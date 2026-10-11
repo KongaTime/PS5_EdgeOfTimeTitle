@@ -118,6 +118,14 @@ else()
 	file(REMOVE ${CMAKE_BINARY_DIR}/ui.txt)
 endif()
 
+# EdgeOfTimeRecomp: the title's program (reeot/reeot.cmake) joins its entry to the
+# objects, and what it links to the link (PS5_TITLE_LINK_INPUTS), as PS5_RPCS3Title
+set(PS5_TITLE_LINK_INPUTS)
+set(PS5_TITLE_LINK_DEPENDS)
+if(EXISTS ${ROOT}/reeot/reeot.cmake AND NOT PS5_HOST_REFERENCE)
+	include(${ROOT}/reeot/reeot.cmake)
+endif()
+
 if(PS5_HOST_REFERENCE)
 	add_executable(ps5-samples-host $<TARGET_OBJECTS:samples>)
 	target_link_libraries(ps5-samples-host PRIVATE dl pthread)
@@ -127,8 +135,8 @@ endif()
 # Link, sign and package: the title folder in dist/<TITLE_ID>/
 add_custom_command(
 	OUTPUT ${CMAKE_BINARY_DIR}/eboot.elf
-	COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/tools/link-title.sh ${CMAKE_BINARY_DIR} ${PS5_VULKAN_DIR} ${PS5_PAYLOAD_SDK} "$<TARGET_OBJECTS:samples>"
-	DEPENDS samples "$<TARGET_OBJECTS:samples>" ${CMAKE_CURRENT_SOURCE_DIR}/tools/link-title.sh
+	COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/tools/link-title.sh ${CMAKE_BINARY_DIR} ${PS5_VULKAN_DIR} ${PS5_PAYLOAD_SDK} "$<TARGET_OBJECTS:samples>" ${PS5_TITLE_LINK_INPUTS}
+	DEPENDS samples "$<TARGET_OBJECTS:samples>" ${CMAKE_CURRENT_SOURCE_DIR}/tools/link-title.sh ${PS5_TITLE_LINK_DEPENDS}
 	COMMAND_EXPAND_LISTS
 	VERBATIM)
 add_custom_target(title ALL DEPENDS ${CMAKE_BINARY_DIR}/eboot.elf)

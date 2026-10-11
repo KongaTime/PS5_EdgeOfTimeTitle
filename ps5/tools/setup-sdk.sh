@@ -17,9 +17,12 @@ root=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/../.." && pwd)
 cache="$root/.deps/native"
 sdk="$cache/ps5-payload-sdk"
 sdk_fork="${PS5_PAYLOAD_SDK_FORK:-$root/../PS5_PayloadSDK}"
-# adc8dd7: /data through the Lapy daemon (ps5platform/elevation.h), an opt-in no sample calls.
+# 1de8b37 (KongaTime/PS5_PayloadSDK, beside this repository): the revision
+# PS5_RPCS3Title and EdgeOfTimeRecomp's ps5/tools/build-rexglue.sh pin, three
+# commits after the template's adc8dd7 (/data through the Lapy daemon,
+# ps5platform/elevation.h): the platform layer's pathconf and sbrk.
 # Never older than fa69d00, the platform layer's localeconv in the C locale (ps5_localeconv).
-sdk_revision=adc8dd795ada7bf696cd98748aae463a3970ffbb
+sdk_revision=1de8b37d583de476ad07cde9a0d562b75fb1be8f
 
 if [[ ! -f $sdk/.ps5-sdk-revision || $(<"$sdk/.ps5-sdk-revision") != "$sdk_revision" ]]; then
     git -C "$sdk_fork" cat-file -e "$sdk_revision^{commit}" 2>/dev/null || {

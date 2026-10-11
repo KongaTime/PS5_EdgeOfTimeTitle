@@ -39,6 +39,15 @@
 extern "C" VKAPI_ATTR PFN_vkVoidFunction VKAPI_CALL vk_icdGetInstanceProcAddr(VkInstance instance, const char *name);
 #endif
 
+/* EdgeOfTimeRecomp: the title's program is not a Vulkan sample. reeot/reeot.cmake
+ * defines PS5_TITLE_MAIN and adds ps5_title_main (reeot/title_main.cpp), and a
+ * launch runs it in place of the samples, as PS5_RPCS3Title does. Not a weak
+ * symbol: a weak reference nothing defines becomes an import, which the native
+ * tool refuses. */
+#if defined(PS5_TITLE_MAIN)
+extern "C" int ps5_title_main(void);
+#endif
+
 /* The title's folder: /app0 on the console, a build folder in the host reference build */
 #ifndef PS5_APP_ROOT
 #define PS5_APP_ROOT "/app0"
@@ -388,6 +397,11 @@ int main()
 
 	int status = 0;
 	TestRun run;
+#if defined(PS5_TITLE_MAIN)
+	if (true) {
+		status = ps5_title_main();
+	} else
+#endif
 	if (readTestRun(run)) {
 		status = runTests(run);
 	} else if (ps5SampleCount == 1) {
