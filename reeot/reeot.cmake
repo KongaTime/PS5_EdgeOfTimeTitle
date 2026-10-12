@@ -1,12 +1,14 @@
 # EdgeOfTimeRecomp for the PS5 - the title's program (included by ps5/CMakeLists.txt).
 #
 # The entry (reeot/title_main.cpp) joins the title's objects and runs in place of
-# the samples (PS5_TITLE_MAIN, ps5/src/main.cpp). For now it runs two checks: the
-# ReXGlue fork's guest-memory test (src/core/memory_ps5.cpp and ps5/tests/
-# memory_ps5_test.cpp, compiled from the fork's checkout beside this repository:
-# ../rexglue-sdk, the same one EdgeOfTimeRecomp builds with, or REXGLUE_SRC),
-# then reeot/code_read_check.cpp. Both link against the platform layer the title
-# already links, and write one results file (REEOT_TEST_RESULTS).
+# the samples (PS5_TITLE_MAIN, ps5/src/main.cpp). It runs the ReXGlue app the link
+# holds, through the runtime's PS5 entry (rex_ps5_app_main): for now test app 3
+# (reeot/rex_test_app.cpp).
+#
+# The runtime is the ReXGlue fork's (../rexglue-sdk, or REXGLUE_SRC), built for the
+# PS5 by EdgeOfTimeRecomp's ps5/tools/build-rexglue.sh (../EdgeOfTimeRecomp, or
+# REXGLUE_PS5_BUILD for its build folder): its archives in the fork's
+# out/ps5-amd64/, linked whole into the title with the SDK's libc++experimental.
 #
 # Copyright (C) 2026 KongaTime
 # SPDX-License-Identifier: MIT
@@ -16,28 +18,56 @@ if(NOT reeot_rexglue)
 	set(reeot_rexglue ${ROOT}/../rexglue-sdk)
 endif()
 get_filename_component(reeot_rexglue "${reeot_rexglue}" ABSOLUTE)
-if(NOT EXISTS ${reeot_rexglue}/src/core/memory_ps5.cpp)
-	message(FATAL_ERROR "No ReXGlue fork with the PS5 target at ${reeot_rexglue}: "
-		"git clone https://github.com/KongaTime/rexglue-sdk beside this repository, or set REXGLUE_SRC")
+set(reeot_runtime_build "$ENV{REXGLUE_PS5_BUILD}")
+if(NOT reeot_runtime_build)
+	set(reeot_runtime_build ${ROOT}/../EdgeOfTimeRecomp/build-ps5/rexglue)
 endif()
-if(NOT EXISTS ${reeot_rexglue}/thirdparty/fmt/include/fmt/format.h OR
-   NOT EXISTS ${reeot_rexglue}/thirdparty/simde/simde)
-	message(FATAL_ERROR "The ReXGlue fork's fmt and simde submodules are not checked out: "
-		"git -C ${reeot_rexglue} submodule update --init --depth 1 thirdparty/fmt thirdparty/simde")
+get_filename_component(reeot_runtime_build "${reeot_runtime_build}" ABSOLUTE)
+set(reeot_runtime_dir ${reeot_rexglue}/out/ps5-amd64)
+if(NOT EXISTS ${reeot_runtime_dir}/librexruntime.a OR NOT EXISTS ${reeot_runtime_build}/include/rex/version.h)
+	message(FATAL_ERROR "No ReXGlue runtime built for the PS5 at ${reeot_runtime_dir} (build folder "
+		"${reeot_runtime_build}): run ps5/tools/build-rexglue.sh in EdgeOfTimeRecomp beside this "
+		"repository, or set REXGLUE_SRC and REXGLUE_PS5_BUILD")
 endif()
-message(STATUS "EdgeOfTimeRecomp: the guest memory test from ${reeot_rexglue}")
+message(STATUS "EdgeOfTimeRecomp: the ReXGlue runtime from ${reeot_runtime_dir}")
 
-target_sources(samples PRIVATE ${ROOT}/reeot/title_main.cpp ${ROOT}/reeot/code_read_check.cpp)
+target_sources(samples PRIVATE ${ROOT}/reeot/title_main.cpp ${ROOT}/reeot/rex_test_app.cpp)
 target_compile_definitions(samples PRIVATE PS5_TITLE_MAIN "REEOT_TEST_RESULTS=\"/app0/reeot-test-results.txt\"")
 
-# The fork's sources take its own headers (the test's logging stand-in first) and
-# C++23; the rest of the title is untouched
-set(reeot_memory_sources
-	${reeot_rexglue}/src/core/memory_ps5.cpp
-	${reeot_rexglue}/ps5/tests/memory_ps5_test.cpp)
-target_sources(samples PRIVATE ${reeot_memory_sources})
-set_source_files_properties(${reeot_memory_sources} PROPERTIES
-	INCLUDE_DIRECTORIES "${reeot_rexglue}/ps5/tests/stub;${reeot_rexglue}/include;${reeot_rexglue}/thirdparty/fmt/include;${reeot_rexglue}/thirdparty/simde"
-	COMPILE_DEFINITIONS "MEMORY_PS5_TEST_EMBEDDED;FMT_HEADER_ONLY;MEMORY_PS5_TEST_RESULTS=REEOT_TEST_RESULTS"
-	COMPILE_OPTIONS "-std=c++23"
+# The app takes the runtime's headers, defines and language settings (its
+# rexui objects'); the rest of the title is untouched
+set_source_files_properties(${ROOT}/reeot/rex_test_app.cpp PROPERTIES
+	INCLUDE_DIRECTORIES "${reeot_rexglue}/include;${reeot_runtime_build}/include;${reeot_rexglue}/thirdparty/fmt/include;${reeot_rexglue}/thirdparty/spdlog/include;${reeot_rexglue}/thirdparty/simde;${reeot_rexglue}/thirdparty/simde/simde;${reeot_rexglue}/thirdparty/utfcpp/source;${reeot_rexglue}/thirdparty/imgui;${reeot_rexglue}/thirdparty/vulkan-headers/include;${reeot_rexglue}/thirdparty/tomlplusplus/include"
+	COMPILE_DEFINITIONS "SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;REX_HAS_VULKAN=1"
+	COMPILE_OPTIONS "-std=c++23;-fexperimental-library;-fno-char8_t;-fno-strict-aliasing"
 	SKIP_PRECOMPILE_HEADERS ON)
+
+# The runtime and its libraries in one group (they refer to each other)
+file(GLOB reeot_runtime_archives ${reeot_runtime_dir}/*.a)
+list(REMOVE_ITEM reeot_runtime_archives ${reeot_runtime_dir}/librexruntime.a)
+
+# libc names the runtime imports that no module a title loads exports (null at
+# run time: link-title.sh refuses them), or that the console refuses a title,
+# bound to the platform layer's, as PS5_RPCS3Title's rpcs3/rpcs3.cmake binds
+# them: FFmpeg's isatty, libc++'s pathconf (std::filesystem), and realpath, which
+# std::filesystem's canonical paths are built on (EPERM to a title)
+set(reeot_libc_bindings)
+foreach(name isatty pathconf realpath)
+	list(APPEND reeot_libc_bindings --defsym=${name}=ps5_${name})
+endforeach()
+# A bound name the SDK's stubs also define would be exported from the title to
+# override theirs, and the native tool refuses a title's exports: every name
+# bound here stays local, as PS5_Vulkan's recipe keeps its own
+set(reeot_local_map ${CMAKE_BINARY_DIR}/reeot-local.map)
+set(reeot_local_names)
+foreach(flag ${reeot_libc_bindings})
+	string(REGEX REPLACE "^--defsym=([^=]+)=.*$" "\\1" name "${flag}")
+	string(APPEND reeot_local_names "        ${name};\n")
+endforeach()
+file(WRITE ${reeot_local_map} "{\n    local:\n${reeot_local_names}};\n")
+
+set(PS5_TITLE_LINK_INPUTS
+	--start-group ${reeot_runtime_dir}/librexruntime.a ${reeot_runtime_archives}
+	${PS5_PAYLOAD_SDK}/target/lib/libc++experimental.a --end-group
+	${reeot_libc_bindings} --version-script ${reeot_local_map})
+set(PS5_TITLE_LINK_DEPENDS ${reeot_runtime_dir}/librexruntime.a ${reeot_runtime_archives})
