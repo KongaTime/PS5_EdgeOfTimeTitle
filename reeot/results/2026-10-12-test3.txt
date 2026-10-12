@@ -1,0 +1,426 @@
+startup: main: entered the ReXGlue app
+startup: main: initializing cvars and early ReXGlue logging
+startup: main: constructing application context
+startup: main: initializing application
+==== test app 3: the ReXGlue runtime ====
+window: creating it
+window: open, 3840x2160
+memory: Memory::Initialize (the 4.5 GiB guest arena, the MMIO handler)
+memory: initialized
+code: reading 16 bytes of this app's code (if this is the file's last line, the code is still execute-only)
+code: readable: 55 48 89 e5 41 56 53 49 ...
+startup: main: entering UI event loop
+sound: opening the PS5 driver (sceAudioOut)
+sound: a 440 Hz tone for two seconds (you should hear it now)
+sound: 375 frames submitted in 1663 ms (played at 5.33 ms a frame, after 64 queued)
+sound: driver closed
+controller: CreateDefaultInputSystem (the PS5 scePad driver)
+controller: capabilities for player 1: 0x00000000, type 1, flags 0x1
+controller: rumble on: 0x00000000 (you should feel it for half a second)
+controller: press buttons, the triggers and the sticks for 20 seconds
+controller: player 1 GetState 0x00000000 (connected)
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 516,-774 (packet 1)
+controller: buttons 0x0001, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 19)
+controller: keystroke vk 0x5810 flags 0x0001
+controller: keystroke vk 0x5810 flags 0x0005
+controller: keystroke vk 0x5810 flags 0x0005
+controller: keystroke vk 0x5810 flags 0x0005
+controller: keystroke vk 0x5810 flags 0x0005
+controller: keystroke vk 0x5810 flags 0x0005
+controller: keystroke vk 0x5810 flags 0x0005
+controller: keystroke vk 0x5810 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 25)
+controller: keystroke vk 0x5810 flags 0x0005
+controller: keystroke vk 0x5810 flags 0x0002
+controller: buttons 0x0004, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 30)
+controller: keystroke vk 0x5812 flags 0x0001
+controller: keystroke vk 0x5812 flags 0x0005
+controller: keystroke vk 0x5812 flags 0x0005
+controller: keystroke vk 0x5812 flags 0x0005
+controller: keystroke vk 0x5812 flags 0x0005
+controller: keystroke vk 0x5812 flags 0x0005
+controller: keystroke vk 0x5812 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 31)
+controller: keystroke vk 0x5812 flags 0x0005
+controller: keystroke vk 0x5812 flags 0x0002
+controller: buttons 0x0008, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 37)
+controller: keystroke vk 0x5813 flags 0x0001
+controller: keystroke vk 0x5813 flags 0x0005
+controller: keystroke vk 0x5813 flags 0x0005
+controller: keystroke vk 0x5813 flags 0x0005
+controller: keystroke vk 0x5813 flags 0x0005
+controller: keystroke vk 0x5813 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-774 R 516,-774 (packet 38)
+controller: keystroke vk 0x5813 flags 0x0005
+controller: keystroke vk 0x5813 flags 0x0002
+controller: buttons 0x0002, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 42)
+controller: keystroke vk 0x5811 flags 0x0001
+controller: keystroke vk 0x5811 flags 0x0005
+controller: keystroke vk 0x5811 flags 0x0005
+controller: keystroke vk 0x5811 flags 0x0005
+controller: keystroke vk 0x5811 flags 0x0005
+controller: keystroke vk 0x5811 flags 0x0005
+controller: keystroke vk 0x5811 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 43)
+controller: keystroke vk 0x5811 flags 0x0005
+controller: keystroke vk 0x5811 flags 0x0002
+controller: buttons 0x4000, L2 0, R2 0, sticks L 0,-516 R 516,-774 (packet 49)
+controller: keystroke vk 0x5802 flags 0x0001
+controller: keystroke vk 0x5802 flags 0x0005
+controller: keystroke vk 0x5802 flags 0x0005
+controller: keystroke vk 0x5802 flags 0x0005
+controller: keystroke vk 0x5802 flags 0x0005
+controller: keystroke vk 0x5802 flags 0x0005
+controller: keystroke vk 0x5802 flags 0x0005
+controller: keystroke vk 0x5802 flags 0x0005
+controller: keystroke vk 0x5802 flags 0x0002
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 516,-774 (packet 53)
+controller: buttons 0x8000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 57)
+controller: keystroke vk 0x5803 flags 0x0001
+controller: keystroke vk 0x5803 flags 0x0005
+controller: keystroke vk 0x5803 flags 0x0005
+controller: keystroke vk 0x5803 flags 0x0005
+controller: keystroke vk 0x5803 flags 0x0005
+controller: keystroke vk 0x5803 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 60)
+controller: keystroke vk 0x5803 flags 0x0005
+controller: keystroke vk 0x5803 flags 0x0002
+controller: buttons 0x2000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 64)
+controller: keystroke vk 0x5801 flags 0x0001
+controller: keystroke vk 0x5801 flags 0x0005
+controller: keystroke vk 0x5801 flags 0x0005
+controller: keystroke vk 0x5801 flags 0x0005
+controller: keystroke vk 0x5801 flags 0x0005
+controller: keystroke vk 0x5801 flags 0x0005
+controller: keystroke vk 0x5801 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 69)
+controller: keystroke vk 0x5801 flags 0x0005
+controller: keystroke vk 0x5801 flags 0x0002
+controller: buttons 0x1000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 72)
+controller: keystroke vk 0x5800 flags 0x0001
+controller: keystroke vk 0x5800 flags 0x0005
+controller: keystroke vk 0x5800 flags 0x0005
+controller: keystroke vk 0x5800 flags 0x0005
+controller: keystroke vk 0x5800 flags 0x0005
+controller: keystroke vk 0x5800 flags 0x0005
+controller: keystroke vk 0x5800 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 75)
+controller: keystroke vk 0x5800 flags 0x0005
+controller: keystroke vk 0x5800 flags 0x0002
+controller: buttons 0x0020, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 80)
+controller: keystroke vk 0x5815 flags 0x0001
+controller: keystroke vk 0x5815 flags 0x0005
+controller: keystroke vk 0x5815 flags 0x0005
+controller: keystroke vk 0x5815 flags 0x0005
+controller: keystroke vk 0x5815 flags 0x0005
+controller: keystroke vk 0x5815 flags 0x0005
+controller: keystroke vk 0x5815 flags 0x0005
+controller: keystroke vk 0x5815 flags 0x0005
+controller: keystroke vk 0x5815 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 85)
+controller: keystroke vk 0x5815 flags 0x0005
+controller: keystroke vk 0x5815 flags 0x0002
+controller: buttons 0x0020, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 90)
+controller: keystroke vk 0x5815 flags 0x0001
+controller: keystroke vk 0x5815 flags 0x0005
+controller: keystroke vk 0x5815 flags 0x0005
+controller: keystroke vk 0x5815 flags 0x0005
+controller: keystroke vk 0x5815 flags 0x0005
+controller: keystroke vk 0x5815 flags 0x0005
+controller: keystroke vk 0x5815 flags 0x0005
+controller: keystroke vk 0x5815 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 774,-1032 (packet 92)
+controller: keystroke vk 0x5815 flags 0x0005
+controller: keystroke vk 0x5815 flags 0x0002
+controller: buttons 0x0010, L2 0, R2 0, sticks L 0,-516 R 774,-1032 (packet 93)
+controller: keystroke vk 0x5814 flags 0x0001
+controller: keystroke vk 0x5814 flags 0x0005
+controller: keystroke vk 0x5814 flags 0x0005
+controller: keystroke vk 0x5814 flags 0x0005
+controller: keystroke vk 0x5814 flags 0x0005
+controller: keystroke vk 0x5814 flags 0x0005
+controller: keystroke vk 0x5814 flags 0x0005
+controller: keystroke vk 0x5814 flags 0x0005
+controller: keystroke vk 0x5814 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 774,-1032 (packet 94)
+controller: keystroke vk 0x5814 flags 0x0005
+controller: keystroke vk 0x5814 flags 0x0002
+controller: buttons 0x0040, L2 0, R2 0, sticks L 2064,774 R 774,-1032 (packet 102)
+controller: keystroke vk 0x5816 flags 0x0001
+controller: keystroke vk 0x5816 flags 0x0005
+controller: keystroke vk 0x5816 flags 0x0005
+controller: keystroke vk 0x5816 flags 0x0005
+controller: keystroke vk 0x5816 flags 0x0005
+controller: keystroke vk 0x5816 flags 0x0005
+controller: keystroke vk 0x5816 flags 0x0005
+controller: keystroke vk 0x5816 flags 0x0005
+controller: keystroke vk 0x5816 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L 4128,-774 R 774,-1032 (packet 108)
+controller: keystroke vk 0x5816 flags 0x0005
+controller: keystroke vk 0x5816 flags 0x0002
+controller: buttons 0x0080, L2 0, R2 0, sticks L 0,-1806 R 2064,-1548 (packet 119)
+controller: keystroke vk 0x5817 flags 0x0001
+controller: keystroke vk 0x5817 flags 0x0005
+controller: keystroke vk 0x5817 flags 0x0005
+controller: keystroke vk 0x5817 flags 0x0005
+controller: keystroke vk 0x5817 flags 0x0005
+controller: keystroke vk 0x5817 flags 0x0005
+controller: keystroke vk 0x5817 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-1290 R 1290,-2064 (packet 126)
+controller: keystroke vk 0x5817 flags 0x0005
+controller: keystroke vk 0x5817 flags 0x0002
+controller: buttons 0x0000, L2 0, R2 0, sticks L -20899,-7482 R 12126,5418 (packet 131)
+controller: keystroke vk 0x5823 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -28897,-8772 R 23994,10320 (packet 132)
+controller: keystroke vk 0x5823 flags 0x0005
+controller: keystroke vk 0x5832 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -32768,-4902 R 31218,16254 (packet 133)
+controller: keystroke vk 0x5832 flags 0x0005
+controller: keystroke vk 0x5832 flags 0x0005
+controller: keystroke vk 0x5832 flags 0x0005
+controller: keystroke vk 0x5832 flags 0x0002
+controller: keystroke vk 0x5835 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -24769,28122 R 21156,29154 (packet 136)
+controller: keystroke vk 0x5835 flags 0x0005
+controller: keystroke vk 0x5823 flags 0x0002
+controller: keystroke vk 0x5824 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -9030,32767 R 12126,32767 (packet 137)
+controller: keystroke vk 0x5824 flags 0x0005
+controller: keystroke vk 0x5824 flags 0x0002
+controller: keystroke vk 0x5835 flags 0x0002
+controller: keystroke vk 0x5820 flags 0x0001
+controller: keystroke vk 0x5830 flags 0x0001
+controller: keystroke vk 0x5830 flags 0x0005
+controller: keystroke vk 0x5830 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L 29412,23736 R -26059,22446 (packet 139)
+controller: keystroke vk 0x5830 flags 0x0005
+controller: keystroke vk 0x5820 flags 0x0002
+controller: keystroke vk 0x5830 flags 0x0002
+controller: keystroke vk 0x5825 flags 0x0001
+controller: keystroke vk 0x5833 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L 32767,12642 R -32768,9030 (packet 140)
+controller: keystroke vk 0x5833 flags 0x0005
+controller: keystroke vk 0x5825 flags 0x0002
+controller: keystroke vk 0x5822 flags 0x0001
+controller: keystroke vk 0x5822 flags 0x0005
+controller: keystroke vk 0x5822 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L 28122,-23479 R -29929,-19867 (packet 143)
+controller: keystroke vk 0x5822 flags 0x0005
+controller: keystroke vk 0x5822 flags 0x0002
+controller: keystroke vk 0x5833 flags 0x0002
+controller: keystroke vk 0x5821 flags 0x0001
+controller: keystroke vk 0x5837 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -258,-32768 R -13932,-32251 (packet 144)
+controller: keystroke vk 0x5837 flags 0x0005
+controller: keystroke vk 0x5837 flags 0x0002
+controller: keystroke vk 0x5831 flags 0x0001
+controller: keystroke vk 0x5831 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L -22705,-26575 R 11610,-32768 (packet 146)
+controller: keystroke vk 0x5831 flags 0x0005
+controller: keystroke vk 0x5821 flags 0x0002
+controller: keystroke vk 0x5827 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -29413,-17287 R 19350,-30187 (packet 147)
+controller: keystroke vk 0x5827 flags 0x0005
+controller: keystroke vk 0x5827 flags 0x0002
+controller: keystroke vk 0x5831 flags 0x0002
+controller: keystroke vk 0x5823 flags 0x0001
+controller: keystroke vk 0x5836 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -32768,-1806 R 31992,-14964 (packet 148)
+controller: keystroke vk 0x5836 flags 0x0005
+controller: keystroke vk 0x5836 flags 0x0002
+controller: keystroke vk 0x5832 flags 0x0001
+controller: keystroke vk 0x5832 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L -14964,32767 R 23736,25542 (packet 150)
+controller: keystroke vk 0x5832 flags 0x0005
+controller: keystroke vk 0x5823 flags 0x0002
+controller: keystroke vk 0x5832 flags 0x0002
+controller: keystroke vk 0x5820 flags 0x0001
+controller: keystroke vk 0x5830 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L 25800,28380 R 5418,32767 (packet 151)
+controller: keystroke vk 0x5830 flags 0x0005
+controller: keystroke vk 0x5820 flags 0x0002
+controller: keystroke vk 0x5825 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L 30186,23736 R -21415,27864 (packet 152)
+controller: keystroke vk 0x5825 flags 0x0005
+controller: keystroke vk 0x5830 flags 0x0002
+controller: keystroke vk 0x5834 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L 32767,15480 R -32768,11868 (packet 153)
+controller: keystroke vk 0x5834 flags 0x0005
+controller: keystroke vk 0x5825 flags 0x0002
+controller: keystroke vk 0x5834 flags 0x0002
+controller: keystroke vk 0x5822 flags 0x0001
+controller: keystroke vk 0x5833 flags 0x0001
+controller: keystroke vk 0x5833 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L 31734,-18319 R -32768,-14964 (packet 155)
+controller: keystroke vk 0x5833 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L 10836,-32768 R -23479,-25543 (packet 156)
+controller: keystroke vk 0x5833 flags 0x0005
+controller: keystroke vk 0x5822 flags 0x0002
+controller: keystroke vk 0x5833 flags 0x0002
+controller: keystroke vk 0x5821 flags 0x0001
+controller: keystroke vk 0x5837 flags 0x0001
+controller: keystroke vk 0x5837 flags 0x0002
+controller: keystroke vk 0x5831 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -12126,-32768 R -4644,-32768 (packet 157)
+controller: keystroke vk 0x5831 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L -20383,-27349 R 6192,-32768 (packet 158)
+controller: keystroke vk 0x5831 flags 0x0005
+controller: keystroke vk 0x5821 flags 0x0002
+controller: keystroke vk 0x5827 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -29413,-16254 R 16254,-32509 (packet 159)
+controller: keystroke vk 0x5827 flags 0x0005
+controller: keystroke vk 0x5827 flags 0x0002
+controller: keystroke vk 0x5823 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -32768,2322 R 25800,-25027 (packet 160)
+controller: keystroke vk 0x5823 flags 0x0005
+controller: keystroke vk 0x5831 flags 0x0002
+controller: keystroke vk 0x5836 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -30961,22188 R 32767,-8514 (packet 161)
+controller: keystroke vk 0x5836 flags 0x0005
+controller: keystroke vk 0x5823 flags 0x0002
+controller: keystroke vk 0x5836 flags 0x0002
+controller: keystroke vk 0x5824 flags 0x0001
+controller: keystroke vk 0x5832 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -4128,32767 R 30186,16254 (packet 162)
+controller: keystroke vk 0x5832 flags 0x0005
+controller: keystroke vk 0x5824 flags 0x0002
+controller: keystroke vk 0x5820 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L 22962,30702 R 7740,26058 (packet 163)
+controller: keystroke vk 0x5820 flags 0x0005
+controller: keystroke vk 0x5820 flags 0x0002
+controller: keystroke vk 0x5832 flags 0x0002
+controller: keystroke vk 0x5825 flags 0x0001
+controller: keystroke vk 0x5830 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L 29154,24510 R -23995,25800 (packet 164)
+controller: keystroke vk 0x5830 flags 0x0005
+controller: keystroke vk 0x5830 flags 0x0002
+controller: keystroke vk 0x5834 flags 0x0001
+controller: keystroke vk 0x5834 flags 0x0005
+controller: keystroke vk 0x5825 flags 0x0002
+controller: keystroke vk 0x5834 flags 0x0002
+controller: keystroke vk 0x5825 flags 0x0001
+controller: keystroke vk 0x5833 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L 32767,8772 R -32768,5418 (packet 166)
+controller: keystroke vk 0x5833 flags 0x0005
+controller: keystroke vk 0x5825 flags 0x0002
+controller: keystroke vk 0x5822 flags 0x0001
+controller: keystroke vk 0x5822 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L 11094,-32768 R -21673,-27865 (packet 168)
+controller: keystroke vk 0x5822 flags 0x0005
+controller: keystroke vk 0x5822 flags 0x0002
+controller: keystroke vk 0x5833 flags 0x0002
+controller: keystroke vk 0x5821 flags 0x0001
+controller: keystroke vk 0x5831 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -13416,-31993 R -5676,-32768 (packet 169)
+controller: keystroke vk 0x5831 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L -21931,-26059 R 4644,-32768 (packet 170)
+controller: keystroke vk 0x5831 flags 0x0005
+controller: keystroke vk 0x5821 flags 0x0002
+controller: keystroke vk 0x5827 flags 0x0001
+controller: keystroke vk 0x5827 flags 0x0005
+controller: keystroke vk 0x5827 flags 0x0002
+controller: keystroke vk 0x5823 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -32768,-9030 R 28380,-20641 (packet 172)
+controller: keystroke vk 0x5823 flags 0x0005
+controller: keystroke vk 0x5831 flags 0x0002
+controller: keystroke vk 0x5832 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -32768,12642 R 32767,10836 (packet 173)
+controller: keystroke vk 0x5832 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L -15738,32767 R 23994,26574 (packet 174)
+controller: keystroke vk 0x5832 flags 0x0005
+controller: keystroke vk 0x5823 flags 0x0002
+controller: keystroke vk 0x5832 flags 0x0002
+controller: keystroke vk 0x5820 flags 0x0001
+controller: keystroke vk 0x5835 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L 22962,30702 R 516,32767 (packet 175)
+controller: keystroke vk 0x5835 flags 0x0005
+controller: keystroke vk 0x5820 flags 0x0002
+controller: keystroke vk 0x5835 flags 0x0002
+controller: keystroke vk 0x5825 flags 0x0001
+controller: keystroke vk 0x5830 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L 29412,23736 R -20641,29412 (packet 176)
+controller: keystroke vk 0x5830 flags 0x0005
+controller: keystroke vk 0x5830 flags 0x0002
+controller: keystroke vk 0x5834 flags 0x0001
+controller: keystroke vk 0x5834 flags 0x0005
+controller: keystroke vk 0x5825 flags 0x0002
+controller: keystroke vk 0x5822 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L 32767,5160 R -32768,9030 (packet 178)
+controller: keystroke vk 0x5822 flags 0x0005
+controller: keystroke vk 0x5834 flags 0x0002
+controller: keystroke vk 0x5833 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L 25284,-24253 R -29155,-17287 (packet 179)
+controller: keystroke vk 0x5833 flags 0x0005
+controller: keystroke vk 0x5822 flags 0x0002
+controller: keystroke vk 0x5833 flags 0x0002
+controller: keystroke vk 0x5826 flags 0x0001
+controller: keystroke vk 0x5837 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -5676,-32768 R -2064,-32768 (packet 180)
+controller: keystroke vk 0x5837 flags 0x0005
+controller: keystroke vk 0x5826 flags 0x0002
+controller: keystroke vk 0x5837 flags 0x0002
+controller: keystroke vk 0x5821 flags 0x0001
+controller: keystroke vk 0x5831 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -23995,-24511 R 21156,-28381 (packet 181)
+controller: keystroke vk 0x5831 flags 0x0005
+controller: keystroke vk 0x5821 flags 0x0002
+controller: keystroke vk 0x5831 flags 0x0002
+controller: keystroke vk 0x5827 flags 0x0001
+controller: keystroke vk 0x5836 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -31735,-13416 R 30186,-20383 (packet 182)
+controller: keystroke vk 0x5836 flags 0x0005
+controller: keystroke vk 0x5827 flags 0x0002
+controller: keystroke vk 0x5836 flags 0x0002
+controller: keystroke vk 0x5823 flags 0x0001
+controller: keystroke vk 0x5832 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -32768,-1548 R 32767,-9030 (packet 183)
+controller: keystroke vk 0x5832 flags 0x0005
+controller: keystroke vk 0x5832 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L -18061,32508 R 19866,13674 (packet 185)
+controller: keystroke vk 0x5832 flags 0x0005
+controller: keystroke vk 0x5823 flags 0x0002
+controller: keystroke vk 0x5832 flags 0x0002
+controller: keystroke vk 0x5820 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L 16770,32767 R -17029,18834 (packet 186)
+controller: keystroke vk 0x5820 flags 0x0005
+controller: keystroke vk 0x5834 flags 0x0001
+controller: keystroke vk 0x5834 flags 0x0005
+controller: keystroke vk 0x5820 flags 0x0002
+controller: keystroke vk 0x5834 flags 0x0002
+controller: keystroke vk 0x5825 flags 0x0001
+controller: keystroke vk 0x5833 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L 29670,22446 R -32509,13158 (packet 188)
+controller: keystroke vk 0x5833 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L 32767,14706 R -32768,3096 (packet 189)
+controller: keystroke vk 0x5833 flags 0x0005
+controller: keystroke vk 0x5825 flags 0x0002
+controller: keystroke vk 0x5822 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L 19350,-10836 R -31477,-17545 (packet 190)
+controller: keystroke vk 0x5822 flags 0x0005
+controller: keystroke vk 0x5822 flags 0x0002
+controller: keystroke vk 0x5833 flags 0x0002
+controller: keystroke vk 0x5837 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -10320,-29155 R -9288,-32768 (packet 191)
+controller: keystroke vk 0x5837 flags 0x0005
+controller: keystroke vk 0x5837 flags 0x0002
+controller: keystroke vk 0x5821 flags 0x0001
+controller: keystroke vk 0x5831 flags 0x0001
+controller: buttons 0x0000, L2 0, R2 0, sticks L -25285,-24253 R 16512,-32768 (packet 192)
+controller: keystroke vk 0x5831 flags 0x0005
+controller: keystroke vk 0x5821 flags 0x0002
+controller: keystroke vk 0x5827 flags 0x0001
+controller: keystroke vk 0x5827 flags 0x0005
+controller: keystroke vk 0x5831 flags 0x0002
+controller: keystroke vk 0x5836 flags 0x0001
+controller: keystroke vk 0x5836 flags 0x0005
+controller: buttons 0x0000, L2 0, R2 0, sticks L -31993,-13416 R 32767,-8514 (packet 195)
+controller: keystroke vk 0x5836 flags 0x0005
+controller: keystroke vk 0x5827 flags 0x0002
+controller: keystroke vk 0x5836 flags 0x0002
+controller: keystroke vk 0x5823 flags 0x0001
+controller: done
+quitting through the app context
+startup: main: shutting down application
+==== test app 3: done ====
+startup: main: returning success
+rex_ps5_app_main returned 0
