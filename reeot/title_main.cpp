@@ -18,8 +18,10 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <chrono>
 #include <cstdarg>
 #include <cstdio>
+#include <thread>
 
 #include <sys/stat.h>
 
@@ -54,9 +56,19 @@ extern "C" int ps5_title_main(void)
 		fclose(file);
 		chmod(REEOT_TEST_RESULTS, 0666);
 	}
+	// While the game is brought up: its log at debug level (logs/), and a line
+	// here every five seconds, so a run that goes quiet says whether the title
+	// was still alive (a hang) or not (it died)
+	std::thread([] {
+		for (int seconds = 5;; seconds += 5) {
+			std::this_thread::sleep_for(std::chrono::seconds(5));
+			reeot_note("alive: %d s", seconds);
+		}
+	}).detach();
 	char program[] = "/app0/eboot.bin";
-	char *argv[] = {program, nullptr};
-	const int status = rex_ps5_app_main(1, argv);
+	char log_level[] = "--log_level=debug";
+	char *argv[] = {program, log_level, nullptr};
+	const int status = rex_ps5_app_main(2, argv);
 	reeot_note("rex_ps5_app_main returned %d", status);
 	return status;
 }

@@ -1,0 +1,24 @@
+[2026-10-12 07:45:33.230] [info] [eot] [t102262] reeot v1.0.0 [Release] ps5-amd64
+[2026-10-12 07:45:33.232] [info] [eot] [t102262]   commit:  7b75d91c1 on claude/nifty-knuth-s27y9o
+[2026-10-12 07:45:33.233] [info] [eot] [t102262]   built:   20261012_0643 with Clang 20.1.2
+[2026-10-12 07:45:33.234] [info] [eot] [t102262]   sdk:     rexglue-v0.10.0.43-dev.g25d6a61 ps5-amd64 @20261012_0531
+[2026-10-12 07:45:33.235] [info] [eot] [t102262]   profile: default (/app0/profiles/default)
+[2026-10-12 07:45:33.236] [info] [eot] [t102262] [language] eot_language auto -> English (XLanguage 1)
+[2026-10-12 07:45:33.237] [info] [eot] [t102262] [input] controller input in the background: off
+[2026-10-12 07:45:33.238] [info] [eot] [t102262] [window] 3840x2160, fullscreen
+[2026-10-12 07:45:33.239] [info] [eot] [t102262] [install] game folder /app0/gamedata
+[2026-10-12 07:45:33.241] [info] [sys] [t102262] Guest memory arena mapped: virtual base 0x0000001000000000, physical base 0x0000001100000000
+[2026-10-12 07:45:33.268] [info] [core] [t102262] PS5: fault records go to /app0/logs/fault.log
+[2026-10-12 07:45:33.269] [info] [core] [t102262] PS5: code at 0x400000-0x26dc000 made readable for the MMIO handler
+[2026-10-12 07:45:33.270] [info] [eot] [t102262] [pad] no controller for the first player
+[2026-10-12 07:45:33.295] [info] [core] [t102262] Function table initialized for module: code=82080000-8238E6EC, image=82000000-82600000
+[2026-10-12 07:45:33.298] [info] [eot] [t102262] [boot] entry xex is Default.xex
+[2026-10-12 07:45:33.330] [info] [core] [t102262] XEX patch applied successfully: base version: 0.0.0.2, new version: 0.0.1.2
+[2026-10-12 07:45:33.375] [info] [eot] [t102262] [gpu] display 3840x2160 at 60 Hz, fullscreen (the display suggests 1440p)
+[2026-10-12 07:45:33.400] [info] [eot] [t102262] [gpu] render thread started: 1024 command slots (14 MB), batches of 64
+[2026-10-12 07:45:33.401] [info] [eot] [t102262] [gpu] Vulkan on PlayStation 5 GPU (RADV NAVI21) ready: swapchain 3840x2160, 32768 bindless texture slots, msaa 1x on the full-frame surfaces
+[2026-10-12 07:45:33.402] [info] [eot] [t102262] [gpu] internal render 1914x1080 (1080p = 1.709x the guest's 1120x632), fitted to the window at present; vsync on, fps cap 60
+[2026-10-12 07:45:33.403] [error] [eot] [t102262] [shaders] the embedded shader cache is empty: build reeot_shader_cache_regen and rebuild; no guest shader will run
+[2026-10-12 07:45:33.404] [info] [eot] [t102262] [pso] 6 pipeline worker thread(s) for 8 physical cores
+[2026-10-12 07:45:33.450] [info] [eot] [t102262] [pso] boot: 3066 compiled-in + 0 local rows -> 1400 queued on the recorded lane, 1573 held for 96 level package(s) (93 duplicate); templates: 774; capturing every pipeline drawn to /app0/profiles/default/cache/pso/ as 'session'
+[2026-10-12 07:45:33.454] [info] [core] [t102262] PS5 pad connected: user 513995993, handle 64751360
