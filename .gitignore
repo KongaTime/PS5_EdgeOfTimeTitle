@@ -4,3 +4,5 @@ klog/
 .deps/
 imgui.ini
 __pycache__/
+# The home-screen art: the game's own, kept on the machine that builds (reeot/title-art.py)
+reeot/title-art/
