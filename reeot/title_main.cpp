@@ -67,8 +67,10 @@ extern "C" int ps5_title_main(void)
 	}).detach();
 	char program[] = "/app0/eboot.bin";
 	char log_level[] = "--log_level=debug";
-	char *argv[] = {program, log_level, nullptr};
-	const int status = rex_ps5_app_main(2, argv);
+	// The port's own trace of every D3D call, for the first frames
+	char trace_frames[] = "--eot_trace_frames=10";
+	char *argv[] = {program, log_level, trace_frames, nullptr};
+	const int status = rex_ps5_app_main(3, argv);
 	reeot_note("rex_ps5_app_main returned %d", status);
 	return status;
 }

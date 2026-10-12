@@ -1,0 +1,720 @@
+[2026-10-12 17:30:56.008] [info] [eot] [t101599] reeot v1.0.0 [Release] ps5-amd64
+[2026-10-12 17:30:56.013] [info] [eot] [t101599]   commit:  44cf7cb34 on claude/nifty-knuth-s27y9o
+[2026-10-12 17:30:56.014] [info] [eot] [t101599]   built:   20261012_1624 with Clang 20.1.2
+[2026-10-12 17:30:56.015] [info] [eot] [t101599]   sdk:     rexglue-v0.10.0.43-dev.g25d6a61 ps5-amd64 @20261012_0531
+[2026-10-12 17:30:56.015] [info] [eot] [t101599]   profile: default (/app0/profiles/default)
+[2026-10-12 17:30:56.017] [info] [eot] [t101599] [language] eot_language auto -> English (XLanguage 1)
+[2026-10-12 17:30:56.017] [debug] [core] [t101599] reeot starting
+[2026-10-12 17:30:56.017] [debug] [core] [t101599]   Game directory: /app0/gamedata
+[2026-10-12 17:30:56.017] [debug] [core] [t101599]   User data:      /app0/profiles/default
+[2026-10-12 17:30:56.017] [debug] [core] [t101599]   Cache root:     /app0/profiles/default/cache
+[2026-10-12 17:30:56.018] [info] [eot] [t101599] [input] controller input in the background: off
+[2026-10-12 17:30:56.019] [info] [eot] [t101599] [window] 3840x2160, fullscreen
+[2026-10-12 17:30:56.020] [debug] [eot] [t101599] [input] fullscreen: mouse look on, cursor hidden
+[2026-10-12 17:30:56.020] [info] [eot] [t101599] [install] game folder /app0/gamedata
+[2026-10-12 17:30:56.022] [info] [sys] [t101599] Guest memory arena mapped: virtual base 0x0000001000000000, physical base 0x0000001100000000
+[2026-10-12 17:30:56.049] [info] [core] [t101599] PS5: fault records go to /app0/logs/fault.log
+[2026-10-12 17:30:56.050] [info] [core] [t101599] PS5: code at 0x400000-0x2f40000 made readable for the MMIO handler
+[2026-10-12 17:30:56.051] [debug] [sys] [t101599] Installed MMIO handler for physical address translation
+[2026-10-12 17:30:56.051] [info] [eot] [t101599] [pad] no controller for the first player
+[2026-10-12 17:30:56.052] [debug] [sys] [t101599] Input system initialized
+[2026-10-12 17:30:56.054] [debug] [apu] [t101599] XMA: Registered MMIO handlers at 0x7FEA0000-0x7FEAFFFF
+[2026-10-12 17:30:56.069] [debug] [sys] [t101672] XThread::Execute thid 1 (handle=F8000010, 'XMA Decoder (F8000010)', native=00018D28, <host>)
+[2026-10-12 17:30:56.072] [debug] [sys] [t101599] Audio system initialized
+[2026-10-12 17:30:56.072] [debug] [sys] [t101674] XThread::Execute thid 2 (handle=F8000014, 'Audio Worker (F8000014)', native=00018D2A, <host>)
+[2026-10-12 17:30:56.081] [debug] [sys] [t101599]   Mounted /app0/gamedata at \Device\Harddisk0\Partition1
+[2026-10-12 17:30:56.081] [debug] [fs] [t101599] Registered symbolic link: game: => \Device\Harddisk0\Partition1
+[2026-10-12 17:30:56.081] [debug] [fs] [t101599] Registered symbolic link: d: => \Device\Harddisk0\Partition1
+[2026-10-12 17:30:56.081] [debug] [sys] [t101599]   Registered symbolic links: game:, d:
+[2026-10-12 17:30:56.081] [debug] [sys] [t101599]   Registered NullDevice for \Device\Harddisk0\{{Partition0,Cache0,Cache1}}
+[2026-10-12 17:30:56.081] [debug] [sys] [t101599] Runtime initialized without graphics system (native rendering mode)
+[2026-10-12 17:30:56.081] [debug] [sys] [t101599] Runtime initialized successfully
+[2026-10-12 17:30:56.081] [debug] [sys] [t101599] Initializing function table at 82600000, size 0063CDD8 for code 82080000-8238E6EC (+00010000 thunk reserve)
+[2026-10-12 17:30:56.081] [info] [core] [t101599] Function table initialized for module: code=82080000-8238E6EC, image=82000000-82600000
+[2026-10-12 17:30:56.085] [debug] [sys] [t101599] Registered 11611 recompiled functions (0 duplicates, 0 rejected)
+[2026-10-12 17:30:56.085] [debug] [sys] [t101599] Runtime setup complete (code: 82080000-8238E6EC, image: 82000000-82600000)
+[2026-10-12 17:30:56.085] [debug] [sys] [t101599] Codegen config: skip_lr=true skip_msr=true ctr=true xer=true cr=true reserved=true non_argument=true non_volatile=true
+[2026-10-12 17:30:56.085] [debug] [sys] [t101599] Registered recompiled module: pe='gamelogic.dll' guest='data/gamelogic.dll' lib='reeot_GameLogic'
+[2026-10-12 17:30:56.085] [info] [eot] [t101599] [boot] entry xex is Default.xex
+[2026-10-12 17:30:56.086] [debug] [sys] [t101599] Loading XEX image: game:\Default.xex
+[2026-10-12 17:30:56.109] [debug] [sys] [t101599] Loading XEX patch from \Device\Harddisk0\Partition1\Default.xexp
+[2026-10-12 17:30:56.109] [debug] [fs] [t101599] VFS: entry not found for '\Device\Harddisk0\Partition1\Default.xexpp' on device '\Device\Harddisk0\Partition1'
+[2026-10-12 17:30:56.117] [info] [core] [t101599] XEX patch applied successfully: base version: 0.0.0.2, new version: 0.0.1.2
+[2026-10-12 17:30:56.117] [debug] [core] [t101599] created symbols for import library xam with 90 imports
+[2026-10-12 17:30:56.117] [debug] [core] [t101599] Patched variable import xboxkrnl:0x156 (XboxHardwareInfo) -> 0x30004000
+[2026-10-12 17:30:56.117] [debug] [core] [t101599] Patched variable import xboxkrnl:0x1be (VdGlobalDevice) -> 0xffcae000
+[2026-10-12 17:30:56.117] [debug] [core] [t101599] Patched variable import xboxkrnl:0x1bf (VdGlobalXamDevice) -> 0xffcad000
+[2026-10-12 17:30:56.117] [debug] [core] [t101599] Patched variable import xboxkrnl:0x266 (KeCertMonitorData) -> 0x30003000
+[2026-10-12 17:30:56.117] [debug] [core] [t101599] Patched variable import xboxkrnl:0x1c0 (VdGpuClockInMHz) -> 0xffcac000
+[2026-10-12 17:30:56.117] [debug] [core] [t101599] Patched variable import xboxkrnl:0x1c1 (VdHSIOCalibrationLock) -> 0xffcab000
+[2026-10-12 17:30:56.117] [debug] [core] [t101599] Patched variable import xboxkrnl:0x1ae (ExLoadedCommandLine) -> 0x30008000
+[2026-10-12 17:30:56.117] [debug] [core] [t101599] Patched variable import xboxkrnl:0x193 (XexExecutableModuleHandle) -> 0x30006000
+[2026-10-12 17:30:56.117] [debug] [core] [t101599] Patched variable import xboxkrnl:0x158 (XboxKrnlVersion) -> 0x30009000
+[2026-10-12 17:30:56.117] [debug] [core] [t101599] Patched variable import xboxkrnl:0xe (ExEventObjectType) -> 0x3000001c
+[2026-10-12 17:30:56.117] [debug] [core] [t101599] Patched variable import xboxkrnl:0x59 (KeDebugMonitorData) -> 0x30002000
+[2026-10-12 17:30:56.117] [debug] [core] [t101599] Patched variable import xboxkrnl:0x1b (ExThreadObjectType) -> 0x30000000
+[2026-10-12 17:30:56.117] [debug] [core] [t101599] Patched variable import xboxkrnl:0xad (KeTimeStampBundle) -> 0x3000a000
+[2026-10-12 17:30:56.117] [debug] [core] [t101599] created symbols for import library xboxkrnl with 165 imports
+[2026-10-12 17:30:56.123] [debug] [sys] [t101692] XThread::Execute thid 3 (handle=F8000020, 'Kernel Dispatch (F8000020)', native=00018D3C, <host>)
+[2026-10-12 17:30:56.123] [debug] [sys] [t101599] Achievement store: loaded 47 entries
+[2026-10-12 17:30:56.123] [debug] [sys] [t101599]   XEX image loaded successfully
+[2026-10-12 17:30:56.136] [debug] [krnl] [t101599] rexcrt_heap: added segment guest=0x20000000-0x30000000 size=256MB
+[2026-10-12 17:30:56.136] [debug] [krnl] [t101599] rexcrt_heap: initialized with 1 segment(s), capacity=255MB
+[2026-10-12 17:30:56.137] [debug] [eot] [t101599] [crash] last-chance handler installed
+[2026-10-12 17:30:56.164] [info] [eot] [t101599] [gpu] display 3840x2160 at 60 Hz, fullscreen (the display suggests 1440p)
+[2026-10-12 17:30:56.188] [info] [eot] [t101599] [gpu] render thread started: 1024 command slots (14 MB), batches of 64
+[2026-10-12 17:30:56.189] [info] [eot] [t101599] [gpu] Vulkan on PlayStation 5 GPU (RADV NAVI21) ready: swapchain 3840x2160, 32768 bindless texture slots, msaa 1x on the full-frame surfaces
+[2026-10-12 17:30:56.190] [info] [eot] [t101599] [gpu] internal render 1914x1080 (1080p = 1.709x the guest's 1120x632), fitted to the window at present; vsync on, fps cap 60
+[2026-10-12 17:30:56.190] [error] [eot] [t101599] [shaders] the embedded shader cache is empty: build reeot_shader_cache_regen and rebuild; no guest shader will run
+[2026-10-12 17:30:56.191] [info] [eot] [t101599] [pso] 6 pipeline worker thread(s) for 8 physical cores
+[2026-10-12 17:30:56.236] [info] [eot] [t101599] [pso] boot: 3066 compiled-in + 0 local rows -> 1400 queued on the recorded lane, 1573 held for 96 level package(s) (93 duplicate); templates: 774; capturing every pipeline drawn to /app0/profiles/default/cache/pso/ as 'session'
+[2026-10-12 17:30:56.237] [debug] [sys] [t101599] KernelState: Preparing module launch...
+[2026-10-12 17:30:56.240] [debug] [sys] [t101599]   Module prepared on thread ''
+[2026-10-12 17:30:56.240] [info] [core] [t101599] PS5 pad connected: user 513995993, handle 57739008
+[2026-10-12 17:30:56.394] [warning] [krnl] [t102282] VdSetGraphicsInterruptCallback: no GPU emulation loaded (gpu_plugin not set); call ignored
+[2026-10-12 17:30:56.395] [warning] [krnl] [t102282] VdInitializeRingBuffer: no GPU emulation loaded (gpu_plugin not set); call ignored
+[2026-10-12 17:30:56.395] [warning] [krnl] [t102282] VdEnableRingBufferRPtrWriteBack: no GPU emulation loaded (gpu_plugin not set); call ignored
+[2026-10-12 17:30:56.402] [debug] [eot] [t102282] [gamma] PWL ramp: r[0]=0+192 r[16]=4288+448 r[32]=12480+512 r[64]=29760+576 r[127]=65472+0
+[2026-10-12 17:30:56.407] [debug] [eot] [t102113] [surfaces] 0xe2ef17b0: color 1120x632 fmt=2 msaa=1 tile=0 -> host fmt 11 1914x1080
+[2026-10-12 17:30:56.407] [debug] [eot] [t102113] [textures] 0xe2ef1760: 1120x632x1 mips 0..0 fmt 54 tiled linear-sign base 0xe4e80000 mip 0x0 -> host fmt 0
+[2026-10-12 17:30:56.407] [debug] [eot] [t102113] [textures] 0xe2ef1760: switching mirror to resolve format 11 1914x1080 (was 0 0x0)
+[2026-10-12 17:30:56.407] [debug] [eot] [t102113] [resolve] color 0xe2ef17b0 -> tex 0xe2ef1760 mip 0 rect 0,0-1120,632 at 0,0 exp rt0 copy0 tex0 => x1 (54 -> host fmt 11) fetch=[88c00002 e4e80036 004ee45f 00000c14] base 0xe4e80000 pitch 1120 1120x632 tiled
+[2026-10-12 17:30:56.408] [debug] [eot] [t102113] [present] gamma LUT rebuilt (pwl): r(0)=0.0000 r(32)=0.0107 r(128)=0.0654 r(512)=0.4541 r(1023)=0.9990
+[2026-10-12 17:30:56.418] [debug] [eot] [t101599] [overlay] ready
+[2026-10-12 17:30:56.418] [debug] [eot] [t102282] [gamma] PWL ramp: r[0]=576+2240 r[16]=21888+768 r[32]=32192+448 r[64]=46336+320 r[127]=65344+128
+[2026-10-12 17:30:56.420] [debug] [eot] [t102282] [shaders] vs 0xe5162010 hash cd88219f17bec8af MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.420] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82045328 -> obj=0xe5162010 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.421] [debug] [eot] [t102282] [shaders] ps 0xe2ef1e50 hash 47d0ac01de1b2593 MISS inputs=0 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.421] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82045238 -> obj=0xe2ef1e50
+[2026-10-12 17:30:56.421] [debug] [eot] [t102282] [shaders] vs 0xe7833010 hash 8052f0d33086ab72 MISS inputs=3 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.421] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82045598 -> obj=0xe7833010 (hdr 0x102a1101 0xe0 0x78)
+[2026-10-12 17:30:56.421] [debug] [eot] [t102282] [shaders] ps 0xe7831e60 hash f71e3ba7fbc1e711 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.421] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82045468 -> obj=0xe7831e60
+[2026-10-12 17:30:56.423] [debug] [eot] [t102282] [shaders] vs 0xe7837010 hash 8052f0d33086ab72 MISS inputs=3 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.423] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82045598 -> obj=0xe7837010 (hdr 0x102a1101 0xe0 0x78)
+[2026-10-12 17:30:56.424] [debug] [eot] [t102282] [shaders] ps 0xe4e63e10 hash cf5e999bb452f5b5 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.424] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x820456f0 -> obj=0xe4e63e10
+[2026-10-12 17:30:56.424] [debug] [eot] [t102282] [shaders] vs 0xe7839010 hash f4049a9e0cd2a9a3 MISS inputs=4 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.424] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82045a80 -> obj=0xe7839010 (hdr 0x102a1101 0xf4 0x90)
+[2026-10-12 17:30:56.424] [debug] [eot] [t102282] [shaders] ps 0xe7839cc0 hash 67963ef6d7518e98 MISS inputs=0 spec=0x0 regs=16 texmask=0x0003
+[2026-10-12 17:30:56.424] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82045908 -> obj=0xe7839cc0
+[2026-10-12 17:30:56.424] [debug] [eot] [t102282] [shaders] vs 0xe7846010 hash f4049a9e0cd2a9a3 MISS inputs=4 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.424] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82045a80 -> obj=0xe7846010 (hdr 0x102a1101 0xf4 0x90)
+[2026-10-12 17:30:56.424] [debug] [eot] [t102282] [shaders] ps 0xe7837470 hash 386f001ef3b27f9c MISS inputs=0 spec=0x0 regs=16 texmask=0x0003
+[2026-10-12 17:30:56.424] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82045c08 -> obj=0xe7837470
+[2026-10-12 17:30:56.424] [debug] [eot] [t102282] [shaders] vs 0xe784a170 hash ba794fe5506f0e4e MISS inputs=3 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.424] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82045fb8 -> obj=0xe784a170 (hdr 0x102a1101 0xe0 0x78)
+[2026-10-12 17:30:56.424] [debug] [eot] [t102282] [shaders] ps 0xe7852820 hash b0a383fc7299c166 MISS inputs=0 spec=0x0 regs=109 texmask=0x0001
+[2026-10-12 17:30:56.424] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82045e48 -> obj=0xe7852820
+[2026-10-12 17:30:56.425] [debug] [eot] [t102282] [shaders] vs 0xe7852980 hash ba794fe5506f0e4e MISS inputs=3 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.425] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82045fb8 -> obj=0xe7852980 (hdr 0x102a1101 0xe0 0x78)
+[2026-10-12 17:30:56.425] [debug] [eot] [t102282] [shaders] ps 0xe7852de0 hash ba3d15846050a470 MISS inputs=0 spec=0x0 regs=109 texmask=0x0001
+[2026-10-12 17:30:56.425] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82046110 -> obj=0xe7852de0
+[2026-10-12 17:30:56.425] [debug] [eot] [t102282] [shaders] vs 0xe7858010 hash d9f4b2ab14bee64b MISS inputs=5 spec=0x0 regs=123 texmask=0x0000
+[2026-10-12 17:30:56.425] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82035420 -> obj=0xe7858010 (hdr 0x102a1101 0x404 0x268)
+[2026-10-12 17:30:56.428] [debug] [eot] [t102282] [shaders] ps 0xe7848ed0 hash 54398528bb35f5a6 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.428] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x820352f0 -> obj=0xe7848ed0
+[2026-10-12 17:30:56.428] [debug] [krnl] [t102190] XAudioRegisterRenderDriverClient called! callback_ptr=7010F9A8 driver_ptr=E2EF32F0
+[2026-10-12 17:30:56.428] [debug] [apu] [t102190] AudioSystem::RegisterClient: callback=822E84D8 callback_arg=E2EF32D0
+[2026-10-12 17:30:56.428] [debug] [apu] [t102190] AudioSystem::RegisterClient: using client index=0 queued_frames=8
+[2026-10-12 17:30:56.429] [info] [apu] [t102190] PS5 AudioOut port 536870912 open: 48 kHz, S16 stereo, 256-sample periods
+[2026-10-12 17:30:56.429] [debug] [eot] [t102282] [shaders] vs 0xe785c010 hash 717868033b692b07 MISS inputs=5 spec=0x0 regs=123 texmask=0x0000
+[2026-10-12 17:30:56.429] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82035fb0 -> obj=0xe785c010 (hdr 0x102a1101 0x440 0x310)
+[2026-10-12 17:30:56.429] [debug] [apu] [t101674] AudioWorker: dispatching callback 822E84D8 with arg 30109000 for client 0
+[2026-10-12 17:30:56.429] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.429] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.429] [debug] [eot] [t102282] [shaders] ps 0xe785e010 hash 25b489a711c3d2be MISS inputs=0 spec=0x0 regs=256 texmask=0x0001
+[2026-10-12 17:30:56.429] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82035a90 -> obj=0xe785e010
+[2026-10-12 17:30:56.429] [debug] [eot] [t102282] [shaders] vs 0xe785e280 hash 7f6ab97cb50e9a85 MISS inputs=5 spec=0x0 regs=123 texmask=0x0000
+[2026-10-12 17:30:56.429] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82036c90 -> obj=0xe785e280 (hdr 0x102a1101 0x454 0x328)
+[2026-10-12 17:30:56.430] [debug] [eot] [t102282] [shaders] ps 0xe785eba0 hash 68dca09b5b5e5e00 MISS inputs=0 spec=0x0 regs=256 texmask=0x0003
+[2026-10-12 17:30:56.430] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82036700 -> obj=0xe785eba0
+[2026-10-12 17:30:56.430] [debug] [eot] [t102282] [shaders] vs 0xe7862010 hash f13633c226239027 MISS inputs=5 spec=0x0 regs=123 texmask=0x0000
+[2026-10-12 17:30:56.430] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x820379d8 -> obj=0xe7862010 (hdr 0x102a1101 0x458 0x328)
+[2026-10-12 17:30:56.430] [debug] [eot] [t102282] [shaders] ps 0xe786e7a0 hash d011c136dc673637 MISS inputs=0 spec=0x0 regs=256 texmask=0x0007
+[2026-10-12 17:30:56.430] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82037410 -> obj=0xe786e7a0
+[2026-10-12 17:30:56.430] [debug] [eot] [t102282] [shaders] vs 0xe78707e0 hash 649b425bcc88e7b3 MISS inputs=5 spec=0x0 regs=123 texmask=0x0000
+[2026-10-12 17:30:56.430] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x820386b0 -> obj=0xe78707e0 (hdr 0x102a1101 0x3b4 0x2ec)
+[2026-10-12 17:30:56.430] [debug] [eot] [t102282] [shaders] ps 0xe7872010 hash 77ca7ace2772dca2 MISS inputs=0 spec=0x0 regs=256 texmask=0x0005
+[2026-10-12 17:30:56.430] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82038158 -> obj=0xe7872010
+[2026-10-12 17:30:56.430] [debug] [eot] [t102282] [shaders] vs 0xe78722a0 hash eb921904d458b086 MISS inputs=5 spec=0x0 regs=123 texmask=0x0000
+[2026-10-12 17:30:56.430] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82039030 -> obj=0xe78722a0 (hdr 0x102a1101 0x414 0x280)
+[2026-10-12 17:30:56.430] [debug] [eot] [t102282] [shaders] ps 0xe7875e10 hash de601ddb0eb74bfb MISS inputs=0 spec=0x0 regs=129 texmask=0x0003
+[2026-10-12 17:30:56.430] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82038d50 -> obj=0xe7875e10
+[2026-10-12 17:30:56.430] [debug] [krnl] [t101674] XAudioSubmitRenderDriverFrame: driver=41550000 samples=8239ECE0
+[2026-10-12 17:30:56.430] [debug] [apu] [t101674] AudioSystem::SubmitFrame called: index=0 samples_ptr=8239ECE0
+[2026-10-12 17:30:56.430] [debug] [eot] [t102282] [shaders] vs 0xe78627e0 hash ed6af20c868d82a7 MISS inputs=5 spec=0x0 regs=123 texmask=0x0000
+[2026-10-12 17:30:56.430] [debug] [apu] [t101674] AudioWorker: callback returned for client 0
+[2026-10-12 17:30:56.430] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82039cd0 -> obj=0xe78627e0 (hdr 0x102a1101 0x450 0x328)
+[2026-10-12 17:30:56.430] [debug] [apu] [t101674] AudioWorker: dispatching callback 822E84D8 with arg 30109000 for client 0
+[2026-10-12 17:30:56.431] [debug] [eot] [t102282] [shaders] ps 0xe785c7d0 hash 712b062eb1eb58bf MISS inputs=0 spec=0x0 regs=256 texmask=0x0003
+[2026-10-12 17:30:56.431] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x820396c8 -> obj=0xe785c7d0
+[2026-10-12 17:30:56.431] [debug] [eot] [t102282] [shaders] vs 0xe7881550 hash 7a21db6de4096167 MISS inputs=5 spec=0x0 regs=123 texmask=0x0000
+[2026-10-12 17:30:56.431] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8203aad0 -> obj=0xe7881550 (hdr 0x102a1101 0x464 0x34c)
+[2026-10-12 17:30:56.431] [debug] [eot] [t102282] [shaders] ps 0xe788bc40 hash fdaee40825b78e1d MISS inputs=0 spec=0x0 regs=256 texmask=0x0007
+[2026-10-12 17:30:56.431] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8203a448 -> obj=0xe788bc40
+[2026-10-12 17:30:56.431] [debug] [eot] [t102282] [shaders] vs 0xe7858790 hash 8fc4bb75d636b050 MISS inputs=5 spec=0x0 regs=123 texmask=0x0000
+[2026-10-12 17:30:56.431] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8203b958 -> obj=0xe7858790 (hdr 0x102a1101 0x468 0x34c)
+[2026-10-12 17:30:56.431] [debug] [eot] [t102282] [shaders] ps 0xe7835cb0 hash 601200b5bbb625e6 MISS inputs=0 spec=0x0 regs=256 texmask=0x000f
+[2026-10-12 17:30:56.431] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8203b280 -> obj=0xe7835cb0
+[2026-10-12 17:30:56.431] [debug] [eot] [t102282] [shaders] vs 0xe78337d0 hash e52f469fa21609e4 MISS inputs=5 spec=0x0 regs=123 texmask=0x0000
+[2026-10-12 17:30:56.431] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8203c760 -> obj=0xe78337d0 (hdr 0x102a1101 0x454 0x328)
+[2026-10-12 17:30:56.431] [debug] [eot] [t102282] [shaders] ps 0xe78a89b0 hash 51f54a8c0c97353f MISS inputs=0 spec=0x0 regs=256 texmask=0x0007
+[2026-10-12 17:30:56.431] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8203c110 -> obj=0xe78a89b0
+[2026-10-12 17:30:56.431] [debug] [eot] [t102282] [shaders] vs 0xe5162470 hash 5694fba9fda5102a MISS inputs=5 spec=0x0 regs=123 texmask=0x0000
+[2026-10-12 17:30:56.431] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8203d188 -> obj=0xe5162470 (hdr 0x102a1101 0x410 0x280)
+[2026-10-12 17:30:56.431] [debug] [eot] [t102282] [shaders] ps 0xe789edf0 hash 94e62fec2a15119f MISS inputs=0 spec=0x0 regs=20 texmask=0x0019
+[2026-10-12 17:30:56.431] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8203cee0 -> obj=0xe789edf0
+[2026-10-12 17:30:56.432] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.432] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.432] [debug] [eot] [t102282] [shaders] vs 0xe78ac4a0 hash 588b8253c5cd7d34 MISS inputs=5 spec=0x0 regs=123 texmask=0x0000
+[2026-10-12 17:30:56.432] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8203da38 -> obj=0xe78ac4a0 (hdr 0x102a1101 0x414 0x2f8)
+[2026-10-12 17:30:56.432] [debug] [eot] [t102282] [shaders] ps 0xe78beac0 hash d99633d3a867a6b5 MISS inputs=0 spec=0x0 regs=110 texmask=0x0001
+[2026-10-12 17:30:56.432] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8203d818 -> obj=0xe78beac0
+[2026-10-12 17:30:56.432] [debug] [eot] [t102282] [shaders] vs 0xe78c83a0 hash e879ddd4e9fd1f21 MISS inputs=5 spec=0x0 regs=123 texmask=0x0000
+[2026-10-12 17:30:56.432] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8203e410 -> obj=0xe78c83a0 (hdr 0x102a1101 0x424 0x31c)
+[2026-10-12 17:30:56.432] [debug] [eot] [t102282] [shaders] ps 0xe78bec80 hash 5a3a1038d034659c MISS inputs=0 spec=0x0 regs=110 texmask=0x0003
+[2026-10-12 17:30:56.432] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8203e148 -> obj=0xe78bec80
+[2026-10-12 17:30:56.432] [debug] [eot] [t102282] [shaders] vs 0xe78cc6c0 hash dfa45ea97f1d40cb MISS inputs=5 spec=0x0 regs=123 texmask=0x0000
+[2026-10-12 17:30:56.432] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8203ee50 -> obj=0xe78cc6c0 (hdr 0x102a1101 0x414 0x280)
+[2026-10-12 17:30:56.432] [debug] [eot] [t102282] [shaders] ps 0xe78c8b40 hash 8e0b2b845f6b6675 MISS inputs=0 spec=0x0 regs=20 texmask=0x001d
+[2026-10-12 17:30:56.432] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8203eb50 -> obj=0xe78c8b40
+[2026-10-12 17:30:56.432] [debug] [eot] [t102282] [shaders] vs 0xe78d0010 hash 0cfe269c4b14b141 MISS inputs=5 spec=0x0 regs=125 texmask=0x0000
+[2026-10-12 17:30:56.432] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8203f620 -> obj=0xe78d0010 (hdr 0x102a1101 0x32c 0x244)
+[2026-10-12 17:30:56.432] [debug] [eot] [t102282] [shaders] ps 0xe78cce50 hash a2c90e1582b4e6b2 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.432] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8203f4e8 -> obj=0xe78cce50
+[2026-10-12 17:30:56.432] [debug] [eot] [t102282] [shaders] vs 0xe78d6010 hash e3ee704f4df22f3b MISS inputs=5 spec=0x0 regs=125 texmask=0x0000
+[2026-10-12 17:30:56.432] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8203fe78 -> obj=0xe78d6010 (hdr 0x102a1101 0x33c 0x25c)
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] ps 0xe78c8d80 hash c70618c6f7ece800 MISS inputs=0 spec=0x0 regs=129 texmask=0x0003
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8203fb90 -> obj=0xe78c8d80
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] vs 0xe78e24a0 hash 69e5234fb9bb7686 MISS inputs=1 spec=0x0 regs=16 texmask=0x0000
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048400 -> obj=0xe78e24a0 (hdr 0x102a1101 0x1c0 0x90)
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] ps 0xe78bee70 hash 9ff09b868270be18 MISS inputs=0 spec=0x0 regs=16 texmask=0x0000
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x820482e8 -> obj=0xe78bee70
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] vs 0xe78e49a0 hash 638de75fa4d14ac9 MISS inputs=5 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82042a30 -> obj=0xe78e49a0 (hdr 0x102a1101 0x278 0x2e0)
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] ps 0xe78e29e0 hash 98dd18b98acb33c8 MISS inputs=0 spec=0x0 regs=256 texmask=0x0003
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82042508 -> obj=0xe78e29e0
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] vs 0xe78ea010 hash d6ce2f93d338006f MISS inputs=3 spec=0x0 regs=129 texmask=0x0000
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x820430b8 -> obj=0xe78ea010 (hdr 0x102a1101 0x1d4 0x1c0)
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] ps 0xe78acec0 hash 503fddf1d2c1c1a2 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82042f88 -> obj=0xe78acec0
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] vs 0xe78ee010 hash 3cb5d688c6b9c31b MISS inputs=5 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82043450 -> obj=0xe78ee010 (hdr 0x102a1101 0x2dc 0x2bc)
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] ps 0xe78f0010 hash 98dd18b98acb33c8 MISS inputs=0 spec=0x0 regs=256 texmask=0x0003
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82042508 -> obj=0xe78f0010
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] vs 0xe78f2010 hash be6142f5098a1e9a MISS inputs=3 spec=0x0 regs=129 texmask=0x0000
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x820439e8 -> obj=0xe78f2010 (hdr 0x102a1101 0x23c 0x184)
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] ps 0xe7897ec0 hash 503fddf1d2c1c1a2 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.433] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82042f88 -> obj=0xe7897ec0
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] vs 0xe78f6010 hash 552085c752afe808 MISS inputs=4 spec=0x0 regs=129 texmask=0x0000
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82043f58 -> obj=0xe78f6010 (hdr 0x102a1101 0x248 0x1fc)
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] ps 0xe7890e90 hash 69bc95bbddd51619 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82043da8 -> obj=0xe7890e90
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] vs 0xe78fa010 hash ba738daf285a85a9 MISS inputs=4 spec=0x0 regs=129 texmask=0x0000
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x820445e8 -> obj=0xe78fa010 (hdr 0x102a1101 0x1f0 0x1d8)
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] ps 0xe78e2d40 hash 6a745ebea95ae94e MISS inputs=0 spec=0x0 regs=18 texmask=0x0003
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x820443a0 -> obj=0xe78e2d40
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] vs 0xe78fe010 hash af59be389235c761 MISS inputs=4 spec=0x0 regs=129 texmask=0x0000
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x820449b0 -> obj=0xe78fe010 (hdr 0x102a1101 0x2bc 0x1c0)
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] ps 0xe785cea0 hash 69bc95bbddd51619 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82043da8 -> obj=0xe785cea0
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] vs 0xe7902010 hash 76348b43d918e9c7 MISS inputs=4 spec=0x0 regs=129 texmask=0x0000
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82044e30 -> obj=0xe7902010 (hdr 0x102a1101 0x254 0x1b4)
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] ps 0xe78d8d60 hash 6a745ebea95ae94e MISS inputs=0 spec=0x0 regs=18 texmask=0x0003
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x820443a0 -> obj=0xe78d8d60
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] vs 0xe7906010 hash 75892eea02c94cfd MISS inputs=2 spec=0x0 regs=109 texmask=0x0000
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82050158 -> obj=0xe7906010 (hdr 0x102a1101 0x118 0x6c)
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] ps 0xe7908890 hash 1a31426e40610047 MISS inputs=0 spec=0x0 regs=256 texmask=0x0003
+[2026-10-12 17:30:56.434] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204fb98 -> obj=0xe7908890
+[2026-10-12 17:30:56.435] [debug] [eot] [t102282] [shaders] vs 0xe7912090 hash bdea655505f627f3 MISS inputs=1 spec=0x0 regs=16 texmask=0x0000
+[2026-10-12 17:30:56.435] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82050858 -> obj=0xe7912090 (hdr 0x102a1101 0x1e0 0xb4)
+[2026-10-12 17:30:56.435] [debug] [eot] [t102282] [shaders] ps 0xe7914520 hash 3f7e5706e95fbbf2 MISS inputs=0 spec=0x0 regs=256 texmask=0x0003
+[2026-10-12 17:30:56.435] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x820502e0 -> obj=0xe7914520
+[2026-10-12 17:30:56.435] [debug] [eot] [t102282] [shaders] vs 0xe79217a0 hash 7652200a7e72e711 MISS inputs=1 spec=0x0 regs=117 texmask=0x0000
+[2026-10-12 17:30:56.435] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82050c00 -> obj=0xe79217a0 (hdr 0x102a1101 0x220 0x130)
+[2026-10-12 17:30:56.435] [debug] [eot] [t102282] [shaders] ps 0xe7908e50 hash c69935577150b064 MISS inputs=0 spec=0x0 regs=109 texmask=0x0000
+[2026-10-12 17:30:56.435] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82050af0 -> obj=0xe7908e50
+[2026-10-12 17:30:56.435] [debug] [eot] [t102282] [shaders] vs 0xe792e5a0 hash b5e962816199350e MISS inputs=1 spec=0x0 regs=122 texmask=0x0000
+[2026-10-12 17:30:56.435] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82046500 -> obj=0xe792e5a0 (hdr 0x102a1101 0x37c 0x154)
+[2026-10-12 17:30:56.435] [debug] [krnl] [t101674] XAudioSubmitRenderDriverFrame: driver=41550000 samples=8239ECE0
+[2026-10-12 17:30:56.435] [debug] [apu] [t101674] AudioSystem::SubmitFrame called: index=0 samples_ptr=8239ECE0
+[2026-10-12 17:30:56.435] [debug] [apu] [t101674] AudioWorker: callback returned for client 0
+[2026-10-12 17:30:56.435] [debug] [apu] [t101674] AudioWorker: dispatching callback 822E84D8 with arg 30109000 for client 0
+[2026-10-12 17:30:56.435] [debug] [eot] [t102282] [shaders] ps 0xe7921d40 hash 2c6987d85f056d89 MISS inputs=0 spec=0x0 regs=109 texmask=0x0001
+[2026-10-12 17:30:56.435] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82046360 -> obj=0xe7921d40
+[2026-10-12 17:30:56.435] [debug] [eot] [t102282] [shaders] vs 0xe7930520 hash 232760aee3e63b7c MISS inputs=1 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.435] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82046c48 -> obj=0xe7930520 (hdr 0x102a1101 0x3d4 0x184)
+[2026-10-12 17:30:56.435] [debug] [eot] [t102282] [shaders] ps 0xe793fbb0 hash 3b78862078d356cc MISS inputs=0 spec=0x0 regs=109 texmask=0x0003
+[2026-10-12 17:30:56.435] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x820469d0 -> obj=0xe793fbb0
+[2026-10-12 17:30:56.435] [debug] [eot] [t102282] [shaders] vs 0xe7944ac0 hash 39667d8ecef36bcb MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.435] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82047408 -> obj=0xe7944ac0 (hdr 0x102a1101 0xe8 0x60)
+[2026-10-12 17:30:56.435] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.435] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.436] [debug] [eot] [t102282] [shaders] ps 0xe794ee40 hash 161e120919ebcbdf MISS inputs=0 spec=0x0 regs=109 texmask=0x0001
+[2026-10-12 17:30:56.436] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x820471a0 -> obj=0xe794ee40
+[2026-10-12 17:30:56.436] [debug] [eot] [t102282] [shaders] vs 0xe79025e0 hash 8cb261eb3dd4f43e MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.436] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x820477a0 -> obj=0xe79025e0 (hdr 0x102a1101 0xe4 0x60)
+[2026-10-12 17:30:56.436] [debug] [eot] [t102282] [shaders] ps 0xe795adc0 hash 3ffb66decfb467b9 MISS inputs=0 spec=0x0 regs=109 texmask=0x0001
+[2026-10-12 17:30:56.436] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82047550 -> obj=0xe795adc0
+[2026-10-12 17:30:56.436] [debug] [eot] [t102282] [shaders] vs 0xe7902a40 hash fc018afb9d5b0ec5 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.436] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82047a50 -> obj=0xe7902a40 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.436] [debug] [eot] [t102282] [shaders] ps 0xe7902ea0 hash 12a0e24ef66e1da1 MISS inputs=0 spec=0x0 regs=109 texmask=0x0001
+[2026-10-12 17:30:56.436] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x820478e8 -> obj=0xe7902ea0
+[2026-10-12 17:30:56.436] [debug] [eot] [t102282] [shaders] vs 0xe796d010 hash 2566c8303b39e505 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.436] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82047e78 -> obj=0xe796d010 (hdr 0x102a1101 0xe0 0x60)
+[2026-10-12 17:30:56.436] [debug] [eot] [t102282] [shaders] ps 0xe7935da0 hash e186810077ec08f6 MISS inputs=0 spec=0x0 regs=16 texmask=0x0007
+[2026-10-12 17:30:56.436] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82047b90 -> obj=0xe7935da0
+[2026-10-12 17:30:56.436] [debug] [eot] [t102282] [shaders] vs 0xe7980010 hash 3f2cfd119948661e MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.436] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x820481a8 -> obj=0xe7980010 (hdr 0x102a1101 0xe0 0x60)
+[2026-10-12 17:30:56.436] [debug] [eot] [t102282] [shaders] ps 0xe793fd80 hash 726f55ad3c3fcf2d MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.436] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82047fb8 -> obj=0xe793fd80
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] vs 0xe7984010 hash 7aef7e7d95bb2f85 MISS inputs=3 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82067078 -> obj=0xe7984010 (hdr 0x102a1101 0x118 0xdc)
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] ps 0xe7986010 hash 97c209a3f7bfa2a0 MISS inputs=0 spec=0x0 regs=116 texmask=0x0001
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82067270 -> obj=0xe7986010
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] vs 0xe7988010 hash 0c184cb521b00511 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82031db8 -> obj=0xe7988010 (hdr 0x102a1101 0xe8 0x60)
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] ps 0xe798a010 hash e95bb90812b8d903 MISS inputs=0 spec=0x0 regs=113 texmask=0x0007
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82031988 -> obj=0xe798a010
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] vs 0xe798c010 hash 0c184cb521b00511 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82031db8 -> obj=0xe798c010 (hdr 0x102a1101 0xe8 0x60)
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] ps 0xe798e010 hash f22fa3f5744ede4c MISS inputs=0 spec=0x0 regs=116 texmask=0x0007
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82031f00 -> obj=0xe798e010
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] vs 0xe7990010 hash 0c184cb521b00511 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82031db8 -> obj=0xe7990010 (hdr 0x102a1101 0xe8 0x60)
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] ps 0xe7993aa0 hash 21e112356174d8bd MISS inputs=0 spec=0x0 regs=119 texmask=0x0007
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x820323d8 -> obj=0xe7993aa0
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] vs 0xe7995010 hash 0c184cb521b00511 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82031db8 -> obj=0xe7995010 (hdr 0x102a1101 0xe8 0x60)
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] ps 0xe7997010 hash 2d3b75791f8ef702 MISS inputs=0 spec=0x0 regs=122 texmask=0x0007
+[2026-10-12 17:30:56.437] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82032998 -> obj=0xe7997010
+[2026-10-12 17:30:56.438] [debug] [eot] [t102282] [shaders] vs 0xe79a1320 hash 583137959ef9a364 MISS inputs=1 spec=0x0 regs=16 texmask=0x0000
+[2026-10-12 17:30:56.438] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x820334b0 -> obj=0xe79a1320 (hdr 0x102a1101 0x1dc 0xa8)
+[2026-10-12 17:30:56.438] [debug] [eot] [t102282] [shaders] ps 0xe79a3010 hash 00ba542f16661e48 MISS inputs=0 spec=0x0 regs=114 texmask=0x0003
+[2026-10-12 17:30:56.438] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82033070 -> obj=0xe79a3010
+[2026-10-12 17:30:56.438] [debug] [eot] [t102282] [shaders] vs 0xe79b0a30 hash a381bc9081d1784a MISS inputs=1 spec=0x0 regs=16 texmask=0x0000
+[2026-10-12 17:30:56.438] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82033ba0 -> obj=0xe79b0a30 (hdr 0x102a1101 0x1dc 0xa8)
+[2026-10-12 17:30:56.438] [debug] [eot] [t102282] [shaders] ps 0xe79a3ab0 hash 10fdc1f91de4282d MISS inputs=0 spec=0x0 regs=115 texmask=0x0003
+[2026-10-12 17:30:56.438] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82033738 -> obj=0xe79a3ab0
+[2026-10-12 17:30:56.438] [debug] [eot] [t102282] [shaders] vs 0xe79bd5a0 hash 7a71adb0c983ed4d MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.438] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82034330 -> obj=0xe79bd5a0 (hdr 0x102a1101 0xe8 0x60)
+[2026-10-12 17:30:56.438] [debug] [eot] [t102282] [shaders] ps 0xe79bfb60 hash dc61fa924b661d16 MISS inputs=0 spec=0x0 regs=116 texmask=0x000f
+[2026-10-12 17:30:56.438] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82033e28 -> obj=0xe79bfb60
+[2026-10-12 17:30:56.438] [debug] [eot] [t102282] [shaders] vs 0xe79c4400 hash 73b04c35f8d81f9a MISS inputs=1 spec=0x0 regs=16 texmask=0x0000
+[2026-10-12 17:30:56.438] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82034900 -> obj=0xe79c4400 (hdr 0x102a1101 0x1e0 0xa8)
+[2026-10-12 17:30:56.438] [debug] [krnl] [t101674] XAudioSubmitRenderDriverFrame: driver=41550000 samples=8239ECE0
+[2026-10-12 17:30:56.438] [debug] [apu] [t101674] AudioSystem::SubmitFrame called: index=0 samples_ptr=8239ECE0
+[2026-10-12 17:30:56.438] [debug] [apu] [t101674] AudioWorker: callback returned for client 0
+[2026-10-12 17:30:56.438] [debug] [apu] [t101674] AudioWorker: dispatching callback 822E84D8 with arg 30109000 for client 0
+[2026-10-12 17:30:56.438] [debug] [eot] [t102282] [shaders] ps 0xe79c4c10 hash 8934539abc3d24cc MISS inputs=0 spec=0x0 regs=115 texmask=0x0007
+[2026-10-12 17:30:56.438] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82034478 -> obj=0xe79c4c10
+[2026-10-12 17:30:56.438] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.438] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.438] [debug] [eot] [t102282] [shaders] vs 0xe79d24a0 hash ce105d80ff21241e MISS inputs=1 spec=0x0 regs=16 texmask=0x0000
+[2026-10-12 17:30:56.438] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82035068 -> obj=0xe79d24a0 (hdr 0x102a1101 0x1e0 0xa8)
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] ps 0xe79d2a00 hash b3799c50968660bf MISS inputs=0 spec=0x0 regs=116 texmask=0x0007
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82034b88 -> obj=0xe79d2a00
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] vs 0xe79d8010 hash 2196aa7980b64b8e MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x820420b0 -> obj=0xe79d8010 (hdr 0x102a1101 0xd8 0x60)
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] ps 0xe79c4ed0 hash 09c97461e5b71865 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82041f80 -> obj=0xe79c4ed0
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] vs 0xe79dc010 hash e7bb90987169c56d MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048830 -> obj=0xe79dc010 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] ps 0xe7993e00 hash aafaeaa05703e372 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82048650 -> obj=0xe7993e00
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] vs 0xe79e0010 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe79e0010 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] ps 0xe7921ec0 hash 15d514517b71a428 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82048970 -> obj=0xe7921ec0
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] vs 0xe79e4010 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe79e4010 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] ps 0xe79d2cf0 hash 7560f39c59855eaa MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82048be0 -> obj=0xe79d2cf0
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] vs 0xe79e8010 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe79e8010 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.439] [debug] [eot] [t102282] [shaders] ps 0xe79d2e50 hash b670b9c109cc4606 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82048d90 -> obj=0xe79d2e50
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] vs 0xe79ec010 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe79ec010 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] ps 0xe79ee010 hash a0e6b54ca43bbcdf MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82048f40 -> obj=0xe79ee010
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] vs 0xe79f0010 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe79f0010 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] ps 0xe79f2010 hash 1c8a159812029c73 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82049120 -> obj=0xe79f2010
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] vs 0xe79f4010 hash e7bb90987169c56d MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048830 -> obj=0xe79f4010 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] ps 0xe79f71a0 hash ba6bbd7c23a0edc9 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82049300 -> obj=0xe79f71a0
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] vs 0xe79fa8a0 hash e7bb90987169c56d MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048830 -> obj=0xe79fa8a0 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] ps 0xe79fad00 hash 3dc977f6a4c82461 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82049550 -> obj=0xe79fad00
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] vs 0xe7a10930 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe7a10930 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] ps 0xe79fae60 hash 7d4480afb0bd47a5 MISS inputs=0 spec=0x0 regs=109 texmask=0x0003
+[2026-10-12 17:30:56.440] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x820497a0 -> obj=0xe79fae60
+[2026-10-12 17:30:56.441] [debug] [eot] [t102282] [shaders] vs 0xe7a1a010 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.441] [debug] [krnl] [t101674] XAudioSubmitRenderDriverFrame: driver=41550000 samples=8239ECE0
+[2026-10-12 17:30:56.441] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe7a1a010 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.441] [debug] [apu] [t101674] AudioSystem::SubmitFrame called: index=0 samples_ptr=8239ECE0
+[2026-10-12 17:30:56.441] [debug] [apu] [t101674] AudioWorker: callback returned for client 0
+[2026-10-12 17:30:56.441] [debug] [apu] [t101674] AudioWorker: dispatching callback 822E84D8 with arg 30109000 for client 0
+[2026-10-12 17:30:56.441] [debug] [eot] [t102282] [shaders] ps 0xe7a10d90 hash 177eb602babaf628 MISS inputs=0 spec=0x0 regs=109 texmask=0x0001
+[2026-10-12 17:30:56.441] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82049930 -> obj=0xe7a10d90
+[2026-10-12 17:30:56.441] [debug] [eot] [t102282] [shaders] vs 0xe7a24b30 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.441] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe7a24b30 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.441] [debug] [eot] [t102282] [shaders] ps 0xe7a28010 hash f8ec65264a3884d8 MISS inputs=0 spec=0x0 regs=110 texmask=0x0003
+[2026-10-12 17:30:56.441] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82049aa0 -> obj=0xe7a28010
+[2026-10-12 17:30:56.441] [debug] [eot] [t102282] [shaders] vs 0xe7a33210 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.441] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe7a33210 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.441] [debug] [eot] [t102282] [shaders] ps 0xe7a3dab0 hash 24908f7a9ef6d731 MISS inputs=0 spec=0x0 regs=110 texmask=0x0001
+[2026-10-12 17:30:56.441] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82049d28 -> obj=0xe7a3dab0
+[2026-10-12 17:30:56.441] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.441] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.441] [debug] [eot] [t102282] [shaders] vs 0xe7a42400 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.441] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe7a42400 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.441] [debug] [eot] [t102282] [shaders] ps 0xe7a4c090 hash 658d133b58177574 MISS inputs=0 spec=0x0 regs=256 texmask=0x0003
+[2026-10-12 17:30:56.441] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204a0d8 -> obj=0xe7a4c090
+[2026-10-12 17:30:56.441] [debug] [eot] [t102282] [shaders] vs 0xe7a4e820 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.441] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe7a4e820 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.442] [debug] [eot] [t102282] [shaders] ps 0xe7a42eb0 hash 9c8fafd72916abad MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.442] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204a430 -> obj=0xe7a42eb0
+[2026-10-12 17:30:56.442] [debug] [eot] [t102282] [shaders] vs 0xe7a58090 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.442] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe7a58090 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.442] [debug] [krnl] [t101674] XAudioSubmitRenderDriverFrame: driver=41550000 samples=8239ECE0
+[2026-10-12 17:30:56.442] [debug] [apu] [t101674] AudioSystem::SubmitFrame called: index=0 samples_ptr=8239ECE0
+[2026-10-12 17:30:56.442] [debug] [apu] [t101674] AudioWorker: callback returned for client 0
+[2026-10-12 17:30:56.442] [debug] [eot] [t102282] [shaders] ps 0xe7a4ec80 hash c5f4de60c22969e6 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.442] [debug] [apu] [t101674] AudioWorker: dispatching callback 822E84D8 with arg 30109000 for client 0
+[2026-10-12 17:30:56.442] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204a5c0 -> obj=0xe7a4ec80
+[2026-10-12 17:30:56.442] [debug] [eot] [t102282] [shaders] vs 0xe7a5d010 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.442] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe7a5d010 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.442] [debug] [eot] [t102282] [shaders] ps 0xe7a67e40 hash 61a3a83e5a5d9066 MISS inputs=0 spec=0x0 regs=16 texmask=0x0003
+[2026-10-12 17:30:56.442] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204a750 -> obj=0xe7a67e40
+[2026-10-12 17:30:56.442] [debug] [eot] [t102282] [shaders] vs 0xe7a6b010 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.442] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe7a6b010 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.442] [debug] [eot] [t102282] [shaders] ps 0xe7a4edc0 hash df522460d172274f MISS inputs=0 spec=0x0 regs=16 texmask=0x0003
+[2026-10-12 17:30:56.442] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204a8b0 -> obj=0xe7a4edc0
+[2026-10-12 17:30:56.442] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.442] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.442] [debug] [eot] [t102282] [shaders] vs 0xe7a87520 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.442] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe7a87520 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.443] [debug] [eot] [t102282] [shaders] ps 0xe7a87980 hash f615178d93d20188 MISS inputs=0 spec=0x0 regs=16 texmask=0x0003
+[2026-10-12 17:30:56.443] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204aa10 -> obj=0xe7a87980
+[2026-10-12 17:30:56.443] [debug] [eot] [t102282] [shaders] vs 0xe7a87b00 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.443] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe7a87b00 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.443] [debug] [eot] [t102282] [shaders] ps 0xe7a98620 hash aca171ecbc176617 MISS inputs=0 spec=0x0 regs=110 texmask=0x0001
+[2026-10-12 17:30:56.443] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204abe8 -> obj=0xe7a98620
+[2026-10-12 17:30:56.443] [debug] [eot] [t102282] [shaders] vs 0xe7a987d0 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.443] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe7a987d0 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.443] [debug] [krnl] [t101674] XAudioSubmitRenderDriverFrame: driver=41550000 samples=8239ECE0
+[2026-10-12 17:30:56.443] [debug] [apu] [t101674] AudioSystem::SubmitFrame called: index=0 samples_ptr=8239ECE0
+[2026-10-12 17:30:56.443] [debug] [apu] [t101674] AudioWorker: callback returned for client 0
+[2026-10-12 17:30:56.443] [debug] [eot] [t102282] [shaders] ps 0xe7a98c30 hash cd3bbec4e54f7cfc MISS inputs=0 spec=0x0 regs=110 texmask=0x0001
+[2026-10-12 17:30:56.443] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204ae80 -> obj=0xe7a98c30
+[2026-10-12 17:30:56.443] [debug] [apu] [t101674] AudioWorker: dispatching callback 822E84D8 with arg 30109000 for client 0
+[2026-10-12 17:30:56.443] [debug] [eot] [t102282] [shaders] vs 0xe7ab1930 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.443] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe7ab1930 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.443] [debug] [eot] [t102282] [shaders] ps 0xe7a98df0 hash e006c89c6221419c MISS inputs=0 spec=0x0 regs=109 texmask=0x0003
+[2026-10-12 17:30:56.443] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204b150 -> obj=0xe7a98df0
+[2026-10-12 17:30:56.443] [debug] [eot] [t102282] [shaders] vs 0xe7ab7010 hash 8d5ad89860156c48 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.443] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8204b590 -> obj=0xe7ab7010 (hdr 0x102a1101 0xd8 0x60)
+[2026-10-12 17:30:56.444] [debug] [eot] [t102282] [shaders] ps 0xe7ab1d90 hash 36e64a4219844002 MISS inputs=0 spec=0x0 regs=109 texmask=0x0003
+[2026-10-12 17:30:56.444] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204b380 -> obj=0xe7ab1d90
+[2026-10-12 17:30:56.444] [debug] [eot] [t102282] [shaders] vs 0xe7ac18a0 hash 2196aa7980b64b8e MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.444] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.444] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x820420b0 -> obj=0xe7ac18a0 (hdr 0x102a1101 0xd8 0x60)
+[2026-10-12 17:30:56.444] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.444] [debug] [eot] [t102282] [shaders] ps 0xe7837ed0 hash 09c97461e5b71865 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.444] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82041f80 -> obj=0xe7837ed0
+[2026-10-12 17:30:56.444] [debug] [eot] [t102282] [shaders] vs 0xe7acf820 hash 6fd80c477245a4ce MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.444] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8204b818 -> obj=0xe7acf820 (hdr 0x102a1101 0xd8 0x60)
+[2026-10-12 17:30:56.444] [debug] [eot] [t102282] [shaders] ps 0xe7acfc70 hash 6bd1c21710d628c5 MISS inputs=0 spec=0x0 regs=16 texmask=0x0003
+[2026-10-12 17:30:56.444] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204b6c8 -> obj=0xe7acfc70
+[2026-10-12 17:30:56.444] [debug] [eot] [t102282] [shaders] vs 0xe7ade410 hash 0480299d9a0aa486 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.444] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8204c508 -> obj=0xe7ade410 (hdr 0x102a1101 0xd8 0x60)
+[2026-10-12 17:30:56.444] [debug] [krnl] [t101674] XAudioSubmitRenderDriverFrame: driver=41550000 samples=8239ECE0
+[2026-10-12 17:30:56.444] [debug] [apu] [t101674] AudioSystem::SubmitFrame called: index=0 samples_ptr=8239ECE0
+[2026-10-12 17:30:56.444] [debug] [apu] [t101674] AudioWorker: callback returned for client 0
+[2026-10-12 17:30:56.444] [debug] [eot] [t102282] [shaders] ps 0xe7ade860 hash cc7d0e94beb5c24a MISS inputs=0 spec=0x0 regs=129 texmask=0x0fff
+[2026-10-12 17:30:56.444] [debug] [apu] [t101674] AudioWorker: dispatching callback 822E84D8 with arg 30109000 for client 0
+[2026-10-12 17:30:56.444] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204b950 -> obj=0xe7ade860
+[2026-10-12 17:30:56.444] [debug] [eot] [t102282] [shaders] vs 0xe7ae2820 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.444] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe7ae2820 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.445] [debug] [eot] [t102282] [shaders] ps 0xe7adee40 hash 87c73b0e5a227d64 MISS inputs=0 spec=0x0 regs=109 texmask=0x0003
+[2026-10-12 17:30:56.445] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204c640 -> obj=0xe7adee40
+[2026-10-12 17:30:56.445] [debug] [eot] [t102282] [shaders] vs 0xe7aef520 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.445] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe7aef520 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.445] [debug] [eot] [t102282] [shaders] ps 0xe7acfdb0 hash 668af1e2a5b4cf25 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.445] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204c870 -> obj=0xe7acfdb0
+[2026-10-12 17:30:56.445] [debug] [eot] [t102282] [shaders] vs 0xe7af9b30 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.445] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.445] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe7af9b30 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.445] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.445] [debug] [eot] [t102282] [shaders] ps 0xe7aef980 hash b3f587e942d0734b MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.445] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204ca48 -> obj=0xe7aef980
+[2026-10-12 17:30:56.445] [debug] [eot] [t102282] [shaders] vs 0xe7b07a20 hash b5d68ed1700972a3 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.445] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82048aa0 -> obj=0xe7b07a20 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.445] [debug] [eot] [t102282] [shaders] ps 0xe7b07e80 hash 1b9364ef5bb9f526 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.445] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204cc20 -> obj=0xe7b07e80
+[2026-10-12 17:30:56.445] [debug] [eot] [t102282] [shaders] vs 0xe7b09820 hash e37013b697084b84 MISS inputs=2 spec=0x0 regs=124 texmask=0x0000
+[2026-10-12 17:30:56.445] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8204d1d0 -> obj=0xe7b09820 (hdr 0x102a1101 0x118 0x60)
+[2026-10-12 17:30:56.445] [debug] [krnl] [t101674] XAudioSubmitRenderDriverFrame: driver=41550000 samples=8239ECE0
+[2026-10-12 17:30:56.445] [debug] [apu] [t101674] AudioSystem::SubmitFrame called: index=0 samples_ptr=8239ECE0
+[2026-10-12 17:30:56.445] [debug] [eot] [t102282] [shaders] ps 0xe7b09cb0 hash fbc5fc4812582bb7 MISS inputs=0 spec=0x0 regs=129 texmask=0x0007
+[2026-10-12 17:30:56.445] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204cdf8 -> obj=0xe7b09cb0
+[2026-10-12 17:30:56.445] [debug] [apu] [t101674] AudioWorker: callback returned for client 0
+[2026-10-12 17:30:56.445] [debug] [apu] [t101674] AudioWorker: dispatching callback 822E84D8 with arg 30109000 for client 0
+[2026-10-12 17:30:56.446] [debug] [eot] [t102282] [shaders] vs 0xe7b2a620 hash bf3186fcec157688 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.446] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8204d7a8 -> obj=0xe7b2a620 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.446] [debug] [eot] [t102282] [shaders] ps 0xe7b2c820 hash 5fe5b293e69d48b8 MISS inputs=0 spec=0x0 regs=112 texmask=0x0003
+[2026-10-12 17:30:56.446] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204d348 -> obj=0xe7b2c820
+[2026-10-12 17:30:56.446] [debug] [eot] [t102282] [shaders] vs 0xe7b2ca40 hash cbdc471daaf747cd MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.446] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8204db00 -> obj=0xe7b2ca40 (hdr 0x102a1101 0xe0 0x60)
+[2026-10-12 17:30:56.446] [debug] [eot] [t102282] [shaders] ps 0xe7b2cea0 hash 4c9bcf4116fa5a25 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.446] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204d8e8 -> obj=0xe7b2cea0
+[2026-10-12 17:30:56.446] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.446] [debug] [eot] [t102282] [shaders] vs 0xe7b2aa80 hash 2196aa7980b64b8e MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.446] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.446] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x820420b0 -> obj=0xe7b2aa80 (hdr 0x102a1101 0xd8 0x60)
+[2026-10-12 17:30:56.446] [debug] [eot] [t102282] [shaders] ps 0xe7aefdf0 hash 21e752edcd519ed7 MISS inputs=0 spec=0x0 regs=112 texmask=0x0001
+[2026-10-12 17:30:56.446] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204dc40 -> obj=0xe7aefdf0
+[2026-10-12 17:30:56.446] [debug] [eot] [t102282] [shaders] vs 0xe7b53090 hash e54203c6b3eed1d1 MISS inputs=2 spec=0x0 regs=109 texmask=0x0000
+[2026-10-12 17:30:56.446] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8204e6c0 -> obj=0xe7b53090 (hdr 0x102a1101 0x114 0x6c)
+[2026-10-12 17:30:56.446] [debug] [eot] [t102282] [shaders] ps 0xe7b43cc0 hash 23f8bff9bf8e2021 MISS inputs=0 spec=0x0 regs=114 texmask=0x0003
+[2026-10-12 17:30:56.446] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204e2d0 -> obj=0xe7b43cc0
+[2026-10-12 17:30:56.446] [debug] [eot] [t102282] [shaders] vs 0xe7b57010 hash dd6bb037010547b4 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.446] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8204e980 -> obj=0xe7b57010 (hdr 0x102a1101 0xe0 0x60)
+[2026-10-12 17:30:56.447] [debug] [eot] [t102282] [shaders] ps 0xe7b2aed0 hash a41af87d0340c691 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.447] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204e840 -> obj=0xe7b2aed0
+[2026-10-12 17:30:56.447] [debug] [krnl] [t101674] XAudioSubmitRenderDriverFrame: driver=41550000 samples=8239ECE0
+[2026-10-12 17:30:56.447] [debug] [apu] [t101674] AudioSystem::SubmitFrame called: index=0 samples_ptr=8239ECE0
+[2026-10-12 17:30:56.447] [debug] [apu] [t101674] AudioWorker: callback returned for client 0
+[2026-10-12 17:30:56.447] [debug] [eot] [t102282] [shaders] vs 0xe7b59ab0 hash 589f7a2d4947de99 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.447] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8204ed28 -> obj=0xe7b59ab0 (hdr 0x102a1101 0xe0 0x60)
+[2026-10-12 17:30:56.447] [debug] [eot] [t102282] [shaders] ps 0xe7b5cdb0 hash 07cdebc6db80352a MISS inputs=0 spec=0x0 regs=110 texmask=0x0003
+[2026-10-12 17:30:56.447] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204eac0 -> obj=0xe7b5cdb0
+[2026-10-12 17:30:56.447] [debug] [eot] [t102282] [shaders] vs 0xe7b6a390 hash 589f7a2d4947de99 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.447] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8204ed28 -> obj=0xe7b6a390 (hdr 0x102a1101 0xe0 0x60)
+[2026-10-12 17:30:56.447] [debug] [eot] [t102282] [shaders] ps 0xe7b6c820 hash 6a9915f06a9f3b2c MISS inputs=0 spec=0x0 regs=111 texmask=0x0001
+[2026-10-12 17:30:56.447] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204ee68 -> obj=0xe7b6c820
+[2026-10-12 17:30:56.447] [debug] [eot] [t102282] [shaders] vs 0xe7b6c9d0 hash 589f7a2d4947de99 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.447] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8204ed28 -> obj=0xe7b6c9d0 (hdr 0x102a1101 0xe0 0x60)
+[2026-10-12 17:30:56.447] [debug] [apu] [t101674] AudioWorker: dispatching callback 822E84D8 with arg 30109000 for client 0
+[2026-10-12 17:30:56.447] [debug] [eot] [t102282] [shaders] ps 0xe7b6ce30 hash 04087c22007562f4 MISS inputs=0 spec=0x0 regs=110 texmask=0x0001
+[2026-10-12 17:30:56.447] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204f058 -> obj=0xe7b6ce30
+[2026-10-12 17:30:56.447] [debug] [eot] [t102282] [shaders] vs 0xe7b7b090 hash 589f7a2d4947de99 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.447] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8204ed28 -> obj=0xe7b7b090 (hdr 0x102a1101 0xe0 0x60)
+[2026-10-12 17:30:56.447] [debug] [eot] [t102282] [shaders] ps 0xe7b7dc30 hash f4b321f6a7e948a6 MISS inputs=0 spec=0x0 regs=113 texmask=0x0001
+[2026-10-12 17:30:56.447] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204f300 -> obj=0xe7b7dc30
+[2026-10-12 17:30:56.448] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.448] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.448] [debug] [eot] [t102282] [shaders] vs 0xe7b8c010 hash bd580ca1012297e9 MISS inputs=1 spec=0x0 regs=57 texmask=0x0000
+[2026-10-12 17:30:56.448] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x8204f8f0 -> obj=0xe7b8c010 (hdr 0x102a1101 0x208 0x9c)
+[2026-10-12 17:30:56.448] [debug] [eot] [t102282] [shaders] ps 0xe7baebb0 hash a77d11d77323bbe9 MISS inputs=0 spec=0x0 regs=109 texmask=0x0001
+[2026-10-12 17:30:56.448] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x8204f700 -> obj=0xe7baebb0
+[2026-10-12 17:30:56.448] [debug] [eot] [t102282] [shaders] vs 0xe7bb6010 hash 936296c23c9928ba MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.448] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82040710 -> obj=0xe7bb6010 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.448] [debug] [eot] [t102282] [shaders] ps 0xe7baed40 hash 2c26a3983d0b09ae MISS inputs=0 spec=0x0 regs=16 texmask=0x0007
+[2026-10-12 17:30:56.448] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82040410 -> obj=0xe7baed40
+[2026-10-12 17:30:56.448] [debug] [eot] [t102282] [shaders] vs 0xe7bbd010 hash 0c1964f7ecb66ab0 MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.448] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82040b80 -> obj=0xe7bbd010 (hdr 0x102a1101 0xdc 0x60)
+[2026-10-12 17:30:56.448] [debug] [eot] [t102282] [shaders] ps 0xe7bbf010 hash 630a7f3edeeed042 MISS inputs=0 spec=0x0 regs=16 texmask=0x000f
+[2026-10-12 17:30:56.448] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82040850 -> obj=0xe7bbf010
+[2026-10-12 17:30:56.448] [debug] [eot] [t102282] [shaders] vs 0xe7bc1010 hash 09634f6ec2cca0f5 MISS inputs=2 spec=0x0 regs=16 texmask=0x0000
+[2026-10-12 17:30:56.448] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82040da8 -> obj=0xe7bc1010 (hdr 0x102a1101 0x174 0x84)
+[2026-10-12 17:30:56.449] [debug] [eot] [t102282] [shaders] ps 0xe2efbfe0 hash ae8063383bd2cbc9 MISS inputs=0 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.449] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82040cc0 -> obj=0xe2efbfe0
+[2026-10-12 17:30:56.449] [debug] [eot] [t102282] [shaders] vs 0xe7bcd090 hash 62ff9d35c25a96f5 MISS inputs=2 spec=0x0 regs=16 texmask=0x0000
+[2026-10-12 17:30:56.449] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82041088 -> obj=0xe7bcd090 (hdr 0x102a1101 0x178 0x84)
+[2026-10-12 17:30:56.449] [debug] [eot] [t102282] [shaders] ps 0xe2efc140 hash d5aafa9902ad8c62 MISS inputs=0 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.449] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82040fa0 -> obj=0xe2efc140
+[2026-10-12 17:30:56.449] [debug] [eot] [t102282] [shaders] vs 0xe7bd1010 hash fcb9fbd11bae1273 MISS inputs=2 spec=0x0 regs=16 texmask=0x0000
+[2026-10-12 17:30:56.449] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x820413e8 -> obj=0xe7bd1010 (hdr 0x102a1101 0x178 0x84)
+[2026-10-12 17:30:56.449] [debug] [eot] [t102282] [shaders] ps 0xe7bd3440 hash 3366e510cd208fed MISS inputs=0 spec=0x0 regs=109 texmask=0x0001
+[2026-10-12 17:30:56.449] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82041288 -> obj=0xe7bd3440
+[2026-10-12 17:30:56.449] [debug] [eot] [t102282] [shaders] vs 0xe7bd35a0 hash 968dfb7219a4f970 MISS inputs=1 spec=0x0 regs=16 texmask=0x0000
+[2026-10-12 17:30:56.449] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x820416f8 -> obj=0xe7bd35a0 (hdr 0x102a1101 0x168 0x6c)
+[2026-10-12 17:30:56.449] [debug] [eot] [t102282] [shaders] ps 0xe7bdee60 hash 1aeb9bab3e94f5d1 MISS inputs=0 spec=0x0 regs=109 texmask=0x0000
+[2026-10-12 17:30:56.449] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x820415e8 -> obj=0xe7bdee60
+[2026-10-12 17:30:56.449] [debug] [krnl] [t101674] XAudioSubmitRenderDriverFrame: driver=41550000 samples=8239ECE0
+[2026-10-12 17:30:56.449] [debug] [apu] [t101674] AudioSystem::SubmitFrame called: index=0 samples_ptr=8239ECE0
+[2026-10-12 17:30:56.449] [debug] [eot] [t102282] [shaders] vs 0xe7c03a10 hash 8f786604340b6a6d MISS inputs=3 spec=0x0 regs=16 texmask=0x0000
+[2026-10-12 17:30:56.449] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82041a00 -> obj=0xe7c03a10 (hdr 0x102a1101 0x180 0x9c)
+[2026-10-12 17:30:56.449] [debug] [apu] [t101674] AudioWorker: callback returned for client 0
+[2026-10-12 17:30:56.449] [debug] [eot] [t102282] [shaders] ps 0xe7864ed0 hash efcc23f4a6abb692 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.449] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x820418d0 -> obj=0xe7864ed0
+[2026-10-12 17:30:56.450] [debug] [eot] [t102282] [shaders] vs 0xe7c24610 hash 5d70ee2e9e2e73c7 MISS inputs=3 spec=0x0 regs=16 texmask=0x0000
+[2026-10-12 17:30:56.450] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x82041d58 -> obj=0xe7c24610 (hdr 0x102a1101 0x18c 0x9c)
+[2026-10-12 17:30:56.450] [debug] [eot] [t102282] [shaders] ps 0xe7c24eb0 hash 989bd0ec9a452a68 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.450] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82041c20 -> obj=0xe7c24eb0
+[2026-10-12 17:30:56.450] [debug] [eot] [t102282] [shaders] vs 0xe7c527a0 hash 2196aa7980b64b8e MISS inputs=2 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.450] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x820420b0 -> obj=0xe7c527a0 (hdr 0x102a1101 0xd8 0x60)
+[2026-10-12 17:30:56.450] [debug] [eot] [t102282] [shaders] ps 0xe7c3feb0 hash 09c97461e5b71865 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.450] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x82041f80 -> obj=0xe7c3feb0
+[2026-10-12 17:30:56.450] [debug] [eot] [t102282] [shaders] vs 0xe7c699c0 hash 154294e582bf5213 MISS inputs=1 spec=0x0 regs=256 texmask=0x0000
+[2026-10-12 17:30:56.450] [debug] [eot] [t102282] [shaders] CreateVertexShader blob=0x820423e8 -> obj=0xe7c699c0 (hdr 0x102a1101 0xd4 0x48)
+[2026-10-12 17:30:56.450] [debug] [eot] [t102282] [shaders] ps 0xe7c69e10 hash 73b00cd2b39d0ee6 MISS inputs=0 spec=0x0 regs=16 texmask=0x0001
+[2026-10-12 17:30:56.450] [debug] [eot] [t102282] [shaders] CreatePixelShader blob=0x820421e8 -> obj=0xe7c69e10
+[2026-10-12 17:30:56.453] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.453] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.458] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.458] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.463] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.463] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.469] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.469] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.474] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.474] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.480] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.480] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.485] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.485] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.490] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.490] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.495] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.495] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.501] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.501] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.506] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.506] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.512] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.512] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.517] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.517] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.522] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.522] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.528] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.528] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.533] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.533] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.539] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.539] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.543] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.543] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.548] [debug] [sys] [t102190] Loading XEX patch from \Device\Harddisk0\Partition1\Data\GameLogic.dllp
+[2026-10-12 17:30:56.549] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.549] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.551] [debug] [fs] [t102190] VFS: entry not found for '\Device\Harddisk0\Partition1\Data\GameLogic.dllpp' on device '\Device\Harddisk0\Partition1'
+[2026-10-12 17:30:56.551] [info] [core] [t102190] XEX patch applied successfully: base version: 0.0.0.2, new version: 0.0.1.2
+[2026-10-12 17:30:56.554] [debug] [core] [t102190] Patched variable import xboxkrnl:0x193 (XexExecutableModuleHandle) -> 0x30006000
+[2026-10-12 17:30:56.554] [debug] [core] [t102190] Patched variable import xboxkrnl:0x59 (KeDebugMonitorData) -> 0x30002000
+[2026-10-12 17:30:56.554] [debug] [core] [t102190] Patched variable import xboxkrnl:0x156 (XboxHardwareInfo) -> 0x30004000
+[2026-10-12 17:30:56.554] [debug] [core] [t102190] created symbols for import library xboxkrnl with 36 imports
+[2026-10-12 17:30:56.554] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.554] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.555] [debug] [sys] [t102190] Initializing function table at 88410000, size 0064FA88 for code 880A0000-883B7D44 (+00010000 thunk reserve)
+[2026-10-12 17:30:56.556] [info] [core] [t102190] Function table initialized for module: code=880A0000-883B7D44, image=88080000-88410000
+[2026-10-12 17:30:56.556] [info] [core] [t102190] Registering module: data/gamelogic.dll (code_base=880A0000)
+[2026-10-12 17:30:56.560] [info] [core] [t102190] Module 'data/gamelogic.dll' registered 8673 functions
+[2026-10-12 17:30:56.562] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.562] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.565] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.565] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.570] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.570] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.575] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.575] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.581] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.581] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.581] [warning] [eot] [t102113] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-12 17:30:56.582] [debug] [eot] [t102113] [hitch] frame 2 threads: capture 0.00 present-wait 15.44 worker-idle 162.98 blit 1.12 house 0.01 | gpu 0.30 (1 frames collected) | transfers 0 evicted 0 vtx-miss 0 idx-miss 0 pso-binds 0 dead-resolves 0 | guest+other 148.87
+[2026-10-12 17:30:56.582] [debug] [eot] [t102113] [hitch] frame 2 took 164.3 ms: draw 0.00 (0 draws) upload 0.00 (0 tex) resolve 0.00 (0) link 0.00 (0) pso 0.00 (0) guest d3d 0.00 (0 calls) | acquire 0.01 submit 0.06 fence 0.01 pace 0.00 | new host objects: 0 tex (0 surface 0 mirror 0 guest, 0 recycled) 0 views 0 fb, 0 parked | vtx 0 KB idx 0 KB const 0 KB | live 1 tex 1 surf, pool 0 | resolve: mirror 0.00 fb 0.00 bind 0.00 | scans: alias 0.00 msaa 0.00 | unaccounted 164.22
+[2026-10-12 17:30:56.586] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.587] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.592] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.592] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.597] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.597] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.602] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.602] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.608] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.608] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.613] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.613] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.618] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.618] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.623] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.623] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.629] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.629] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.634] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.634] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.640] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.640] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.644] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.644] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.650] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.650] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.651] [error] [sys] [t102282] Unhandled guest access violation: read of guest 0x00003C20 (host 0x0000001000003C20) on thread 0xF8000128
+[2026-10-12 17:30:56.652] [critical] [eot] [t102282] ================ reeot host crash ================
+[2026-10-12 17:30:56.653] [critical] [eot] [t102282] build: reeot 1.0.0 44cf7cb34 [rexglue-v0.10.0.43-dev.g25d6a61-Release]
+[2026-10-12 17:30:56.653] [critical] [eot] [t102282] module base: eboot.bin @ 0x0000000000000000
+[2026-10-12 17:30:56.654] [critical] [eot] [t102282] exception: ACCESS_VIOLATION @ host pc 0x0000000001a54ab1
+[2026-10-12 17:30:56.655] [critical] [eot] [t102282] faulting module: 
+[2026-10-12 17:30:56.655] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.656] [critical] [eot] [t102282] fault address: 0x0000001000003c20 (read)
+[2026-10-12 17:30:56.656] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.656] [critical] [eot] [t102282] guest fault VA: 0x00003c20
+[2026-10-12 17:30:56.657] [critical] [eot] [t102282] registers:
+[2026-10-12 17:30:56.658] [critical] [eot] [t102282]     rip = 0x0000000001a54ab1   eflags = 0x00010256
+[2026-10-12 17:30:56.658] [critical] [eot] [t102282]     rax = 0x000000007079ea10
+[2026-10-12 17:30:56.659] [critical] [eot] [t102282]     rcx = 0x0000000000000050
+[2026-10-12 17:30:56.660] [critical] [eot] [t102282]     rdx = 0x0000000000003c20
+[2026-10-12 17:30:56.661] [critical] [eot] [t102282]     rbx = 0x0000001000000000
+[2026-10-12 17:30:56.661] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.661] [critical] [eot] [t102282]     rsp = 0x000000041f4cf8c0
+[2026-10-12 17:30:56.661] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.662] [critical] [eot] [t102282]     rbp = 0x000000041f4cf8f0
+[2026-10-12 17:30:56.663] [critical] [eot] [t102282]     rsi = 0x0000000000000002
+[2026-10-12 17:30:56.663] [critical] [eot] [t102282]     rdi = 0x0000001000003c20
+[2026-10-12 17:30:56.664] [critical] [eot] [t102282]      r8 = 0x0000000000000002
+[2026-10-12 17:30:56.665] [critical] [eot] [t102282]      r9 = 0x0000000000000000
+[2026-10-12 17:30:56.666] [critical] [eot] [t102282]     r10 = 0x00000000ffffc3df
+[2026-10-12 17:30:56.666] [critical] [eot] [t102282]     r11 = 0x0000000000000000
+[2026-10-12 17:30:56.666] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.667] [critical] [eot] [t102282]     r12 = 0x0000000000000000
+[2026-10-12 17:30:56.667] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.668] [critical] [eot] [t102282]     r13 = 0x0000000000003c20
+[2026-10-12 17:30:56.668] [critical] [eot] [t102282]     r14 = 0x000000201407a340
+[2026-10-12 17:30:56.669] [critical] [eot] [t102282]     r15 = 0x00000000048e4560
+[2026-10-12 17:30:56.670] [critical] [eot] [t102282] stack code addresses (sp 0x000000041f4cf8c0, first is the return address of the call that faulted):
+[2026-10-12 17:30:56.671] [critical] [eot] [t102282]     (no module addresses on the stack)
+[2026-10-12 17:30:56.671] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.671] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.673] [critical] [eot] [t102282] backtrace (23 frames, top frames are the crash handler):
+[2026-10-12 17:30:56.673] [critical] [eot] [t102282]     [ 0] 0x0000000000e53460  ()
+[2026-10-12 17:30:56.674] [critical] [eot] [t102282]     [ 1] 0x0000000000459a90  ()
+[2026-10-12 17:30:56.675] [critical] [eot] [t102282]     [ 2] 0x0000000000459693  ()
+[2026-10-12 17:30:56.676] [critical] [eot] [t102282]     [ 3] 0x0000000002b1d812  ()
+[2026-10-12 17:30:56.676] [critical] [eot] [t102282]     [ 4] 0x000000080000cbbf  ()
+[2026-10-12 17:30:56.677] [critical] [eot] [t102282]     [ 5] 0x000000080000c67a  ()
+[2026-10-12 17:30:56.677] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.678] [critical] [eot] [t102282]     [ 6] 0x00000007eeffc003  ()
+[2026-10-12 17:30:56.678] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.678] [critical] [eot] [t102282]     [ 7] 0x0000000001a54ab1  ()
+[2026-10-12 17:30:56.679] [critical] [eot] [t102282]     [ 8] 0x00000000005a9d73  ()
+[2026-10-12 17:30:56.680] [critical] [eot] [t102282]     [ 9] 0x0000000000eb1fb4  ()
+[2026-10-12 17:30:56.681] [critical] [eot] [t102282]     [10] 0x00000000017a17c1  ()
+[2026-10-12 17:30:56.681] [critical] [eot] [t102282]     [11] 0x000000000120440b  ()
+[2026-10-12 17:30:56.682] [critical] [eot] [t102282]     [12] 0x00000000010c984b  ()
+[2026-10-12 17:30:56.682] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.683] [critical] [eot] [t102282]     [13] 0x00000000010a471e  ()
+[2026-10-12 17:30:56.683] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.683] [critical] [eot] [t102282]     [14] 0x0000000000edd21d  ()
+[2026-10-12 17:30:56.684] [critical] [eot] [t102282]     [15] 0x00000000012f6fc5  ()
+[2026-10-12 17:30:56.685] [critical] [eot] [t102282]     [16] 0x00000000013b6202  ()
+[2026-10-12 17:30:56.686] [critical] [eot] [t102282]     [17] 0x00000000018e090c  ()
+[2026-10-12 17:30:56.686] [critical] [eot] [t102282]     [18] 0x0000000002cc42e8  ()
+[2026-10-12 17:30:56.687] [critical] [eot] [t102282]     [19] 0x0000000002cc8199  ()
+[2026-10-12 17:30:56.688] [critical] [eot] [t102282]     [20] 0x0000000002b833e8  ()
+[2026-10-12 17:30:56.688] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000002
+[2026-10-12 17:30:56.688] [critical] [eot] [t102282]     [21] 0x0000000000e53f79  ()
+[2026-10-12 17:30:56.688] [debug] [apu] [t102297] XMA: Write to unknown register (0601): 00000003
+[2026-10-12 17:30:56.689] [critical] [eot] [t102282]     [22] 0x000000080000758d  ()
+[2026-10-12 17:30:56.690] [critical] [eot] [t102282] ===================================================
+[2026-10-12 17:30:56.691] [error] [eot] [t102282] Fatal: reeot crashed - reeot hit a fatal error and has to close.
+
+ACCESS_VIOLATION at 0x0000000001a54ab1
