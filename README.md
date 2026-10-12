@@ -13,11 +13,33 @@ PS5 layer (the launch, the pad, klog, the build and the console tools). It links
 the same way. Its program is in `reeot/`, and runs in place of the template's samples
 (`PS5_TITLE_MAIN` in `ps5/src/main.cpp`).
 
-## What it runs now: test app 5
+## What it runs now: the game
 
 The title links the ReXGlue fork's runtime and runs the ReXGlue app the link holds
-through the runtime's PS5 entry, `rex_ps5_app_main` (`reeot/title_main.cpp`). For now
-that app is test app 5 (`reeot/rex_test_app.cpp`), which checks, in order:
+through the runtime's PS5 entry, `rex_ps5_app_main` (`reeot/title_main.cpp`). That app
+is EdgeOfTimeRecomp's own, `ReeotApp`, built with the game by `reeot/reeot_game.cmake`
+(`REEOT_TITLE_APP=game`, the default):
+
+- **The game's recompiled code.** Run `rexglue codegen reeot_manifest.toml` in
+  EdgeOfTimeRecomp first, with your own `Default.xex` and `Default.xexp`, and
+  `Data/GameLogic.dll` and `Data/GameLogic.dllp`, in its `assets/`. Use ReXGlue
+  `nightly-20261002-bd833a2a`. That code is made from your game files: it stays in
+  the build, and is never committed.
+- **The game logic module.** A title cannot load code of its own as a library.
+  `reeot/prelink_module.py` joins the module into one object and gives its names a
+  prefix of their own. `reeot/gamelogic_static.cpp` registers its two entry points
+  under its library's name, where the fork's `DynamicLibrary` finds them.
+- **EdgeOfTimeRecomp's own sources,** from its `ps5/reeot-sources.cmake`, with its
+  host shaders compiled to SPIR-V. This needs `dxc` on the PATH, or `REEOT_DXC`.
+- **No Vulkan samples.** `reeot/title_entry.cpp` is the title's `main`. The samples'
+  ImGui 1.65 would clash with the runtime's 1.92.
+
+On the console, the game reads its files from `/app0/gamedata`, which is
+`/data/homebrew/PPSA99300/gamedata/`, copied from a PC install. Profiles, mods and
+logs go in the title's folder.
+
+`-DREEOT_TITLE_APP=test` builds test app 5 instead (`reeot/rex_test_app.cpp`). It
+checks, in order:
 
 - the window: the display surface's size;
 - the picture: EdgeOfTimeRecomp's renderer, plume (its `thirdparty/plume` with

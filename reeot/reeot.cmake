@@ -53,7 +53,21 @@ if(NOT EXISTS ${reeot_runtime_dir}/librexruntime.a OR NOT EXISTS ${reeot_runtime
 endif()
 message(STATUS "EdgeOfTimeRecomp: the ReXGlue runtime from ${reeot_runtime_dir}")
 
-target_sources(samples PRIVATE ${ROOT}/reeot/title_main.cpp ${ROOT}/reeot/rex_test_app.cpp)
+# The app the title runs: the game (reeot/reeot_game.cmake), or test app 5
+set(REEOT_TITLE_APP game CACHE STRING "What the title runs: game, or test (reeot/rex_test_app.cpp)")
+set_property(CACHE REEOT_TITLE_APP PROPERTY STRINGS game test)
+if(REEOT_TITLE_APP STREQUAL "test")
+	target_sources(samples PRIVATE ${ROOT}/reeot/title_main.cpp ${ROOT}/reeot/rex_test_app.cpp)
+else()
+	# The game alone: the template's start-up (its platform layer and volk) and
+	# reeot/title_entry.cpp, without the Vulkan samples, whose ImGui 1.65 would
+	# meet the runtime's ImGui 1.92 in the link
+	get_target_property(reeot_samples_sources samples SOURCES)
+	list(FILTER reeot_samples_sources INCLUDE REGEX "(^|/)(src/platform\\.c|third_party/volk/volk\\.c)$")
+	set_property(TARGET samples PROPERTY SOURCES ${reeot_samples_sources} ${ROOT}/reeot/title_entry.cpp
+		${ROOT}/reeot/title_main.cpp)
+endif()
+message(STATUS "EdgeOfTimeRecomp: the title runs the ${REEOT_TITLE_APP} app")
 
 # plume, and the picture test that drives it
 add_library(reeot_plume OBJECT ${reeot_plume}/plume_vulkan.cpp ${ROOT}/reeot/plume_test.cpp)
@@ -79,9 +93,10 @@ list(REMOVE_ITEM reeot_runtime_archives ${reeot_runtime_dir}/librexruntime.a)
 # run time: link-title.sh refuses them), or that the console refuses a title,
 # bound to the platform layer's, as PS5_RPCS3Title's rpcs3/rpcs3.cmake binds
 # them: FFmpeg's isatty, libc++'s pathconf (std::filesystem), and realpath, which
-# std::filesystem's canonical paths are built on (EPERM to a title)
+# std::filesystem's canonical paths are built on (EPERM to a title), and fork,
+# which the game's desktop paths name (a title starts no process)
 set(reeot_libc_bindings)
-foreach(name isatty pathconf realpath)
+foreach(name isatty pathconf realpath fork)
 	list(APPEND reeot_libc_bindings --defsym=${name}=ps5_${name})
 endforeach()
 # A bound name the SDK's stubs also define would be exported from the title to
@@ -95,11 +110,18 @@ foreach(flag ${reeot_libc_bindings})
 endforeach()
 file(WRITE ${reeot_local_map} "{\n    local:\n${reeot_local_names}};\n")
 
+set(reeot_game_link_inputs)
+set(reeot_game_link_depends)
+if(NOT REEOT_TITLE_APP STREQUAL "test")
+	include(${ROOT}/reeot/reeot_game.cmake)
+endif()
+
 set(PS5_TITLE_LINK_INPUTS
-	$<TARGET_OBJECTS:reeot_plume>
+	$<TARGET_OBJECTS:reeot_plume> ${reeot_game_link_inputs}
 	--start-group ${reeot_runtime_dir}/librexruntime.a ${reeot_runtime_archives}
 	${PS5_PAYLOAD_SDK}/target/lib/libc++experimental.a --end-group
 	${reeot_libc_bindings} --version-script ${reeot_local_map}
 	# abort() through the runtime's fault records (its __wrap_abort)
 	--wrap=abort)
-set(PS5_TITLE_LINK_DEPENDS ${reeot_runtime_dir}/librexruntime.a ${reeot_runtime_archives} reeot_plume)
+set(PS5_TITLE_LINK_DEPENDS ${reeot_runtime_dir}/librexruntime.a ${reeot_runtime_archives} reeot_plume
+	${reeot_game_link_depends})
