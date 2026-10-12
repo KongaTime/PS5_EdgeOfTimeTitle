@@ -1,0 +1,626 @@
+startup: main: entered the ReXGlue app
+startup: main: initializing cvars and early ReXGlue logging
+startup: main: constructing application context
+startup: main: initializing application
+==== test app 4: the ReXGlue runtime and its fault records ====
+window: creating it
+window: open, 3840x2160
+memory: Memory::Initialize (the 4.5 GiB guest arena, the MMIO handler)
+memory: initialized
+code: reading 16 bytes of this app's code (if this is the file's last line, the code is still execute-only)
+code: readable: 55 48 89 e5 41 56 53 49 ...
+startup: main: entering UI event loop
+sound: opening the PS5 driver (sceAudioOut)
+sound: a 440 Hz tone for two seconds (you should hear it now)
+sound: 375 frames submitted in 1665 ms (played at 5.33 ms a frame, after 64 queued)
+sound: driver closed
+controller: CreateDefaultInputSystem (the PS5 scePad driver)
+controller: capabilities for player 1: 0x00000000, type 1, flags 0x1
+controller: rumble on: 0x00000000 (you should feel it for half a second)
+controller: press L1, R1, L2 and R2, one at a time, for 15 seconds
+controller: player 1 GetState 0x00000000 (connected)
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 258,-774 (packet 1)
+controller: buttons 0x0100, L2 0, R2 0, sticks L 0,-516 R 258,-774 (packet 2)
+controller: key 0x5805 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 258,-774 (packet 3)
+controller: key 0x5805 up
+controller: buttons 0x0200, L2 0, R2 0, sticks L 0,-516 R 258,-774 (packet 4)
+controller: key 0x5804 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 258,-774 (packet 5)
+controller: key 0x5804 up
+controller: buttons 0x0000, L2 77, R2 0, sticks L 0,-516 R 258,-774 (packet 6)
+controller: key 0x5806 down
+controller: buttons 0x0000, L2 255, R2 255, sticks L 0,-516 R 0,-774 (packet 9)
+controller: key 0x5807 down
+controller: buttons 0x0000, L2 0, R2 255, sticks L 0,-516 R 0,-774 (packet 11)
+controller: key 0x5806 up
+controller: buttons 0x0000, L2 0, R2 21, sticks L 0,-516 R 0,-774 (packet 13)
+controller: key 0x5807 up
+controller: buttons 0x0000, L2 154, R2 0, sticks L 0,-516 R 0,-774 (packet 15)
+controller: key 0x5806 down
+controller: buttons 0x0200, L2 208, R2 0, sticks L 0,-516 R 0,-774 (packet 17)
+controller: key 0x5804 down
+controller: buttons 0x0200, L2 0, R2 0, sticks L 0,-516 R 0,-774 (packet 18)
+controller: key 0x5806 up
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 0,-774 (packet 19)
+controller: key 0x5804 up
+controller: buttons 0x0100, L2 0, R2 0, sticks L 0,-516 R 0,-774 (packet 20)
+controller: key 0x5805 down
+controller: buttons 0x0100, L2 0, R2 120, sticks L 0,-516 R 0,-774 (packet 21)
+controller: key 0x5807 down
+controller: buttons 0x0000, L2 0, R2 255, sticks L 0,-516 R 0,-774 (packet 24)
+controller: key 0x5805 up
+controller: buttons 0x0000, L2 255, R2 0, sticks L 0,-516 R 0,-774 (packet 26)
+controller: key 0x5807 up
+controller: key 0x5806 down
+controller: buttons 0x0000, L2 255, R2 144, sticks L 0,-516 R 0,-774 (packet 27)
+controller: key 0x5807 down
+controller: buttons 0x0000, L2 0, R2 255, sticks L 0,-516 R 0,-774 (packet 31)
+controller: key 0x5806 up
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 0,-774 (packet 32)
+controller: key 0x5807 up
+controller: buttons 0x0000, L2 0, R2 0, sticks L -30187,-10578 R 0,-3096 (packet 34)
+controller: key 0x5823 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -32768,-12126 R 12642,-20125 (packet 37)
+controller: key 0x5831 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -32768,-4128 R 26574,-24253 (packet 38)
+controller: key 0x5831 up
+controller: key 0x5836 down
+controller: key 0x5836 up
+controller: key 0x5832 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -29155,21930 R 32767,-8514 (packet 40)
+controller: key 0x5823 up
+controller: key 0x5824 down
+controller: key 0x5824 up
+controller: key 0x5820 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -4902,32767 R 26574,23220 (packet 42)
+controller: key 0x5832 up
+controller: key 0x5835 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 10578,32767 R 15738,31734 (packet 43)
+controller: key 0x5835 up
+controller: key 0x5830 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 23220,29670 R -4644,32767 (packet 44)
+controller: key 0x5820 up
+controller: key 0x5825 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 31992,21156 R -26317,21930 (packet 45)
+controller: key 0x5830 up
+controller: key 0x5834 down
+controller: key 0x5825 up
+controller: key 0x5834 up
+controller: key 0x5822 down
+controller: key 0x5833 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 32767,10836 R -32768,-2838 (packet 46)
+controller: buttons 0x0000, L2 0, R2 0, sticks L 19092,-31219 R -25285,-25285 (packet 48)
+controller: key 0x5822 up
+controller: key 0x5833 up
+controller: key 0x5821 down
+controller: key 0x5837 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -1032,-32768 R -8514,-32768 (packet 49)
+controller: key 0x5837 up
+controller: key 0x5831 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -18577,-29155 R 12900,-32768 (packet 51)
+controller: buttons 0x0000, L2 0, R2 0, sticks L -23221,-12642 R 14964,-32768 (packet 52)
+controller: key 0x5821 up
+controller: key 0x5823 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -32509,14964 R 16254,-17545 (packet 53)
+controller: key 0x5831 up
+controller: buttons 0x0000, L2 0, R2 0, sticks L -26575,25284 R 17286,9030 (packet 54)
+controller: key 0x5823 up
+controller: key 0x5824 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -16254,32767 R 1548,21156 (packet 55)
+controller: key 0x5824 up
+controller: key 0x5820 down
+controller: key 0x5830 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 4902,32767 R -23737,14448 (packet 56)
+controller: key 0x5830 up
+controller: key 0x5833 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 18576,32250 R -31993,-4386 (packet 57)
+controller: buttons 0x0000, L2 0, R2 0, sticks L 26832,24510 R -30961,-18577 (packet 58)
+controller: key 0x5820 up
+controller: key 0x5825 down
+controller: key 0x5833 up
+controller: key 0x5837 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 29670,10320 R -18577,-29413 (packet 59)
+controller: key 0x5825 up
+controller: key 0x5837 up
+controller: key 0x5822 down
+controller: key 0x5831 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 23736,-3354 R -13158,-32251 (packet 60)
+controller: buttons 0x0000, L2 0, R2 0, sticks L 13674,-8514 R -10062,-30703 (packet 61)
+controller: key 0x5822 up
+controller: buttons 0x0000, L2 0, R2 0, sticks L 5418,-8772 R -3096,-15222 (packet 62)
+controller: key 0x5831 up
+controller: buttons 0x0040, L2 0, R2 0, sticks L 774,-7998 R -1290,-2322 (packet 63)
+controller: key 0x5816 down
+controller: buttons 0x00c0, L2 0, R2 0, sticks L -516,-12384 R -2580,4128 (packet 64)
+controller: key 0x5817 down
+controller: buttons 0x00c0, L2 0, R2 0, sticks L -6450,-16513 R -2322,11352 (packet 66)
+controller: buttons 0x00c0, L2 0, R2 0, sticks L -9546,-9546 R 258,-774 (packet 69)
+controller: buttons 0x0040, L2 0, R2 0, sticks L -9030,-774 R 0,-2064 (packet 70)
+controller: key 0x5817 up
+controller: buttons 0x0000, L2 0, R2 0, sticks L -516,10836 R 0,-4386 (packet 71)
+controller: key 0x5816 up
+controller: buttons 0x0000, L2 0, R2 0, sticks L 7482,20640 R 0,-7740 (packet 72)
+controller: key 0x5820 down
+controller: buttons 0x0040, L2 0, R2 0, sticks L 11868,17802 R -1032,-9804 (packet 74)
+controller: key 0x5820 up
+controller: key 0x5816 down
+controller: buttons 0x00c0, L2 0, R2 0, sticks L 7224,6708 R -774,-7740 (packet 75)
+controller: key 0x5817 down
+controller: buttons 0x00c0, L2 0, R2 0, sticks L -1290,-16771 R 2838,-2322 (packet 78)
+controller: buttons 0x0080, L2 0, R2 0, sticks L -1806,-10578 R 2322,-2322 (packet 79)
+controller: key 0x5816 up
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-1290 R 2838,-5160 (packet 80)
+controller: key 0x5817 up
+controller: buttons 0x0080, L2 0, R2 0, sticks L 4902,4902 R 6708,-5418 (packet 83)
+controller: key 0x5817 down
+controller: buttons 0x00c0, L2 0, R2 0, sticks L 4386,-1290 R 6966,-6708 (packet 84)
+controller: key 0x5816 down
+controller: buttons 0x0040, L2 0, R2 0, sticks L -2064,-7998 R 2064,-3354 (packet 87)
+controller: key 0x5817 up
+controller: buttons 0x0000, L2 0, R2 0, sticks L -2322,1806 R -1032,-3354 (packet 88)
+controller: key 0x5816 up
+controller: buttons 0x1000, L2 0, R2 0, sticks L 0,-774 R 0,-2838 (packet 95)
+controller: key 0x5800 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 0,-2838 (packet 102)
+controller: key 0x5800 up
+controller: buttons 0x4000, L2 0, R2 0, sticks L 0,-516 R 0,-2580 (packet 106)
+controller: key 0x5802 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 0,-2064 (packet 109)
+controller: key 0x5802 up
+controller: buttons 0x8000, L2 0, R2 0, sticks L 0,-516 R 0,-2322 (packet 110)
+controller: key 0x5803 down
+controller: buttons 0xa000, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 114)
+controller: key 0x5801 down
+controller: buttons 0x2000, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 115)
+controller: key 0x5803 up
+controller: buttons 0x3000, L2 0, R2 0, sticks L 0,-516 R 0,-2064 (packet 119)
+controller: key 0x5800 down
+controller: buttons 0x2000, L2 0, R2 0, sticks L 0,-516 R 0,-2064 (packet 120)
+controller: key 0x5800 up
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 0,-2064 (packet 121)
+controller: key 0x5801 up
+controller: buttons 0x0020, L2 0, R2 0, sticks L 0,-516 R 0,-2064 (packet 124)
+controller: key 0x5815 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 0,-2322 (packet 125)
+controller: key 0x5815 up
+controller: buttons 0x0010, L2 0, R2 0, sticks L 0,-516 R 0,-2064 (packet 132)
+controller: key 0x5814 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 135)
+controller: key 0x5814 up
+controller: buttons 0x0002, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 140)
+controller: key 0x5811 down
+controller: buttons 0x0006, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 143)
+controller: key 0x5812 down
+controller: buttons 0x0004, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 144)
+controller: key 0x5811 up
+controller: buttons 0x0005, L2 0, R2 0, sticks L 0,-516 R 0,-1548 (packet 145)
+controller: key 0x5810 down
+controller: buttons 0x0001, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 147)
+controller: key 0x5812 up
+controller: buttons 0x000a, L2 0, R2 0, sticks L 0,-774 R 0,-1548 (packet 148)
+controller: key 0x5810 up
+controller: key 0x5811 down
+controller: key 0x5813 down
+controller: buttons 0x0002, L2 0, R2 0, sticks L 0,-516 R 0,-1548 (packet 152)
+controller: key 0x5813 up
+controller: buttons 0x0006, L2 0, R2 0, sticks L 0,-516 R 0,-1548 (packet 153)
+controller: key 0x5812 down
+controller: buttons 0x0004, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 154)
+controller: key 0x5811 up
+controller: buttons 0x0005, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 156)
+controller: key 0x5810 down
+controller: buttons 0x0001, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 157)
+controller: key 0x5812 up
+controller: buttons 0x0009, L2 0, R2 0, sticks L 0,-516 R 0,-1548 (packet 159)
+controller: key 0x5810 up
+controller: key 0x5813 down
+controller: buttons 0x0008, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 160)
+controller: buttons 0x000a, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 161)
+controller: key 0x5811 down
+controller: buttons 0x0002, L2 0, R2 0, sticks L 0,-516 R 0,-1548 (packet 162)
+controller: key 0x5813 up
+controller: buttons 0x0006, L2 0, R2 0, sticks L 0,-774 R 0,-1548 (packet 164)
+controller: key 0x5812 down
+controller: buttons 0x0004, L2 0, R2 0, sticks L 0,-516 R 0,-1548 (packet 165)
+controller: key 0x5811 up
+controller: buttons 0x0001, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 167)
+controller: key 0x5812 up
+controller: key 0x5810 down
+controller: buttons 0x0008, L2 0, R2 0, sticks L 0,-516 R 0,-1548 (packet 170)
+controller: key 0x5810 up
+controller: key 0x5813 down
+controller: buttons 0x000a, L2 0, R2 0, sticks L 0,-774 R 0,-1548 (packet 171)
+controller: key 0x5811 down
+controller: buttons 0x0002, L2 0, R2 0, sticks L 0,-516 R 0,-1548 (packet 173)
+controller: key 0x5813 up
+controller: buttons 0x0006, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 174)
+controller: key 0x5812 down
+controller: buttons 0x0004, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 176)
+controller: key 0x5811 up
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 0,-1548 (packet 177)
+controller: key 0x5812 up
+controller: buttons 0x0100, L2 0, R2 0, sticks L 0,-516 R 0,-1548 (packet 178)
+controller: key 0x5805 down
+controller: buttons 0x0300, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 181)
+controller: key 0x5804 down
+controller: buttons 0x0200, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 182)
+controller: key 0x5805 up
+controller: buttons 0x0200, L2 0, R2 255, sticks L 0,-516 R 0,-1548 (packet 186)
+controller: key 0x5807 down
+controller: buttons 0x0000, L2 0, R2 255, sticks L 0,-774 R 0,-1548 (packet 187)
+controller: key 0x5804 up
+controller: buttons 0x0000, L2 255, R2 255, sticks L 0,-516 R 0,-1548 (packet 189)
+controller: key 0x5806 down
+controller: buttons 0x0200, L2 255, R2 0, sticks L 0,-774 R 0,-1548 (packet 194)
+controller: key 0x5807 up
+controller: key 0x5804 down
+controller: buttons 0x0200, L2 47, R2 0, sticks L 0,-516 R 0,-1806 (packet 196)
+controller: key 0x5806 up
+controller: buttons 0x0300, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 198)
+controller: key 0x5805 down
+controller: key 0x5807 down
+controller: buttons 0x0300, L2 0, R2 255, sticks L 0,-516 R 0,-1806 (packet 200)
+controller: buttons 0x0100, L2 43, R2 255, sticks L 0,-516 R 0,-1806 (packet 201)
+controller: key 0x5804 up
+controller: key 0x5806 down
+controller: buttons 0x0100, L2 255, R2 255, sticks L 0,-516 R 0,-1548 (packet 202)
+controller: buttons 0x0200, L2 255, R2 207, sticks L 0,-516 R 0,-1548 (packet 206)
+controller: key 0x5805 up
+controller: key 0x5804 down
+controller: buttons 0x0200, L2 255, R2 0, sticks L 0,-516 R 0,-1548 (packet 207)
+controller: key 0x5807 up
+controller: buttons 0x0200, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 209)
+controller: key 0x5806 up
+controller: buttons 0x0300, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 210)
+controller: key 0x5805 down
+controller: key 0x5807 down
+controller: buttons 0x0100, L2 0, R2 255, sticks L 0,-516 R 0,-1806 (packet 212)
+controller: key 0x5804 up
+controller: buttons 0x0100, L2 255, R2 255, sticks L 0,-516 R 0,-1548 (packet 214)
+controller: key 0x5806 down
+controller: buttons 0x0000, L2 255, R2 255, sticks L 0,-516 R 0,-1548 (packet 215)
+controller: key 0x5805 up
+controller: buttons 0x0200, L2 255, R2 255, sticks L 0,-516 R 0,-1548 (packet 216)
+controller: key 0x5804 down
+controller: buttons 0x0200, L2 137, R2 0, sticks L 0,-516 R 0,-1806 (packet 218)
+controller: key 0x5807 up
+controller: buttons 0x0200, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 219)
+controller: key 0x5806 up
+controller: buttons 0x0100, L2 0, R2 19, sticks L 0,-516 R 0,-1806 (packet 222)
+controller: key 0x5804 up
+controller: key 0x5805 down
+controller: key 0x5807 down
+controller: buttons 0x0100, L2 11, R2 255, sticks L 0,-516 R 0,-1806 (packet 223)
+controller: buttons 0x0100, L2 125, R2 255, sticks L 0,-516 R 0,-1806 (packet 224)
+controller: key 0x5806 down
+controller: buttons 0x0300, L2 255, R2 255, sticks L 0,-516 R 0,-1548 (packet 227)
+controller: key 0x5804 down
+controller: buttons 0x0200, L2 255, R2 255, sticks L 0,-516 R 0,-1806 (packet 228)
+controller: key 0x5805 up
+controller: buttons 0x0200, L2 248, R2 20, sticks L 0,-516 R 0,-1548 (packet 229)
+controller: key 0x5807 up
+controller: buttons 0x0000, L2 255, R2 255, sticks L 0,-516 R 0,-1548 (packet 233)
+controller: key 0x5804 up
+controller: key 0x5807 down
+controller: buttons 0x0200, L2 255, R2 255, sticks L 0,-516 R 0,-1548 (packet 234)
+controller: key 0x5804 down
+controller: buttons 0x0200, L2 219, R2 0, sticks L 0,-516 R 0,-1806 (packet 236)
+controller: key 0x5807 up
+controller: buttons 0x0200, L2 30, R2 0, sticks L 0,-516 R 0,-1806 (packet 237)
+controller: key 0x5806 up
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 238)
+controller: key 0x5804 up
+controller: buttons 0x0020, L2 0, R2 0, sticks L 0,-516 R 0,-1548 (packet 241)
+controller: key 0x5815 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 0,-1548 (packet 242)
+controller: key 0x5815 up
+controller: buttons 0x0020, L2 0, R2 0, sticks L 0,-774 R 0,-1548 (packet 248)
+controller: key 0x5815 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 0,-1806 (packet 251)
+controller: that phase is over (300 lines, 220 repeats so far)
+controller: press everything and move both sticks for 15 seconds
+controller: player 1 GetState 0x00000000 (connected)
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 0,-1548 (packet 252)
+controller: buttons 0x0040, L2 0, R2 0, sticks L -774,3096 R 0,-1806 (packet 260)
+controller: key 0x5816 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 258,1290 R 774,-1806 (packet 267)
+controller: key 0x5816 up
+controller: buttons 0x0080, L2 0, R2 0, sticks L 774,1548 R 3354,-1290 (packet 272)
+controller: key 0x5817 down
+controller: buttons 0x00c0, L2 0, R2 0, sticks L 774,1548 R 2580,-1032 (packet 273)
+controller: key 0x5816 down
+controller: buttons 0x0040, L2 0, R2 0, sticks L 516,1806 R 1032,-1290 (packet 277)
+controller: key 0x5817 up
+controller: buttons 0x0000, L2 0, R2 0, sticks L 516,774 R 1032,-3612 (packet 278)
+controller: key 0x5816 up
+controller: buttons 0x0040, L2 0, R2 0, sticks L 0,0 R 1032,-774 (packet 283)
+controller: key 0x5816 down
+controller: buttons 0x00c0, L2 0, R2 0, sticks L 1806,2838 R 0,-516 (packet 285)
+controller: key 0x5817 down
+controller: buttons 0x0080, L2 0, R2 0, sticks L 3612,-3354 R 1548,-1548 (packet 288)
+controller: key 0x5816 up
+controller: buttons 0x0000, L2 0, R2 0, sticks L 516,-3096 R 1548,-3612 (packet 290)
+controller: key 0x5817 up
+controller: buttons 0x00c0, L2 0, R2 0, sticks L 2580,-516 R 1548,-3612 (packet 293)
+controller: key 0x5816 down
+controller: key 0x5817 down
+controller: buttons 0x0080, L2 0, R2 0, sticks L 7740,-9804 R 516,-2838 (packet 298)
+controller: key 0x5816 up
+controller: key 0x5817 up
+controller: buttons 0x0000, L2 0, R2 0, sticks L 3354,-6192 R 4128,-6966 (packet 299)
+controller: buttons 0x0000, L2 0, R2 0, sticks L -22447,-22189 R 25542,-6450 (packet 304)
+controller: key 0x5827 down
+controller: key 0x5832 down
+controller: key 0x5827 up
+controller: key 0x5823 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -32768,-9804 R 32767,5418 (packet 308)
+controller: buttons 0x0000, L2 0, R2 0, sticks L -32768,6192 R 32508,16512 (packet 309)
+controller: buttons 0x0000, L2 0, R2 0, sticks L -25027,28638 R 21156,30186 (packet 310)
+controller: key 0x5823 up
+controller: key 0x5832 up
+controller: key 0x5824 down
+controller: key 0x5830 down
+controller: key 0x5824 up
+controller: key 0x5820 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 4902,32767 R -774,32767 (packet 311)
+controller: buttons 0x0000, L2 0, R2 0, sticks L 19092,32250 R -19351,30960 (packet 312)
+controller: key 0x5820 up
+controller: key 0x5830 up
+controller: key 0x5825 down
+controller: key 0x5834 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 29670,22962 R -31993,15222 (packet 313)
+controller: key 0x5834 up
+controller: key 0x5833 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 32767,12900 R -32768,3096 (packet 314)
+controller: key 0x5825 up
+controller: key 0x5822 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 32767,-8256 R -29671,-19351 (packet 315)
+controller: buttons 0x0000, L2 0, R2 0, sticks L 19608,-30961 R -13932,-31735 (packet 316)
+controller: key 0x5822 up
+controller: key 0x5833 up
+controller: key 0x5821 down
+controller: key 0x5831 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -10062,-32768 R 11610,-32768 (packet 317)
+controller: buttons 0x0000, L2 0, R2 0, sticks L -18577,-29155 R 22446,-27865 (packet 318)
+controller: key 0x5831 up
+controller: key 0x5836 down
+controller: key 0x5821 up
+controller: key 0x5836 up
+controller: key 0x5827 down
+controller: key 0x5832 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -28381,-20383 R 19608,16254 (packet 320)
+controller: key 0x5832 up
+controller: key 0x5827 up
+controller: key 0x5823 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -32768,5418 R 1548,32767 (packet 321)
+controller: key 0x5830 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -23221,28122 R -21673,28638 (packet 322)
+controller: key 0x5823 up
+controller: key 0x5830 up
+controller: key 0x5820 down
+controller: key 0x5834 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 11610,32767 R -32251,13932 (packet 323)
+controller: key 0x5834 up
+controller: key 0x5833 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 28896,26316 R -32768,-1548 (packet 324)
+controller: key 0x5820 up
+controller: key 0x5825 down
+controller: key 0x5825 up
+controller: key 0x5822 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 32767,10320 R -17029,-30703 (packet 326)
+controller: key 0x5833 up
+controller: key 0x5831 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 29154,-22189 R 10062,-32768 (packet 327)
+controller: key 0x5822 up
+controller: key 0x5826 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -3096,-32768 R 22704,-28381 (packet 328)
+controller: key 0x5826 up
+controller: key 0x5831 up
+controller: key 0x5821 down
+controller: key 0x5836 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -20899,-29413 R 29154,-21157 (packet 329)
+controller: key 0x5821 up
+controller: key 0x5827 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -24511,-26833 R 32767,-12900 (packet 330)
+controller: key 0x5836 up
+controller: key 0x5832 down
+controller: key 0x5827 up
+controller: key 0x5823 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -32768,7998 R 23220,27864 (packet 332)
+controller: key 0x5832 up
+controller: key 0x5835 down
+controller: key 0x5835 up
+controller: key 0x5830 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -16771,32767 R -4386,32767 (packet 333)
+controller: key 0x5823 up
+controller: key 0x5820 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 20898,31476 R -29929,13932 (packet 334)
+controller: key 0x5820 up
+controller: key 0x5830 up
+controller: key 0x5825 down
+controller: key 0x5833 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 32767,12384 R -32768,-13416 (packet 336)
+controller: key 0x5825 up
+controller: key 0x5822 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 32767,1032 R -21157,-27865 (packet 337)
+controller: key 0x5833 up
+controller: key 0x5837 down
+controller: key 0x5837 up
+controller: key 0x5831 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 21930,-28639 R -2322,-32768 (packet 338)
+controller: key 0x5822 up
+controller: key 0x5821 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -9804,-32768 R 11352,-32768 (packet 339)
+controller: buttons 0x0000, L2 0, R2 0, sticks L -18319,-29413 R 18576,-28897 (packet 340)
+controller: buttons 0x0000, L2 0, R2 0, sticks L -22705,-27091 R 13932,-9288 (packet 341)
+controller: key 0x5821 up
+controller: key 0x5831 up
+controller: key 0x5827 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -30445,-10578 R 516,-1290 (packet 343)
+controller: key 0x5827 up
+controller: key 0x5823 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -28381,22446 R 516,-774 (packet 345)
+controller: key 0x5823 up
+controller: key 0x5824 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L -5676,13158 R 516,-1032 (packet 346)
+controller: key 0x5824 up
+controller: buttons 0x1000, L2 0, R2 0, sticks L 0,-774 R 516,-1032 (packet 350)
+controller: key 0x5800 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-774 R 516,-1032 (packet 354)
+controller: key 0x5800 up
+controller: buttons 0x4000, L2 0, R2 0, sticks L 0,-774 R 516,-774 (packet 356)
+controller: key 0x5802 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-774 R 516,-1032 (packet 359)
+controller: key 0x5802 up
+controller: buttons 0x8000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 360)
+controller: key 0x5803 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-774 R 516,-1032 (packet 361)
+controller: key 0x5803 up
+controller: buttons 0x2000, L2 0, R2 0, sticks L 0,-774 R 516,-774 (packet 362)
+controller: key 0x5801 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 365)
+controller: key 0x5801 up
+controller: buttons 0x1000, L2 0, R2 0, sticks L 0,-774 R 516,-1032 (packet 366)
+controller: key 0x5800 down
+controller: buttons 0x4000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 370)
+controller: key 0x5800 up
+controller: key 0x5802 down
+controller: buttons 0x5000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 371)
+controller: key 0x5800 down
+controller: buttons 0x4000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 372)
+controller: key 0x5800 up
+controller: buttons 0x8000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 373)
+controller: key 0x5802 up
+controller: key 0x5803 down
+controller: buttons 0x2000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 374)
+controller: key 0x5803 up
+controller: key 0x5801 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 375)
+controller: key 0x5801 up
+controller: buttons 0x1000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 376)
+controller: key 0x5800 down
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 377)
+controller: key 0x5800 up
+controller: buttons 0x0100, L2 0, R2 0, sticks L 0,-516 R 516,-774 (packet 381)
+controller: key 0x5805 down
+controller: buttons 0x0300, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 385)
+controller: key 0x5804 down
+controller: buttons 0x0200, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 388)
+controller: key 0x5805 up
+controller: buttons 0x0200, L2 0, R2 95, sticks L 0,-516 R 516,-774 (packet 389)
+controller: key 0x5807 down
+controller: buttons 0x0000, L2 21, R2 255, sticks L 0,-516 R 516,-1032 (packet 391)
+controller: key 0x5804 up
+controller: key 0x5806 down
+controller: buttons 0x0000, L2 141, R2 255, sticks L 0,-516 R 516,-1032 (packet 392)
+controller: buttons 0x0000, L2 255, R2 61, sticks L 0,-774 R 516,-774 (packet 395)
+controller: key 0x5807 up
+controller: buttons 0x0000, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 399)
+controller: key 0x5806 up
+controller: buttons 0x0200, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 400)
+controller: key 0x5804 down
+controller: buttons 0x0300, L2 0, R2 164, sticks L 0,-516 R 516,-1032 (packet 401)
+controller: key 0x5805 down
+controller: key 0x5807 down
+controller: buttons 0x0100, L2 0, R2 255, sticks L 0,-516 R 516,-1032 (packet 403)
+controller: key 0x5804 up
+controller: buttons 0x0100, L2 67, R2 255, sticks L 0,-516 R 516,-774 (packet 404)
+controller: key 0x5806 down
+controller: buttons 0x0000, L2 255, R2 255, sticks L 0,-516 R 516,-774 (packet 406)
+controller: key 0x5805 up
+controller: buttons 0x0200, L2 255, R2 218, sticks L 0,-516 R 516,-774 (packet 407)
+controller: key 0x5804 down
+controller: buttons 0x0200, L2 255, R2 53, sticks L 0,-516 R 516,-774 (packet 408)
+controller: key 0x5807 up
+controller: buttons 0x0300, L2 32, R2 0, sticks L 0,-516 R 516,-774 (packet 412)
+controller: key 0x5806 up
+controller: key 0x5805 down
+controller: buttons 0x0100, L2 0, R2 254, sticks L 0,-516 R 516,-1032 (packet 413)
+controller: key 0x5804 up
+controller: key 0x5807 down
+controller: buttons 0x0300, L2 5, R2 255, sticks L 0,-516 R 516,-1032 (packet 417)
+controller: key 0x5804 down
+controller: key 0x5805 up
+controller: buttons 0x0200, L2 198, R2 157, sticks L 0,-774 R 516,-774 (packet 418)
+controller: key 0x5806 down
+controller: buttons 0x0200, L2 255, R2 0, sticks L 0,-516 R 516,-1032 (packet 419)
+controller: key 0x5807 up
+controller: buttons 0x0200, L2 255, R2 219, sticks L 0,-516 R 516,-1032 (packet 422)
+controller: key 0x5807 down
+controller: buttons 0x0300, L2 255, R2 255, sticks L 0,-516 R 516,-1032 (packet 423)
+controller: key 0x5805 down
+controller: key 0x5804 up
+controller: buttons 0x0100, L2 255, R2 255, sticks L 0,-516 R 516,-1032 (packet 424)
+controller: buttons 0x0000, L2 47, R2 255, sticks L 0,-516 R 516,-1032 (packet 427)
+controller: key 0x5805 up
+controller: key 0x5806 up
+controller: buttons 0x0204, L2 0, R2 250, sticks L 0,-516 R 516,-1032 (packet 429)
+controller: key 0x5812 down
+controller: key 0x5804 down
+controller: buttons 0x0204, L2 0, R2 35, sticks L 0,-774 R 516,-1032 (packet 430)
+controller: key 0x5807 up
+controller: buttons 0x0004, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 432)
+controller: key 0x5804 up
+controller: buttons 0x0005, L2 0, R2 85, sticks L 0,-516 R 516,-1032 (packet 433)
+controller: key 0x5810 down
+controller: key 0x5807 down
+controller: buttons 0x0001, L2 0, R2 194, sticks L 0,-516 R 516,-1032 (packet 434)
+controller: key 0x5812 up
+controller: buttons 0x0201, L2 0, R2 226, sticks L 0,-516 R 516,-1032 (packet 436)
+controller: key 0x5804 down
+controller: buttons 0x0209, L2 0, R2 24, sticks L 0,-516 R 516,-1032 (packet 438)
+controller: key 0x5807 up
+controller: key 0x5813 down
+controller: buttons 0x0208, L2 0, R2 0, sticks L 0,-774 R 516,-1032 (packet 439)
+controller: key 0x5810 up
+controller: buttons 0x020a, L2 0, R2 0, sticks L 0,-774 R 516,-1032 (packet 441)
+controller: key 0x5811 down
+controller: buttons 0x0002, L2 0, R2 46, sticks L 0,-516 R 516,-1032 (packet 442)
+controller: key 0x5813 up
+controller: key 0x5804 up
+controller: key 0x5807 down
+controller: buttons 0x0002, L2 0, R2 217, sticks L 0,-516 R 516,-1032 (packet 443)
+controller: buttons 0x020a, L2 0, R2 255, sticks L 0,-516 R 516,-1032 (packet 445)
+controller: key 0x5813 down
+controller: key 0x5804 down
+controller: buttons 0x0208, L2 0, R2 215, sticks L 0,-516 R 516,-1032 (packet 446)
+controller: key 0x5811 up
+controller: buttons 0x0200, L2 0, R2 89, sticks L 0,-516 R 516,-1032 (packet 447)
+controller: key 0x5813 up
+controller: buttons 0x0200, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 448)
+controller: key 0x5807 up
+controller: buttons 0x0208, L2 0, R2 0, sticks L 0,-774 R 516,-1032 (packet 449)
+controller: key 0x5813 down
+controller: buttons 0x0008, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 450)
+controller: key 0x5804 up
+controller: buttons 0x000a, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 451)
+controller: key 0x5811 down
+controller: buttons 0x0002, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 452)
+controller: key 0x5813 up
+controller: buttons 0x0202, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 453)
+controller: key 0x5804 down
+controller: buttons 0x0206, L2 0, R2 78, sticks L 0,-516 R 516,-1032 (packet 454)
+controller: key 0x5812 down
+controller: key 0x5807 down
+controller: buttons 0x0204, L2 0, R2 187, sticks L 0,-774 R 516,-1032 (packet 455)
+controller: key 0x5811 up
+controller: buttons 0x0004, L2 0, R2 255, sticks L 0,-516 R 516,-1032 (packet 457)
+controller: key 0x5804 up
+controller: buttons 0x0001, L2 0, R2 235, sticks L 0,-516 R 516,-1032 (packet 458)
+controller: key 0x5812 up
+controller: key 0x5810 down
+controller: buttons 0x0001, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 460)
+controller: key 0x5807 up
+controller: buttons 0x0008, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 461)
+controller: key 0x5810 up
+controller: key 0x5813 down
+controller: buttons 0x0002, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 462)
+controller: key 0x5813 up
+controller: key 0x5811 down
+controller: buttons 0x0006, L2 0, R2 0, sticks L 0,-516 R 516,-1032 (packet 463)
+controller: key 0x5812 down
+controller: that phase is over (300 lines, 389 repeats so far)
+controller: done
+fault: the last step crashes on purpose; then send /data/homebrew/PPSA99300/logs/fault.log too
+fault: writing to address 0 now (fault.log should get the record)
