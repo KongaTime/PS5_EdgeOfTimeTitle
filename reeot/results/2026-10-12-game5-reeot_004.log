@@ -1,0 +1,433 @@
+[2026-10-12 16:44:59.029] [info] [eot] [t101146] reeot v1.0.0 [Release] ps5-amd64
+[2026-10-12 16:44:59.032] [info] [eot] [t101146]   commit:  7b75d91c1 on claude/nifty-knuth-s27y9o
+[2026-10-12 16:44:59.032] [info] [eot] [t101146]   built:   20261012_0643 with Clang 20.1.2
+[2026-10-12 16:44:59.033] [info] [eot] [t101146]   sdk:     rexglue-v0.10.0.43-dev.g25d6a61 ps5-amd64 @20261012_0531
+[2026-10-12 16:44:59.034] [info] [eot] [t101146]   profile: default (/app0/profiles/default)
+[2026-10-12 16:44:59.036] [info] [eot] [t101146] [language] eot_language auto -> English (XLanguage 1)
+[2026-10-12 16:44:59.037] [debug] [core] [t101146] reeot starting
+[2026-10-12 16:44:59.037] [debug] [core] [t101146]   Game directory: /app0/gamedata
+[2026-10-12 16:44:59.037] [debug] [core] [t101146]   User data:      /app0/profiles/default
+[2026-10-12 16:44:59.037] [debug] [core] [t101146]   Cache root:     /app0/profiles/default/cache
+[2026-10-12 16:44:59.037] [info] [eot] [t101146] [input] controller input in the background: off
+[2026-10-12 16:44:59.038] [info] [eot] [t101146] [window] 3840x2160, fullscreen
+[2026-10-12 16:44:59.039] [debug] [eot] [t101146] [input] fullscreen: mouse look on, cursor hidden
+[2026-10-12 16:44:59.039] [info] [eot] [t101146] [install] game folder /app0/gamedata
+[2026-10-12 16:44:59.042] [info] [sys] [t101146] Guest memory arena mapped: virtual base 0x0000001000000000, physical base 0x0000001100000000
+[2026-10-12 16:44:59.070] [info] [core] [t101146] PS5: fault records go to /app0/logs/fault.log
+[2026-10-12 16:44:59.071] [info] [core] [t101146] PS5: code at 0x400000-0x26e4000 made readable for the MMIO handler
+[2026-10-12 16:44:59.072] [debug] [sys] [t101146] Installed MMIO handler for physical address translation
+[2026-10-12 16:44:59.072] [info] [eot] [t101146] [pad] no controller for the first player
+[2026-10-12 16:44:59.072] [debug] [sys] [t101146] Input system initialized
+[2026-10-12 16:44:59.074] [debug] [apu] [t101146] XMA: Registered MMIO handlers at 0x7FEA0000-0x7FEAFFFF
+[2026-10-12 16:44:59.090] [debug] [sys] [t101260] XThread::Execute thid 1 (handle=F8000010, 'XMA Decoder (F8000010)', native=00018B8C, <host>)
+[2026-10-12 16:44:59.092] [debug] [sys] [t101146] Audio system initialized
+[2026-10-12 16:44:59.092] [debug] [sys] [t101263] XThread::Execute thid 2 (handle=F8000014, 'Audio Worker (F8000014)', native=00018B8F, <host>)
+[2026-10-12 16:44:59.101] [debug] [sys] [t101146]   Mounted /app0/gamedata at \Device\Harddisk0\Partition1
+[2026-10-12 16:44:59.101] [debug] [fs] [t101146] Registered symbolic link: game: => \Device\Harddisk0\Partition1
+[2026-10-12 16:44:59.101] [debug] [fs] [t101146] Registered symbolic link: d: => \Device\Harddisk0\Partition1
+[2026-10-12 16:44:59.101] [debug] [sys] [t101146]   Registered symbolic links: game:, d:
+[2026-10-12 16:44:59.101] [debug] [sys] [t101146]   Registered NullDevice for \Device\Harddisk0\{{Partition0,Cache0,Cache1}}
+[2026-10-12 16:44:59.101] [debug] [sys] [t101146] Runtime initialized without graphics system (native rendering mode)
+[2026-10-12 16:44:59.101] [debug] [sys] [t101146] Runtime initialized successfully
+[2026-10-12 16:44:59.101] [debug] [sys] [t101146] Initializing function table at 82600000, size 0063CDD8 for code 82080000-8238E6EC (+00010000 thunk reserve)
+[2026-10-12 16:44:59.102] [info] [core] [t101146] Function table initialized for module: code=82080000-8238E6EC, image=82000000-82600000
+[2026-10-12 16:44:59.106] [debug] [sys] [t101146] Registered 11611 recompiled functions (0 duplicates, 0 rejected)
+[2026-10-12 16:44:59.106] [debug] [sys] [t101146] Runtime setup complete (code: 82080000-8238E6EC, image: 82000000-82600000)
+[2026-10-12 16:44:59.106] [debug] [sys] [t101146] Codegen config: skip_lr=true skip_msr=true ctr=true xer=true cr=true reserved=true non_argument=true non_volatile=true
+[2026-10-12 16:44:59.106] [debug] [sys] [t101146] Registered recompiled module: pe='gamelogic.dll' guest='data/gamelogic.dll' lib='reeot_GameLogic'
+[2026-10-12 16:44:59.106] [info] [eot] [t101146] [boot] entry xex is Default.xex
+[2026-10-12 16:44:59.106] [debug] [sys] [t101146] Loading XEX image: game:\Default.xex
+[2026-10-12 16:44:59.227] [debug] [sys] [t101146] Loading XEX patch from \Device\Harddisk0\Partition1\Default.xexp
+[2026-10-12 16:44:59.233] [debug] [fs] [t101146] VFS: entry not found for '\Device\Harddisk0\Partition1\Default.xexpp' on device '\Device\Harddisk0\Partition1'
+[2026-10-12 16:44:59.241] [info] [core] [t101146] XEX patch applied successfully: base version: 0.0.0.2, new version: 0.0.1.2
+[2026-10-12 16:44:59.242] [debug] [core] [t101146] created symbols for import library xam with 90 imports
+[2026-10-12 16:44:59.242] [debug] [core] [t101146] Patched variable import xboxkrnl:0x156 (XboxHardwareInfo) -> 0x30004000
+[2026-10-12 16:44:59.242] [debug] [core] [t101146] Patched variable import xboxkrnl:0x1be (VdGlobalDevice) -> 0xffcae000
+[2026-10-12 16:44:59.242] [debug] [core] [t101146] Patched variable import xboxkrnl:0x1bf (VdGlobalXamDevice) -> 0xffcad000
+[2026-10-12 16:44:59.242] [debug] [core] [t101146] Patched variable import xboxkrnl:0x266 (KeCertMonitorData) -> 0x30003000
+[2026-10-12 16:44:59.242] [debug] [core] [t101146] Patched variable import xboxkrnl:0x1c0 (VdGpuClockInMHz) -> 0xffcac000
+[2026-10-12 16:44:59.242] [debug] [core] [t101146] Patched variable import xboxkrnl:0x1c1 (VdHSIOCalibrationLock) -> 0xffcab000
+[2026-10-12 16:44:59.243] [debug] [core] [t101146] Patched variable import xboxkrnl:0x1ae (ExLoadedCommandLine) -> 0x30008000
+[2026-10-12 16:44:59.243] [debug] [core] [t101146] Patched variable import xboxkrnl:0x193 (XexExecutableModuleHandle) -> 0x30006000
+[2026-10-12 16:44:59.243] [debug] [core] [t101146] Patched variable import xboxkrnl:0x158 (XboxKrnlVersion) -> 0x30009000
+[2026-10-12 16:44:59.243] [debug] [core] [t101146] Patched variable import xboxkrnl:0xe (ExEventObjectType) -> 0x3000001c
+[2026-10-12 16:44:59.243] [debug] [core] [t101146] Patched variable import xboxkrnl:0x59 (KeDebugMonitorData) -> 0x30002000
+[2026-10-12 16:44:59.243] [debug] [core] [t101146] Patched variable import xboxkrnl:0x1b (ExThreadObjectType) -> 0x30000000
+[2026-10-12 16:44:59.243] [debug] [core] [t101146] Patched variable import xboxkrnl:0xad (KeTimeStampBundle) -> 0x3000a000
+[2026-10-12 16:44:59.243] [debug] [core] [t101146] created symbols for import library xboxkrnl with 165 imports
+[2026-10-12 16:44:59.248] [debug] [sys] [t101264] XThread::Execute thid 3 (handle=F8000020, 'Kernel Dispatch (F8000020)', native=00018B90, <host>)
+[2026-10-12 16:44:59.248] [debug] [sys] [t101146] Achievement store: loaded 47 entries
+[2026-10-12 16:44:59.249] [debug] [sys] [t101146]   XEX image loaded successfully
+[2026-10-12 16:44:59.261] [debug] [krnl] [t101146] rexcrt_heap: added segment guest=0x20000000-0x30000000 size=256MB
+[2026-10-12 16:44:59.261] [debug] [krnl] [t101146] rexcrt_heap: initialized with 1 segment(s), capacity=255MB
+[2026-10-12 16:44:59.262] [debug] [eot] [t101146] [crash] last-chance handler installed
+[2026-10-12 16:44:59.385] [info] [eot] [t101146] [gpu] display 3840x2160 at 60 Hz, fullscreen (the display suggests 1440p)
+[2026-10-12 16:44:59.400] [info] [eot] [t101146] [gpu] render thread started: 1024 command slots (14 MB), batches of 64
+[2026-10-12 16:44:59.401] [info] [eot] [t101146] [gpu] Vulkan on PlayStation 5 GPU (RADV NAVI21) ready: swapchain 3840x2160, 32768 bindless texture slots, msaa 1x on the full-frame surfaces
+[2026-10-12 16:44:59.402] [info] [eot] [t101146] [gpu] internal render 1914x1080 (1080p = 1.709x the guest's 1120x632), fitted to the window at present; vsync on, fps cap 60
+[2026-10-12 16:44:59.403] [error] [eot] [t101146] [shaders] the embedded shader cache is empty: build reeot_shader_cache_regen and rebuild; no guest shader will run
+[2026-10-12 16:44:59.404] [info] [eot] [t101146] [pso] 6 pipeline worker thread(s) for 8 physical cores
+[2026-10-12 16:44:59.453] [info] [eot] [t101146] [pso] boot: 3066 compiled-in + 0 local rows -> 1400 queued on the recorded lane, 1573 held for 96 level package(s) (93 duplicate); templates: 774; capturing every pipeline drawn to /app0/profiles/default/cache/pso/ as 'session'
+[2026-10-12 16:44:59.454] [debug] [sys] [t101146] KernelState: Preparing module launch...
+[2026-10-12 16:44:59.456] [debug] [sys] [t101146]   Module prepared on thread ''
+[2026-10-12 16:44:59.457] [info] [core] [t101146] PS5 pad connected: user 513995993, handle 50923264
+[2026-10-12 16:45:09.457] [info] [core] [t101316] PS5 stall dump 1 (10 s after launch): 29 threads
+[2026-10-12 16:45:09.458] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:45:09.458] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:45:09.459] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:45:09.460] [info] [core] [t101316]   '' (guest): 1293 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.460] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.461] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.462] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.462] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.463] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.464] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.465] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.465] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.466] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.467] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.467] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.468] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.469] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.470] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.470] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.471] [info] [core] [t101316]   '' (guest): 11 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.472] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.472] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.473] [info] [core] [t101316]   '' (guest): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 16:45:09.474] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.475] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.475] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.476] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.477] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:09.477] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.478] [info] [core] [t101316] PS5 stall dump 2 (20 s after launch): 29 threads
+[2026-10-12 16:45:19.479] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:45:19.480] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:45:19.480] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:45:19.481] [info] [core] [t101316]   '' (guest): 1293 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.482] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.482] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.483] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.484] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.484] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.485] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.486] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.487] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.487] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.488] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.489] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.489] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.490] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.491] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.492] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.492] [info] [core] [t101316]   '' (guest): 11 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.493] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.494] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.494] [info] [core] [t101316]   '' (guest): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 16:45:19.495] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.496] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.497] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.497] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.498] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:19.499] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.500] [info] [core] [t101316] PS5 stall dump 3 (30 s after launch): 29 threads
+[2026-10-12 16:45:29.500] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:45:29.501] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:45:29.502] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:45:29.502] [info] [core] [t101316]   '' (guest): 1293 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.503] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.504] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.504] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.505] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.506] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.507] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.507] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.508] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.509] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.509] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.510] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.511] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.512] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.512] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.513] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.514] [info] [core] [t101316]   '' (guest): 11 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.514] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.515] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.516] [info] [core] [t101316]   '' (guest): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 16:45:29.516] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.517] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.518] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.519] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.519] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:29.520] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.521] [info] [core] [t101316] PS5 stall dump 4 (40 s after launch): 29 threads
+[2026-10-12 16:45:39.521] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:45:39.522] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:45:39.523] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:45:39.524] [info] [core] [t101316]   '' (guest): 1293 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.524] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.525] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.526] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.526] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.527] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.528] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.529] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.529] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.530] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.531] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.531] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.532] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.533] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.534] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.534] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.535] [info] [core] [t101316]   '' (guest): 11 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.536] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.536] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.537] [info] [core] [t101316]   '' (guest): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 16:45:39.538] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.538] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.539] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.540] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.541] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:39.541] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.542] [info] [core] [t101316] PS5 stall dump 5 (50 s after launch): 29 threads
+[2026-10-12 16:45:49.543] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:45:49.544] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:45:49.545] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:45:49.545] [info] [core] [t101316]   '' (guest): 1293 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.546] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.547] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.547] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.548] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.549] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.550] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.550] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.551] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.552] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.552] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.553] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.554] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.555] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.555] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.556] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.557] [info] [core] [t101316]   '' (guest): 11 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.557] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.558] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.559] [info] [core] [t101316]   '' (guest): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 16:45:49.559] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.560] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.561] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.562] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.562] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:49.563] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.564] [info] [core] [t101316] PS5 stall dump 6 (60 s after launch): 29 threads
+[2026-10-12 16:45:59.564] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:45:59.565] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:45:59.566] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:45:59.567] [info] [core] [t101316]   '' (guest): 1293 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.567] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.568] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.569] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.569] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.570] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.571] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.572] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.572] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.573] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.574] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.574] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.575] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.576] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.576] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.577] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.578] [info] [core] [t101316]   '' (guest): 11 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.579] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.579] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.580] [info] [core] [t101316]   '' (guest): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 16:45:59.581] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.581] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.582] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.583] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.584] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:45:59.584] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.585] [info] [core] [t101316] PS5 stall dump 7 (70 s after launch): 29 threads
+[2026-10-12 16:46:09.586] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:46:09.587] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:46:09.587] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:46:09.588] [info] [core] [t101316]   '' (guest): 1293 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.589] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.589] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.590] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.591] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.594] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.595] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.596] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.596] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.597] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.598] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.599] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.599] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.600] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.601] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.601] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.602] [info] [core] [t101316]   '' (guest): 11 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.603] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.604] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.604] [info] [core] [t101316]   '' (guest): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 16:46:09.605] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.606] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.606] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.607] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.608] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:09.609] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.609] [info] [core] [t101316] PS5 stall dump 8 (80 s after launch): 29 threads
+[2026-10-12 16:46:19.610] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:46:19.611] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:46:19.611] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:46:19.612] [info] [core] [t101316]   '' (guest): 1293 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.613] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.613] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.614] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.615] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.616] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.616] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.617] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.618] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.618] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.619] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.620] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.621] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.621] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.622] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.623] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.623] [info] [core] [t101316]   '' (guest): 11 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.624] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.625] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.625] [info] [core] [t101316]   '' (guest): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 16:46:19.626] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.627] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.628] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.628] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.629] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:19.630] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.631] [info] [core] [t101316] PS5 stall dump 9 (90 s after launch): 29 threads
+[2026-10-12 16:46:29.631] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:46:29.632] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:46:29.633] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:46:29.634] [info] [core] [t101316]   '' (guest): 1293 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.634] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.635] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.636] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.636] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.637] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.638] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.639] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.639] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.640] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.641] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.641] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.642] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.643] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.643] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.644] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.645] [info] [core] [t101316]   '' (guest): 11 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.646] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.646] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.647] [info] [core] [t101316]   '' (guest): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 16:46:29.648] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.648] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.649] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.650] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.651] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:29.651] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.652] [info] [core] [t101316] PS5 stall dump 10 (100 s after launch): 29 threads
+[2026-10-12 16:46:39.653] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:46:39.654] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:46:39.655] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:46:39.655] [info] [core] [t101316]   '' (guest): 1293 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.656] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.657] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.657] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.658] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.659] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.660] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.660] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.661] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.662] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.662] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.663] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.664] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.665] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.665] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.666] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.667] [info] [core] [t101316]   '' (guest): 11 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.667] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.668] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.669] [info] [core] [t101316]   '' (guest): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 16:46:39.669] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.670] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.671] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.672] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.672] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:39.673] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.674] [info] [core] [t101316] PS5 stall dump 11 (110 s after launch): 29 threads
+[2026-10-12 16:46:49.675] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:46:49.675] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:46:49.676] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:46:49.677] [info] [core] [t101316]   '' (guest): 1293 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.677] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.678] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.679] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.679] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.680] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.681] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.682] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.682] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.686] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.687] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.692] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.693] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.694] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.695] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.695] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.696] [info] [core] [t101316]   '' (guest): 11 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.697] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.697] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.698] [info] [core] [t101316]   '' (guest): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 16:46:49.699] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.699] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.700] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.701] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.702] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:49.702] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.703] [info] [core] [t101316] PS5 stall dump 12 (120 s after launch): 29 threads
+[2026-10-12 16:46:59.704] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:46:59.705] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:46:59.705] [info] [core] [t101316]   '': 0 calls, last (none)
+[2026-10-12 16:46:59.706] [info] [core] [t101316]   '' (guest): 1293 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.707] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.707] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.708] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.709] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.710] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.710] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.711] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.712] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.712] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.713] [info] [core] [t101316]   '' (guest): 9 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.714] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.715] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.715] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.716] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.717] [info] [core] [t101316]   '' (guest): 3 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.717] [info] [core] [t101316]   '' (guest): 11 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.718] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.719] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.720] [info] [core] [t101316]   '' (guest): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 16:46:59.720] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.721] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.722] [info] [core] [t101316]   '' (guest): 8 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.722] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.723] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
+[2026-10-12 16:46:59.724] [info] [core] [t101316]   '' (guest): 10 calls, last __imp__NtWaitForSingleObjectEx
