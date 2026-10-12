@@ -59,7 +59,7 @@ class RexTestApp final : public rex::ui::WindowedApp {
 	{
 		reeot_note("==== test app 5: EdgeOfTimeRecomp's renderer (plume) on the PS5 display ====");
 		reeot_note("window: creating it");
-		window_ = rex::ui::Window::Create(app_context(), "EdgeOfTimeRecomp", 1920, 1080);
+		window_ = rex::ui::Window::Create(app_context(), "EdgeOfTimeRecomp");
 		if (!window_ || !window_->Open()) {
 			reeot_note("window: FAILED to create or open");
 			return false;
