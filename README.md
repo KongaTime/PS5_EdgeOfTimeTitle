@@ -34,6 +34,12 @@ is `/data/homebrew/PPSA99300/` on the console, and the title ends when they do.
   written before its step, so a file ending on "reading ..." means that read ended the
   title.
 
+  On the console (2026-10-12, `reeot/results/2026-10-12.txt`): untouched code is not
+  readable (reading it ended the title), but after `sceKernelMprotect` read+execute a
+  page of code read back its real bytes and still ran. The kernel's query answers
+  execute-only either way. The ReXGlue fork now makes the code segment readable when
+  its fault handler installs; the check's last step does the same for the whole segment.
+
 ## Building and running
 
 It builds against the PS5 stack, checked out beside it:

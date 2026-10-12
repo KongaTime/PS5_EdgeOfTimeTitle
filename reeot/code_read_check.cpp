@@ -13,10 +13,18 @@
  * 1. what the kernel says of the title's code and of a system module's code;
  * 2. if the title's code is not readable, sceKernelMprotect read-execute on a
  *    page of code kept for this (one ret, then int3s), and a call into it;
- * 3. a read of that page, then of the title's other code, left as it was.
+ * 3. a read of that page;
+ * 4. sceKernelMprotect read-execute on the whole code segment, as the ReXGlue
+ *    fork's ExceptionHandler::Install does, and a read of the title's other code.
  *
  * Every line is in the results file before the step it describes, so a file
  * that ends on "reading ..." means that read ended the title.
+ *
+ * On the console (2026-10-12, reeot/results/2026-10-12.txt): the code segment
+ * (0x400000-0xd3c000) and a system module's both answer 0x4 (execute only);
+ * sceKernelMprotect read-execute on the probe page succeeded, the page still
+ * ran and read back its real bytes, yet still answered 0x4; reading untouched
+ * code ended the title.
  *
  * Copyright (C) 2026 KongaTime
  * SPDX-License-Identifier: MIT
@@ -141,7 +149,19 @@ extern "C" void reeot_code_read_check(const char *results)
 		}
 	}
 	read_code("the probe page", probe, true);
-	read_code("this title's other code (ps5_title_main, unchanged)", reinterpret_cast<const void *>(&ps5_title_main),
-		false);
+
+	/* What the fork does: the whole segment, from the bounds the kernel gives */
+	void *start = nullptr;
+	void *end = nullptr;
+	uint32_t protection = 0;
+	const void *main_code = reinterpret_cast<const void *>(&ps5_title_main);
+	if (sceKernelQueryMemoryProtection(const_cast<void *>(main_code), &start, &end, &protection) == 0) {
+		const int32_t result = sceKernelMprotect(start, static_cast<size_t>(static_cast<char *>(end) -
+							static_cast<char *>(start)),
+			PS5_KERNEL_PROT_CPU_READ | PS5_KERNEL_PROT_CPU_EXEC);
+		note("code read: sceKernelMprotect(the code segment %p-%p, read+execute): 0x%08x", start, end,
+			static_cast<unsigned>(result));
+	}
+	read_code("this title's other code (ps5_title_main), after the segment's sceKernelMprotect", main_code, false);
 	note("==== code read check: done ====");
 }
