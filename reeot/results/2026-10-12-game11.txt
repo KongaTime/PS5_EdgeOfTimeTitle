@@ -1,0 +1,36 @@
+startup: main: entered the ReXGlue app
+startup: main: initializing cvars and early ReXGlue logging
+startup: main: constructing application context
+startup: main: initializing application
+startup: app: environment
+startup: app: presentation
+startup: app: paths
+startup: app: runtime
+startup: app: launching the module
+startup: main: entering UI event loop
+alive: 5 s
+alive: 10 s
+alive: 15 s
+alive: 20 s
+alive: 25 s
+alive: 30 s
+alive: 35 s
+alive: 40 s
+alive: 45 s
+alive: 50 s
+alive: 55 s
+alive: 60 s
+alive: 65 s
+alive: 70 s
+alive: 75 s
+alive: 80 s
+alive: 85 s
+alive: 90 s
+alive: 95 s
+alive: 100 s
+alive: 105 s
+alive: 110 s
+alive: 115 s
+alive: 120 s
+alive: 125 s
+alive: 130 s

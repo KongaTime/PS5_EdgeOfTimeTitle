@@ -54,8 +54,9 @@ endif()
 message(STATUS "EdgeOfTimeRecomp: the ReXGlue runtime from ${reeot_runtime_dir}")
 
 # The app the title runs: the game (reeot/reeot_game.cmake), or test app 5
-set(REEOT_TITLE_APP game CACHE STRING "What the title runs: game, or test (reeot/rex_test_app.cpp)")
-set_property(CACHE REEOT_TITLE_APP PROPERTY STRINGS game test)
+set(REEOT_TITLE_APP game CACHE STRING
+	"What the title runs: game, test (reeot/rex_test_app.cpp) or shaderdump (reeot/shader_dump.cpp)")
+set_property(CACHE REEOT_TITLE_APP PROPERTY STRINGS game test shaderdump)
 if(REEOT_TITLE_APP STREQUAL "test")
 	target_sources(samples PRIVATE ${ROOT}/reeot/title_main.cpp ${ROOT}/reeot/rex_test_app.cpp)
 else()
@@ -66,6 +67,18 @@ else()
 	list(FILTER reeot_samples_sources INCLUDE REGEX "(^|/)(src/platform\\.c|third_party/volk/volk\\.c)$")
 	set_property(TARGET samples PROPERTY SOURCES ${reeot_samples_sources} ${ROOT}/reeot/title_entry.cpp
 		${ROOT}/reeot/title_main.cpp)
+endif()
+if(REEOT_TITLE_APP STREQUAL "shaderdump")
+	# PKZLib's pack reader. Its inflate is the zlib RADV's archive carries;
+	# PKZLib's contrib/zlib gives the header.
+	set(reeot_pkzlib ${reeot_eotr}/thirdparty/PKZLib)
+	if(NOT EXISTS ${reeot_pkzlib}/contrib/zlib/zlib.h)
+		message(FATAL_ERROR "No zlib at ${reeot_pkzlib}/contrib/zlib: git -C ${reeot_pkzlib} submodule update "
+			"--init contrib/zlib")
+	endif()
+	target_sources(samples PRIVATE ${ROOT}/reeot/shader_dump.cpp)
+	set_source_files_properties(${ROOT}/reeot/shader_dump.cpp PROPERTIES
+		INCLUDE_DIRECTORIES "${reeot_pkzlib};${reeot_pkzlib}/contrib/zlib" COMPILE_OPTIONS "-std=c++20;-O2")
 endif()
 message(STATUS "EdgeOfTimeRecomp: the title runs the ${REEOT_TITLE_APP} app")
 
@@ -112,7 +125,7 @@ file(WRITE ${reeot_local_map} "{\n    local:\n${reeot_local_names}};\n")
 
 set(reeot_game_link_inputs)
 set(reeot_game_link_depends)
-if(NOT REEOT_TITLE_APP STREQUAL "test")
+if(REEOT_TITLE_APP STREQUAL "game")
 	include(${ROOT}/reeot/reeot_game.cmake)
 endif()
 
