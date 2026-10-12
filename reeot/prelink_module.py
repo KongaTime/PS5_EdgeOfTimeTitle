@@ -5,10 +5,10 @@ On the desktop each of the game's DLL modules (GameLogic.dll) is a shared librar
 of its own, so its names never meet the executable's: both define PPCImageConfig
 and PPCFuncMappings, for one. A title links everything into one executable, so
 this joins a module's objects into one relocatable object (ld -r) and gives every
-name it defines strongly a prefix of its own. The module's references to those
-names follow them; what it refers to elsewhere (the runtime, the executable's
-exports) and what it defines weakly (inline functions, templates, shared alike)
-keep their names. ReXModule_Register and ReXModule_GetImageInfo, the two names
+name it defines a prefix of its own. The module's references to those names
+follow them; what it refers to elsewhere (the runtime, the executable's exports)
+and the C++ it defines weakly (inline functions, templates, shared alike) keep
+their names. ReXModule_Register and ReXModule_GetImageInfo, the two names
 the runtime looks up in a module (kernel_state.cpp), take the prefix too:
 reeot/gamelogic_static.cpp gives them back to it by their own names
 (rex::platform::RegisterStaticLibrary).
@@ -22,6 +22,11 @@ import argparse
 import os
 import subprocess
 import sys
+
+
+# Weak names a module shares with the rest of the title: C++ inline functions,
+# templates and their guards, and the compiler's helpers
+SHARED_WEAK = ("_Z", "DW.ref.", "__clang_", "__cxa_", "__gxx_")
 
 
 def main():
@@ -40,9 +45,18 @@ def main():
     renames = []
     for line in symbols.splitlines():
         fields = line.split()
-        # value, type, name; strong definitions only (T D B R and the like, not W V)
-        if len(fields) == 3 and fields[1] in "TDBRSACG":
-            renames.append(f"{fields[2]} {args.prefix}{fields[2]}")
+        # value, type, name: every strong definition (T D B R and the like), and
+        # every weak one but C++'s. A recompiled function's plain name is a weak
+        # alias of its __imp__ name (DEFINE_REX_FUNC), so hooks can replace it,
+        # and names the executable shares (xstart, the CRT's entry) would
+        # otherwise resolve to the executable's: GameLogic.dll's entry ran
+        # Default.xex's startup again, and its constructors reset the game's
+        # globals.
+        if len(fields) != 3:
+            continue
+        value, kind, name = fields
+        if kind in "TDBRSACG" or (kind in "WV" and not name.startswith(SHARED_WEAK)):
+            renames.append(f"{name} {args.prefix}{name}")
     if not any(r.startswith("ReXModule_Register ") for r in renames):
         sys.exit("prelink_module.py: the module defines no ReXModule_Register")
 

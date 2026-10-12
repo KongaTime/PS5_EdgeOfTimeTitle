@@ -237,4 +237,7 @@ set_property(TARGET reeot_plume PROPERTY SOURCES ${reeot_plume}/plume_vulkan.cpp
 
 list(APPEND reeot_game_link_inputs "$<FILTER:$<TARGET_OBJECTS:reeot_recomp>,INCLUDE,\\.o$>" ${reeot_gamelogic_object}
 	$<TARGET_OBJECTS:reeot_game> $<TARGET_OBJECTS:reeot_zstd> $<TARGET_OBJECTS:reeot_shader_cache>)
-set(reeot_game_link_depends reeot_recomp reeot_gamelogic_object reeot_game reeot_zstd reeot_shader_cache)
+# The object file as well as its target: a target alone orders the link after
+# the prelink but does not relink when only the object changed
+set(reeot_game_link_depends reeot_recomp reeot_gamelogic_object ${reeot_gamelogic_object} reeot_game
+	reeot_zstd reeot_shader_cache)
