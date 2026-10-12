@@ -160,8 +160,14 @@ foreach(shader ${REEOT_PS5_HOST_SHADERS})
 	list(APPEND reeot_shader_headers ${header})
 endforeach()
 
-# The game's shaders, when the desktop build's recompiled cache is there
-if(EXISTS ${reeot_eotr}/generated/shader_cache.cpp)
+# The game's shaders, when the recompiled cache is there: split
+# (ps5/tools/split-shader-cache.py), its compressed SPIR-V a file beside
+# eboot.bin, shader-cache.zst; or whole, linked in
+if(EXISTS ${reeot_eotr}/generated/shader_cache_ps5.cpp)
+	set(reeot_shader_cache ${reeot_eotr}/generated/shader_cache_ps5.cpp)
+	message(STATUS "EdgeOfTimeRecomp: the game's shaders from ${reeot_shader_cache}, with "
+		"${reeot_eotr}/generated/shader-cache.zst beside eboot.bin")
+elseif(EXISTS ${reeot_eotr}/generated/shader_cache.cpp)
 	set(reeot_shader_cache ${reeot_eotr}/generated/shader_cache.cpp)
 	message(STATUS "EdgeOfTimeRecomp: the game's shaders from ${reeot_shader_cache}")
 else()
