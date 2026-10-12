@@ -1,7 +1,8 @@
 /*
- * EdgeOfTimeRecomp for the PS5 - test app 3: the ReXGlue runtime on the
+ * EdgeOfTimeRecomp for the PS5 - test app 4: the ReXGlue runtime on the
  * console, through the PS5 app layer the fork ported from
- * TheSimpsonsGame-PS5-Builder (rexglue-sdk's ps5/PORTED.md).
+ * TheSimpsonsGame-PS5-Builder (rexglue-sdk's ps5/PORTED.md), and its fault
+ * records.
  *
  * The title's main calls rex_ps5_app_main (reeot/title_main.cpp), which runs
  * this app on the ported app context and window. It checks, in order:
@@ -12,12 +13,17 @@
  *    (the fork's ExceptionHandler::Install); a read of this app's code then;
  * 3. the sound: a 440 Hz tone for two seconds through the ported sceAudioOut
  *    driver, fed from guest memory as the guest's audio client feeds it;
- * 4. the controller: a short rumble, then for 20 seconds each change of the
- *    buttons and triggers and each keystroke (CreateDefaultInputSystem, the
- *    ported scePad driver);
+ * 4. the controller: a short rumble, then 15 seconds of the bumpers and
+ *    triggers alone, then 15 seconds of everything (each change of the buttons,
+ *    triggers and sticks, and each key going down or up, without repeats;
+ *    CreateDefaultInputSystem, the ported scePad driver);
+ * 5. the fault records: a write to address 0 from a few calls deep, which no
+ *    ReXGlue handler takes, so the fork's ForwardUnhandledException writes its
+ *    record and backtrace to /app0/logs/fault.log before the title ends.
  *
- * then quits through the app context. Every line goes to the results file
- * before its step (reeot_note), so a file that stops says where.
+ * Every line goes to the results file before its step (reeot_note), so a file
+ * that stops says where. Test app 3 (2026-10-12) was steps 1 to 4 with one
+ * 20-second controller phase, and quit cleanly.
  *
  * Copyright (C) 2026 KongaTime
  * SPDX-License-Identifier: MIT
@@ -60,7 +66,7 @@ class RexTestApp final : public rex::ui::WindowedApp {
 
 	bool OnInitialize() override
 	{
-		reeot_note("==== test app 3: the ReXGlue runtime ====");
+		reeot_note("==== test app 4: the ReXGlue runtime and its fault records ====");
 		reeot_note("window: creating it");
 		window_ = rex::ui::Window::Create(app_context(), "EdgeOfTimeRecomp", 1920, 1080);
 		if (!window_ || !window_->Open()) {
@@ -98,7 +104,7 @@ class RexTestApp final : public rex::ui::WindowedApp {
 		input_.reset();
 		window_.reset();
 		memory_.reset();
-		reeot_note("==== test app 3: done ====");
+		reeot_note("==== test app 4: done (not expected: it should have crashed on purpose) ====");
 	}
 
     private:
@@ -108,6 +114,7 @@ class RexTestApp final : public rex::ui::WindowedApp {
 	{
 		TestSound();
 		TestController();
+		TestFaultRecord();
 		reeot_note("quitting through the app context");
 		app_context().CallInUIThread([this] { app_context().QuitFromUIThread(); });
 	}
@@ -184,12 +191,19 @@ class RexTestApp final : public rex::ui::WindowedApp {
 		vibration.right_motor_speed = 0;
 		input_->SetState(0, &vibration);
 
-		reeot_note("controller: press buttons, the triggers and the sticks for 20 seconds");
-		const auto end = Clock::now() + std::chrono::seconds(20);
+		WatchController("press L1, R1, L2 and R2, one at a time, for 15 seconds", 15);
+		WatchController("press everything and move both sticks for 15 seconds", 15);
+		reeot_note("controller: done");
+	}
+
+	void WatchController(const char *prompt, int seconds)
+	{
+		reeot_note("controller: %s", prompt);
+		const auto end = Clock::now() + std::chrono::seconds(seconds);
 		rex::X_RESULT last_result = 0xffffffff;
 		uint32_t last_field = 0xffffffff;
 		int lines = 0;
-		while (Clock::now() < end && !stopping_ && lines < 400) {
+		while (Clock::now() < end && !stopping_ && lines < 300) {
 			rex::input::X_INPUT_STATE state{};
 			const rex::X_RESULT result = input_->GetState(0, &state);
 			if (result != last_result) {
@@ -216,17 +230,47 @@ class RexTestApp final : public rex::ui::WindowedApp {
 					lines++;
 				}
 			}
+			// Keys going down and up; repeats (test app 3 saw them work) are
+			// counted, not listed
 			rex::input::X_INPUT_KEYSTROKE keystroke{};
-			while (input_->GetKeystroke(0, 0, &keystroke) == 0 && lines < 400) {
-				reeot_note("controller: keystroke vk 0x%04x flags 0x%04x",
-					   unsigned(uint16_t(keystroke.virtual_key)), unsigned(uint16_t(keystroke.flags)));
-				lines++;
+			while (input_->GetKeystroke(0, 0, &keystroke) == 0) {
+				const unsigned flags = unsigned(uint16_t(keystroke.flags));
+				if (flags & rex::input::X_INPUT_KEYSTROKE_REPEAT) {
+					repeats_++;
+					continue;
+				}
+				if (lines < 300) {
+					reeot_note("controller: key 0x%04x %s", unsigned(uint16_t(keystroke.virtual_key)),
+						   (flags & rex::input::X_INPUT_KEYSTROKE_KEYUP) ? "up" : "down");
+					lines++;
+				}
 			}
 			std::this_thread::sleep_for(std::chrono::milliseconds(16));
 		}
-		reeot_note("controller: done");
+		reeot_note("controller: that phase is over (%d lines, %u repeats so far)", lines, repeats_);
 	}
 
+	// A few real frames deep, so the backtrace has something to walk
+	__attribute__((noinline)) void CrashLevel3()
+	{
+		reeot_note("fault: writing to address 0 now (fault.log should get the record)");
+		*reinterpret_cast<volatile uint32_t *>(uintptr_t(0)) = 0x52455845; // "REXE"
+		__asm__ volatile("" ::: "memory");
+	}
+	__attribute__((noinline)) void CrashLevel2()
+	{
+		CrashLevel3();
+		__asm__ volatile("" ::: "memory");
+	}
+	__attribute__((noinline)) void TestFaultRecord()
+	{
+		reeot_note("fault: the last step crashes on purpose; then send /data/homebrew/PPSA99300/"
+			   "logs/fault.log too");
+		CrashLevel2();
+		__asm__ volatile("" ::: "memory");
+	}
+
+	unsigned repeats_ = 0;
 	std::unique_ptr<rex::ui::Window> window_;
 	std::unique_ptr<rex::memory::Memory> memory_;
 	std::unique_ptr<rex::input::InputSystem> input_;

@@ -69,5 +69,7 @@ file(WRITE ${reeot_local_map} "{\n    local:\n${reeot_local_names}};\n")
 set(PS5_TITLE_LINK_INPUTS
 	--start-group ${reeot_runtime_dir}/librexruntime.a ${reeot_runtime_archives}
 	${PS5_PAYLOAD_SDK}/target/lib/libc++experimental.a --end-group
-	${reeot_libc_bindings} --version-script ${reeot_local_map})
+	${reeot_libc_bindings} --version-script ${reeot_local_map}
+	# abort() through the runtime's fault records (its __wrap_abort)
+	--wrap=abort)
 set(PS5_TITLE_LINK_DEPENDS ${reeot_runtime_dir}/librexruntime.a ${reeot_runtime_archives})
