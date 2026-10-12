@@ -66,11 +66,12 @@ extern "C" int ps5_title_main(void)
 		}
 	}).detach();
 	char program[] = "/app0/eboot.bin";
-	char log_level[] = "--log_level=debug";
-	// The port's own trace of every D3D call, for the first frames
-	char trace_frames[] = "--eot_trace_frames=10";
-	char *argv[] = {program, log_level, trace_frames, nullptr};
-	const int status = rex_ps5_app_main(3, argv);
+	// Info, not debug: the game plays now, and debug logged about 3 MB a minute
+	// (126 MB in a 43-minute session), mostly the XMA decoder's register writes.
+	// A crash's report is logged in full at any level.
+	char log_level[] = "--log_level=info";
+	char *argv[] = {program, log_level, nullptr};
+	const int status = rex_ps5_app_main(2, argv);
 	reeot_note("rex_ps5_app_main returned %d", status);
 	return status;
 }

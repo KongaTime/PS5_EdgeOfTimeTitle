@@ -1,0 +1,441 @@
+[2026-10-12 21:37:30.198] [info] [eot] [t101689] reeot v1.0.0 [Release] ps5-amd64
+[2026-10-12 21:37:30.201] [info] [eot] [t101689]   commit:  9c2c4a3ae on claude/nifty-knuth-s27y9o
+[2026-10-12 21:37:30.201] [info] [eot] [t101689]   built:   20261012_1824 with Clang 20.1.2
+[2026-10-12 21:37:30.202] [info] [eot] [t101689]   sdk:     rexglue-v0.10.0.43-dev.g25d6a61 ps5-amd64 @20261012_0531
+[2026-10-12 21:37:30.203] [info] [eot] [t101689]   profile: default (/app0/profiles/default)
+[2026-10-12 21:37:30.205] [info] [eot] [t101689] [language] eot_language auto -> English (XLanguage 1)
+[2026-10-12 21:37:30.206] [debug] [core] [t101689] Loaded config: reeot.toml
+[2026-10-12 21:37:30.206] [debug] [core] [t101689] reeot starting
+[2026-10-12 21:37:30.206] [debug] [core] [t101689]   Game directory: /app0/gamedata
+[2026-10-12 21:37:30.206] [debug] [core] [t101689]   User data:      /app0/profiles/default
+[2026-10-12 21:37:30.206] [debug] [core] [t101689]   Cache root:     /app0/profiles/default/cache
+[2026-10-12 21:37:30.206] [info] [eot] [t101689] [input] controller input in the background: off
+[2026-10-12 21:37:30.207] [info] [eot] [t101689] [window] 3840x2160, fullscreen
+[2026-10-12 21:37:30.208] [debug] [eot] [t101689] [input] fullscreen: mouse look on, cursor hidden
+[2026-10-12 21:37:30.209] [info] [eot] [t101689] [install] game folder /app0/gamedata
+[2026-10-12 21:37:30.213] [info] [sys] [t101689] Guest memory arena mapped: virtual base 0x0000001000000000, physical base 0x0000001100000000
+[2026-10-12 21:37:30.240] [info] [core] [t101689] PS5: fault records go to /app0/logs/fault.log
+[2026-10-12 21:37:30.242] [info] [core] [t101689] PS5: code at 0x400000-0x2f40000 made readable for the MMIO handler
+[2026-10-12 21:37:30.242] [debug] [sys] [t101689] Installed MMIO handler for physical address translation
+[2026-10-12 21:37:30.243] [info] [eot] [t101689] [pad] no controller for the first player
+[2026-10-12 21:37:30.243] [debug] [sys] [t101689] Input system initialized
+[2026-10-12 21:37:30.245] [debug] [apu] [t101689] XMA: Registered MMIO handlers at 0x7FEA0000-0x7FEAFFFF
+[2026-10-12 21:37:30.260] [debug] [sys] [t101556] XThread::Execute thid 1 (handle=F8000010, 'XMA Decoder (F8000010)', native=00018CB4, <host>)
+[2026-10-12 21:37:30.263] [debug] [sys] [t101689] Audio system initialized
+[2026-10-12 21:37:30.263] [debug] [sys] [t101557] XThread::Execute thid 2 (handle=F8000014, 'Audio Worker (F8000014)', native=00018CB5, <host>)
+[2026-10-12 21:37:30.271] [debug] [sys] [t101689]   Mounted /app0/gamedata at \Device\Harddisk0\Partition1
+[2026-10-12 21:37:30.271] [debug] [fs] [t101689] Registered symbolic link: game: => \Device\Harddisk0\Partition1
+[2026-10-12 21:37:30.271] [debug] [fs] [t101689] Registered symbolic link: d: => \Device\Harddisk0\Partition1
+[2026-10-12 21:37:30.271] [debug] [sys] [t101689]   Registered symbolic links: game:, d:
+[2026-10-12 21:37:30.271] [debug] [sys] [t101689]   Registered NullDevice for \Device\Harddisk0\{{Partition0,Cache0,Cache1}}
+[2026-10-12 21:37:30.271] [debug] [sys] [t101689] Runtime initialized without graphics system (native rendering mode)
+[2026-10-12 21:37:30.271] [debug] [sys] [t101689] Runtime initialized successfully
+[2026-10-12 21:37:30.271] [debug] [sys] [t101689] Initializing function table at 82600000, size 0063CDD8 for code 82080000-8238E6EC (+00010000 thunk reserve)
+[2026-10-12 21:37:30.271] [info] [core] [t101689] Function table initialized for module: code=82080000-8238E6EC, image=82000000-82600000
+[2026-10-12 21:37:30.275] [debug] [sys] [t101689] Registered 11611 recompiled functions (0 duplicates, 0 rejected)
+[2026-10-12 21:37:30.275] [debug] [sys] [t101689] Runtime setup complete (code: 82080000-8238E6EC, image: 82000000-82600000)
+[2026-10-12 21:37:30.275] [debug] [sys] [t101689] Codegen config: skip_lr=true skip_msr=true ctr=true xer=true cr=true reserved=true non_argument=true non_volatile=true
+[2026-10-12 21:37:30.275] [debug] [sys] [t101689] Registered recompiled module: pe='gamelogic.dll' guest='data/gamelogic.dll' lib='reeot_GameLogic'
+[2026-10-12 21:37:30.275] [info] [eot] [t101689] [boot] entry xex is Default.xex
+[2026-10-12 21:37:30.276] [debug] [sys] [t101689] Loading XEX image: game:\Default.xex
+[... 1218228 lines in all; the end of the session follows ...]
+[2026-10-12 22:20:20.986] [debug] [eot] [t101863] [shaders] vs 0xf98998e0 hash 6ca59eec0b8b86a7 hit inputs=2 spec=0x1 regs=16 texmask=0x0000
+[2026-10-12 22:20:20.987] [debug] [eot] [t101863] [shaders] ps 0xf8b59120 hash 35c3a902c671cfee hit inputs=0 spec=0x2 regs=19 texmask=0x0000
+[2026-10-12 22:20:20.989] [debug] [eot] [t101863] [shaders] vs 0xf989a0e0 hash 44f56d0c13458bc8 hit inputs=6 spec=0x5 regs=19 texmask=0x0000
+[2026-10-12 22:20:20.990] [debug] [eot] [t101863] [shaders] ps 0xfb7d2420 hash 17406706cc4a5b6b hit inputs=0 spec=0x2 regs=59 texmask=0x003f
+[2026-10-12 22:20:20.996] [debug] [eot] [t101863] [shaders] vs 0xf989a8e0 hash 6cce7484e039f479 hit inputs=2 spec=0x1 regs=21 texmask=0x0000
+[2026-10-12 22:20:21.000] [debug] [eot] [t101863] [shaders] vs 0xf989b120 hash b390b4df35c7ca91 hit inputs=10 spec=0x5 regs=66 texmask=0x0000
+[2026-10-12 22:20:21.003] [debug] [eot] [t101863] [shaders] vs 0xf989b920 hash aea35e0bb3ce74f0 hit inputs=10 spec=0x5 regs=256 texmask=0x0000
+[2026-10-12 22:20:21.003] [debug] [eot] [t101863] [shaders] vs 0xf989c120 hash 6c2122983d0c90f9 hit inputs=5 spec=0x0 regs=66 texmask=0x0000
+[2026-10-12 22:20:21.004] [debug] [eot] [t101863] [shaders] vs 0xf989c920 hash f0b18a26b3e609d9 hit inputs=9 spec=0x1 regs=66 texmask=0x0000
+[2026-10-12 22:20:21.008] [debug] [eot] [t101863] [shaders] vs 0xf989d120 hash df3a2d38c45b23e9 hit inputs=10 spec=0x5 regs=66 texmask=0x0000
+[2026-10-12 22:20:21.011] [debug] [eot] [t101863] [shaders] vs 0xf989d920 hash 3d19e0de3be280e7 hit inputs=6 spec=0x1 regs=66 texmask=0x0000
+[2026-10-12 22:20:21.018] [debug] [eot] [t101863] [shaders] vs 0xf989e0e0 hash cc0980122697d6f5 hit inputs=7 spec=0x5 regs=16 texmask=0x0000
+[2026-10-12 22:20:21.019] [debug] [eot] [t101863] [shaders] ps 0xf8b59320 hash 798985ed671866c8 hit inputs=0 spec=0x2 regs=59 texmask=0x0003
+[2026-10-12 22:20:21.022] [debug] [eot] [t101863] [shaders] vs 0xf989e8e0 hash 7294da86fbd3e4fa hit inputs=7 spec=0x5 regs=256 texmask=0x0000
+[2026-10-12 22:20:21.022] [debug] [eot] [t101863] [shaders] ps 0xf989f040 hash d232440065d709a3 hit inputs=0 spec=0x2 regs=256 texmask=0x001f
+[2026-10-12 22:20:21.023] [debug] [eot] [t101863] [shaders] ps 0xf989f840 hash 15385a5efa245d14 hit inputs=0 spec=0x2 regs=256 texmask=0x001f
+[2026-10-12 22:20:21.024] [debug] [eot] [t101863] [shaders] ps 0xfbf6a020 hash dcff295742f57fcb hit inputs=0 spec=0x2 regs=256 texmask=0x001f
+[2026-10-12 22:20:21.025] [debug] [eot] [t101863] [shaders] ps 0xf98a0040 hash 74c8534a3bea26d1 hit inputs=0 spec=0x2 regs=256 texmask=0x801f
+[2026-10-12 22:20:21.026] [debug] [eot] [t101863] [shaders] vs 0xf98a08e0 hash 1cef8e7d57b7cd6c hit inputs=4 spec=0x5 regs=16 texmask=0x0000
+[2026-10-12 22:20:21.027] [debug] [eot] [t101863] [shaders] ps 0xf8b59520 hash 03c97a7e5afbb3b1 hit inputs=0 spec=0x2 regs=61 texmask=0x0004
+[2026-10-12 22:20:21.032] [debug] [eot] [t101863] [shaders] vs 0xf98a10e0 hash e384f662251373ce hit inputs=5 spec=0x4 regs=16 texmask=0x0000
+[2026-10-12 22:20:21.035] [debug] [eot] [t101863] [shaders] ps 0xfb7d2820 hash a6a5119cd5362faf hit inputs=0 spec=0x2 regs=59 texmask=0x001b
+[2026-10-12 22:20:21.040] [debug] [eot] [t101863] [shaders] vs 0xf98a1940 hash d9215371cd4e00eb hit inputs=11 spec=0x5 regs=66 texmask=0x0000
+[2026-10-12 22:20:21.041] [debug] [eot] [t101863] [shaders] vs 0xf98a2140 hash 1e69a5d4423c7644 hit inputs=11 spec=0x5 regs=256 texmask=0x0000
+[2026-10-12 22:20:21.045] [debug] [eot] [t101863] [shaders] vs 0xf98a2940 hash 6c2122983d0c90f9 hit inputs=5 spec=0x0 regs=66 texmask=0x0000
+[2026-10-12 22:20:21.048] [debug] [eot] [t101863] [shaders] vs 0xf98a3140 hash 8b362432644d6104 hit inputs=11 spec=0x5 regs=66 texmask=0x0000
+[2026-10-12 22:20:21.051] [debug] [eot] [t101863] [shaders] vs 0xf98a3940 hash 35984699016da5c3 hit inputs=9 spec=0x4 regs=66 texmask=0x0000
+[2026-10-12 22:20:21.052] [debug] [eot] [t101863] [shaders] vs 0xf98a4140 hash 3d19e0de3be280e7 hit inputs=6 spec=0x1 regs=66 texmask=0x0000
+[2026-10-12 22:20:21.055] [debug] [eot] [t101863] [shaders] vs 0xf98a48e0 hash 80ba18222b088779 hit inputs=6 spec=0x5 regs=16 texmask=0x0000
+[2026-10-12 22:20:21.056] [debug] [eot] [t101863] [shaders] ps 0xf8b59720 hash cd048212961024b1 hit inputs=0 spec=0x2 regs=59 texmask=0x0003
+[2026-10-12 22:20:21.057] [debug] [eot] [t101863] [shaders] vs 0xf98a50e0 hash b20d2622e148856a hit inputs=6 spec=0x5 regs=256 texmask=0x0000
+[2026-10-12 22:20:21.057] [debug] [eot] [t101863] [shaders] ps 0xf98a5840 hash fc7b013072f78b7b hit inputs=0 spec=0x2 regs=256 texmask=0x001f
+[2026-10-12 22:20:21.058] [debug] [eot] [t101863] [shaders] ps 0xf258bf60 hash 2ac3965990632c0a hit inputs=0 spec=0x2 regs=256 texmask=0x001f
+[2026-10-12 22:20:21.059] [debug] [eot] [t101863] [shaders] ps 0xfbf6b020 hash 8bc2766158bc70c8 hit inputs=0 spec=0x2 regs=256 texmask=0x001f
+[2026-10-12 22:20:21.060] [debug] [eot] [t101863] [shaders] ps 0xf258c760 hash e804f2131ca3b176 hit inputs=0 spec=0x2 regs=256 texmask=0x801f
+[2026-10-12 22:20:21.060] [debug] [eot] [t101863] [shaders] vs 0xf258d000 hash e150e32bcb1fab6a hit inputs=4 spec=0x4 regs=16 texmask=0x0000
+[2026-10-12 22:20:21.061] [debug] [eot] [t101863] [shaders] ps 0xfb7d2c20 hash dd44e38d120a8347 hit inputs=0 spec=0x2 regs=59 texmask=0x001b
+[2026-10-12 22:20:21.061] [debug] [eot] [t101863] [shaders] vs 0xf258d840 hash 74a98944d6ccf0ec hit inputs=10 spec=0x5 regs=66 texmask=0x0000
+[2026-10-12 22:20:21.061] [debug] [eot] [t101863] [shaders] vs 0xf258e040 hash bfea797e10fafc54 hit inputs=10 spec=0x5 regs=256 texmask=0x0000
+[2026-10-12 22:20:21.063] [debug] [eot] [t101863] [shaders] vs 0xf258e840 hash d9b84dd101f6c81d hit inputs=8 spec=0x4 regs=66 texmask=0x0000
+[2026-10-12 22:20:21.071] [debug] [eot] [t101863] [shaders] ps 0xfb7d3020 hash 4a291b85028f0811 hit inputs=0 spec=0x2 regs=62 texmask=0x0019
+[2026-10-12 22:20:21.071] [debug] [eot] [t101863] [shaders] ps 0xf258ef60 hash 7ccdc3d051c4ee66 hit inputs=0 spec=0x2 regs=256 texmask=0x003f
+[2026-10-12 22:20:21.073] [debug] [eot] [t101863] [shaders] ps 0xf258f760 hash e916e2c4e79d6a67 hit inputs=0 spec=0x2 regs=256 texmask=0x003f
+[2026-10-12 22:20:21.074] [debug] [eot] [t101863] [shaders] ps 0xfbf6c020 hash a0550887b4039cdd hit inputs=0 spec=0x2 regs=256 texmask=0x003f
+[2026-10-12 22:20:21.078] [debug] [eot] [t101863] [shaders] ps 0xf258ff60 hash 1edbb490fadf232b hit inputs=0 spec=0x2 regs=256 texmask=0x803f
+[2026-10-12 22:20:21.082] [debug] [eot] [t101863] [shaders] ps 0xf8b59920 hash cbb0cef2bb58513e hit inputs=0 spec=0x2 regs=59 texmask=0x0000
+[2026-10-12 22:20:21.082] [debug] [eot] [t101863] [shaders] ps 0xfb7d3420 hash 6454bb34b3028502 hit inputs=0 spec=0x2 regs=62 texmask=0x003d
+[2026-10-12 22:20:21.083] [debug] [eot] [t101863] [shaders] ps 0xf8b59b20 hash 48d58e834a8e62a5 hit inputs=0 spec=0x2 regs=76 texmask=0x0000
+[2026-10-12 22:20:21.149] [debug] [eot] [t101863] [shaders] ps 0xfb7d3820 hash 3104ba26da9f9ed7 hit inputs=0 spec=0x2 regs=84 texmask=0x000b
+[2026-10-12 22:20:21.151] [debug] [eot] [t101863] [shaders] ps 0xf2590760 hash f008722092572b66 hit inputs=0 spec=0x2 regs=256 texmask=0x001f
+[2026-10-12 22:20:21.152] [debug] [eot] [t101863] [shaders] ps 0xfbf6d020 hash 51a8b2b4c4b8d9aa hit inputs=0 spec=0x2 regs=256 texmask=0x001f
+[2026-10-12 22:20:21.154] [debug] [eot] [t101863] [shaders] ps 0xecb08020 hash 3954efceeb3c86e7 hit inputs=0 spec=0x2 regs=256 texmask=0x001f
+[2026-10-12 22:20:21.157] [debug] [eot] [t101863] [shaders] ps 0xf2590f60 hash 826dfbcc45fed02f hit inputs=0 spec=0x2 regs=256 texmask=0x801f
+[2026-10-12 22:20:21.157] [debug] [eot] [t101863] [shaders] ps 0xfb7d3c20 hash 52bcbc859ca3ce0d hit inputs=0 spec=0x2 regs=84 texmask=0x001f
+[2026-10-12 22:20:21.161] [debug] [eot] [t101863] [shaders] ps 0xf8b59d20 hash dd733cc2d4594450 hit inputs=0 spec=0x2 regs=16 texmask=0x0001
+[2026-10-12 22:20:21.164] [debug] [eot] [t101863] [shaders] ps 0xf8b59f20 hash bdd121a6567f0d19 hit inputs=0 spec=0x2 regs=59 texmask=0x0003
+[2026-10-12 22:20:21.165] [debug] [eot] [t101863] [shaders] ps 0xf8b5a120 hash 9f8997c9aa11e205 hit inputs=0 spec=0x2 regs=59 texmask=0x0003
+[2026-10-12 22:20:21.168] [debug] [eot] [t101863] [shaders] ps 0xf8b5a320 hash b933180daa8ade77 hit inputs=0 spec=0x2 regs=59 texmask=0x0003
+[2026-10-12 22:20:21.170] [debug] [eot] [t101863] [shaders] ps 0xf8b5a520 hash 96cae84736790563 hit inputs=0 spec=0x2 regs=59 texmask=0x0000
+[2026-10-12 22:20:21.171] [debug] [eot] [t101863] [shaders] ps 0xf8b5a720 hash 9d79f417383de6a5 hit inputs=0 spec=0x2 regs=16 texmask=0x0001
+[2026-10-12 22:20:21.172] [debug] [eot] [t101863] [shaders] ps 0xecc88300 hash c117c3a70d3a1bd5 hit inputs=0 spec=0x2 regs=76 texmask=0x0000
+[2026-10-12 22:20:21.176] [debug] [eot] [t101863] [shaders] ps 0xecc88500 hash b0dbe726c8ed5de0 hit inputs=0 spec=0x2 regs=62 texmask=0x0003
+[2026-10-12 22:20:21.177] [debug] [eot] [t101863] [shaders] ps 0xecc88700 hash b0dbe726c8ed5de0 hit inputs=0 spec=0x2 regs=62 texmask=0x0003
+[2026-10-12 22:20:21.181] [debug] [eot] [t101863] [shaders] ps 0xecc88900 hash f61ece3a6ed226c4 hit inputs=0 spec=0x2 regs=59 texmask=0x0001
+[2026-10-12 22:20:21.182] [debug] [eot] [t101863] [shaders] ps 0xecc88b00 hash 55a5962e4272709b hit inputs=0 spec=0x2 regs=59 texmask=0x0000
+[2026-10-12 22:20:21.182] [debug] [eot] [t101863] [shaders] ps 0xecc88d00 hash 47e3be472ae48438 hit inputs=0 spec=0x2 regs=16 texmask=0x0001
+[2026-10-12 22:20:21.182] [debug] [eot] [t101863] [shaders] ps 0xecc88f00 hash 9d6c9fed96c68d97 hit inputs=0 spec=0x2 regs=76 texmask=0x0000
+[2026-10-12 22:20:21.190] [debug] [eot] [t101863] [shaders] ps 0xfb7d4020 hash 3f36901b90b31214 hit inputs=0 spec=0x2 regs=84 texmask=0x000b
+[2026-10-12 22:20:21.192] [debug] [eot] [t101863] [shaders] ps 0xf2591760 hash 1149ed21f6e19bb3 hit inputs=0 spec=0x2 regs=256 texmask=0x001f
+[2026-10-12 22:20:21.195] [debug] [eot] [t101863] [shaders] ps 0xecb09020 hash 0cc7027025f992d1 hit inputs=0 spec=0x2 regs=256 texmask=0x001f
+[2026-10-12 22:20:21.196] [debug] [eot] [t101863] [shaders] ps 0xecb0a020 hash dfda40eb3425896a hit inputs=0 spec=0x2 regs=256 texmask=0x001f
+[2026-10-12 22:20:21.198] [debug] [eot] [t101863] [shaders] ps 0xf2591f60 hash b8f1a4d33f019810 hit inputs=0 spec=0x2 regs=256 texmask=0x801f
+[2026-10-12 22:20:21.198] [debug] [eot] [t101863] [shaders] ps 0xfb7d4420 hash 1fd1378b10164b32 hit inputs=0 spec=0x2 regs=84 texmask=0x001f
+[2026-10-12 22:20:21.200] [debug] [eot] [t101863] [shaders] ps 0xfb7d4820 hash 050cd0aa68812fd0 hit inputs=0 spec=0x2 regs=84 texmask=0x000b
+[2026-10-12 22:20:21.200] [debug] [eot] [t101863] [shaders] ps 0xf2592760 hash 817f48d47b9ee718 hit inputs=0 spec=0x2 regs=256 texmask=0x001f
+[2026-10-12 22:20:21.200] [debug] [eot] [t101863] [shaders] ps 0xecb0b020 hash 1d3df7a20dfd4433 hit inputs=0 spec=0x2 regs=256 texmask=0x001f
+[2026-10-12 22:20:21.200] [debug] [eot] [t101863] [shaders] ps 0xecb0c020 hash 0ebec3acd162e573 hit inputs=0 spec=0x2 regs=256 texmask=0x001f
+[2026-10-12 22:20:21.200] [debug] [eot] [t101863] [shaders] ps 0xf2592f60 hash 2b0937ff0977b5ae hit inputs=0 spec=0x2 regs=256 texmask=0x801f
+[2026-10-12 22:20:21.201] [debug] [eot] [t101863] [shaders] ps 0xfb7d4c20 hash c1760a4e28faed6f hit inputs=0 spec=0x2 regs=84 texmask=0x001f
+[2026-10-12 22:20:21.209] [debug] [eot] [t101863] [shaders] ps 0xfb7d5020 hash 793e31e2d4bf7524 hit inputs=0 spec=0x2 regs=84 texmask=0x0003
+[2026-10-12 22:20:21.210] [debug] [eot] [t101863] [shaders] ps 0xf2593760 hash 86b95b746a38bfcb hit inputs=0 spec=0x2 regs=256 texmask=0x0007
+[2026-10-12 22:20:21.214] [debug] [eot] [t101863] [shaders] ps 0xf2593f60 hash ff649339b7d9b5d4 hit inputs=0 spec=0x2 regs=256 texmask=0x0007
+[2026-10-12 22:20:21.215] [debug] [eot] [t101863] [shaders] ps 0xecb0d020 hash bf779862caf40e21 hit inputs=0 spec=0x2 regs=256 texmask=0x0007
+[2026-10-12 22:20:21.217] [debug] [eot] [t101863] [shaders] ps 0xf2594760 hash 50b9706f10ae357a hit inputs=0 spec=0x2 regs=256 texmask=0x8007
+[2026-10-12 22:20:21.219] [debug] [eot] [t101863] [shaders] ps 0xecc89100 hash 35c3a902c671cfee hit inputs=0 spec=0x2 regs=19 texmask=0x0000
+[2026-10-12 22:20:21.220] [debug] [eot] [t101863] [shaders] ps 0xfb7d5420 hash d74f3b42eb854719 hit inputs=0 spec=0x2 regs=84 texmask=0x0007
+[2026-10-12 22:20:21.223] [debug] [eot] [t101863] [shaders] vs 0xf2595000 hash 203654d045b0c65a hit inputs=7 spec=0x5 regs=47 texmask=0x0000
+[2026-10-12 22:20:21.226] [debug] [eot] [t101863] [shaders] ps 0xfb7d5820 hash 5aed94d42d05a0d8 hit inputs=0 spec=0x2 regs=84 texmask=0x001f
+[2026-10-12 22:20:21.227] [debug] [eot] [t101863] [shaders] vs 0xf2595800 hash d04b8157c3c75533 hit inputs=7 spec=0x5 regs=47 texmask=0x0000
+[2026-10-12 22:20:21.227] [debug] [eot] [t101863] [shaders] ps 0xf2595f60 hash 9740098434d7cc87 hit inputs=0 spec=0x2 regs=84 texmask=0x001f
+[2026-10-12 22:20:21.228] [debug] [eot] [t101863] [shaders] ps 0xf2596760 hash 75d46bd02fc5e41d hit inputs=0 spec=0x2 regs=84 texmask=0x001f
+[2026-10-12 22:20:21.228] [debug] [eot] [t101863] [shaders] ps 0xecb0e020 hash abec7e6c2f060ee9 hit inputs=0 spec=0x2 regs=84 texmask=0x001f
+[2026-10-12 22:20:21.228] [debug] [eot] [t101863] [shaders] ps 0xf2596f60 hash 6d2b31a40bef6a7b hit inputs=0 spec=0x2 regs=84 texmask=0x801f
+[2026-10-12 22:20:21.229] [debug] [eot] [t101863] [shaders] ps 0xecc89300 hash 0b2c459696176fab hit inputs=0 spec=0x2 regs=16 texmask=0x0001
+[2026-10-12 22:20:21.229] [debug] [eot] [t101863] [shaders] vs 0xf2597800 hash 3ed5ca11150e7e19 hit inputs=4 spec=0x5 regs=47 texmask=0x0000
+[2026-10-12 22:20:21.231] [debug] [eot] [t101863] [shaders] ps 0xecc89500 hash 346358b3a6c1e0cc hit inputs=0 spec=0x2 regs=61 texmask=0x0008
+[2026-10-12 22:20:21.233] [debug] [eot] [t101863] [shaders] ps 0xfb7d5c20 hash e74534ea685ae21f hit inputs=0 spec=0x2 regs=84 texmask=0x003f
+[2026-10-12 22:20:21.244] [debug] [eot] [t101863] [shaders] vs 0xf2597fe0 hash dbd18aa8103d6fee hit inputs=4 spec=0x5 regs=43 texmask=0x0000
+[2026-10-12 22:20:21.247] [debug] [eot] [t101863] [shaders] ps 0xfb7d6020 hash e4dd3d03eb22ce7a hit inputs=0 spec=0x2 regs=84 texmask=0x0007
+[2026-10-12 22:20:21.250] [debug] [eot] [t101863] [shaders] vs 0xf25987e0 hash bcca225f2f952965 hit inputs=4 spec=0x5 regs=256 texmask=0x0000
+[2026-10-12 22:20:21.251] [debug] [eot] [t101863] [shaders] ps 0xf2598f60 hash 021ed9ecd1a38aa5 hit inputs=0 spec=0x2 regs=256 texmask=0x000f
+[2026-10-12 22:20:21.252] [debug] [eot] [t101863] [shaders] ps 0xf2599760 hash eefaf18e374774cd hit inputs=0 spec=0x2 regs=256 texmask=0x000f
+[2026-10-12 22:20:21.252] [debug] [eot] [t101863] [shaders] ps 0xecb0f020 hash 2fae112be60a6181 hit inputs=0 spec=0x2 regs=256 texmask=0x000f
+[2026-10-12 22:20:21.253] [debug] [eot] [t101863] [shaders] ps 0xf2599f60 hash bd976d5ca69fdfae hit inputs=0 spec=0x2 regs=256 texmask=0x800f
+[2026-10-12 22:20:21.254] [debug] [eot] [t101863] [shaders] ps 0xecc89700 hash f61ece3a6ed226c4 hit inputs=0 spec=0x2 regs=59 texmask=0x0001
+[2026-10-12 22:20:21.254] [debug] [eot] [t101863] [shaders] ps 0xecc89900 hash 55a5962e4272709b hit inputs=0 spec=0x2 regs=59 texmask=0x0000
+[2026-10-12 22:20:21.255] [debug] [eot] [t101863] [shaders] ps 0xecc89b00 hash d7f19780f61464e8 hit inputs=0 spec=0x2 regs=16 texmask=0x0001
+[2026-10-12 22:20:21.255] [debug] [eot] [t101863] [shaders] ps 0xecc89d00 hash 9d6c9fed96c68d97 hit inputs=0 spec=0x2 regs=76 texmask=0x0000
+[2026-10-12 22:20:21.258] [debug] [eot] [t101863] [shaders] ps 0xfb7d6420 hash 79702e03782190df hit inputs=0 spec=0x2 regs=84 texmask=0x003b
+[2026-10-12 22:20:21.261] [debug] [eot] [t101863] [shaders] ps 0xf259a760 hash 1c81f50524e50299 hit inputs=0 spec=0x2 regs=256 texmask=0x007f
+[2026-10-12 22:20:21.262] [debug] [eot] [t101863] [shaders] ps 0xecb10020 hash dc70d6b15e6fc5bc hit inputs=0 spec=0x2 regs=256 texmask=0x007f
+[2026-10-12 22:20:21.263] [debug] [eot] [t101863] [shaders] ps 0xecb11020 hash 3794bc704be99b1e hit inputs=0 spec=0x2 regs=256 texmask=0x007f
+[2026-10-12 22:20:21.266] [debug] [eot] [t101863] [shaders] ps 0xf259af60 hash 4f971ec9457f2b6a hit inputs=0 spec=0x2 regs=256 texmask=0x807f
+[2026-10-12 22:20:21.267] [debug] [eot] [t101863] [shaders] ps 0xecc89f00 hash a0035d342185bf8b hit inputs=0 spec=0x2 regs=59 texmask=0x0000
+[2026-10-12 22:20:21.269] [debug] [eot] [t101863] [shaders] ps 0xecc8a100 hash 36b62a495e7d5db2 hit inputs=0 spec=0x2 regs=16 texmask=0x0001
+[2026-10-12 22:20:21.271] [debug] [eot] [t101863] [shaders] ps 0xecc8a300 hash 3ab4af6ae79e8152 hit inputs=0 spec=0x2 regs=61 texmask=0x0002
+[2026-10-12 22:20:21.273] [debug] [eot] [t101863] [shaders] ps 0xfb7d6820 hash af25bfd50735ddeb hit inputs=0 spec=0x2 regs=84 texmask=0x007f
+[2026-10-12 22:20:21.277] [debug] [eot] [t101863] [shaders] ps 0xecc8a500 hash 0a57d97c91912400 hit inputs=0 spec=0x2 regs=76 texmask=0x0000
+[2026-10-12 22:20:21.437] [debug] [eot] [t101563] [hitch] frame 151636 threads: capture 5.19 present-wait 0.71 worker-idle 47.10 blit 0.11 house 0.33 | gpu 2.63 (1 frames collected) | transfers 0 evicted 0 vtx-miss 0 idx-miss 1 pso-binds 220 dead-resolves 23 | guest+other 44.71
+[2026-10-12 22:20:21.437] [debug] [eot] [t101563] [hitch] frame 151636 took 50.6 ms: draw 1.56 (356 draws) upload 0.00 (0 tex) resolve 0.52 (36) link 0.00 (0) pso 0.00 (0) guest d3d 0.06 (122 calls) | acquire 0.02 submit 0.09 fence 0.09 pace 0.00 | new host objects: 0 tex (0 surface 0 mirror 0 guest, 0 recycled) 0 views 0 fb, 0 parked | vtx 617 KB idx 26 KB const 595 KB | live 721 tex 118 surf, pool 111 | resolve: mirror 0.02 fb 0.00 bind 0.02 | scans: alias 0.09 msaa 0.03 | unaccounted 48.27
+[2026-10-12 22:20:21.506] [debug] [eot] [t101563] [hitch] frame 151638 threads: capture 1.45 present-wait 0.79 worker-idle 36.35 blit 0.09 house 0.31 | gpu 2.65 (1 frames collected) | transfers 0 evicted 0 vtx-miss 0 idx-miss 1 pso-binds 220 dead-resolves 23 | guest+other 37.77
+[2026-10-12 22:20:21.506] [debug] [eot] [t101563] [hitch] frame 151638 took 40.0 ms: draw 1.63 (354 draws) upload 0.00 (0 tex) resolve 0.67 (36) link 0.00 (0) pso 0.00 (0) guest d3d 0.04 (122 calls) | acquire 0.02 submit 0.07 fence 0.07 pace 0.00 | new host objects: 0 tex (0 surface 0 mirror 0 guest, 0 recycled) 0 views 0 fb, 0 parked | vtx 609 KB idx 26 KB const 593 KB | live 721 tex 118 surf, pool 111 | resolve: mirror 0.02 fb 0.00 bind 0.02 | scans: alias 0.11 msaa 0.03 | unaccounted 37.50
+[2026-10-12 22:20:21.515] [debug] [eot] [t101863] [anim] 158 animation(s) loaded over 666 ms, ending 1705 ms ago (slowest 3016 us)
+[2026-10-12 22:20:21.516] [debug] [eot] [t101863] [pso] predictor: model 0xed0ae040: 1 materials, 1 (material,stride) refs, 11 slots -> 0 queued (1 without template); unresolved shader objects: 0 vs, 1 ps
+[2026-10-12 22:20:21.516] [debug] [eot] [t101863] [pso] predictor: model 0xf06a6450: 1 materials, 1 (material,stride) refs, 6 slots -> 0 queued (3 without template); unresolved shader objects: 0 vs, 0 ps
+[2026-10-12 22:20:21.517] [debug] [eot] [t101863] [pso] predictor: model 0xf06a5ca0: 2 materials, 1 (material,stride) refs, 22 slots -> 26 queued (2 without template); unresolved shader objects: 0 vs, 2 ps
+[2026-10-12 22:20:21.520] [debug] [eot] [t101863] [pso] predictor: model 0xf06a5a10: 4 materials, 4 (material,stride) refs, 44 slots -> 0 queued (10 without template); unresolved shader objects: 0 vs, 3 ps
+[2026-10-12 22:20:21.521] [debug] [eot] [t101863] [pso] predictor: model 0xe3f55900: 1 materials, 1 (material,stride) refs, 6 slots -> 12 queued (2 without template); unresolved shader objects: 0 vs, 0 ps
+[2026-10-12 22:20:21.522] [debug] [eot] [t101863] [pso] predictor: model 0xf4b66270: 2 materials, 2 (material,stride) refs, 22 slots -> 0 queued (2 without template); unresolved shader objects: 0 vs, 2 ps
+[2026-10-12 22:20:21.522] [debug] [eot] [t101863] [pso] predictor: model 0xf4b66790: 2 materials, 2 (material,stride) refs, 22 slots -> 0 queued (2 without template); unresolved shader objects: 0 vs, 2 ps
+[2026-10-12 22:20:21.525] [debug] [eot] [t101863] [pso] predictor: model 0xf8da0dd0: 3 materials, 3 (material,stride) refs, 18 slots -> 29 queued (9 without template); unresolved shader objects: 0 vs, 0 ps
+[2026-10-12 22:20:21.525] [debug] [eot] [t101863] [pso] predictor: model 0xf8d9ef10: 1 materials, 1 (material,stride) refs, 22 slots -> 0 queued (2 without template); unresolved shader objects: 0 vs, 2 ps
+[2026-10-12 22:20:21.525] [debug] [eot] [t101863] [pso] predictor: model 0xe3f513d0: 1 materials, 1 (material,stride) refs, 6 slots -> 0 queued (2 without template); unresolved shader objects: 0 vs, 0 ps
+[2026-10-12 22:20:21.538] [debug] [eot] [t101563] [textures] 0xf3f3fd40: 512x512x1 mips 0..3 fmt 20 tiled linear-sign base 0xf5066000 mip 0xf50a6000 -> host fmt 61
+[2026-10-12 22:20:21.538] [debug] [eot] [t101563] [textures] 0xf3f3ffe0: 32x64x1 mips 0..3 fmt 20 tiled gamma base 0xf50db000 mip 0xf50df000 -> host fmt 62
+[2026-10-12 22:20:21.538] [debug] [eot] [t101563] [textures] 0xf3f40030: 512x256x1 mips 0..6 fmt 20 tiled linear-sign base 0xf50e4000 mip 0xf5104000 -> host fmt 61
+[2026-10-12 22:20:21.555] [debug] [eot] [t101563] [textures] 0xf3f40080: 256x512x1 mips 0..6 fmt 20 tiled linear-sign base 0xf5119000 mip 0xf5139000 -> host fmt 61
+[2026-10-12 22:20:21.556] [debug] [eot] [t101563] [textures] 0xf3f400d0: 256x256x1 mips 0..6 fmt 20 tiled gamma base 0xf514e000 mip 0xf515e000 -> host fmt 62
+[2026-10-12 22:20:21.556] [debug] [eot] [t101563] [textures] 0xf3f40120: 512x512x1 mips 0..7 fmt 18 tiled linear-sign base 0xeced3000 mip 0xecef3000 -> host fmt 55
+[2026-10-12 22:20:21.556] [debug] [eot] [t101563] [textures] 0xf3f403f0: 256x256x1 mips 0..6 fmt 20 tiled gamma base 0xecf04000 mip 0xecf14000 -> host fmt 62
+[2026-10-12 22:20:21.556] [debug] [eot] [t101563] [textures] 0xf3f40440: 128x128x1 mips 0..5 fmt 20 tiled gamma base 0xf50bf000 mip 0xf50c3000 -> host fmt 62
+[2026-10-12 22:20:21.572] [debug] [eot] [t101563] [textures] 0xf3f40260: 256x256x1 mips 0..6 fmt 18 tiled gamma base 0xecf25000 mip 0xecf2d000 -> host fmt 56
+[2026-10-12 22:20:21.572] [debug] [eot] [t101563] [textures] 0xf3f40680: 512x512x1 mips 0..7 fmt 18 tiled linear-sign base 0xecf36000 mip 0xecf56000 -> host fmt 55
+[2026-10-12 22:20:21.572] [debug] [eot] [t101563] [textures] 0xf3f406d0: 256x256x1 mips 0..6 fmt 20 tiled gamma base 0xecf67000 mip 0xecf77000 -> host fmt 62
+[2026-10-12 22:20:21.583] [debug] [eot] [t101563] [textures] 0xf3f40720: 512x512x1 mips 0..7 fmt 20 tiled linear-sign base 0xecf88000 mip 0xecfc8000 -> host fmt 61
+[2026-10-12 22:20:21.584] [debug] [eot] [t101563] [textures] 0xf3f408f0: 1024x1024x1 mips 0..8 fmt 20 tiled linear-sign base 0xfa00f000 mip 0xfa10f000 -> host fmt 61
+[2026-10-12 22:20:21.600] [debug] [eot] [t101563] [textures] 0xf3f40770: 256x256x1 mips 0..6 fmt 20 tiled gamma base 0xfa170000 mip 0xfa180000 -> host fmt 62
+[2026-10-12 22:20:21.601] [debug] [eot] [t101563] [textures] 0xf3f407c0: 32x32x32 mips 0..0 fmt 6 tiled gamma base 0xfa191000 mip 0x0 -> host fmt 20
+[2026-10-12 22:20:21.601] [debug] [eot] [t101563] [textures] 0xf3f40810: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfa1b2000 mip 0xfa1d2000 -> host fmt 56
+[2026-10-12 22:20:21.616] [debug] [eot] [t101563] [textures] 0xf3f40860: 512x512x1 mips 0..7 fmt 20 tiled linear-sign base 0xfa1e3000 mip 0xfa223000 -> host fmt 61
+[2026-10-12 22:20:21.616] [debug] [eot] [t101563] [textures] 0xf3f40c20: 512x256x1 mips 0..6 fmt 18 tiled linear-sign base 0xfa244000 mip 0xfa254000 -> host fmt 55
+[2026-10-12 22:20:21.616] [debug] [eot] [t101563] [textures] 0xf3f40c70: 256x256x1 mips 0..6 fmt 20 tiled gamma base 0xfa25f000 mip 0xfa26f000 -> host fmt 62
+[2026-10-12 22:20:21.617] [debug] [eot] [t101563] [textures] 0xf3f40cc0: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfa280000 mip 0xfa2a0000 -> host fmt 56
+[2026-10-12 22:20:21.637] [debug] [eot] [t101563] [textures] 0xf3f40d10: 512x512x1 mips 0..7 fmt 18 tiled linear-sign base 0xfa2b1000 mip 0xfa2d1000 -> host fmt 55
+[2026-10-12 22:20:21.637] [debug] [eot] [t101563] [textures] 0xf3f40d60: 512x512x1 mips 0..7 fmt 20 tiled linear-sign base 0xfa2e2000 mip 0xfa322000 -> host fmt 61
+[2026-10-12 22:20:21.638] [debug] [eot] [t101563] [textures] 0xf3f40db0: 512x512x1 mips 0..7 fmt 20 tiled gamma base 0xfa343000 mip 0xfa383000 -> host fmt 62
+[2026-10-12 22:20:21.652] [debug] [eot] [t101563] [textures] 0xf3f40e00: 256x256x1 mips 0..6 fmt 18 tiled gamma base 0xfa3a4000 mip 0xfa3ac000 -> host fmt 56
+[2026-10-12 22:20:21.652] [debug] [eot] [t101563] [textures] 0xf3f40e50: 1024x1024x1 mips 0..8 fmt 18 tiled linear-sign base 0xfa3b5000 mip 0xfa435000 -> host fmt 55
+[2026-10-12 22:20:21.652] [debug] [eot] [t101563] [textures] 0xf3f40ea0: 256x256x1 mips 0..6 fmt 20 tiled linear-sign base 0xfa466000 mip 0xfa476000 -> host fmt 61
+[2026-10-12 22:20:21.669] [debug] [eot] [t101563] [textures] 0xf3f40f30: 512x256x1 mips 0..6 fmt 20 tiled gamma base 0xfa487000 mip 0xfa4a7000 -> host fmt 62
+[2026-10-12 22:20:21.669] [debug] [eot] [t101563] [textures] 0xf3f40f80: 1024x1024x1 mips 0..8 fmt 18 tiled linear-sign base 0xfa4bc000 mip 0xfa53c000 -> host fmt 55
+[2026-10-12 22:20:21.685] [debug] [eot] [t101563] [textures] 0xf3f39890: 512x512x1 mips 0..7 fmt 18 tiled linear-sign base 0xfa56d000 mip 0xfa58d000 -> host fmt 55
+[2026-10-12 22:20:21.685] [debug] [eot] [t101563] [textures] 0xf3f398e0: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfa59e000 mip 0xfa5be000 -> host fmt 56
+[2026-10-12 22:20:21.686] [debug] [eot] [t101563] [textures] 0xf3f39b40: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfa5cf000 mip 0xfa5ef000 -> host fmt 56
+[2026-10-12 22:20:21.704] [debug] [eot] [t101563] [textures] 0xf3f39930: 512x32x1 mips 0..3 fmt 20 tiled gamma base 0xfa600000 mip 0xfa610000 -> host fmt 62
+[2026-10-12 22:20:21.704] [debug] [eot] [t101563] [textures] 0xf3f39980: 256x256x1 mips 0..6 fmt 18 tiled linear-sign base 0xfa619000 mip 0xfa621000 -> host fmt 55
+[2026-10-12 22:20:21.704] [debug] [eot] [t101563] [textures] 0xf3f399d0: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfa62a000 mip 0xfa64a000 -> host fmt 56
+[2026-10-12 22:20:21.705] [debug] [eot] [t101563] [textures] 0xf3f39a20: 128x128x1 mips 0..5 fmt 20 tiled gamma base 0xfa65b000 mip 0xfa65f000 -> host fmt 62
+[2026-10-12 22:20:21.724] [debug] [eot] [t101563] [textures] 0xf3f39a70: 512x512x1 mips 0..7 fmt 20 tiled gamma base 0xfa674000 mip 0xfa6b4000 -> host fmt 62
+[2026-10-12 22:20:21.725] [debug] [eot] [t101563] [textures] 0xf3f39ac0: 256x256x1 mips 0..6 fmt 18 tiled gamma base 0xfa6d5000 mip 0xfa6dd000 -> host fmt 56
+[2026-10-12 22:20:21.725] [debug] [eot] [t101563] [textures] 0xf3f39b90: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfa6e6000 mip 0xfa706000 -> host fmt 56
+[2026-10-12 22:20:21.725] [debug] [eot] [t101563] [textures] 0xf3f39be0: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfa717000 mip 0xfa737000 -> host fmt 56
+[2026-10-12 22:20:21.739] [debug] [eot] [t101563] [textures] 0xf3f39c30: 512x512x1 mips 0..7 fmt 18 tiled linear-sign base 0xfa748000 mip 0xfa768000 -> host fmt 55
+[2026-10-12 22:20:21.739] [debug] [eot] [t101563] [textures] 0xf3f39c80: 512x1024x1 mips 0..7 fmt 18 tiled gamma base 0xfa779000 mip 0xfa7b9000 -> host fmt 56
+[2026-10-12 22:20:21.740] [debug] [eot] [t101563] [textures] 0xf3f39cd0: 512x512x1 mips 0..7 fmt 20 tiled linear-sign base 0xfa7d4000 mip 0xfa814000 -> host fmt 61
+[2026-10-12 22:20:21.755] [debug] [eot] [t101563] [textures] 0xf3f39d20: 256x256x1 mips 0..6 fmt 18 tiled linear-sign base 0xfa835000 mip 0xfa83d000 -> host fmt 55
+[2026-10-12 22:20:21.755] [debug] [eot] [t101563] [textures] 0xf3f39d70: 1024x1024x1 mips 0..8 fmt 20 tiled linear-sign base 0xfa846000 mip 0xfa946000 -> host fmt 61
+[2026-10-12 22:20:21.770] [debug] [eot] [t101563] [textures] 0xf3f39dc0: 64x64x6 mips 0..0 fmt 18 tiled gamma base 0xfa9a7000 mip 0x0 -> host fmt 56
+[2026-10-12 22:20:21.770] [debug] [eot] [t101563] [textures] 0xf3f39e10: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfa9f4000 mip 0xfaa14000 -> host fmt 56
+[2026-10-12 22:20:21.770] [debug] [eot] [t101563] [textures] 0xf3f39e60: 512x512x1 mips 0..7 fmt 20 tiled gamma base 0xfaa25000 mip 0xfaa65000 -> host fmt 62
+[2026-10-12 22:20:21.771] [debug] [eot] [t101563] [textures] 0xf3f39eb0: 512x512x1 mips 0..7 fmt 18 tiled linear-sign base 0xf98fc000 mip 0xf991c000 -> host fmt 55
+[2026-10-12 22:20:21.786] [debug] [eot] [t101563] [textures] 0xf3f39f00: 256x512x1 mips 0..6 fmt 18 tiled linear-sign base 0xfaae0000 mip 0xfaaf0000 -> host fmt 55
+[2026-10-12 22:20:21.787] [debug] [eot] [t101563] [textures] 0xf3f39f50: 512x512x1 mips 0..7 fmt 20 tiled linear-sign base 0xfaafb000 mip 0xfab3b000 -> host fmt 61
+[2026-10-12 22:20:21.787] [debug] [eot] [t101563] [textures] 0xf3f3a1f0: 128x128x6 mips 0..0 fmt 18 tiled gamma base 0xf992d000 mip 0x0 -> host fmt 56
+[2026-10-12 22:20:21.787] [debug] [eot] [t101563] [textures] 0xf3f3a240: 512x512x1 mips 0..7 fmt 20 tiled linear-sign base 0xfc5b2000 mip 0xfc5f2000 -> host fmt 61
+[2026-10-12 22:20:21.802] [debug] [eot] [t101563] [textures] 0xf3f3a320: 1024x512x1 mips 0..7 fmt 20 tiled gamma base 0xfc613000 mip 0xfc693000 -> host fmt 62
+[2026-10-12 22:20:21.803] [debug] [eot] [t101563] [textures] 0xf3f3a370: 512x512x1 mips 0..7 fmt 20 tiled linear-sign base 0xfc6c8000 mip 0xfc708000 -> host fmt 61
+[2026-10-12 22:20:21.822] [debug] [eot] [t101563] [textures] 0xf3f3a5c0: 512x512x1 mips 0..7 fmt 20 tiled gamma base 0xfc729000 mip 0xfc769000 -> host fmt 62
+[2026-10-12 22:20:21.823] [debug] [eot] [t101563] [textures] 0xf3f3a3c0: 512x512x1 mips 0..7 fmt 20 tiled linear-sign base 0xfc78a000 mip 0xfc7ca000 -> host fmt 61
+[2026-10-12 22:20:21.836] [debug] [eot] [t101563] [textures] 0xf3f3a410: 512x512 fmt 2 ships one level; the host carries 10
+[2026-10-12 22:20:21.836] [debug] [eot] [t101563] [textures] 0xf3f3a410: 512x512x1 mips 0..0 fmt 2 tiled gamma base 0xfab5c000 mip 0x0 -> host fmt 50
+[2026-10-12 22:20:21.855] [debug] [eot] [t101563] [textures] 0xf3f3a460: 512x512x1 mips 0..7 fmt 20 tiled gamma base 0xfc7eb000 mip 0xfc82b000 -> host fmt 62
+[2026-10-12 22:20:21.856] [debug] [eot] [t101563] [textures] 0xf3f3a4b0: 256x256x1 mips 0..6 fmt 18 tiled gamma base 0xfaace000 mip 0xfaad6000 -> host fmt 56
+[2026-10-12 22:20:21.856] [debug] [eot] [t101563] [textures] 0xf3f3a500: 512x512 fmt 2 ships one level; the host carries 10
+[2026-10-12 22:20:21.856] [debug] [eot] [t101563] [textures] 0xf3f3a500: 512x512x1 mips 0..0 fmt 2 tiled gamma base 0xfc84c000 mip 0x0 -> host fmt 50
+[2026-10-12 22:20:21.871] [debug] [eot] [t101563] [textures] 0xf3f3a550: 512x512x1 mips 0..7 fmt 20 tiled gamma base 0xfc88d000 mip 0xfc8cd000 -> host fmt 62
+[2026-10-12 22:20:21.871] [debug] [eot] [t101563] [textures] 0xf3f3a610: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfc8ee000 mip 0xfc90e000 -> host fmt 56
+[2026-10-12 22:20:21.887] [debug] [eot] [t101563] [textures] 0xf3f3a660: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfc91f000 mip 0xfc93f000 -> host fmt 56
+[2026-10-12 22:20:21.887] [debug] [eot] [t101563] [textures] 0xf3f3a8f0: 256x256x1 mips 0..6 fmt 18 tiled linear-sign base 0xfab9d000 mip 0xfaba5000 -> host fmt 55
+[2026-10-12 22:20:21.887] [debug] [eot] [t101563] [textures] 0xf3f3a6b0: 256x256x1 mips 0..6 fmt 20 tiled gamma base 0xfc950000 mip 0xfc960000 -> host fmt 62
+[2026-10-12 22:20:21.887] [debug] [eot] [t101563] [textures] 0xf3f3a700: 256x256x1 mips 0..6 fmt 20 tiled gamma base 0xfc971000 mip 0xfc981000 -> host fmt 62
+[2026-10-12 22:20:21.901] [debug] [eot] [t101563] [textures] 0xf3f3a790: 256x256x1 mips 0..6 fmt 20 tiled gamma base 0xfc992000 mip 0xfc9a2000 -> host fmt 62
+[2026-10-12 22:20:21.902] [debug] [eot] [t101563] [textures] 0xf3f3a7e0: 256x256x1 mips 0..6 fmt 18 tiled gamma base 0xf3ff9000 mip 0xf4001000 -> host fmt 56
+[2026-10-12 22:20:21.902] [debug] [eot] [t101563] [textures] 0xf3f3a830: 256x512x1 mips 0..6 fmt 20 tiled gamma base 0xfc9b3000 mip 0xfc9d3000 -> host fmt 62
+[2026-10-12 22:20:21.921] [debug] [eot] [t101563] [textures] 0xf3f3a880: 512x512x1 mips 0..7 fmt 20 tiled linear-sign base 0xfc9e8000 mip 0xfca28000 -> host fmt 61
+[2026-10-12 22:20:21.922] [debug] [eot] [t101563] [textures] 0xf3f3a940: 512x512x1 mips 0..7 fmt 20 tiled linear-sign base 0xfca49000 mip 0xfca89000 -> host fmt 61
+[2026-10-12 22:20:21.937] [debug] [eot] [t101563] [textures] 0xf3f3ac20: 512x512x1 mips 0..7 fmt 18 tiled linear-sign base 0xfcaaa000 mip 0xfcaca000 -> host fmt 55
+[2026-10-12 22:20:21.937] [debug] [eot] [t101563] [textures] 0xf3f3ad00: 512x512x1 mips 0..7 fmt 20 tiled linear-sign base 0xfcadb000 mip 0xfcb1b000 -> host fmt 61
+[2026-10-12 22:20:21.951] [debug] [eot] [t101563] [textures] 0xf3f3ad50: 64x64x1 mips 0..2 fmt 18 tiled gamma base 0xfa66c000 mip 0xfa66e000 -> host fmt 56
+[2026-10-12 22:20:21.951] [debug] [eot] [t101563] [textures] 0xf3f3ada0: 512x512 fmt 2 ships one level; the host carries 10
+[2026-10-12 22:20:21.951] [debug] [eot] [t101563] [textures] 0xf3f3ada0: 512x512x1 mips 0..0 fmt 2 tiled gamma base 0xfcb3c000 mip 0x0 -> host fmt 50
+[2026-10-12 22:20:21.966] [debug] [eot] [t101563] [textures] 0xf3f3adf0: 256x256x1 mips 0..6 fmt 20 tiled linear-sign base 0xfcb7d000 mip 0xfcb8d000 -> host fmt 61
+[2026-10-12 22:20:21.967] [debug] [eot] [t101563] [textures] 0xf3f3ae40: 512x512 fmt 2 ships one level; the host carries 10
+[2026-10-12 22:20:21.967] [debug] [eot] [t101563] [textures] 0xf3f3ae40: 512x512x1 mips 0..0 fmt 2 tiled gamma base 0xfcb9e000 mip 0x0 -> host fmt 50
+[2026-10-12 22:20:21.987] [debug] [eot] [t101563] [textures] 0xf3f3ae90: 128x256x1 mips 0..5 fmt 20 tiled gamma base 0xfcbdf000 mip 0xfcbe7000 -> host fmt 62
+[2026-10-12 22:20:21.987] [debug] [eot] [t101563] [textures] 0xf3f3aee0: 512x512x1 mips 0..7 fmt 20 tiled linear-sign base 0xfcbf4000 mip 0xfcc34000 -> host fmt 61
+[2026-10-12 22:20:21.987] [debug] [eot] [t101563] [textures] 0xf3f3b040: 256x256x1 mips 0..6 fmt 20 tiled gamma base 0xfcc55000 mip 0xfcc65000 -> host fmt 62
+[2026-10-12 22:20:22.003] [debug] [eot] [t101563] [textures] 0xf3f3af30: 512x512x1 mips 0..7 fmt 18 tiled linear-sign base 0xfcc76000 mip 0xfcc96000 -> host fmt 55
+[2026-10-12 22:20:22.003] [debug] [eot] [t101563] [textures] 0xf3f3af80: 512x512x1 mips 0..7 fmt 18 tiled linear-sign base 0xfcca7000 mip 0xfccc7000 -> host fmt 55
+[2026-10-12 22:20:22.010] [debug] [eot] [t101863] [pso] predictor: model 0xf06a66e0: 1 materials, 1 (material,stride) refs, 11 slots -> 0 queued (1 without template); unresolved shader objects: 0 vs, 1 ps
+[2026-10-12 22:20:22.011] [debug] [eot] [t101863] [pso] predictor: model 0xf06a61c0: 1 materials, 1 (material,stride) refs, 11 slots -> 0 queued (1 without template); unresolved shader objects: 0 vs, 1 ps
+[2026-10-12 22:20:22.012] [debug] [eot] [t101863] [pso] predictor: model 0xf06a5f30: 2 materials, 2 (material,stride) refs, 22 slots -> 0 queued (2 without template); unresolved shader objects: 0 vs, 2 ps
+[2026-10-12 22:20:22.012] [debug] [eot] [t101863] [pso] predictor: model 0xf06a5780: 2 materials, 2 (material,stride) refs, 22 slots -> 0 queued (7 without template); unresolved shader objects: 0 vs, 2 ps
+[2026-10-12 22:20:22.012] [debug] [eot] [t101863] [pso] predictor: model 0xf06a54f0: 1 materials, 1 (material,stride) refs, 11 slots -> 0 queued (1 without template); unresolved shader objects: 0 vs, 1 ps
+[2026-10-12 22:20:22.012] [debug] [eot] [t101863] [pso] predictor: model 0xf06a5260: 2 materials, 2 (material,stride) refs, 22 slots -> 0 queued (2 without template); unresolved shader objects: 0 vs, 2 ps
+[2026-10-12 22:20:22.021] [debug] [eot] [t101563] [textures] 0xf3f3afd0: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfccd8000 mip 0xfccf8000 -> host fmt 56
+[2026-10-12 22:20:22.021] [debug] [eot] [t101563] [textures] 0xf3f3b090: 512x1024x1 mips 0..7 fmt 20 tiled linear-sign base 0xfcd09000 mip 0xfcd89000 -> host fmt 61
+[2026-10-12 22:20:22.045] [debug] [eot] [t101563] [textures] 0xf3f3b0e0: 256x256x1 mips 0..2 fmt 18 tiled gamma base 0xfcdbe000 mip 0xfcdc6000 -> host fmt 56
+[2026-10-12 22:20:22.045] [debug] [eot] [t101563] [textures] 0xf3f3b130: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfcdcb000 mip 0xfcdeb000 -> host fmt 56
+[2026-10-12 22:20:22.046] [debug] [eot] [t101563] [textures] 0xf3f3b330: 512x256x1 mips 0..6 fmt 18 tiled gamma base 0xfcdfc000 mip 0xfce0c000 -> host fmt 56
+[2026-10-12 22:20:22.046] [debug] [eot] [t101563] [textures] 0xf3f3b180: 512x512x1 mips 0..7 fmt 18 tiled linear-sign base 0xfce17000 mip 0xfce37000 -> host fmt 55
+[2026-10-12 22:20:22.081] [debug] [eot] [t101563] [textures] 0xf3f3b1d0: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfce48000 mip 0xfce68000 -> host fmt 56
+[2026-10-12 22:20:22.081] [debug] [eot] [t101563] [textures] 0xf3f3b220: 512x512x1 mips 0..7 fmt 18 tiled linear-sign base 0xfce79000 mip 0xfce99000 -> host fmt 55
+[2026-10-12 22:20:22.082] [debug] [eot] [t101563] [textures] 0xf3f3b270: 512x512x1 mips 0..7 fmt 18 tiled linear-sign base 0xfceaa000 mip 0xfceca000 -> host fmt 55
+[2026-10-12 22:20:22.116] [debug] [eot] [t101563] [textures] 0xfabb60bc: aliases 0xfacae0bc (2048x2048 fmt 22 base 0xe5a6b000)
+[2026-10-12 22:20:22.116] [debug] [eot] [t101563] [resolve] depth 0xfabb67fc -> tex 0xfabb60bc mip 0 rect 0,0-1024,1024 at 1024,0 exp rt0 copy0 tex0 => x1 (22 -> host fmt 33) fetch=[90000002 e5a6b096 00ffe7ff 00001690] base 0xe5a6b000 pitch 2048 2048x2048 tiled
+[2026-10-12 22:20:22.117] [debug] [eot] [t101563] [textures] 0xedf520bc: aliases 0xfabb60bc (2048x2048 fmt 22 base 0xe5a6b000)
+[2026-10-12 22:20:22.117] [debug] [eot] [t101563] [resolve] depth 0xedf527fc -> tex 0xedf520bc mip 0 rect 0,0-1024,1024 at 0,1024 exp rt0 copy0 tex0 => x1 (22 -> host fmt 33) fetch=[90000002 e5a6b096 00ffe7ff 00001690] base 0xe5a6b000 pitch 2048 2048x2048 tiled
+[2026-10-12 22:20:22.121] [debug] [eot] [t101563] [textures] 0xf3f3b380: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfcedb000 mip 0xfcefb000 -> host fmt 56
+[2026-10-12 22:20:22.122] [debug] [eot] [t101563] [textures] 0xf3f3b2c0: 512x512x1 mips 0..7 fmt 20 tiled linear-sign base 0xfcf0c000 mip 0xfcf4c000 -> host fmt 61
+[2026-10-12 22:20:22.123] [debug] [eot] [t101563] [hitch] frame 151671 threads: capture 2.11 present-wait 1.79 worker-idle 34.19 blit 0.10 house 0.32 | gpu 2.69 (1 frames collected) | transfers 0 evicted 0 vtx-miss 0 idx-miss 0 pso-binds 417 dead-resolves 23 | guest+other 36.58
+[2026-10-12 22:20:22.123] [debug] [eot] [t101563] [hitch] frame 151671 took 40.5 ms: draw 2.59 (679 draws) upload 0.79 (2 tex) resolve 0.74 (31) link 0.00 (0) pso 0.00 (0) guest d3d 0.18 (117 calls) | acquire 0.02 submit 0.10 fence 0.10 pace 0.00 | new host objects: 1 tex (0 surface 0 mirror 1 guest, 1 recycled) 1 views 0 fb, 0 parked | vtx 378 KB idx 16 KB const 1121 KB | live 812 tex 118 surf, pool 52 | resolve: mirror 0.10 fb 0.00 bind 0.03 | scans: alias 0.11 msaa 0.02 | unaccounted 35.97
+[2026-10-12 22:20:22.128] [debug] [eot] [t101601] [anim] 2 animation(s) loaded over 2 ms, ending 612 ms ago (slowest 1784 us)
+[2026-10-12 22:20:22.161] [debug] [eot] [t101563] [textures] 0xf3f3b3d0: 256x256x1 mips 0..6 fmt 18 tiled linear-sign base 0xfcf6d000 mip 0xfcf75000 -> host fmt 55
+[2026-10-12 22:20:22.161] [debug] [eot] [t101563] [textures] 0xf3f3b420: 512x512x1 mips 0..7 fmt 20 tiled linear-sign base 0xfcf7e000 mip 0xfcfbe000 -> host fmt 61
+[2026-10-12 22:20:22.161] [debug] [eot] [t101563] [textures] 0xf3f3b750: 32x64x1 mips 0..3 fmt 20 tiled gamma base 0xecbe9000 mip 0xecbed000 -> host fmt 62
+[2026-10-12 22:20:22.161] [debug] [eot] [t101563] [textures] 0xf3f3b7a0: 512x512x1 mips 0..7 fmt 18 tiled linear-sign base 0xfcfdf000 mip 0xfcfff000 -> host fmt 55
+[2026-10-12 22:20:22.191] [debug] [eot] [t101563] [textures] 0xf3f3b7f0: 512x1024x1 mips 0..7 fmt 18 tiled linear-sign base 0xfd010000 mip 0xfd050000 -> host fmt 55
+[2026-10-12 22:20:22.191] [debug] [eot] [t101563] [textures] 0xf3f3b840: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfd06b000 mip 0xfd08b000 -> host fmt 56
+[2026-10-12 22:20:22.192] [debug] [eot] [t101563] [textures] 0xf3f3b890: 256x256x1 mips 0..6 fmt 18 tiled linear-sign base 0xfd09c000 mip 0xfd0a4000 -> host fmt 55
+[2026-10-12 22:20:22.225] [debug] [eot] [t101563] [textures] 0xf3f3b8e0: 512x128x1 mips 0..5 fmt 20 tiled gamma base 0xfd0ad000 mip 0xfd0bd000 -> host fmt 62
+[2026-10-12 22:20:22.226] [debug] [eot] [t101563] [textures] 0xf3f3b930: 512x512x1 mips 0..7 fmt 20 tiled gamma base 0xfd0ce000 mip 0xfd10e000 -> host fmt 62
+[2026-10-12 22:20:22.226] [debug] [eot] [t101563] [textures] 0xf3f3b980: 256x256x1 mips 0..6 fmt 18 tiled gamma base 0xfd12f000 mip 0xfd137000 -> host fmt 56
+[2026-10-12 22:20:22.257] [debug] [eot] [t101563] [textures] 0xf3f3b9d0: 256x256x1 mips 0..6 fmt 20 tiled gamma base 0xfd140000 mip 0xfd150000 -> host fmt 62
+[2026-10-12 22:20:22.257] [debug] [eot] [t101563] [textures] 0xf3f3ba20: 512x512x1 mips 0..7 fmt 18 tiled linear-sign base 0xfd161000 mip 0xfd181000 -> host fmt 55
+[2026-10-12 22:20:22.258] [debug] [eot] [t101563] [textures] 0xf3f3ba70: 512x512x1 mips 0..3 fmt 18 tiled gamma base 0xfd192000 mip 0xfd1b2000 -> host fmt 56
+[2026-10-12 22:20:22.292] [debug] [eot] [t101563] [textures] 0xf3f3bac0: 32x32x32 mips 0..0 fmt 6 tiled gamma base 0xfd1bf000 mip 0x0 -> host fmt 20
+[2026-10-12 22:20:22.332] [debug] [eot] [t101563] [textures] 0xf3f3bb10: 1024x1024x1 mips 0..8 fmt 18 tiled linear-sign base 0xfd1e0000 mip 0xfd260000 -> host fmt 55
+[2026-10-12 22:20:22.333] [debug] [eot] [t101563] [textures] 0xe3018eb0: 256x512x1 mips 0..6 fmt 18 tiled gamma base 0xfd291000 mip 0xfd2a1000 -> host fmt 56
+[2026-10-12 22:20:22.333] [debug] [eot] [t101563] [hitch] frame 151677 threads: capture 2.04 present-wait 2.21 worker-idle 32.90 blit 0.09 house 0.39 | gpu 2.81 (1 frames collected) | transfers 0 evicted 0 vtx-miss 0 idx-miss 1 pso-binds 412 dead-resolves 23 | guest+other 35.80
+[2026-10-12 22:20:22.333] [debug] [eot] [t101563] [hitch] frame 151677 took 40.0 ms: draw 3.28 (693 draws) upload 0.78 (2 tex) resolve 0.68 (36) link 0.00 (0) pso 0.00 (0) guest d3d 0.22 (133 calls) | acquire 0.02 submit 0.08 fence 0.08 pace 0.00 | new host objects: 1 tex (0 surface 0 mirror 1 guest, 1 recycled) 1 views 0 fb, 0 parked | vtx 399 KB idx 16 KB const 1152 KB | live 829 tex 118 surf, pool 45 | resolve: mirror 0.03 fb 0.00 bind 0.04 | scans: alias 0.12 msaa 0.02 | unaccounted 34.91
+[2026-10-12 22:20:22.375] [debug] [eot] [t101563] [textures] 0xe3016610: 256x256x1 mips 0..6 fmt 18 tiled linear-sign base 0xfd2ac000 mip 0xfd2b4000 -> host fmt 55
+[2026-10-12 22:20:22.375] [debug] [eot] [t101563] [textures] 0xe30ca6e0: 256x256x1 mips 0..6 fmt 18 tiled gamma base 0xfd2bd000 mip 0xfd2c5000 -> host fmt 56
+[2026-10-12 22:20:22.376] [debug] [eot] [t101563] [textures] 0xe30ca7d0: 256x256x1 mips 0..6 fmt 20 tiled linear-sign base 0xfd2ce000 mip 0xfd2de000 -> host fmt 61
+[2026-10-12 22:20:22.376] [debug] [eot] [t101563] [hitch] frame 151678 threads: capture 2.36 present-wait 2.56 worker-idle 36.22 blit 0.11 house 0.33 | gpu 2.63 (1 frames collected) | transfers 0 evicted 0 vtx-miss 0 idx-miss 1 pso-binds 406 dead-resolves 23 | guest+other 37.78
+[2026-10-12 22:20:22.376] [debug] [eot] [t101563] [hitch] frame 151678 took 42.7 ms: draw 2.51 (693 draws) upload 0.60 (3 tex) resolve 0.76 (36) link 0.00 (0) pso 0.00 (0) guest d3d 0.18 (133 calls) | acquire 0.05 submit 0.10 fence 0.09 pace 0.00 | new host objects: 1 tex (0 surface 0 mirror 1 guest, 2 recycled) 1 views 0 fb, 0 parked | vtx 401 KB idx 16 KB const 1148 KB | live 831 tex 118 surf, pool 44 | resolve: mirror 0.03 fb 0.00 bind 0.04 | scans: alias 0.13 msaa 0.03 | unaccounted 38.42
+[2026-10-12 22:20:22.409] [debug] [eot] [t101563] [textures] 0xfbd14e10: 512x512x1 mips 0..4 fmt 18 tiled gamma base 0xfd2ef000 mip 0xfd30f000 -> host fmt 56
+[2026-10-12 22:20:22.598] [debug] [eot] [t101601] [pso] predictor: model 0xe3f70ca0: 1 materials, 1 (material,stride) refs, 12 slots -> 0 queued (5 without template); unresolved shader objects: 0 vs, 0 ps
+[2026-10-12 22:20:22.599] [debug] [eot] [t101601] [pso] predictor: model 0xe3f704f0: 1 materials, 1 (material,stride) refs, 11 slots -> 0 queued (1 without template); unresolved shader objects: 0 vs, 1 ps
+[2026-10-12 22:20:22.599] [debug] [eot] [t101601] [pso] predictor: model 0xe3f70260: 1 materials, 1 (material,stride) refs, 11 slots -> 0 queued (1 without template); unresolved shader objects: 0 vs, 1 ps
+[2026-10-12 22:20:22.602] [debug] [eot] [t101601] [pso] predictor: model 0xe3f6f820: 2 materials, 2 (material,stride) refs, 44 slots -> 0 queued (4 without template); unresolved shader objects: 0 vs, 4 ps
+[2026-10-12 22:20:22.608] [debug] [eot] [t101601] [pso] predictor: model 0xe3f6e110: 1 materials, 1 (material,stride) refs, 11 slots -> 0 queued (1 without template); unresolved shader objects: 0 vs, 1 ps
+[2026-10-12 22:20:22.611] [debug] [eot] [t101601] [pso] predictor: model 0xe3f6ca00: 1 materials, 1 (material,stride) refs, 11 slots -> 0 queued (1 without template); unresolved shader objects: 0 vs, 1 ps
+[2026-10-12 22:20:22.614] [debug] [eot] [t101601] [pso] predictor: model 0xe3f6c4e0: 1 materials, 1 (material,stride) refs, 6 slots -> 0 queued (3 without template); unresolved shader objects: 0 vs, 0 ps
+[2026-10-12 22:20:22.618] [debug] [eot] [t101601] [pso] predictor: model 0xe3f6b060: 4 materials, 4 (material,stride) refs, 77 slots -> 0 queued (7 without template); unresolved shader objects: 0 vs, 7 ps
+[2026-10-12 22:20:22.630] [debug] [eot] [t101601] [pso] predictor: model 0xe3f6a8b0: 1 materials, 1 (material,stride) refs, 22 slots -> 15 queued (2 without template); unresolved shader objects: 0 vs, 2 ps
+[2026-10-12 22:20:22.640] [debug] [eot] [t101601] [pso] predictor: model 0xe3f6a620: 1 materials, 1 (material,stride) refs, 11 slots -> 0 queued (1 without template); unresolved shader objects: 0 vs, 1 ps
+[2026-10-12 22:20:22.642] [debug] [eot] [t101601] [pso] predictor: model 0xe3f6a100: 2 materials, 2 (material,stride) refs, 22 slots -> 0 queued (2 without template); unresolved shader objects: 0 vs, 2 ps
+[2026-10-12 22:20:22.646] [debug] [eot] [t101601] [pso] predictor: model 0xe3f69430: 1 materials, 1 (material,stride) refs, 22 slots -> 0 queued (10 without template); unresolved shader objects: 0 vs, 0 ps
+[2026-10-12 22:20:22.659] [debug] [eot] [t101601] [pso] predictor: model 0xe3f67fb0: 2 materials, 2 (material,stride) refs, 34 slots -> 12 queued (15 without template); unresolved shader objects: 0 vs, 0 ps
+[2026-10-12 22:20:22.677] [debug] [eot] [t101601] [pso] predictor: model 0xe3f64750: 1 materials, 1 (material,stride) refs, 11 slots -> 0 queued (1 without template); unresolved shader objects: 0 vs, 1 ps
+[2026-10-12 22:20:22.680] [debug] [eot] [t101563] [textures] 0xf928a680: 512x512x1 mips 0..7 fmt 20 tiled gamma base 0xfd91f000 mip 0xfd95f000 -> host fmt 62
+[2026-10-12 22:20:22.704] [debug] [eot] [t101563] [textures] 0xf9289fd0: 256x256x1 mips 0..6 fmt 18 tiled gamma base 0xfd8e6000 mip 0xfd8ee000 -> host fmt 56
+[2026-10-12 22:20:22.704] [debug] [eot] [t101563] [textures] 0xf928a9b0: 512x512x1 mips 0..7 fmt 20 tiled linear-sign base 0xfd980000 mip 0xfd9c0000 -> host fmt 61
+[2026-10-12 22:20:22.723] [debug] [eot] [t101563] [textures] 0xf928aa00: 512x512x1 mips 0..7 fmt 20 tiled gamma base 0xfd9e1000 mip 0xfda21000 -> host fmt 62
+[2026-10-12 22:20:22.723] [debug] [eot] [t101563] [textures] 0xf928aa60: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfda56000 mip 0xfda76000 -> host fmt 56
+[2026-10-12 22:20:22.751] [debug] [eot] [t101563] [textures] 0xf928b1f0: 1024x1024x1 mips 0..8 fmt 18 tiled gamma base 0xfda87000 mip 0xfdb07000 -> host fmt 56
+[2026-10-12 22:20:22.752] [debug] [eot] [t101563] [textures] 0xf928abc0: 512x512x1 mips 0..7 fmt 20 tiled gamma base 0xfdb38000 mip 0xfdb78000 -> host fmt 62
+[2026-10-12 22:20:22.775] [debug] [eot] [t101563] [textures] 0xf928b040: 128x256x1 mips 0..2 fmt 18 tiled gamma base 0xfd8f7000 mip 0xfd8fb000 -> host fmt 56
+[2026-10-12 22:20:22.806] [debug] [eot] [t101563] [textures] 0xf928b0f0: 1024x1024x1 mips 0..8 fmt 20 tiled linear-sign base 0xfdb99000 mip 0xfdc99000 -> host fmt 61
+[2026-10-12 22:20:22.844] [debug] [eot] [t101563] [textures] 0xf928b140: 1024x1024x1 mips 0..8 fmt 20 tiled linear-sign base 0xfdd02000 mip 0xfde02000 -> host fmt 61
+[2026-10-12 22:20:22.861] [debug] [eot] [t101563] [textures] 0xf928b090: 128x256x1 mips 0..2 fmt 20 tiled linear-sign base 0xfde63000 mip 0xfde6b000 -> host fmt 61
+[2026-10-12 22:20:22.862] [debug] [eot] [t101563] [textures] 0xf928b790: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfd871000 mip 0xfd891000 -> host fmt 56
+[2026-10-12 22:20:22.862] [debug] [eot] [t101563] [textures] 0xf928b7e0: 512x64x1 mips 0..4 fmt 18 tiled gamma base 0xfda42000 mip 0xfda4a000 -> host fmt 56
+[2026-10-12 22:20:22.883] [debug] [eot] [t101563] [textures] 0xf928b830: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfde94000 mip 0xfdeb4000 -> host fmt 56
+[2026-10-12 22:20:22.884] [debug] [eot] [t101563] [textures] 0xf928b880: 256x32x1 mips 0..3 fmt 20 tiled gamma base 0xfdee9000 mip 0xfdef1000 -> host fmt 62
+[2026-10-12 22:20:22.884] [debug] [eot] [t101563] [textures] 0xf928b930: 64x128x1 mips 0..2 fmt 20 tiled gamma base 0xfd8a2000 mip 0xfd8a6000 -> host fmt 62
+[2026-10-12 22:20:22.884] [debug] [eot] [t101563] [textures] 0xf928b8d0: 1024x1024x1 mips 0..8 fmt 18 tiled gamma base 0xfdef6000 mip 0xfdf76000 -> host fmt 56
+[2026-10-12 22:20:22.909] [debug] [eot] [t101563] [textures] 0xf928b980: 1024x1024x1 mips 0..8 fmt 18 tiled linear-sign base 0xfdfa7000 mip 0xfe027000 -> host fmt 55
+[2026-10-12 22:20:22.934] [debug] [eot] [t101563] [textures] 0xf928b9d0: 512x512x1 mips 0..7 fmt 18 tiled linear-sign base 0xfe058000 mip 0xfe078000 -> host fmt 55
+[2026-10-12 22:20:22.935] [debug] [eot] [t101563] [textures] 0xf928e930: 256x512x1 mips 0..2 fmt 18 tiled linear-sign base 0xfde74000 mip 0xfde84000 -> host fmt 55
+[2026-10-12 22:20:22.935] [debug] [eot] [t101563] [textures] 0xf928e980: 128x128x6 mips 0..2 fmt 18 tiled gamma base 0xfe089000 mip 0xfe095000 -> host fmt 56
+[2026-10-12 22:20:22.958] [debug] [eot] [t101563] [textures] 0xf928e9d0: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfe0ae000 mip 0xfe0ce000 -> host fmt 56
+[2026-10-12 22:20:22.979] [debug] [eot] [t101563] [textures] 0xf928f090: 256x64x1 mips 0..4 fmt 20 tiled gamma base 0xfe103000 mip 0xfe10b000 -> host fmt 62
+[2026-10-12 22:20:23.004] [debug] [eot] [t101563] [textures] 0xf9297ec0: 512x512x1 mips 0..7 fmt 20 tiled linear-sign base 0xfe138000 mip 0xfe178000 -> host fmt 61
+[2026-10-12 22:20:23.005] [debug] [eot] [t101563] [textures] 0xf9297b00: 512x256x1 mips 0..6 fmt 20 tiled gamma base 0xfe199000 mip 0xfe1b9000 -> host fmt 62
+[2026-10-12 22:20:23.005] [debug] [eot] [t101563] [textures] 0xf9298180: 512x256x1 mips 0..6 fmt 20 tiled linear-sign base 0xfe1ce000 mip 0xfe1ee000 -> host fmt 61
+[2026-10-12 22:20:23.033] [debug] [eot] [t101563] [textures] 0xf9296150: 512x512x1 mips 0..7 fmt 18 tiled gamma base 0xfe203000 mip 0xfe223000 -> host fmt 56
+[2026-10-12 22:20:23.033] [debug] [eot] [t101563] [textures] 0xf9297ca0: 512x256x1 mips 0..6 fmt 18 tiled gamma base 0xfdec5000 mip 0xfded5000 -> host fmt 56
+[2026-10-12 22:20:23.036] [debug] [eot] [t101863] [pkg] mount id 602 'L:/06A_SM99_010_GenLab99_T.pak' -> flags 0x8014 openFlags 0x0
+[2026-10-12 22:20:23.047] [debug] [eot] [t101575] [pso] GLAPIPackage::Load(0x4a 'L:/EnemyGunnerFutureExtraData.pak')
+[2026-10-12 22:20:23.047] [debug] [eot] [t101575] [pso] package 0x4a: 0 of 126 recorded pipelines queued on the recorded lane
+[2026-10-12 22:20:23.047] [debug] [eot] [t101575] [pso] GLAPIPackage::Load(0x51 'L:/EnemyRangerExtraData.pak')
+[2026-10-12 22:20:23.047] [debug] [eot] [t101575] [pso] package 0x51: 0 of 100 recorded pipelines queued on the recorded lane
+[2026-10-12 22:20:23.047] [debug] [eot] [t101575] [pso] GLAPIPackage::Load(0x5d 'L:/EnemyCleanerFutureExtraData.pak')
+[2026-10-12 22:20:23.047] [debug] [eot] [t101575] [pso] package 0x5d: 0 of 43 recorded pipelines queued on the recorded lane
+[2026-10-12 22:20:23.047] [debug] [eot] [t101575] [pso] GLAPIPackage::Load(0x42 'L:/EnemyCrasherFutureExtraData.pak')
+[2026-10-12 22:20:23.047] [debug] [eot] [t101575] [pso] package 0x42: 0 of 126 recorded pipelines queued on the recorded lane
+[2026-10-12 22:20:23.047] [debug] [eot] [t101575] [pso] GLAPIPackage::Load(0x4a 'L:/EnemyGunnerFutureExtraData.pak')
+[2026-10-12 22:20:23.047] [debug] [eot] [t101575] [pso] package 0x4a: 0 of 126 recorded pipelines queued on the recorded lane
+[2026-10-12 22:20:23.047] [debug] [eot] [t101575] [pso] GLAPIPackage::Load(0x5d 'L:/EnemyCleanerFutureExtraData.pak')
+[2026-10-12 22:20:23.047] [debug] [eot] [t101575] [pso] package 0x5d: 0 of 43 recorded pipelines queued on the recorded lane
+[2026-10-12 22:20:23.047] [debug] [eot] [t101575] [pso] GLAPIPackage::Load(0x42 'L:/EnemyCrasherFutureExtraData.pak')
+[2026-10-12 22:20:23.047] [debug] [eot] [t101575] [pso] package 0x42: 0 of 126 recorded pipelines queued on the recorded lane
+[2026-10-12 22:20:23.047] [debug] [eot] [t101575] [pso] GLAPIPackage::Load(0x51 'L:/EnemyRangerExtraData.pak')
+[2026-10-12 22:20:23.047] [debug] [eot] [t101575] [pso] package 0x51: 0 of 100 recorded pipelines queued on the recorded lane
+[2026-10-12 22:20:23.047] [debug] [eot] [t101575] [pso] GLAPIPackage::Load(0x46 'L:/EnemyHatchlingExtraData.pak')
+[2026-10-12 22:20:23.048] [debug] [eot] [t101575] [pso] package 0x46: 0 of 136 recorded pipelines queued on the recorded lane
+[2026-10-12 22:20:23.048] [debug] [eot] [t101575] [pso] GLAPIPackage::Load(0x42 'L:/EnemyCrasherFutureExtraData.pak')
+[2026-10-12 22:20:23.048] [debug] [eot] [t101575] [pso] package 0x42: 0 of 126 recorded pipelines queued on the recorded lane
+[2026-10-12 22:20:23.048] [debug] [eot] [t101575] [pso] GLAPIPackage::Load(0x5d 'L:/EnemyCleanerFutureExtraData.pak')
+[2026-10-12 22:20:23.048] [debug] [eot] [t101575] [pso] package 0x5d: 0 of 43 recorded pipelines queued on the recorded lane
+[2026-10-12 22:20:23.072] [debug] [fs] [t101598] VFS: entry not found for 'D:\Data\EnemyRangerExtraData.pak' (via symlink '\Device\Harddisk0\Partition1\Data\EnemyRangerExtraData.pak') on device '\Device\Harddisk0\Partition1'
+[2026-10-12 22:20:23.072] [debug] [krnl] [t101598] rexcrt_GetFileAttributesA: not found 'D:\Data\EnemyRangerExtraData.pak'
+[2026-10-12 22:20:23.073] [debug] [eot] [t101458] [pkg] open 'L:/EnemyRangerExtraData.pak' mode 0x11 -> 0x1
+[2026-10-12 22:20:23.099] [debug] [eot] [t101458] [pkg] mount id 81 'L:/EnemyRangerExtraData.pak' -> flags 0x8014 openFlags 0x0
+[2026-10-12 22:20:23.102] [debug] [eot] [t101563] [hitch] frame 151706 threads: capture 2.42 present-wait 1.14 worker-idle 35.42 blit 0.10 house 0.34 | gpu 2.55 (1 frames collected) | transfers 0 evicted 0 vtx-miss 0 idx-miss 1 pso-binds 404 dead-resolves 22 | guest+other 37.54
+[2026-10-12 22:20:23.102] [debug] [eot] [t101563] [hitch] frame 151706 took 41.1 ms: draw 2.98 (681 draws) upload 0.00 (0 tex) resolve 0.59 (35) link 0.00 (0) pso 0.00 (0) guest d3d 0.20 (127 calls) | acquire 0.02 submit 0.10 fence 0.12 pace 0.00 | new host objects: 0 tex (0 surface 0 mirror 0 guest, 0 recycled) 0 views 0 fb, 0 parked | vtx 384 KB idx 18 KB const 1141 KB | live 862 tex 118 surf, pool 38 | resolve: mirror 0.02 fb 0.00 bind 0.02 | scans: alias 0.11 msaa 0.03 | unaccounted 37.08
+[2026-10-12 22:20:23.130] [debug] [eot] [t101601] [pso] predictor: model 0xe3f518f0: 1 materials, 1 (material,stride) refs, 6 slots -> 0 queued (3 without template); unresolved shader objects: 0 vs, 0 ps
+[2026-10-12 22:20:23.142] [debug] [fs] [t101598] VFS: entry not found for 'D:\Data\EnemyGunnerFutureExtraData.pak' (via symlink '\Device\Harddisk0\Partition1\Data\EnemyGunnerFutureExtraData.pak') on device '\Device\Harddisk0\Partition1'
+[2026-10-12 22:20:23.142] [debug] [krnl] [t101598] rexcrt_GetFileAttributesA: not found 'D:\Data\EnemyGunnerFutureExtraData.pak'
+[2026-10-12 22:20:23.143] [debug] [eot] [t101507] [pkg] open 'L:/EnemyGunnerFutureExtraData.pak' mode 0x11 -> 0x1
+[2026-10-12 22:20:23.158] [debug] [eot] [t101507] [pkg] mount id 74 'L:/EnemyGunnerFutureExtraData.pak' -> flags 0x8014 openFlags 0x0
+[2026-10-12 22:20:23.159] [critical] [eot] [t101507] ================ reeot host crash ================
+[2026-10-12 22:20:23.162] [critical] [eot] [t101507] build: reeot 1.0.0 9c2c4a3ae [rexglue-v0.10.0.43-dev.g25d6a61-Release]
+[2026-10-12 22:20:23.163] [critical] [eot] [t101507] module base: eboot.bin @ 0x0000000000000000
+[2026-10-12 22:20:23.163] [critical] [eot] [t101507] exception: ACCESS_VIOLATION @ host pc 0x00000000004510bf
+[2026-10-12 22:20:23.164] [critical] [eot] [t101507] faulting module: 
+[2026-10-12 22:20:23.165] [critical] [eot] [t101507] fault address: 0x000000203e981078 (read)
+[2026-10-12 22:20:23.166] [critical] [eot] [t101507] registers:
+[2026-10-12 22:20:23.166] [critical] [eot] [t101507]     rip = 0x00000000004510bf   eflags = 0x00010206
+[2026-10-12 22:20:23.167] [critical] [eot] [t101507]     rax = 0xffffffffffff1f90
+[2026-10-12 22:20:23.168] [critical] [eot] [t101507]     rcx = 0x00000000049087b0
+[2026-10-12 22:20:23.168] [critical] [eot] [t101507]     rdx = 0x0000000000000001
+[2026-10-12 22:20:23.169] [critical] [eot] [t101507]     rbx = 0x000000203e981078
+[2026-10-12 22:20:23.170] [critical] [eot] [t101507]     rsp = 0x000000049eabfa80
+[2026-10-12 22:20:23.170] [critical] [eot] [t101507]     rbp = 0x000000049eabfa90
+[2026-10-12 22:20:23.171] [critical] [eot] [t101507]     rsi = 0x000000203e981078
+[2026-10-12 22:20:23.172] [critical] [eot] [t101507]     rdi = 0x000000202c75f8a8
+[2026-10-12 22:20:23.173] [critical] [eot] [t101507]      r8 = 0x0000000000000000
+[2026-10-12 22:20:23.173] [critical] [eot] [t101507]      r9 = 0x0000000000000000
+[2026-10-12 22:20:23.174] [critical] [eot] [t101507]     r10 = 0x000000202c9ea090
+[2026-10-12 22:20:23.175] [critical] [eot] [t101507]     r11 = 0x00000020323a2250
+[2026-10-12 22:20:23.175] [critical] [eot] [t101507]     r12 = 0x0000000800040ed0
+[2026-10-12 22:20:23.176] [critical] [eot] [t101507]     r13 = 0x0000000800040e70
+[2026-10-12 22:20:23.177] [critical] [eot] [t101507]     r14 = 0x000000203219b7a0
+[2026-10-12 22:20:23.178] [critical] [eot] [t101507]     r15 = 0x0000000000e54e00
+[2026-10-12 22:20:23.178] [critical] [eot] [t101507] stack code addresses (sp 0x000000049eabfa80, first is the return address of the call that faulted):
+[2026-10-12 22:20:23.179] [critical] [eot] [t101507]     (no module addresses on the stack)
+[2026-10-12 22:20:23.180] [critical] [eot] [t101507] backtrace (24 frames, top frames are the crash handler):
+[2026-10-12 22:20:23.180] [debug] [eot] [t101563] [hitch] frame 151708 threads: capture 2.76 present-wait 0.70 worker-idle 56.53 blit 0.10 house 0.29 | gpu 2.35 (1 frames collected) | transfers 0 evicted 0 vtx-miss 0 idx-miss 1 pso-binds 404 dead-resolves 22 | guest+other 58.21
+[2026-10-12 22:20:23.180] [critical] [eot] [t101507]     [ 0] 0x0000000000e54120  ()
+[2026-10-12 22:20:23.180] [debug] [eot] [t101563] [hitch] frame 151708 took 61.7 ms: draw 2.57 (685 draws) upload 0.00 (0 tex) resolve 0.73 (35) link 0.00 (0) pso 0.00 (0) guest d3d 0.39 (127 calls) | acquire 0.02 submit 0.07 fence 0.08 pace 0.00 | new host objects: 0 tex (0 surface 0 mirror 0 guest, 0 recycled) 0 views 0 fb, 0 parked | vtx 381 KB idx 18 KB const 1151 KB | live 862 tex 118 surf, pool 38 | resolve: mirror 0.03 fb 0.00 bind 0.02 | scans: alias 0.14 msaa 0.03 | unaccounted 57.80
+[2026-10-12 22:20:23.181] [critical] [eot] [t101507]     [ 1] 0x0000000000459ac0  ()
+[2026-10-12 22:20:23.182] [critical] [eot] [t101507]     [ 2] 0x00000000004596c3  ()
+[2026-10-12 22:20:23.183] [critical] [eot] [t101507]     [ 3] 0x0000000002b1e4d2  ()
+[2026-10-12 22:20:23.183] [critical] [eot] [t101507]     [ 4] 0x000000080000cbbf  ()
+[2026-10-12 22:20:23.184] [critical] [eot] [t101507]     [ 5] 0x000000080000c67a  ()
+[2026-10-12 22:20:23.185] [critical] [eot] [t101507]     [ 6] 0x00000007eeffc003  ()
+[2026-10-12 22:20:23.185] [critical] [eot] [t101507]     [ 7] 0x00000000004510bf  ()
+[2026-10-12 22:20:23.186] [critical] [eot] [t101507]     [ 8] 0x0000000000e54273  ()
+[2026-10-12 22:20:23.187] [critical] [eot] [t101507]     [ 9] 0x0000000800040bc9  ()
+[2026-10-12 22:20:23.188] [critical] [eot] [t101507]     [10] 0x00000008000079be  ()
+[2026-10-12 22:20:23.188] [critical] [eot] [t101507]     [11] 0x0000000800007947  ()
+[2026-10-12 22:20:23.189] [critical] [eot] [t101507]     [12] 0x000000080000783b  ()
+[2026-10-12 22:20:23.190] [critical] [eot] [t101507]     [13] 0x0000000002b8d170  ()
+[2026-10-12 22:20:23.190] [critical] [eot] [t101507]     [14] 0x0000000002cc282f  ()
+[2026-10-12 22:20:23.191] [critical] [eot] [t101507]     [15] 0x0000000002e621c6  ()
+[2026-10-12 22:20:23.192] [critical] [eot] [t101507]     [16] 0x00000000012f7c99  ()
+[2026-10-12 22:20:23.192] [critical] [eot] [t101507]     [17] 0x00000000013b6ec2  ()
+[2026-10-12 22:20:23.193] [critical] [eot] [t101507]     [18] 0x00000000018e15cc  ()
+[2026-10-12 22:20:23.194] [critical] [eot] [t101507]     [19] 0x0000000002cc4fa8  ()
+[2026-10-12 22:20:23.195] [critical] [eot] [t101507]     [20] 0x0000000002cc8e59  ()
+[2026-10-12 22:20:23.195] [critical] [eot] [t101507]     [21] 0x0000000002b88348  ()
+[2026-10-12 22:20:23.196] [critical] [eot] [t101507]     [22] 0x0000000000e54c39  ()
+[2026-10-12 22:20:23.197] [critical] [eot] [t101507]     [23] 0x000000080000758d  ()
+[2026-10-12 22:20:23.197] [critical] [eot] [t101507] ===================================================
+[2026-10-12 22:20:23.198] [error] [eot] [t101507] Fatal: reeot crashed - reeot hit a fatal error and has to close.
+
+ACCESS_VIOLATION at 0x00000000004510bf
