@@ -1,0 +1,34 @@
+[2026-10-12 07:37:14.437] [info] [eot] [t102359] reeot v1.0.0 [Release] ps5-amd64
+[2026-10-12 07:37:14.439] [info] [eot] [t102359]   commit:  215210a00 on claude/nifty-knuth-s27y9o (local modifications)
+[2026-10-12 07:37:14.440] [info] [eot] [t102359]   built:   20261012_0623 with Clang 20.1.2
+[2026-10-12 07:37:14.441] [info] [eot] [t102359]   sdk:     rexglue-v0.10.0.43-dev.g25d6a61 ps5-amd64 @20261012_0531
+[2026-10-12 07:37:14.441] [info] [eot] [t102359]   profile: default (/app0/profiles/default)
+[2026-10-12 07:37:14.451] [info] [eot] [t102359] [language] eot_language auto -> English (XLanguage 1)
+[2026-10-12 07:37:14.452] [info] [eot] [t102359] [input] controller input in the background: off
+[2026-10-12 07:37:14.453] [info] [eot] [t102359] [window] 3840x2160, fullscreen
+[2026-10-12 07:37:14.457] [info] [eot] [t102359] [install] game folder /app0/gamedata
+[2026-10-12 07:37:14.459] [info] [sys] [t102359] Guest memory arena mapped: virtual base 0x0000001000000000, physical base 0x0000001100000000
+[2026-10-12 07:37:14.486] [info] [core] [t102359] PS5: fault records go to /app0/logs/fault.log
+[2026-10-12 07:37:14.486] [info] [core] [t102359] PS5: code at 0x400000-0x26d8000 made readable for the MMIO handler
+[2026-10-12 07:37:14.487] [info] [eot] [t102359] [pad] no controller for the first player
+[2026-10-12 07:37:14.511] [info] [core] [t102359] Function table initialized for module: code=82080000-8238E6EC, image=82000000-82600000
+[2026-10-12 07:37:14.514] [info] [eot] [t102359] [boot] entry xex is Default.xex
+[2026-10-12 07:37:14.649] [info] [core] [t102359] XEX patch applied successfully: base version: 0.0.0.2, new version: 0.0.1.2
+[2026-10-12 07:37:14.693] [info] [eot] [t102359] [gpu] display 3840x2160 at 60 Hz, fullscreen (the display suggests 1440p)
+[2026-10-12 07:37:14.730] [info] [eot] [t102359] [gpu] render thread started: 1024 command slots (14 MB), batches of 64
+[2026-10-12 07:37:14.731] [info] [eot] [t102359] [gpu] Vulkan on PlayStation 5 GPU (RADV NAVI21) ready: swapchain 3840x2160, 32768 bindless texture slots, msaa 1x on the full-frame surfaces
+[2026-10-12 07:37:14.731] [info] [eot] [t102359] [gpu] internal render 1914x1080 (1080p = 1.709x the guest's 1120x632), fitted to the window at present; vsync on, fps cap 60
+[2026-10-12 07:37:14.732] [error] [eot] [t102359] [shaders] the embedded shader cache is empty: build reeot_shader_cache_regen and rebuild; no guest shader will run
+[2026-10-12 07:37:14.753] [info] [eot] [t102359] [pso] 6 pipeline worker thread(s) for 8 physical cores
+[2026-10-12 07:37:14.799] [info] [eot] [t102359] [pso] boot: 3066 compiled-in + 0 local rows -> 1400 queued on the recorded lane, 1573 held for 96 level package(s) (93 duplicate); templates: 774; capturing every pipeline drawn to /app0/profiles/default/cache/pso/ as 'session'
+[2026-10-12 07:37:14.802] [info] [core] [t102359] PS5 pad connected: user 513995993, handle 64685824
+[2026-10-12 07:37:14.923] [error] [sys] [t102313] CreateThread failed
+[2026-10-12 07:37:14.924] [error] [krnl] [t102313] Thread creation failed: C0000017
+[2026-10-12 07:37:14.925] [error] [sys] [t102313] CreateThread failed
+[2026-10-12 07:37:14.925] [error] [krnl] [t102313] Thread creation failed: C0000017
+[2026-10-12 07:37:14.926] [error] [sys] [t102313] CreateThread failed
+[2026-10-12 07:37:14.927] [error] [krnl] [t102313] Thread creation failed: C0000017
+[2026-10-12 07:37:14.928] [error] [sys] [t102313] CreateThread failed
+[2026-10-12 07:37:14.928] [error] [krnl] [t102313] Thread creation failed: C0000017
+[2026-10-12 07:37:14.929] [error] [sys] [t102313] CreateThread failed
+[2026-10-12 07:37:14.929] [error] [krnl] [t102313] Thread creation failed: C0000017

@@ -1,0 +1,10 @@
+startup: main: entered the ReXGlue app
+startup: main: initializing cvars and early ReXGlue logging
+startup: main: constructing application context
+startup: main: initializing application
+startup: app: environment
+startup: app: presentation
+startup: app: paths
+startup: app: runtime
+startup: app: launching the module
+startup: main: entering UI event loop
