@@ -137,4 +137,4 @@ set(PS5_TITLE_LINK_INPUTS
 	# abort() through the runtime's fault records (its __wrap_abort)
 	--wrap=abort)
 set(PS5_TITLE_LINK_DEPENDS ${reeot_runtime_dir}/librexruntime.a ${reeot_runtime_archives} reeot_plume
-	${reeot_game_link_depends})
+	$<TARGET_OBJECTS:reeot_plume> ${reeot_game_link_depends})
