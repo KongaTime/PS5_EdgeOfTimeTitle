@@ -13,28 +13,28 @@ PS5 layer (the launch, the pad, klog, the build and the console tools). It links
 the same way. Its program is in `reeot/`, and runs in place of the template's samples
 (`PS5_TITLE_MAIN` in `ps5/src/main.cpp`).
 
-## What it runs now: test app 4
+## What it runs now: test app 5
 
 The title links the ReXGlue fork's runtime and runs the ReXGlue app the link holds
 through the runtime's PS5 entry, `rex_ps5_app_main` (`reeot/title_main.cpp`). For now
-that app is test app 4 (`reeot/rex_test_app.cpp`), which checks the PS5 app layer the
-fork ported from TheSimpsonsGame-PS5-Builder (the fork's `ps5/PORTED.md`), in order:
+that app is test app 5 (`reeot/rex_test_app.cpp`), which checks, in order:
 
 - the window: the display surface's size;
-- the guest memory: `Memory::Initialize`, as the game calls it, which also installs the
-  MMIO handler and so makes the title's code readable; then a read of the app's code;
-- the sound: a 440 Hz tone for two seconds through the ported `sceAudioOut` driver,
-  fed from guest memory;
-- the controller: a short rumble, then 15 seconds of the bumpers and triggers alone and
-  15 seconds of everything, through `CreateDefaultInputSystem` and the ported `scePad`
-  driver;
-- the fault records: a write to address 0 a few calls deep, which no ReXGlue handler
-  takes, so the runtime writes its record and backtrace to `/app0/logs/fault.log` and
-  the title ends. The title links with `--wrap=abort`, so an `abort()` is recorded too.
+- the picture: EdgeOfTimeRecomp's renderer, plume (its `thirdparty/plume` with
+  `ps5/patches/plume-ps5.patch`), on the PS5 display: plume's device, a command queue and
+  a swap chain on a `VK_KHR_display` surface, cleared to red, green, blue and white for a
+  second each (`reeot/plume_test.cpp`). plume gets Vulkan from the RADV linked into the
+  title; its messages go into the results file;
+- the guest memory: `Memory::Initialize` and a read of the app's code;
+- the sound: a one-second 440 Hz tone through the ported `sceAudioOut` driver.
 
-Test app 3 (2026-10-12, `reeot/results/2026-10-12-test3.txt`) ran the first four with one
-20-second controller phase: the runtime started and quit cleanly, the tone was heard and
-the rumble felt.
+The build takes plume from EdgeOfTimeRecomp's checkout (`EDGEOFTIMERECOMP_SRC`, or
+`../EdgeOfTimeRecomp`), with its submodules and the patch applied.
+
+Test apps 3 and 4 (2026-10-12, `reeot/results/`) checked the window, the memory, the
+sound, every button, stick and trigger of the controller, the rumble and the fault
+records (`/app0/logs/fault.log`, with a backtrace); their controller and crash steps are
+in `reeot/rex_test_app.cpp`'s history (`a6dad73`).
 
 It writes `/app0/reeot-test-results.txt` (`/data/homebrew/PPSA99300/` on the console),
 with the runtime's start-up stages (`prospero_startup_log`, which the title gives the

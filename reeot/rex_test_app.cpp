@@ -1,29 +1,23 @@
 /*
- * EdgeOfTimeRecomp for the PS5 - test app 4: the ReXGlue runtime on the
- * console, through the PS5 app layer the fork ported from
- * TheSimpsonsGame-PS5-Builder (rexglue-sdk's ps5/PORTED.md), and its fault
- * records.
+ * EdgeOfTimeRecomp for the PS5 - test app 5: EdgeOfTimeRecomp's renderer,
+ * plume, on the PS5 display, inside the ReXGlue runtime.
  *
  * The title's main calls rex_ps5_app_main (reeot/title_main.cpp), which runs
- * this app on the ported app context and window. It checks, in order:
+ * this app on the PS5 app layer the fork ported from TheSimpsonsGame-PS5-
+ * Builder (rexglue-sdk's ps5/PORTED.md). It checks, in order:
  *
  * 1. the window: the display surface's size;
- * 2. the guest memory: Memory::Initialize, as the game will call it, which
- *    also installs the MMIO handler and so makes the title's code readable
- *    (the fork's ExceptionHandler::Install); a read of this app's code then;
- * 3. the sound: a 440 Hz tone for two seconds through the ported sceAudioOut
- *    driver, fed from guest memory as the guest's audio client feeds it;
- * 4. the controller: a short rumble, then 15 seconds of the bumpers and
- *    triggers alone, then 15 seconds of everything (each change of the buttons,
- *    triggers and sticks, and each key going down or up, without repeats;
- *    CreateDefaultInputSystem, the ported scePad driver);
- * 5. the fault records: a write to address 0 from a few calls deep, which no
- *    ReXGlue handler takes, so the fork's ForwardUnhandledException writes its
- *    record and backtrace to /app0/logs/fault.log before the title ends.
+ * 2. the picture: plume's device and a swap chain on the display, cleared to
+ *    red, green, blue and white for a second each (reeot/plume_test.cpp);
+ * 3. the guest memory: Memory::Initialize, and a read of this app's code;
+ * 4. the sound: a one-second 440 Hz tone through the ported sceAudioOut driver;
  *
- * Every line goes to the results file before its step (reeot_note), so a file
- * that stops says where. Test app 3 (2026-10-12) was steps 1 to 4 with one
- * 20-second controller phase, and quit cleanly.
+ * then quits through the app context. Every line goes to the results file
+ * before its step (reeot_note), so a file that stops says where.
+ *
+ * Test apps 3 and 4 (2026-10-12, reeot/results) checked the window, memory,
+ * sound, every button and stick of the controller and the fault records; their
+ * controller and crash steps are in this file's history (a6dad73).
  *
  * Copyright (C) 2026 KongaTime
  * SPDX-License-Identifier: MIT
@@ -38,8 +32,6 @@
 #include <thread>
 
 #include <rex/audio/prospero/prospero_audio_driver.h>
-#include <rex/input/input.h>
-#include <rex/input/input_system.h>
 #include <rex/system/xmemory.h>
 #include <rex/thread.h>
 #include <rex/ui/window.h>
@@ -47,11 +39,10 @@
 #include <rex/ui/windowed_app_context.h>
 
 extern "C" void reeot_note(const char *format, ...) __attribute__((format(printf, 1, 2)));
+extern "C" bool reeot_plume_test(const char *results);
 
 namespace
 {
-using Clock = std::chrono::steady_clock;
-
 uint32_t BigEndianFloat(float value)
 {
 	return __builtin_bswap32(std::bit_cast<uint32_t>(value));
@@ -66,7 +57,7 @@ class RexTestApp final : public rex::ui::WindowedApp {
 
 	bool OnInitialize() override
 	{
-		reeot_note("==== test app 4: the ReXGlue runtime and its fault records ====");
+		reeot_note("==== test app 5: EdgeOfTimeRecomp's renderer (plume) on the PS5 display ====");
 		reeot_note("window: creating it");
 		window_ = rex::ui::Window::Create(app_context(), "EdgeOfTimeRecomp", 1920, 1080);
 		if (!window_ || !window_->Open()) {
@@ -75,23 +66,6 @@ class RexTestApp final : public rex::ui::WindowedApp {
 		}
 		reeot_note("window: open, %ux%u", window_->GetActualPhysicalWidth(),
 			   window_->GetActualPhysicalHeight());
-
-		reeot_note("memory: Memory::Initialize (the 4.5 GiB guest arena, the MMIO handler)");
-		memory_ = std::make_unique<rex::memory::Memory>();
-		if (!memory_->Initialize()) {
-			reeot_note("memory: FAILED to initialize");
-			return false;
-		}
-		reeot_note("memory: initialized");
-		reeot_note("code: reading 16 bytes of this app's code (if this is the file's last line, "
-			   "the code is still execute-only)");
-		const volatile uint8_t *code = reinterpret_cast<const volatile uint8_t *>(&RexTestApp::Create);
-		uint8_t bytes[16];
-		for (int i = 0; i < 16; i++)
-			bytes[i] = code[i];
-		reeot_note("code: readable: %02x %02x %02x %02x %02x %02x %02x %02x ...", bytes[0], bytes[1],
-			   bytes[2], bytes[3], bytes[4], bytes[5], bytes[6], bytes[7]);
-
 		worker_ = std::thread([this] { Run(); });
 		return true;
 	}
@@ -101,10 +75,9 @@ class RexTestApp final : public rex::ui::WindowedApp {
 		stopping_ = true;
 		if (worker_.joinable())
 			worker_.join();
-		input_.reset();
 		window_.reset();
 		memory_.reset();
-		reeot_note("==== test app 4: done (not expected: it should have crashed on purpose) ====");
+		reeot_note("==== test app 5: done ====");
 	}
 
     private:
@@ -112,19 +85,36 @@ class RexTestApp final : public rex::ui::WindowedApp {
 
 	void Run()
 	{
-		TestSound();
-		TestController();
-		TestFaultRecord();
+		reeot_note("picture: %s", reeot_plume_test(REEOT_TEST_RESULTS) ? "passed" : "FAILED");
+		if (TestMemory())
+			TestSound();
 		reeot_note("quitting through the app context");
 		app_context().CallInUIThread([this] { app_context().QuitFromUIThread(); });
+	}
+
+	bool TestMemory()
+	{
+		reeot_note("memory: Memory::Initialize (the 4.5 GiB guest arena, the MMIO handler)");
+		memory_ = std::make_unique<rex::memory::Memory>();
+		if (!memory_->Initialize()) {
+			reeot_note("memory: FAILED to initialize");
+			return false;
+		}
+		reeot_note("memory: initialized");
+		const volatile uint8_t *code = reinterpret_cast<const volatile uint8_t *>(&RexTestApp::Create);
+		uint8_t bytes[4];
+		for (int i = 0; i < 4; i++)
+			bytes[i] = code[i];
+		reeot_note("code: readable: %02x %02x %02x %02x", bytes[0], bytes[1], bytes[2], bytes[3]);
+		return true;
 	}
 
 	void TestSound()
 	{
 		using rex::audio::prospero::kSamplesPerFrame;
 		constexpr size_t kGuestChannels = 6;
-		constexpr int kFrames = 375; // two seconds of 256-sample periods at 48 kHz
-		reeot_note("sound: opening the PS5 driver (sceAudioOut)");
+		constexpr int kFrames = 188; // a second of 256-sample periods at 48 kHz
+		reeot_note("sound: a one-second beep through the PS5 driver (sceAudioOut)");
 		auto semaphore = rex::thread::Semaphore::Create(64, 64);
 		auto driver = std::make_unique<rex::audio::prospero::ProsperoAudioDriver>(memory_.get(),
 											   semaphore.get());
@@ -133,22 +123,13 @@ class RexTestApp final : public rex::ui::WindowedApp {
 			return;
 		}
 		const uint32_t frame = memory_->SystemHeapAlloc(uint32_t(kSamplesPerFrame * kGuestChannels * 4));
-		if (!frame) {
-			reeot_note("sound: FAILED to allocate a guest frame");
-			return;
-		}
 		auto *planes = memory_->TranslateVirtual<uint32_t *>(frame);
-		reeot_note("sound: a 440 Hz tone for two seconds (you should hear it now)");
-		const auto start = Clock::now();
 		double phase = 0;
 		int submitted = 0;
 		for (; submitted < kFrames && !stopping_; submitted++) {
 			if (rex::thread::Wait(semaphore.get(), false, std::chrono::milliseconds(1000)) !=
-			    rex::thread::WaitResult::kSuccess) {
-				reeot_note("sound: no frame was played for a second; stopping");
+			    rex::thread::WaitResult::kSuccess)
 				break;
-			}
-			// Guest planes: FL, FR, FC, LFE, BL, BR, big-endian floats
 			for (size_t i = 0; i < kSamplesPerFrame; i++) {
 				const float value = float(0.25 * std::sin(phase));
 				phase += 2.0 * 3.14159265358979 * 440.0 / 48000.0;
@@ -158,122 +139,13 @@ class RexTestApp final : public rex::ui::WindowedApp {
 			}
 			driver->SubmitFrame(frame);
 		}
-		const auto elapsed =
-			std::chrono::duration_cast<std::chrono::milliseconds>(Clock::now() - start).count();
-		reeot_note("sound: %d frames submitted in %lld ms (played at 5.33 ms a frame, after 64 queued)",
-			   submitted, static_cast<long long>(elapsed));
 		driver->Shutdown();
 		memory_->SystemHeapFree(frame);
-		reeot_note("sound: driver closed");
+		reeot_note("sound: %d frames played", submitted);
 	}
 
-	void TestController()
-	{
-		reeot_note("controller: CreateDefaultInputSystem (the PS5 scePad driver)");
-		input_ = rex::input::CreateDefaultInputSystem(false);
-		if (!input_) {
-			reeot_note("controller: FAILED to create the input system");
-			return;
-		}
-		rex::input::X_INPUT_CAPABILITIES caps{};
-		const rex::X_RESULT caps_result = input_->GetCapabilities(0, rex::input::X_INPUT_FLAG_GAMEPAD, &caps);
-		reeot_note("controller: capabilities for player 1: 0x%08x, type %u, flags 0x%x",
-			   static_cast<unsigned>(caps_result), unsigned(caps.type), unsigned(caps.flags));
-
-		rex::input::X_INPUT_VIBRATION vibration{};
-		vibration.left_motor_speed = 0xffff;
-		vibration.right_motor_speed = 0xffff;
-		const rex::X_RESULT rumble = input_->SetState(0, &vibration);
-		reeot_note("controller: rumble on: 0x%08x (you should feel it for half a second)",
-			   static_cast<unsigned>(rumble));
-		std::this_thread::sleep_for(std::chrono::milliseconds(500));
-		vibration.left_motor_speed = 0;
-		vibration.right_motor_speed = 0;
-		input_->SetState(0, &vibration);
-
-		WatchController("press L1, R1, L2 and R2, one at a time, for 15 seconds", 15);
-		WatchController("press everything and move both sticks for 15 seconds", 15);
-		reeot_note("controller: done");
-	}
-
-	void WatchController(const char *prompt, int seconds)
-	{
-		reeot_note("controller: %s", prompt);
-		const auto end = Clock::now() + std::chrono::seconds(seconds);
-		rex::X_RESULT last_result = 0xffffffff;
-		uint32_t last_field = 0xffffffff;
-		int lines = 0;
-		while (Clock::now() < end && !stopping_ && lines < 300) {
-			rex::input::X_INPUT_STATE state{};
-			const rex::X_RESULT result = input_->GetState(0, &state);
-			if (result != last_result) {
-				reeot_note("controller: player 1 GetState 0x%08x%s", static_cast<unsigned>(result),
-					   result == 0 ? " (connected)" : "");
-				last_result = result;
-				lines++;
-			}
-			if (result == 0) {
-				const auto &pad = state.gamepad;
-				const auto axis = [](int16_t value) { return value > 16000 ? 1u : value < -16000 ? 2u : 0u; };
-				const uint32_t field = uint32_t(uint16_t(pad.buttons)) |
-						       (uint32_t(uint8_t(pad.left_trigger) > 64) << 16) |
-						       (uint32_t(uint8_t(pad.right_trigger) > 64) << 17) |
-						       (axis(int16_t(pad.thumb_lx)) << 18) | (axis(int16_t(pad.thumb_ly)) << 20) |
-						       (axis(int16_t(pad.thumb_rx)) << 22) | (axis(int16_t(pad.thumb_ry)) << 24);
-				if (field != last_field) {
-					reeot_note("controller: buttons 0x%04x, L2 %u, R2 %u, sticks L %d,%d R %d,%d (packet %u)",
-						   unsigned(uint16_t(pad.buttons)), unsigned(uint8_t(pad.left_trigger)),
-						   unsigned(uint8_t(pad.right_trigger)), int(int16_t(pad.thumb_lx)),
-						   int(int16_t(pad.thumb_ly)), int(int16_t(pad.thumb_rx)),
-						   int(int16_t(pad.thumb_ry)), unsigned(uint32_t(state.packet_number)));
-					last_field = field;
-					lines++;
-				}
-			}
-			// Keys going down and up; repeats (test app 3 saw them work) are
-			// counted, not listed
-			rex::input::X_INPUT_KEYSTROKE keystroke{};
-			while (input_->GetKeystroke(0, 0, &keystroke) == 0) {
-				const unsigned flags = unsigned(uint16_t(keystroke.flags));
-				if (flags & rex::input::X_INPUT_KEYSTROKE_REPEAT) {
-					repeats_++;
-					continue;
-				}
-				if (lines < 300) {
-					reeot_note("controller: key 0x%04x %s", unsigned(uint16_t(keystroke.virtual_key)),
-						   (flags & rex::input::X_INPUT_KEYSTROKE_KEYUP) ? "up" : "down");
-					lines++;
-				}
-			}
-			std::this_thread::sleep_for(std::chrono::milliseconds(16));
-		}
-		reeot_note("controller: that phase is over (%d lines, %u repeats so far)", lines, repeats_);
-	}
-
-	// A few real frames deep, so the backtrace has something to walk
-	__attribute__((noinline)) void CrashLevel3()
-	{
-		reeot_note("fault: writing to address 0 now (fault.log should get the record)");
-		*reinterpret_cast<volatile uint32_t *>(uintptr_t(0)) = 0x52455845; // "REXE"
-		__asm__ volatile("" ::: "memory");
-	}
-	__attribute__((noinline)) void CrashLevel2()
-	{
-		CrashLevel3();
-		__asm__ volatile("" ::: "memory");
-	}
-	__attribute__((noinline)) void TestFaultRecord()
-	{
-		reeot_note("fault: the last step crashes on purpose; then send /data/homebrew/PPSA99300/"
-			   "logs/fault.log too");
-		CrashLevel2();
-		__asm__ volatile("" ::: "memory");
-	}
-
-	unsigned repeats_ = 0;
 	std::unique_ptr<rex::ui::Window> window_;
 	std::unique_ptr<rex::memory::Memory> memory_;
-	std::unique_ptr<rex::input::InputSystem> input_;
 	std::thread worker_;
 	std::atomic<bool> stopping_{false};
 };

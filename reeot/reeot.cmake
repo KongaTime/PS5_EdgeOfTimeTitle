@@ -10,6 +10,12 @@
 # REXGLUE_PS5_BUILD for its build folder): its archives in the fork's
 # out/ps5-amd64/, linked whole into the title with the SDK's libc++experimental.
 #
+# The renderer is EdgeOfTimeRecomp's plume (../EdgeOfTimeRecomp, or
+# EDGEOFTIMERECOMP_SRC: its thirdparty/plume, with
+# ps5/patches/plume-ps5.patch applied), built here as reeot_plume, apart from the
+# samples so it keeps its own headers, and using the title's volk
+# (PLUME_NO_VOLK_IMPLEMENTATION).
+#
 # Copyright (C) 2026 KongaTime
 # SPDX-License-Identifier: MIT
 
@@ -24,6 +30,22 @@ if(NOT reeot_runtime_build)
 endif()
 get_filename_component(reeot_runtime_build "${reeot_runtime_build}" ABSOLUTE)
 set(reeot_runtime_dir ${reeot_rexglue}/out/ps5-amd64)
+set(reeot_eotr "$ENV{EDGEOFTIMERECOMP_SRC}")
+if(NOT reeot_eotr)
+	set(reeot_eotr ${ROOT}/../EdgeOfTimeRecomp)
+endif()
+get_filename_component(reeot_eotr "${reeot_eotr}" ABSOLUTE)
+set(reeot_plume ${reeot_eotr}/thirdparty/plume)
+if(NOT EXISTS ${reeot_plume}/contrib/volk/volk.h)
+	message(FATAL_ERROR "No plume with its submodules at ${reeot_plume}: git -C ${reeot_eotr} submodule update "
+		"--init thirdparty/plume, then git -C ${reeot_plume} submodule update --init contrib/volk "
+		"contrib/Vulkan-Headers contrib/VulkanMemoryAllocator")
+endif()
+file(READ ${reeot_plume}/plume_vulkan.cpp reeot_plume_source)
+if(NOT reeot_plume_source MATCHES "createProsperoDisplaySurface")
+	message(FATAL_ERROR "plume at ${reeot_plume} has no PS5 support: git -C ${reeot_plume} apply "
+		"${reeot_eotr}/ps5/patches/plume-ps5.patch")
+endif()
 if(NOT EXISTS ${reeot_runtime_dir}/librexruntime.a OR NOT EXISTS ${reeot_runtime_build}/include/rex/version.h)
 	message(FATAL_ERROR "No ReXGlue runtime built for the PS5 at ${reeot_runtime_dir} (build folder "
 		"${reeot_runtime_build}): run ps5/tools/build-rexglue.sh in EdgeOfTimeRecomp beside this "
@@ -32,6 +54,13 @@ endif()
 message(STATUS "EdgeOfTimeRecomp: the ReXGlue runtime from ${reeot_runtime_dir}")
 
 target_sources(samples PRIVATE ${ROOT}/reeot/title_main.cpp ${ROOT}/reeot/rex_test_app.cpp)
+
+# plume, and the picture test that drives it
+add_library(reeot_plume OBJECT ${reeot_plume}/plume_vulkan.cpp ${ROOT}/reeot/plume_test.cpp)
+target_include_directories(reeot_plume PRIVATE ${reeot_plume} ${reeot_plume}/contrib/volk
+	${reeot_plume}/contrib/Vulkan-Headers/include ${reeot_plume}/contrib/VulkanMemoryAllocator/include)
+target_compile_definitions(reeot_plume PRIVATE PLUME_NO_VOLK_IMPLEMENTATION NDEBUG)
+target_compile_options(reeot_plume PRIVATE -std=c++20 -O2 -fno-omit-frame-pointer)
 target_compile_definitions(samples PRIVATE PS5_TITLE_MAIN "REEOT_TEST_RESULTS=\"/app0/reeot-test-results.txt\"")
 
 # The app takes the runtime's headers, defines and language settings (its
@@ -67,9 +96,10 @@ endforeach()
 file(WRITE ${reeot_local_map} "{\n    local:\n${reeot_local_names}};\n")
 
 set(PS5_TITLE_LINK_INPUTS
+	$<TARGET_OBJECTS:reeot_plume>
 	--start-group ${reeot_runtime_dir}/librexruntime.a ${reeot_runtime_archives}
 	${PS5_PAYLOAD_SDK}/target/lib/libc++experimental.a --end-group
 	${reeot_libc_bindings} --version-script ${reeot_local_map}
 	# abort() through the runtime's fault records (its __wrap_abort)
 	--wrap=abort)
-set(PS5_TITLE_LINK_DEPENDS ${reeot_runtime_dir}/librexruntime.a ${reeot_runtime_archives})
+set(PS5_TITLE_LINK_DEPENDS ${reeot_runtime_dir}/librexruntime.a ${reeot_runtime_archives} reeot_plume)
