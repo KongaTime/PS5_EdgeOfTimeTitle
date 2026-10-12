@@ -1,0 +1,28 @@
+startup: main: entered the ReXGlue app
+startup: main: initializing cvars and early ReXGlue logging
+startup: main: constructing application context
+startup: main: initializing application
+==== test app 5: EdgeOfTimeRecomp's renderer (plume) on the PS5 display ====
+window: creating it
+window: open, 3840x2160
+startup: main: entering UI event loop
+picture: plume's Vulkan interface (RADV, linked in)
+picture: device created
+picture: a swap chain on the display in B8G8R8A8_UNORM
+picture: swap chain 3840x2160, 3 images
+picture: the screen should be red for a second now
+picture: the screen should be green for a second now
+picture: the screen should be blue for a second now
+picture: the screen should be white for a second now
+picture: 244 frames presented in four seconds
+picture: passed
+memory: Memory::Initialize (the 4.5 GiB guest arena, the MMIO handler)
+memory: initialized
+code: readable: 55 48 89 e5
+sound: a one-second beep through the PS5 driver (sceAudioOut)
+sound: 188 frames played
+quitting through the app context
+startup: main: shutting down application
+==== test app 5: done ====
+startup: main: returning success
+rex_ps5_app_main returned 0

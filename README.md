@@ -31,6 +31,10 @@ that app is test app 5 (`reeot/rex_test_app.cpp`), which checks, in order:
 The build takes plume from EdgeOfTimeRecomp's checkout (`EDGEOFTIMERECOMP_SRC`, or
 `../EdgeOfTimeRecomp`), with its submodules and the patch applied.
 
+Test app 5 ran on the console on 2026-10-12 (`reeot/results/2026-10-12-test5.txt`): plume
+made a 3840x2160 swap chain of three B8G8R8A8 images on the display and presented 244
+frames in four seconds (the display's 60 Hz); the four colors showed, then the tone.
+
 Test apps 3 and 4 (2026-10-12, `reeot/results/`) checked the window, the memory, the
 sound, every button, stick and trigger of the controller, the rumble and the fault
 records (`/app0/logs/fault.log`, with a backtrace); their controller and crash steps are
