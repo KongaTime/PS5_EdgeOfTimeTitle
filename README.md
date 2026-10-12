@@ -1,5 +1,8 @@
 # EdgeOfTimeRecomp for the PS5 (title)
 
+> **Playing it?** [RELEASE.md](RELEASE.md) is the guide: what you need, how to build it
+> from your own copy of the game, how to install it, and the credits.
+
 The PS5 homebrew title (`PPSA99300`) for
 [EdgeOfTimeRecomp](https://github.com/KongaTime/EdgeOfTimeRecomp), the static
 recompilation of the Xbox 360 game on the ReXGlue SDK. The plan is
