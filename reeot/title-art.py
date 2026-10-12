@@ -16,6 +16,14 @@ the title folder. Put the sources there, run this, and build:
 
 Needs Pillow and etcpak (pip install etcpak).
 
+The console keeps the name and art it read when the title was registered
+(ShadowMountPlus registers a /data/homebrew title once), so changing sce_sys/
+in place does not show on the home screen. What worked on the user's console:
+upload a PPSA99300 folder holding only the new sce_sys/ with ps5upload,
+overriding the installed game; the title re-registers with the new name and
+art, and the files already in /data/homebrew/PPSA99300 (eboot.bin, gamedata/,
+shader-cache.zst, profiles/ with the saves) stay as they were.
+
 Copyright (C) 2026 KongaTime
 SPDX-License-Identifier: MIT
 """
