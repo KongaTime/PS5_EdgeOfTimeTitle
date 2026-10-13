@@ -1,7 +1,9 @@
 # EdgeOfTimeRecomp for the PS5
 
-> **Playing it?** [RELEASE.md](RELEASE.md) is the guide: what you need, how to build it
-> from your own copy of the game, how to install it, and the credits.
+> **Playing it?** Download the
+> [latest release](https://github.com/KongaTime/PS5_EdgeOfTimeTitle/releases/latest),
+> add the game files from your own copy, and copy it to the PS5.
+> [RELEASE.md](RELEASE.md) has the steps, how to build it yourself, and the credits.
 
 The PS5 homebrew title (`PPSA99300`) for
 [EdgeOfTimeRecomp](https://github.com/KongaTime/EdgeOfTimeRecomp), the static

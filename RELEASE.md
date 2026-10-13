@@ -11,9 +11,9 @@ the static recompilation of the game for PC. This project adds the PS5: the ReXG
 runtime for the console, the title that runs it, and the tools to make the game's
 shaders on the console. See [Credits](#credits).
 
-**No game content is included, and none may be shared.** You build it yourself from
-your own copy of the game. Everything made from the game (see
-[What not to share](#what-not-to-share)) stays with you.
+**No game files are included.** You need your own copy of the game. Download the
+release, add your game files, copy it to the PS5 and play: see
+[Install the download](#install-the-download). Building it yourself is optional.
 
 ## Status
 
@@ -35,9 +35,33 @@ your own copy of the game. Everything made from the game (see
   2121.
 
 **The game:** your own copy of the Xbox 360 game, installed on a PC with
-[EdgeOfTimeRecompiled](https://github.com/goliathret/EdgeOfTimeRecomp)'s installer. Its
-game folder is what the PS5 reads. It also holds the port's own packages, in
-`Data/custom/`.
+[EdgeOfTimeRecompiled](https://github.com/goliathret/EdgeOfTimeRecomp)'s installer (its
+README explains how to get the files from your Xbox 360). The install's `game` folder is
+what the PS5 reads. It also holds the port's own packages, in `Data/custom/`.
+
+## Install the download
+
+1. Download `SpiderMan-EdgeOfTime-PS5-v1.0.0.zip` from the
+   [latest release](https://github.com/KongaTime/PS5_EdgeOfTimeTitle/releases/latest)
+   and unzip it.
+2. Copy everything inside the PC install's `game` folder into `PPSA99300/gamedata/`.
+   `Default.xex` must end up at `PPSA99300/gamedata/Default.xex`.
+3. Copy the whole `PPSA99300` folder to `/data/homebrew/` on the PS5 over FTP, so that
+   you have `/data/homebrew/PPSA99300/eboot.bin`.
+4. ShadowMountPlus adds *Spider-Man Edge Of Time* to the home screen about 30 seconds
+   after the folder appears. Launch it from there.
+
+The first few minutes can stutter while the PS5 prepares each shader the first time it
+is used.
+
+Your saves, settings and logs are in the title's folder, under `profiles/` and `logs/`.
+Back up `profiles/` before you update or remove the game. Never delete the title from
+the home screen while its folder is still in `/data/homebrew`. To update, replace
+`eboot.bin` and `shader-cache.zst` together.
+
+## Build it yourself (optional)
+
+Only needed to change the code or make your own build.
 
 **A Linux machine to build on** (it was built on Ubuntu; WSL2 may work but is untested),
 with:
@@ -50,8 +74,6 @@ with:
   [`nightly-20261002-bd833a2a`](https://github.com/rexglue/rexglue-sdk/releases/tag/nightly-20261002-bd833a2a)
   (the linux-amd64 zip). Use exactly this version: the PS5 runtime runs only the code
   this version generates.
-
-## Build it
 
 ### 1. Get the code
 
@@ -140,7 +162,7 @@ cd PS5_EdgeOfTimeTitle && ps5/tools/build.sh
 This writes the title folder `dist/PPSA99300/` again, now with an `eboot.bin` of about
 77 MB that runs the game.
 
-## Install it
+## Install your own build
 
 Your folder on the console ends up like this:
 
@@ -190,22 +212,17 @@ steps 5 and 6 again, and install the new `eboot.bin` and `shader-cache.zst` toge
 - **Black screen.** Check the newest file in `logs/` for `[shaders]`. Look for a missing
   `shader-cache.zst`, a shader file that doesn't match this `eboot.bin`, or an empty cache.
 - **It closes at once.** `reeot-test-results.txt` names the step it stopped at. If
-  `gamedata/Default.xex` is missing, it says so.
+  `gamedata/Default.xex` is missing, it says so: the game files were copied one folder
+  too deep, or not at all.
 - **It doesn't appear on the home screen.** Check ShadowMountPlus's
   `/data/shadowmount/debug.log`.
 
-## What not to share
+## Never share game files
 
-These are made from the game, so keep them to yourself:
-
-- `eboot.bin` (it contains the game's recompiled code);
-- `shader-cache.zst`, `shader-dump.bin` and `shader-misses.bin`;
-- `EdgeOfTimeRecomp/generated/` and `EdgeOfTimeRecomp/assets/`;
-- the game folder;
-- any art taken from the game.
-
-Share the repositories and this guide instead, so that people build from their own
-copy of the game.
+The download has no game files, and none may be shared. Don't upload or pass on your
+`gamedata/` folder, your copy of the game, `EdgeOfTimeRecomp/assets/` or
+`shader-dump.bin`, and don't ask others for theirs. Point people to the release instead,
+so that they add their own copy of the game.
 
 ## Credits
 
