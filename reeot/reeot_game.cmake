@@ -229,6 +229,10 @@ add_library(reeot_game OBJECT ${REEOT_PS5_SOURCES} ${reeot_embed_sources} ${reeo
 	${reeot_eotr}/thirdparty/XenosRecomp/thirdparty/smol-v/source/smolv.cpp ${ROOT}/reeot/gamelogic_static.cpp
 	# ReXApp, which the SDK gives an app as a source to build (rexglue_configure_target)
 	${reeot_rexglue}/src/ui/rex_app.cpp)
+# The shader dump a build with no shaders runs (src/gpu/shaders/shader_dump.cpp)
+# reads the packs with PKZLib; its inflate is the zlib RADV's archive carries
+set_source_files_properties(${reeot_eotr}/src/gpu/shaders/shader_dump.cpp PROPERTIES INCLUDE_DIRECTORIES
+	"${reeot_eotr}/thirdparty/PKZLib;${reeot_eotr}/thirdparty/PKZLib/contrib/zlib")
 target_include_directories(reeot_game PRIVATE ${reeot_eotr}/src ${reeot_eotr} ${reeot_gen}
 	${reeot_eotr}/thirdparty/stb ${reeot_eotr}/thirdparty/XenosRecomp/XenosRecomp ${reeot_eotr}/thirdparty/renderdoc
 	${reeot_eotr}/thirdparty/XenosRecomp/thirdparty/smol-v/source ${reeot_eotr}/generated/default

@@ -76,9 +76,12 @@ if(REEOT_TITLE_APP STREQUAL "shaderdump")
 		message(FATAL_ERROR "No zlib at ${reeot_pkzlib}/contrib/zlib: git -C ${reeot_pkzlib} submodule update "
 			"--init contrib/zlib")
 	endif()
-	target_sources(samples PRIVATE ${ROOT}/reeot/shader_dump.cpp)
-	set_source_files_properties(${ROOT}/reeot/shader_dump.cpp PROPERTIES
-		INCLUDE_DIRECTORIES "${reeot_pkzlib};${reeot_pkzlib}/contrib/zlib" COMPILE_OPTIONS "-std=c++20;-O2")
+	# The scan is EdgeOfTimeRecomp's, which the game build runs as well
+	set(reeot_shader_dump ${ROOT}/reeot/shader_dump.cpp ${reeot_eotr}/src/gpu/shaders/shader_dump.cpp)
+	target_sources(samples PRIVATE ${reeot_shader_dump})
+	set_source_files_properties(${reeot_shader_dump} PROPERTIES
+		INCLUDE_DIRECTORIES "${reeot_eotr}/src;${reeot_pkzlib};${reeot_pkzlib}/contrib/zlib"
+		COMPILE_OPTIONS "-std=c++20;-O2")
 endif()
 message(STATUS "EdgeOfTimeRecomp: the title runs the ${REEOT_TITLE_APP} app")
 
