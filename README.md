@@ -113,6 +113,13 @@ If the console's klog port is closed, `run.sh` cannot follow the title. In that 
 launch the title from the home screen, wait for it to close, and run
 `reeot/run-tests.sh --fetch`.
 
+## How it was made
+
+I made this port with Claude Code, an AI coding assistant from Anthropic, which wrote
+most of the code. I directed the project, tested every build on my PS5, tracked down the
+crashes from the console side, played through the whole game to verify it and put the
+release together.
+
 ## Licences
 
 The foundation is MIT (`LICENSE.md`, Sascha Willems'; the PS5 layer is under the same
