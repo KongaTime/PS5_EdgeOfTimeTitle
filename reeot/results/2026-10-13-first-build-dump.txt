@@ -1,0 +1,265 @@
+startup: main: entered the ReXGlue app
+startup: main: initializing cvars and early ReXGlue logging
+startup: main: constructing application context
+startup: main: initializing application
+startup: app: environment
+startup: app: presentation
+startup: app: paths
+startup: app: runtime
+startup: app: launching the module
+startup: main: entering UI event loop
+startup: dump: Default.xex at 0x82000000, 6144 KB of 6144 KB readable
+startup: dump: memory range 1 (3648 KB): 165 new shaders, 165 in all
+startup: dump: memory range 2 (1856 KB): 0 new shaders, 165 in all
+startup: dump: memory range 3 (640 KB): 0 new shaders, 165 in all
+startup: dump: looking for the game's packs in /app0/gamedata
+startup: dump: [1/235] Data/01A_SMA_010_PortalRoom_FlashBack.pkz (16 MB): 501 new shaders, 666 in all
+startup: dump: [2/235] Data/01A_SMA_PortalRoom_Pip.pkz (7 MB): 99 new shaders, 765 in all
+startup: dump: [3/235] Data/01_SMA_Main.pkz (0 MB): 0 new shaders, 765 in all
+startup: dump: [4/235] Data/02A_SM99_010_AlchemaxIntro99_T.pkz (25 MB): 487 new shaders, 1252 in all
+startup: dump: [5/235] Data/02A_SM99_020_WalkerCorridor99.pkz (21 MB): 272 new shaders, 1524 in all
+startup: dump: [6/235] Data/02B_SM99_030_GeneratorBase99.pkz (12 MB): 233 new shaders, 1757 in all
+startup: dump: [7/235] Data/02B_SM99_040_GeneratorTop99.pkz (16 MB): 153 new shaders, 1910 in all
+startup: dump: [8/235] Data/02C_SM99_050_PortalRoom99.pkz (3 MB): 36 new shaders, 1946 in all
+startup: dump: [9/235] Data/02D_SM99_060_PortalAccess99_T.pkz (14 MB): 191 new shaders, 2137 in all
+startup: dump: [10/235] Data/02D_SM99_070_ElevatorRide_T.pkz (3 MB): 87 new shaders, 2224 in all
+startup: dump: [11/235] Data/02_SM99_Main.pkz (13 MB): 126 new shaders, 2350 in all
+startup: dump: [12/235] Data/03A_SMA_005_Office_T.pkz (18 MB): 503 new shaders, 2853 in all
+startup: dump: [13/235] Data/03A_SMA_010_Hallway.pkz (29 MB): 354 new shaders, 3207 in all
+startup: dump: [14/235] Data/03A_SMA_020_Shaft_T.pkz (4 MB): 54 new shaders, 3261 in all
+startup: dump: [15/235] Data/03B_SMA_030_PIP_Timer.pkz (13 MB): 48 new shaders, 3309 in all
+startup: dump: [16/235] Data/03B_SMA_030_Security.pkz (24 MB): 208 new shaders, 3517 in all
+startup: dump: [17/235] Data/03B_SMA_040_Shaft_T.pkz (0 MB): 0 new shaders, 3517 in all
+startup: dump: [18/235] Data/03C_SMA_050_Lobby.pkz (28 MB): 224 new shaders, 3741 in all
+startup: dump: [19/235] Data/03C_SMA_060_OfficeCorridors_T.pkz (27 MB): 224 new shaders, 3965 in all
+startup: dump: [20/235] Data/03C_SMA_070_PrototypeRoom_T.pkz (34 MB): 255 new shaders, 4220 in all
+alive: 5 s
+startup: dump: [21/235] Data/03X_SMA_XX1_Shaft_T.pkz (21 MB): 106 new shaders, 4326 in all
+startup: dump: [22/235] Data/03_SMA_Main.pkz (3 MB): 32 new shaders, 4358 in all
+startup: dump: [23/235] Data/04A_SM99_010_RobotHangarA99.pkz (31 MB): 235 new shaders, 4593 in all
+startup: dump: [24/235] Data/04A_SM99_020_RobotHangarB99.pkz (32 MB): 217 new shaders, 4810 in all
+startup: dump: [25/235] Data/04A_SM99_025_RobotHangarC99.pkz (17 MB): 100 new shaders, 4910 in all
+startup: dump: [26/235] Data/04A_SM99_030_HangarToElevator99_T.pkz (40 MB): 198 new shaders, 5108 in all
+startup: dump: [27/235] Data/04B_SM99_040_ElevatorFreefallA99.pkz (12 MB): 45 new shaders, 5153 in all
+startup: dump: [28/235] Data/04B_SM99_050_ElevatorFreefallB99.pkz (13 MB): 18 new shaders, 5171 in all
+startup: dump: [29/235] Data/04B_SM99_060_ElevatorFreefallC99.pkz (21 MB): 45 new shaders, 5216 in all
+startup: dump: [30/235] Data/04B_SM99_070_FreefallToCrawl99_T.pkz (25 MB): 136 new shaders, 5352 in all
+startup: dump: [31/235] Data/04C_SM99_080_ElevatorCrawlA99_T.pkz (14 MB): 39 new shaders, 5391 in all
+startup: dump: [32/235] Data/04C_SM99_090_ElevatorCrawlB99_T.pkz (6 MB): 41 new shaders, 5432 in all
+startup: dump: [33/235] Data/04_SM99_Main.pkz (3 MB): 0 new shaders, 5432 in all
+startup: dump: [34/235] Data/05A_SMA_010_GenLabCorridor_T.pkz (20 MB): 66 new shaders, 5498 in all
+startup: dump: [35/235] Data/05A_SMA_020_GenLab.pkz (33 MB): 287 new shaders, 5785 in all
+startup: dump: [36/235] Data/05A_SMA_030_Skyway1st.pkz (0 MB): 9 new shaders, 5794 in all
+startup: dump: [37/235] Data/05A_SMA_040_ExplodingCorridor.pkz (39 MB): 219 new shaders, 6013 in all
+startup: dump: [38/235] Data/05A_SMA_040_PiPRadioactivity.pkz (7 MB): 41 new shaders, 6054 in all
+startup: dump: [39/235] Data/05A_SMA_050_Skyway2nd.pkz (4 MB): 35 new shaders, 6089 in all
+alive: 10 s
+startup: dump: [40/235] Data/05A_SMA_060_GenLabPortalAccess_T.pkz (24 MB): 100 new shaders, 6189 in all
+startup: dump: [41/235] Data/05B_SM99_PortalRoom_PiP.pkz (1 MB): 0 new shaders, 6189 in all
+startup: dump: [42/235] Data/05B_SMA_070_PortalRoom.pkz (4 MB): 23 new shaders, 6212 in all
+startup: dump: [43/235] Data/05B_SMA_075_PortalRoomBack.pkz (5 MB): 0 new shaders, 6212 in all
+startup: dump: [44/235] Data/05B_SMA_XX2_PortalRoom.pkz (34 MB): 148 new shaders, 6360 in all
+startup: dump: [45/235] Data/05X_SMA_XX1_Skyway.pkz (23 MB): 250 new shaders, 6610 in all
+startup: dump: [46/235] Data/05_SMA_Main.pkz (10 MB): 31 new shaders, 6641 in all
+startup: dump: [47/235] Data/06A_SM99_005_Hallway99_T.pkz (7 MB): 82 new shaders, 6723 in all
+startup: dump: [48/235] Data/06A_SM99_010_GenLab99_T.pkz (20 MB): 164 new shaders, 6887 in all
+startup: dump: [49/235] Data/06A_SM99_015_FillingRoom99_T.pkz (11 MB): 82 new shaders, 6969 in all
+startup: dump: [50/235] Data/06A_SM99_020_TankRooms99.pkz (5 MB): 20 new shaders, 6989 in all
+startup: dump: [51/235] Data/06A_SM99_025_Maintenance99_T.pkz (0 MB): 0 new shaders, 6989 in all
+startup: dump: [52/235] Data/06A_SM99_030_PortalAccess99_T.pkz (7 MB): 0 new shaders, 6989 in all
+startup: dump: [53/235] Data/06B_SM99_040_PortalRoom99_T.pkz (22 MB): 65 new shaders, 7054 in all
+startup: dump: [54/235] Data/06B_SMA_EggRoom_PiP.pkz (19 MB): 77 new shaders, 7131 in all
+startup: dump: [55/235] Data/06C_SM99_050_PortalRoom_T.pkz (27 MB): 42 new shaders, 7173 in all
+startup: dump: [56/235] Data/06X_SM99_XX1_TankRooms99.pkz (23 MB): 298 new shaders, 7471 in all
+startup: dump: [57/235] Data/06X_SM99_XX2_Maintenance99_T.pkz (6 MB): 46 new shaders, 7517 in all
+startup: dump: [58/235] Data/06X_SM99_XX3_Corridors99_T.pkz (4 MB): 15 new shaders, 7532 in all
+startup: dump: [59/235] Data/06_SM99_Main.pkz (9 MB): 8 new shaders, 7540 in all
+startup: dump: [60/235] Data/07A_SMA_010_EggRegenRoom99_T.pkz (2 MB): 0 new shaders, 7540 in all
+startup: dump: [61/235] Data/07A_SMA_020_PortalRoom99_T.pkz (6 MB): 57 new shaders, 7597 in all
+startup: dump: [62/235] Data/07A_SMA_030_EggRegenRoom99_T.pkz (2 MB): 0 new shaders, 7597 in all
+startup: dump: [63/235] Data/07A_SMA_040_Corridors99.pkz (3 MB): 0 new shaders, 7597 in all
+startup: dump: [64/235] Data/07A_SMA_050_CorridorsToJungle99_T.pkz (5 MB): 45 new shaders, 7642 in all
+startup: dump: [65/235] Data/07B_SMA_060_HydroponicJungle99.pkz (34 MB): 244 new shaders, 7886 in all
+startup: dump: [66/235] Data/07C_SMA_065_CorridorsToJungle99_T.pkz (3 MB): 0 new shaders, 7886 in all
+startup: dump: [67/235] Data/07C_SMA_070_Sewers99.pkz (12 MB): 45 new shaders, 7931 in all
+startup: dump: [68/235] Data/07C_SMA_080_Corridors99_T.pkz (1 MB): 0 new shaders, 7931 in all
+startup: dump: [69/235] Data/07C_SMA_090_EggRegenRoom99_T.pkz (4 MB): 0 new shaders, 7931 in all
+startup: dump: [70/235] Data/07C_SMA_100_PortalRoom99_T.pkz (2 MB): 0 new shaders, 7931 in all
+startup: dump: [71/235] Data/07X_SMA_XX1_PortalRoom99_T.pkz (0 MB): 0 new shaders, 7931 in all
+startup: dump: [72/235] Data/07X_SMA_XX2_EggRegenRoom99_T.pkz (7 MB): 22 new shaders, 7953 in all
+startup: dump: [73/235] Data/07X_SMA_XX3_CorridorsToJungle99_T.pkz (8 MB): 10 new shaders, 7963 in all
+alive: 15 s
+startup: dump: [74/235] Data/07X_SMA_XX4_Corridors99_T.pkz (21 MB): 80 new shaders, 8043 in all
+startup: dump: [75/235] Data/07_SMA_Main.pkz (6 MB): 0 new shaders, 8043 in all
+startup: dump: [76/235] Data/08A_SM99_010_PortalRoom_T.pkz (6 MB): 0 new shaders, 8043 in all
+startup: dump: [77/235] Data/08B_SM99_020_FreefallA_T.pkz (11 MB): 34 new shaders, 8077 in all
+startup: dump: [78/235] Data/08B_SM99_030_MechanicalRoomA.pkz (26 MB): 147 new shaders, 8224 in all
+startup: dump: [79/235] Data/08B_SM99_040_FreefallB_T.pkz (7 MB): 12 new shaders, 8236 in all
+startup: dump: [80/235] Data/08B_SM99_050_MechanicalRoomB.pkz (22 MB): 115 new shaders, 8351 in all
+startup: dump: [81/235] Data/08B_SM99_060_FreefallC_T.pkz (12 MB): 16 new shaders, 8367 in all
+startup: dump: [82/235] Data/08B_SM99_065_AlchemaxMainFrame_T.pkz (32 MB): 74 new shaders, 8441 in all
+startup: dump: [83/235] Data/08B_SM99_070_PIPTimerIntro.pkz (12 MB): 27 new shaders, 8468 in all
+startup: dump: [84/235] Data/08C_SM99_070_Archives.pkz (28 MB): 135 new shaders, 8603 in all
+startup: dump: [85/235] Data/08C_SM99_080_TerminalRoom_T.pkz (18 MB): 50 new shaders, 8653 in all
+startup: dump: [86/235] Data/08_SM99_Main.pkz (7 MB): 16 new shaders, 8669 in all
+startup: dump: [87/235] Data/09A_SMA_010_Landing99_T.pkz (14 MB): 155 new shaders, 8824 in all
+startup: dump: [88/235] Data/09A_SMA_020_PowerRoom99.pkz (26 MB): 55 new shaders, 8879 in all
+startup: dump: [89/235] Data/09B_SMA_030_GuardRoom99_T.pkz (16 MB): 67 new shaders, 8946 in all
+startup: dump: [90/235] Data/09B_SMA_040_ArchiveEntrance99.pkz (12 MB): 33 new shaders, 8979 in all
+startup: dump: [91/235] Data/09B_SMA_050_Archives99_T.pkz (18 MB): 80 new shaders, 9059 in all
+startup: dump: [92/235] Data/09_SMA_Main.pkz (2 MB): 0 new shaders, 9059 in all
+startup: dump: [93/235] Data/10A_SM99_010_TerminalRoom_T.pkz (18 MB): 7 new shaders, 9066 in all
+startup: dump: [94/235] Data/10A_SM99_020_Archives.pkz (41 MB): 47 new shaders, 9113 in all
+startup: dump: [95/235] Data/10A_SM99_020_PiPMJUpdates.pkz (1 MB): 11 new shaders, 9124 in all
+alive: 20 s
+startup: dump: [96/235] Data/10A_SM99_030_TentacleMaze.pkz (19 MB): 8 new shaders, 9132 in all
+startup: dump: [97/235] Data/10B_SM99_040_FallA.pkz (9 MB): 9 new shaders, 9141 in all
+startup: dump: [98/235] Data/10B_SM99_050_FallB.pkz (8 MB): 2 new shaders, 9143 in all
+startup: dump: [99/235] Data/10B_SM99_060_FallC.pkz (7 MB): 0 new shaders, 9143 in all
+startup: dump: [100/235] Data/10C_SM99_070_CorridorClimax.pkz (10 MB): 38 new shaders, 9181 in all
+startup: dump: [101/235] Data/10_SM99_Main.pkz (12 MB): 49 new shaders, 9230 in all
+startup: dump: [102/235] Data/11A_SMA_010_Archives99_T.pkz (28 MB): 148 new shaders, 9378 in all
+startup: dump: [103/235] Data/11B_SMA_015_CostumeRoom99.pkz (26 MB): 143 new shaders, 9521 in all
+startup: dump: [104/235] Data/11B_SMA_020_Corridors99_T.pkz (7 MB): 21 new shaders, 9542 in all
+startup: dump: [105/235] Data/11B_SMA_022_Warehouse99.pkz (17 MB): 33 new shaders, 9575 in all
+startup: dump: [106/235] Data/11B_SMA_025_SewersTunnel99_T.pkz (13 MB): 42 new shaders, 9617 in all
+startup: dump: [107/235] Data/11C_SMA_030_HydroponicJungle99.pkz (26 MB): 113 new shaders, 9730 in all
+startup: dump: [108/235] Data/11C_SMA_035_CorridorToSewers99_T.pkz (10 MB): 0 new shaders, 9730 in all
+startup: dump: [109/235] Data/11C_SMA_040_Sewers99_T.pkz (12 MB): 0 new shaders, 9730 in all
+startup: dump: [110/235] Data/11C_SMA_050_Corridors99_T.pkz (22 MB): 60 new shaders, 9790 in all
+startup: dump: [111/235] Data/11C_SMA_060_EggRegenRoom99_T.pkz (9 MB): 0 new shaders, 9790 in all
+startup: dump: [112/235] Data/11C_SMA_070_PortalRoom99_T.pkz (0 MB): 0 new shaders, 9790 in all
+startup: dump: [113/235] Data/11_SMA_Main.pkz (6 MB): 42 new shaders, 9832 in all
+startup: dump: [114/235] Data/12A_SM99_005_PortalRoom99.pkz (12 MB): 67 new shaders, 9899 in all
+startup: dump: [115/235] Data/12A_SM99_010_VentAccess99_T.pkz (10 MB): 39 new shaders, 9938 in all
+startup: dump: [116/235] Data/12A_SM99_020_DNALabFirst99.pkz (0 MB): 0 new shaders, 9938 in all
+startup: dump: [117/235] Data/12A_SM99_030_GammaWing99.pkz (15 MB): 167 new shaders, 10105 in all
+startup: dump: [118/235] Data/12B_SM99_040_DNALabSecond99.pkz (0 MB): 0 new shaders, 10105 in all
+startup: dump: [119/235] Data/12B_SM99_050_CyberneticWing99.pkz (17 MB): 55 new shaders, 10160 in all
+startup: dump: [120/235] Data/12C_SM99_060_DNALabThird99.pkz (0 MB): 0 new shaders, 10160 in all
+startup: dump: [121/235] Data/12C_SM99_070_SymbioticWing99.pkz (19 MB): 31 new shaders, 10191 in all
+startup: dump: [122/235] Data/12C_SM99_080_DNALabFourth99.pkz (0 MB): 5 new shaders, 10196 in all
+startup: dump: [123/235] Data/12C_SM99_090_SamplingStation99_T.pkz (7 MB): 32 new shaders, 10228 in all
+startup: dump: [124/235] Data/12X_SM99_XX1_DNALab99.pkz (26 MB): 143 new shaders, 10371 in all
+startup: dump: [125/235] Data/12_SM99_Main.pkz (12 MB): 38 new shaders, 10409 in all
+alive: 25 s
+startup: dump: [126/235] Data/13A_SMA_010_OfficeClosingDoor_T.pkz (21 MB): 100 new shaders, 10509 in all
+startup: dump: [127/235] Data/13A_SMA_020_GenLab.pkz (36 MB): 239 new shaders, 10748 in all
+startup: dump: [128/235] Data/13A_SMA_030_Corridors_T.pkz (7 MB): 45 new shaders, 10793 in all
+startup: dump: [129/235] Data/13A_SMA_040_Hydroponics.pkz (45 MB): 128 new shaders, 10921 in all
+startup: dump: [130/235] Data/13A_SMA_050_Corridors_T.pkz (6 MB): 0 new shaders, 10921 in all
+startup: dump: [131/235] Data/13A_SMA_060_GenLab.pkz (36 MB): 173 new shaders, 11094 in all
+startup: dump: [132/235] Data/13A_SMA_065_CrawlVent_T.pkz (4 MB): 12 new shaders, 11106 in all
+startup: dump: [133/235] Data/13B_SMA_070_GasChamber.pkz (29 MB): 140 new shaders, 11246 in all
+startup: dump: [134/235] Data/13_SMA_Main.pkz (5 MB): 0 new shaders, 11246 in all
+startup: dump: [135/235] Data/14A_SM99_010_TrapDoorRoomA99.pkz (5 MB): 32 new shaders, 11278 in all
+startup: dump: [136/235] Data/14A_SM99_020_DisposalChuteDownA99.pkz (8 MB): 33 new shaders, 11311 in all
+startup: dump: [137/235] Data/14A_SM99_030_DisposalChuteDownB99.pkz (8 MB): 10 new shaders, 11321 in all
+startup: dump: [138/235] Data/14B_SM99_040_AntiGravCenter99.pkz (33 MB): 127 new shaders, 11448 in all
+startup: dump: [139/235] Data/14C_SM99_050_DisposalChuteUpA99.pkz (9 MB): 0 new shaders, 11448 in all
+startup: dump: [140/235] Data/14C_SM99_060_DisposalChuteUpB99.pkz (7 MB): 0 new shaders, 11448 in all
+startup: dump: [141/235] Data/14C_SM99_070_TrapDoorRoomB99.pkz (24 MB): 153 new shaders, 11601 in all
+startup: dump: [142/235] Data/14X_SM99_XX1_TrapDoorRoom99.pkz (9 MB): 2 new shaders, 11603 in all
+startup: dump: [143/235] Data/14_SM99_Main.pkz (2 MB): 1 new shaders, 11604 in all
+startup: dump: [144/235] Data/15A_SMA_010_FailedExperimentLab.pkz (30 MB): 327 new shaders, 11931 in all
+startup: dump: [145/235] Data/15A_SMA_010_PIP_Zombies.pkz (8 MB): 1 new shaders, 11932 in all
+startup: dump: [146/235] Data/15A_SMA_020_LockedCorridor.pkz (19 MB): 20 new shaders, 11952 in all
+startup: dump: [147/235] Data/15A_SMA_030_TeleportProtoRoomA.pkz (0 MB): 0 new shaders, 11952 in all
+alive: 30 s
+startup: dump: [148/235] Data/15A_SMA_040_TeleportProtoRoomB99.pkz (22 MB): 87 new shaders, 12039 in all
+startup: dump: [149/235] Data/15A_SMA_050_TeleportProtoRoomC.pkz (0 MB): 0 new shaders, 12039 in all
+startup: dump: [150/235] Data/15A_SMA_060_UnlockedCorridor.pkz (26 MB): 112 new shaders, 12151 in all
+startup: dump: [151/235] Data/15A_SMA_XX1_TeleportProtoRoom.pkz (22 MB): 37 new shaders, 12188 in all
+startup: dump: [152/235] Data/15_SMA_Main.pkz (8 MB): 0 new shaders, 12188 in all
+startup: dump: [153/235] Data/16A_SM99_010_WindowsA99_T.pkz (15 MB): 61 new shaders, 12249 in all
+startup: dump: [154/235] Data/16A_SM99_020_GalleryA99.pkz (20 MB): 78 new shaders, 12327 in all
+startup: dump: [155/235] Data/16A_SM99_030_GalleryB99.pkz (21 MB): 57 new shaders, 12384 in all
+startup: dump: [156/235] Data/16A_SM99_040_WindowsB99_T.pkz (13 MB): 26 new shaders, 12410 in all
+startup: dump: [157/235] Data/16A_SM99_042_Office99.pkz (20 MB): 74 new shaders, 12484 in all
+startup: dump: [158/235] Data/16A_SM99_045_Bridge99_T.pkz (14 MB): 29 new shaders, 12513 in all
+startup: dump: [159/235] Data/16A_SM99_050_CEOLobby99.pkz (7 MB): 42 new shaders, 12555 in all
+startup: dump: [160/235] Data/16A_SM99_060_CEOOffice99_T.pkz (19 MB): 66 new shaders, 12621 in all
+startup: dump: [161/235] Data/16X_SM99_XX1_Outdoor99.pkz (1 MB): 0 new shaders, 12621 in all
+startup: dump: [162/235] Data/16_SM99_Main.pkz (3 MB): 0 new shaders, 12621 in all
+startup: dump: [163/235] Data/17A_SM99_020_PortalRoom_T.pkz (19 MB): 104 new shaders, 12725 in all
+startup: dump: [164/235] Data/17A_SM99_040_PortalRoom_T.pkz (16 MB): 28 new shaders, 12753 in all
+startup: dump: [165/235] Data/17A_SM99_060_PortalRoom_T.pkz (19 MB): 54 new shaders, 12807 in all
+startup: dump: [166/235] Data/17A_SMA_010_PortalRoom_T.pkz (22 MB): 45 new shaders, 12852 in all
+startup: dump: [167/235] Data/17A_SMA_030_PortalRoom_T.pkz (20 MB): 30 new shaders, 12882 in all
+startup: dump: [168/235] Data/17A_SMA_050_PortalRoom_T.pkz (15 MB): 6 new shaders, 12888 in all
+startup: dump: [169/235] Data/17_Both_Main.pkz (5 MB): 0 new shaders, 12888 in all
+startup: dump: [170/235] Data/Act01.pkz (0 MB): 0 new shaders, 12888 in all
+startup: dump: [171/235] Data/Act02.pkz (0 MB): 0 new shaders, 12888 in all
+startup: dump: [172/235] Data/Act03.pkz (0 MB): 0 new shaders, 12888 in all
+startup: dump: [173/235] Data/Base2099.pkz (9 MB): 41 new shaders, 12929 in all
+startup: dump: [174/235] Data/BaseAmazing.pkz (15 MB): 201 new shaders, 13130 in all
+alive: 35 s
+startup: dump: [175/235] Data/BaseEnemies.pkz (60 MB): 383 new shaders, 13513 in all
+startup: dump: [176/235] Data/BaseGameplay.pkz (86 MB): 556 new shaders, 14069 in all
+startup: dump: [177/235] Data/BaseHero.pkz (5 MB): 64 new shaders, 14133 in all
+startup: dump: [178/235] Data/BossAntiVenom.pkz (19 MB): 29 new shaders, 14162 in all
+startup: dump: [179/235] Data/BossCEO.pkz (13 MB): 31 new shaders, 14193 in all
+startup: dump: [180/235] Data/BossMonsterOck.pkz (16 MB): 9 new shaders, 14202 in all
+startup: dump: [181/235] Data/CH_SM99_010_PortalRoomFirstStage99.pkz (4 MB): 0 new shaders, 14202 in all
+startup: dump: [182/235] Data/CH_SM99_020_PRoomSecondStage99.pkz (3 MB): 0 new shaders, 14202 in all
+startup: dump: [183/235] Data/CH_SM99_030_PortalRoomThirdStage99.pkz (3 MB): 0 new shaders, 14202 in all
+startup: dump: [184/235] Data/CH_SM99_Main.pkz (0 MB): 0 new shaders, 14202 in all
+startup: dump: [185/235] Data/CH_SMA_010_PortalRoomFirstStage.pkz (4 MB): 0 new shaders, 14202 in all
+startup: dump: [186/235] Data/CH_SMA_020_PRoomSecondStage.pkz (6 MB): 0 new shaders, 14202 in all
+startup: dump: [187/235] Data/CH_SMA_030_PortalRoomThirdStage.pkz (4 MB): 11 new shaders, 14213 in all
+startup: dump: [188/235] Data/CH_SMA_Main.pkz (0 MB): 0 new shaders, 14213 in all
+startup: dump: [189/235] Data/CombatArenas.pkz (0 MB): 0 new shaders, 14213 in all
+startup: dump: [190/235] Data/Common.pkz (3 MB): 14 new shaders, 14227 in all
+startup: dump: [191/235] Data/ENV_CH_010_PRFirstStage.pkz (19 MB): 0 new shaders, 14227 in all
+startup: dump: [192/235] Data/ENV_CH_010_PRFirstStage99.pkz (15 MB): 0 new shaders, 14227 in all
+startup: dump: [193/235] Data/ENV_CH_020_PRSecondStage.pkz (17 MB): 0 new shaders, 14227 in all
+startup: dump: [194/235] Data/ENV_CH_020_PRSecondStage99.pkz (15 MB): 0 new shaders, 14227 in all
+startup: dump: [195/235] Data/ENV_CH_030_PRThirdStage.pkz (17 MB): 0 new shaders, 14227 in all
+startup: dump: [196/235] Data/ENV_CH_030_PRThirdStage99.pkz (15 MB): 0 new shaders, 14227 in all
+startup: dump: [197/235] Data/EnemyAndroidExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+startup: dump: [198/235] Data/EnemyBasherExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+startup: dump: [199/235] Data/EnemyBlackCatAcolyteExtraData.pkz (1 MB): 0 new shaders, 14227 in all
+startup: dump: [200/235] Data/EnemyBlackCatExtraData.pkz (1 MB): 0 new shaders, 14227 in all
+startup: dump: [201/235] Data/EnemyBlockerFutureExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+startup: dump: [202/235] Data/EnemyBlockerPresentExtraData.pkz (2 MB): 0 new shaders, 14227 in all
+startup: dump: [203/235] Data/EnemyCleanerFutureExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+startup: dump: [204/235] Data/EnemyCleanerPresentExtraData.pkz (2 MB): 0 new shaders, 14227 in all
+startup: dump: [205/235] Data/EnemyCrasherFutureExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+startup: dump: [206/235] Data/EnemyCrasherPresentExtraData.pkz (5 MB): 0 new shaders, 14227 in all
+startup: dump: [207/235] Data/EnemyGunnerFutureExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+startup: dump: [208/235] Data/EnemyGunnerPresentExtraData.pkz (1 MB): 0 new shaders, 14227 in all
+startup: dump: [209/235] Data/EnemyHatchlingExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+startup: dump: [210/235] Data/EnemyInfantExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+startup: dump: [211/235] Data/EnemyLaserBotFutureExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+startup: dump: [212/235] Data/EnemyLaserBotPresentExtraData.pkz (3 MB): 0 new shaders, 14227 in all
+startup: dump: [213/235] Data/EnemyMotherFutureExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+startup: dump: [214/235] Data/EnemyMotherPresentExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+startup: dump: [215/235] Data/EnemyRangerExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+startup: dump: [216/235] Data/EnemyStunnerFutureExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+startup: dump: [217/235] Data/EnemyStunnerPresentExtraData.pkz (1 MB): 0 new shaders, 14227 in all
+startup: dump: [218/235] Data/EnemyZombieExtraData.pkz (1 MB): 0 new shaders, 14227 in all
+startup: dump: [219/235] Data/FrontScreen.pkz (11 MB): 14 new shaders, 14241 in all
+alive: 40 s
+startup: dump: [220/235] Data/Gallery.pkz (71 MB): 94 new shaders, 14335 in all
+startup: dump: [221/235] Data/Legal.pkz (0 MB): 0 new shaders, 14335 in all
+startup: dump: [222/235] Data/Main.pkz (0 MB): 1 new shaders, 14336 in all
+startup: dump: [223/235] Data/NAV_CH_XXX_PortalRoom.pkz (0 MB): 0 new shaders, 14336 in all
+startup: dump: [224/235] Data/NAV_CH_XXX_PortalRoom99.pkz (0 MB): 0 new shaders, 14336 in all
+startup: dump: [225/235] Data/TV2099.pkz (0 MB): 0 new shaders, 14336 in all
+startup: dump: [226/235] Data/TVAmazing.pkz (0 MB): 0 new shaders, 14336 in all
+startup: dump: [227/235] Data/WebOfSkills.pkz (2 MB): 7 new shaders, 14343 in all
+startup: dump: [228/235] Data/XX_SMX_XXX_PetersOffice.pkz (13 MB): 41 new shaders, 14384 in all
+startup: dump: [229/235] Data/XX_SMX_XXX_PortalRoom99_T.pkz (13 MB): 14 new shaders, 14398 in all
+startup: dump: [230/235] Data/XX_SMX_XXX_PortalRoom_T.pkz (15 MB): 0 new shaders, 14398 in all
+startup: dump: [231/235] Data/custom/ReeotAchievements.pkz (0 MB): 0 new shaders, 14398 in all
+startup: dump: [232/235] Data/custom/ReeotIcons.pkz (0 MB): 0 new shaders, 14398 in all
+startup: dump: [233/235] Data/custom/ReeotMenu.pkz (0 MB): 0 new shaders, 14398 in all
+startup: dump: [234/235] Data/custom/ReeotSuits.pkz (47 MB): 0 new shaders, 14398 in all
+startup: dump: [235/235] Data/custom/ReeotUI.pkz (2 MB): 0 new shaders, 14398 in all
+startup: dump: DONE: 14398 shaders (426342 found with repeats), 31422 KB in /app0/shader-dump.bin; 0 pack(s) failed
+startup: info: reeot - shaders dumped: This build has no shaders yet, so it wrote the game's to shader-dump.bin and closed. Recompile them (RELEASE.md, step 5), build again, and the game draws.
+startup: main: shutting down application
+alive: 45 s
+alive: 50 s
+alive: 55 s
+alive: 60 s

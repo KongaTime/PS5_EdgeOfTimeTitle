@@ -1,0 +1,363 @@
+[2026-10-13 02:27:57.921] [info] [eot] [t101628] reeot v1.0.0 [Release] ps5-amd64
+[2026-10-13 02:27:57.923] [info] [eot] [t101628]   commit:  fee1afd83 on claude/nifty-knuth-s27y9o (local modifications)
+[2026-10-13 02:27:57.924] [info] [eot] [t101628]   built:   20261013_0031 with Clang 20.1.2
+[2026-10-13 02:27:57.925] [info] [eot] [t101628]   sdk:     rexglue-v0.10.0.43-dev.g25d6a61 ps5-amd64 @20261012_0531
+[2026-10-13 02:27:57.926] [info] [eot] [t101628]   profile: default (/app0/profiles/default)
+[2026-10-13 02:27:57.927] [info] [eot] [t101628] [language] eot_language auto -> English (XLanguage 1)
+[2026-10-13 02:27:57.928] [info] [eot] [t101628] [input] controller input in the background: off
+[2026-10-13 02:27:57.929] [info] [eot] [t101628] [window] 3840x2160, fullscreen
+[2026-10-13 02:27:57.931] [info] [eot] [t101628] [install] game folder /app0/gamedata
+[2026-10-13 02:27:57.932] [info] [sys] [t101628] Guest memory arena mapped: virtual base 0x0000001000000000, physical base 0x0000001100000000
+[2026-10-13 02:27:57.959] [info] [core] [t101628] PS5: fault records go to /app0/logs/fault.log
+[2026-10-13 02:27:57.960] [info] [core] [t101628] PS5: code at 0x400000-0x2f40000 made readable for the MMIO handler
+[2026-10-13 02:27:57.961] [info] [eot] [t101628] [pad] no controller for the first player
+[2026-10-13 02:27:57.990] [info] [core] [t101628] Function table initialized for module: code=82080000-8238E6EC, image=82000000-82600000
+[2026-10-13 02:27:57.993] [info] [eot] [t101628] [boot] entry xex is Default.xex
+[2026-10-13 02:27:58.128] [info] [core] [t101628] XEX patch applied successfully: base version: 0.0.0.2, new version: 0.0.1.2
+[2026-10-13 02:27:58.176] [info] [eot] [t101628] [gpu] display 3840x2160 at 60 Hz, fullscreen (the display suggests 1440p)
+[2026-10-13 02:27:58.201] [info] [eot] [t101628] [gpu] render thread started: 1024 command slots (14 MB), batches of 64
+[2026-10-13 02:27:58.201] [info] [eot] [t101628] [gpu] Vulkan on PlayStation 5 GPU (RADV NAVI21) ready: swapchain 3840x2160, 32768 bindless texture slots, msaa 1x on the full-frame surfaces
+[2026-10-13 02:27:58.202] [info] [eot] [t101628] [gpu] internal render 1914x1080 (1080p = 1.709x the guest's 1120x632), fitted to the window at present; vsync on, fps cap 60
+[2026-10-13 02:27:58.203] [info] [eot] [t101628] [shaders] dump: Default.xex at 0x82000000, 6144 KB of 6144 KB readable
+[2026-10-13 02:27:58.230] [info] [eot] [t101628] [shaders] dump: memory range 1 (3648 KB): 165 new shaders, 165 in all
+[2026-10-13 02:27:58.233] [info] [eot] [t101628] [shaders] dump: memory range 2 (1856 KB): 0 new shaders, 165 in all
+[2026-10-13 02:27:58.234] [info] [eot] [t101628] [shaders] dump: memory range 3 (640 KB): 0 new shaders, 165 in all
+[2026-10-13 02:27:58.235] [info] [eot] [t101628] [shaders] dump: looking for the game's packs in /app0/gamedata
+[2026-10-13 02:27:58.454] [info] [eot] [t101628] [shaders] dump: [1/235] Data/01A_SMA_010_PortalRoom_FlashBack.pkz (16 MB): 501 new shaders, 666 in all
+[2026-10-13 02:27:58.557] [info] [eot] [t101628] [shaders] dump: [2/235] Data/01A_SMA_PortalRoom_Pip.pkz (7 MB): 99 new shaders, 765 in all
+[2026-10-13 02:27:58.560] [info] [eot] [t101628] [shaders] dump: [3/235] Data/01_SMA_Main.pkz (0 MB): 0 new shaders, 765 in all
+[2026-10-13 02:27:58.942] [info] [eot] [t101628] [shaders] dump: [4/235] Data/02A_SM99_010_AlchemaxIntro99_T.pkz (25 MB): 487 new shaders, 1252 in all
+[2026-10-13 02:27:59.269] [info] [eot] [t101628] [shaders] dump: [5/235] Data/02A_SM99_020_WalkerCorridor99.pkz (21 MB): 272 new shaders, 1524 in all
+[2026-10-13 02:27:59.450] [info] [eot] [t101628] [shaders] dump: [6/235] Data/02B_SM99_030_GeneratorBase99.pkz (12 MB): 233 new shaders, 1757 in all
+[2026-10-13 02:27:59.688] [info] [eot] [t101628] [shaders] dump: [7/235] Data/02B_SM99_040_GeneratorTop99.pkz (16 MB): 153 new shaders, 1910 in all
+[2026-10-13 02:27:59.739] [info] [eot] [t101628] [shaders] dump: [8/235] Data/02C_SM99_050_PortalRoom99.pkz (3 MB): 36 new shaders, 1946 in all
+[2026-10-13 02:27:59.964] [info] [eot] [t101628] [shaders] dump: [9/235] Data/02D_SM99_060_PortalAccess99_T.pkz (14 MB): 191 new shaders, 2137 in all
+[2026-10-13 02:28:00.029] [info] [eot] [t101628] [shaders] dump: [10/235] Data/02D_SM99_070_ElevatorRide_T.pkz (3 MB): 87 new shaders, 2224 in all
+[2026-10-13 02:28:00.225] [info] [eot] [t101628] [shaders] dump: [11/235] Data/02_SM99_Main.pkz (13 MB): 126 new shaders, 2350 in all
+[2026-10-13 02:28:00.523] [info] [eot] [t101628] [shaders] dump: [12/235] Data/03A_SMA_005_Office_T.pkz (18 MB): 503 new shaders, 2853 in all
+[2026-10-13 02:28:00.947] [info] [eot] [t101628] [shaders] dump: [13/235] Data/03A_SMA_010_Hallway.pkz (29 MB): 354 new shaders, 3207 in all
+[2026-10-13 02:28:01.014] [info] [eot] [t101628] [shaders] dump: [14/235] Data/03A_SMA_020_Shaft_T.pkz (4 MB): 54 new shaders, 3261 in all
+[2026-10-13 02:28:01.203] [info] [eot] [t101628] [shaders] dump: [15/235] Data/03B_SMA_030_PIP_Timer.pkz (13 MB): 48 new shaders, 3309 in all
+[2026-10-13 02:28:01.541] [info] [eot] [t101628] [shaders] dump: [16/235] Data/03B_SMA_030_Security.pkz (24 MB): 208 new shaders, 3517 in all
+[2026-10-13 02:28:01.554] [info] [eot] [t101628] [shaders] dump: [17/235] Data/03B_SMA_040_Shaft_T.pkz (0 MB): 0 new shaders, 3517 in all
+[2026-10-13 02:28:01.956] [info] [eot] [t101628] [shaders] dump: [18/235] Data/03C_SMA_050_Lobby.pkz (28 MB): 224 new shaders, 3741 in all
+[2026-10-13 02:28:02.338] [info] [eot] [t101628] [shaders] dump: [19/235] Data/03C_SMA_060_OfficeCorridors_T.pkz (27 MB): 224 new shaders, 3965 in all
+[2026-10-13 02:28:02.830] [info] [eot] [t101628] [shaders] dump: [20/235] Data/03C_SMA_070_PrototypeRoom_T.pkz (34 MB): 255 new shaders, 4220 in all
+[2026-10-13 02:28:03.113] [info] [eot] [t101628] [shaders] dump: [21/235] Data/03X_SMA_XX1_Shaft_T.pkz (21 MB): 106 new shaders, 4326 in all
+[2026-10-13 02:28:03.169] [info] [eot] [t101628] [shaders] dump: [22/235] Data/03_SMA_Main.pkz (3 MB): 32 new shaders, 4358 in all
+[2026-10-13 02:28:03.611] [info] [eot] [t101628] [shaders] dump: [23/235] Data/04A_SM99_010_RobotHangarA99.pkz (31 MB): 235 new shaders, 4593 in all
+[2026-10-13 02:28:04.066] [info] [eot] [t101628] [shaders] dump: [24/235] Data/04A_SM99_020_RobotHangarB99.pkz (32 MB): 217 new shaders, 4810 in all
+[2026-10-13 02:28:04.315] [info] [eot] [t101628] [shaders] dump: [25/235] Data/04A_SM99_025_RobotHangarC99.pkz (17 MB): 100 new shaders, 4910 in all
+[2026-10-13 02:28:04.880] [info] [eot] [t101628] [shaders] dump: [26/235] Data/04A_SM99_030_HangarToElevator99_T.pkz (40 MB): 198 new shaders, 5108 in all
+[2026-10-13 02:28:05.061] [info] [eot] [t101628] [shaders] dump: [27/235] Data/04B_SM99_040_ElevatorFreefallA99.pkz (12 MB): 45 new shaders, 5153 in all
+[2026-10-13 02:28:05.257] [info] [eot] [t101628] [shaders] dump: [28/235] Data/04B_SM99_050_ElevatorFreefallB99.pkz (13 MB): 18 new shaders, 5171 in all
+[2026-10-13 02:28:05.545] [info] [eot] [t101628] [shaders] dump: [29/235] Data/04B_SM99_060_ElevatorFreefallC99.pkz (21 MB): 45 new shaders, 5216 in all
+[2026-10-13 02:28:05.904] [info] [eot] [t101628] [shaders] dump: [30/235] Data/04B_SM99_070_FreefallToCrawl99_T.pkz (25 MB): 136 new shaders, 5352 in all
+[2026-10-13 02:28:06.096] [info] [eot] [t101628] [shaders] dump: [31/235] Data/04C_SM99_080_ElevatorCrawlA99_T.pkz (14 MB): 39 new shaders, 5391 in all
+[2026-10-13 02:28:06.195] [info] [eot] [t101628] [shaders] dump: [32/235] Data/04C_SM99_090_ElevatorCrawlB99_T.pkz (6 MB): 41 new shaders, 5432 in all
+[2026-10-13 02:28:06.252] [info] [eot] [t101628] [shaders] dump: [33/235] Data/04_SM99_Main.pkz (3 MB): 0 new shaders, 5432 in all
+[2026-10-13 02:28:06.525] [info] [eot] [t101628] [shaders] dump: [34/235] Data/05A_SMA_010_GenLabCorridor_T.pkz (20 MB): 66 new shaders, 5498 in all
+[2026-10-13 02:28:06.978] [info] [eot] [t101628] [shaders] dump: [35/235] Data/05A_SMA_020_GenLab.pkz (33 MB): 287 new shaders, 5785 in all
+[2026-10-13 02:28:06.985] [info] [eot] [t101628] [shaders] dump: [36/235] Data/05A_SMA_030_Skyway1st.pkz (0 MB): 9 new shaders, 5794 in all
+[2026-10-13 02:28:07.518] [info] [eot] [t101628] [shaders] dump: [37/235] Data/05A_SMA_040_ExplodingCorridor.pkz (39 MB): 219 new shaders, 6013 in all
+[2026-10-13 02:28:07.613] [info] [eot] [t101628] [shaders] dump: [38/235] Data/05A_SMA_040_PiPRadioactivity.pkz (7 MB): 41 new shaders, 6054 in all
+[2026-10-13 02:28:07.673] [info] [eot] [t101628] [shaders] dump: [39/235] Data/05A_SMA_050_Skyway2nd.pkz (4 MB): 35 new shaders, 6089 in all
+[2026-10-13 02:28:08.009] [info] [eot] [t101628] [shaders] dump: [40/235] Data/05A_SMA_060_GenLabPortalAccess_T.pkz (24 MB): 100 new shaders, 6189 in all
+[2026-10-13 02:28:08.030] [info] [eot] [t101628] [shaders] dump: [41/235] Data/05B_SM99_PortalRoom_PiP.pkz (1 MB): 0 new shaders, 6189 in all
+[2026-10-13 02:28:08.081] [info] [eot] [t101628] [shaders] dump: [42/235] Data/05B_SMA_070_PortalRoom.pkz (4 MB): 23 new shaders, 6212 in all
+[2026-10-13 02:28:08.149] [info] [eot] [t102160] [workbuf] 0 lock(s) held
+[2026-10-13 02:28:08.149] [info] [eot] [t101628] [shaders] dump: [43/235] Data/05B_SMA_075_PortalRoomBack.pkz (5 MB): 0 new shaders, 6212 in all
+[2026-10-13 02:28:08.595] [info] [eot] [t101628] [shaders] dump: [44/235] Data/05B_SMA_XX2_PortalRoom.pkz (34 MB): 148 new shaders, 6360 in all
+[2026-10-13 02:28:08.912] [info] [eot] [t101628] [shaders] dump: [45/235] Data/05X_SMA_XX1_Skyway.pkz (23 MB): 250 new shaders, 6610 in all
+[2026-10-13 02:28:09.076] [info] [eot] [t101628] [shaders] dump: [46/235] Data/05_SMA_Main.pkz (10 MB): 31 new shaders, 6641 in all
+[2026-10-13 02:28:09.204] [info] [eot] [t101628] [shaders] dump: [47/235] Data/06A_SM99_005_Hallway99_T.pkz (7 MB): 82 new shaders, 6723 in all
+[2026-10-13 02:28:09.511] [info] [eot] [t101628] [shaders] dump: [48/235] Data/06A_SM99_010_GenLab99_T.pkz (20 MB): 164 new shaders, 6887 in all
+[2026-10-13 02:28:09.676] [info] [eot] [t101628] [shaders] dump: [49/235] Data/06A_SM99_015_FillingRoom99_T.pkz (11 MB): 82 new shaders, 6969 in all
+[2026-10-13 02:28:09.760] [info] [eot] [t101628] [shaders] dump: [50/235] Data/06A_SM99_020_TankRooms99.pkz (5 MB): 20 new shaders, 6989 in all
+[2026-10-13 02:28:09.770] [info] [eot] [t101628] [shaders] dump: [51/235] Data/06A_SM99_025_Maintenance99_T.pkz (0 MB): 0 new shaders, 6989 in all
+[2026-10-13 02:28:09.872] [info] [eot] [t101628] [shaders] dump: [52/235] Data/06A_SM99_030_PortalAccess99_T.pkz (7 MB): 0 new shaders, 6989 in all
+[2026-10-13 02:28:10.164] [info] [eot] [t101628] [shaders] dump: [53/235] Data/06B_SM99_040_PortalRoom99_T.pkz (22 MB): 65 new shaders, 7054 in all
+[2026-10-13 02:28:10.408] [info] [eot] [t101628] [shaders] dump: [54/235] Data/06B_SMA_EggRoom_PiP.pkz (19 MB): 77 new shaders, 7131 in all
+[2026-10-13 02:28:10.768] [info] [eot] [t101628] [shaders] dump: [55/235] Data/06C_SM99_050_PortalRoom_T.pkz (27 MB): 42 new shaders, 7173 in all
+[2026-10-13 02:28:11.129] [info] [eot] [t101628] [shaders] dump: [56/235] Data/06X_SM99_XX1_TankRooms99.pkz (23 MB): 298 new shaders, 7471 in all
+[2026-10-13 02:28:11.225] [info] [eot] [t101628] [shaders] dump: [57/235] Data/06X_SM99_XX2_Maintenance99_T.pkz (6 MB): 46 new shaders, 7517 in all
+[2026-10-13 02:28:11.287] [info] [eot] [t101628] [shaders] dump: [58/235] Data/06X_SM99_XX3_Corridors99_T.pkz (4 MB): 15 new shaders, 7532 in all
+[2026-10-13 02:28:11.424] [info] [eot] [t101628] [shaders] dump: [59/235] Data/06_SM99_Main.pkz (9 MB): 8 new shaders, 7540 in all
+[2026-10-13 02:28:11.454] [info] [eot] [t101628] [shaders] dump: [60/235] Data/07A_SMA_010_EggRegenRoom99_T.pkz (2 MB): 0 new shaders, 7540 in all
+[2026-10-13 02:28:11.545] [info] [eot] [t101628] [shaders] dump: [61/235] Data/07A_SMA_020_PortalRoom99_T.pkz (6 MB): 57 new shaders, 7597 in all
+[2026-10-13 02:28:11.582] [info] [eot] [t101628] [shaders] dump: [62/235] Data/07A_SMA_030_EggRegenRoom99_T.pkz (2 MB): 0 new shaders, 7597 in all
+[2026-10-13 02:28:11.636] [info] [eot] [t101628] [shaders] dump: [63/235] Data/07A_SMA_040_Corridors99.pkz (3 MB): 0 new shaders, 7597 in all
+[2026-10-13 02:28:11.719] [info] [eot] [t101628] [shaders] dump: [64/235] Data/07A_SMA_050_CorridorsToJungle99_T.pkz (5 MB): 45 new shaders, 7642 in all
+[2026-10-13 02:28:12.205] [info] [eot] [t101628] [shaders] dump: [65/235] Data/07B_SMA_060_HydroponicJungle99.pkz (34 MB): 244 new shaders, 7886 in all
+[2026-10-13 02:28:12.259] [info] [eot] [t101628] [shaders] dump: [66/235] Data/07C_SMA_065_CorridorsToJungle99_T.pkz (3 MB): 0 new shaders, 7886 in all
+[2026-10-13 02:28:12.433] [info] [eot] [t101628] [shaders] dump: [67/235] Data/07C_SMA_070_Sewers99.pkz (12 MB): 45 new shaders, 7931 in all
+[2026-10-13 02:28:12.460] [info] [eot] [t101628] [shaders] dump: [68/235] Data/07C_SMA_080_Corridors99_T.pkz (1 MB): 0 new shaders, 7931 in all
+[2026-10-13 02:28:12.524] [info] [eot] [t101628] [shaders] dump: [69/235] Data/07C_SMA_090_EggRegenRoom99_T.pkz (4 MB): 0 new shaders, 7931 in all
+[2026-10-13 02:28:12.553] [info] [eot] [t101628] [shaders] dump: [70/235] Data/07C_SMA_100_PortalRoom99_T.pkz (2 MB): 0 new shaders, 7931 in all
+[2026-10-13 02:28:12.559] [info] [eot] [t101628] [shaders] dump: [71/235] Data/07X_SMA_XX1_PortalRoom99_T.pkz (0 MB): 0 new shaders, 7931 in all
+[2026-10-13 02:28:12.659] [info] [eot] [t101628] [shaders] dump: [72/235] Data/07X_SMA_XX2_EggRegenRoom99_T.pkz (7 MB): 22 new shaders, 7953 in all
+[2026-10-13 02:28:12.767] [info] [eot] [t101628] [shaders] dump: [73/235] Data/07X_SMA_XX3_CorridorsToJungle99_T.pkz (8 MB): 10 new shaders, 7963 in all
+[2026-10-13 02:28:13.051] [info] [eot] [t101628] [shaders] dump: [74/235] Data/07X_SMA_XX4_Corridors99_T.pkz (21 MB): 80 new shaders, 8043 in all
+[2026-10-13 02:28:13.155] [info] [eot] [t101628] [shaders] dump: [75/235] Data/07_SMA_Main.pkz (6 MB): 0 new shaders, 8043 in all
+[2026-10-13 02:28:13.247] [info] [eot] [t101628] [shaders] dump: [76/235] Data/08A_SM99_010_PortalRoom_T.pkz (6 MB): 0 new shaders, 8043 in all
+[2026-10-13 02:28:13.410] [info] [eot] [t101628] [shaders] dump: [77/235] Data/08B_SM99_020_FreefallA_T.pkz (11 MB): 34 new shaders, 8077 in all
+[2026-10-13 02:28:13.780] [info] [eot] [t101628] [shaders] dump: [78/235] Data/08B_SM99_030_MechanicalRoomA.pkz (26 MB): 147 new shaders, 8224 in all
+[2026-10-13 02:28:13.886] [info] [eot] [t101628] [shaders] dump: [79/235] Data/08B_SM99_040_FreefallB_T.pkz (7 MB): 12 new shaders, 8236 in all
+[2026-10-13 02:28:14.218] [info] [eot] [t101628] [shaders] dump: [80/235] Data/08B_SM99_050_MechanicalRoomB.pkz (22 MB): 115 new shaders, 8351 in all
+[2026-10-13 02:28:14.396] [info] [eot] [t101628] [shaders] dump: [81/235] Data/08B_SM99_060_FreefallC_T.pkz (12 MB): 16 new shaders, 8367 in all
+[2026-10-13 02:28:14.814] [info] [eot] [t101628] [shaders] dump: [82/235] Data/08B_SM99_065_AlchemaxMainFrame_T.pkz (32 MB): 74 new shaders, 8441 in all
+[2026-10-13 02:28:14.964] [info] [eot] [t101628] [shaders] dump: [83/235] Data/08B_SM99_070_PIPTimerIntro.pkz (12 MB): 27 new shaders, 8468 in all
+[2026-10-13 02:28:15.341] [info] [eot] [t101628] [shaders] dump: [84/235] Data/08C_SM99_070_Archives.pkz (28 MB): 135 new shaders, 8603 in all
+[2026-10-13 02:28:15.577] [info] [eot] [t101628] [shaders] dump: [85/235] Data/08C_SM99_080_TerminalRoom_T.pkz (18 MB): 50 new shaders, 8653 in all
+[2026-10-13 02:28:15.695] [info] [eot] [t101628] [shaders] dump: [86/235] Data/08_SM99_Main.pkz (7 MB): 16 new shaders, 8669 in all
+[2026-10-13 02:28:15.909] [info] [eot] [t101628] [shaders] dump: [87/235] Data/09A_SMA_010_Landing99_T.pkz (14 MB): 155 new shaders, 8824 in all
+[2026-10-13 02:28:16.275] [info] [eot] [t101628] [shaders] dump: [88/235] Data/09A_SMA_020_PowerRoom99.pkz (26 MB): 55 new shaders, 8879 in all
+[2026-10-13 02:28:16.507] [info] [eot] [t101628] [shaders] dump: [89/235] Data/09B_SMA_030_GuardRoom99_T.pkz (16 MB): 67 new shaders, 8946 in all
+[2026-10-13 02:28:16.665] [info] [eot] [t101628] [shaders] dump: [90/235] Data/09B_SMA_040_ArchiveEntrance99.pkz (12 MB): 33 new shaders, 8979 in all
+[2026-10-13 02:28:16.922] [info] [eot] [t101628] [shaders] dump: [91/235] Data/09B_SMA_050_Archives99_T.pkz (18 MB): 80 new shaders, 9059 in all
+[2026-10-13 02:28:16.970] [info] [eot] [t101628] [shaders] dump: [92/235] Data/09_SMA_Main.pkz (2 MB): 0 new shaders, 9059 in all
+[2026-10-13 02:28:17.204] [info] [eot] [t101628] [shaders] dump: [93/235] Data/10A_SM99_010_TerminalRoom_T.pkz (18 MB): 7 new shaders, 9066 in all
+[2026-10-13 02:28:17.745] [info] [eot] [t101628] [shaders] dump: [94/235] Data/10A_SM99_020_Archives.pkz (41 MB): 47 new shaders, 9113 in all
+[2026-10-13 02:28:17.777] [info] [eot] [t101628] [shaders] dump: [95/235] Data/10A_SM99_020_PiPMJUpdates.pkz (1 MB): 11 new shaders, 9124 in all
+[2026-10-13 02:28:18.021] [info] [eot] [t101628] [shaders] dump: [96/235] Data/10A_SM99_030_TentacleMaze.pkz (19 MB): 8 new shaders, 9132 in all
+[2026-10-13 02:28:18.149] [info] [eot] [t102160] [workbuf] 0 lock(s) held
+[2026-10-13 02:28:18.167] [info] [eot] [t101628] [shaders] dump: [97/235] Data/10B_SM99_040_FallA.pkz (9 MB): 9 new shaders, 9141 in all
+[2026-10-13 02:28:18.299] [info] [eot] [t101628] [shaders] dump: [98/235] Data/10B_SM99_050_FallB.pkz (8 MB): 2 new shaders, 9143 in all
+[2026-10-13 02:28:18.417] [info] [eot] [t101628] [shaders] dump: [99/235] Data/10B_SM99_060_FallC.pkz (7 MB): 0 new shaders, 9143 in all
+[2026-10-13 02:28:18.555] [info] [eot] [t101628] [shaders] dump: [100/235] Data/10C_SM99_070_CorridorClimax.pkz (10 MB): 38 new shaders, 9181 in all
+[2026-10-13 02:28:18.727] [info] [eot] [t101628] [shaders] dump: [101/235] Data/10_SM99_Main.pkz (12 MB): 49 new shaders, 9230 in all
+[2026-10-13 02:28:19.094] [info] [eot] [t101628] [shaders] dump: [102/235] Data/11A_SMA_010_Archives99_T.pkz (28 MB): 148 new shaders, 9378 in all
+[2026-10-13 02:28:19.452] [info] [eot] [t101628] [shaders] dump: [103/235] Data/11B_SMA_015_CostumeRoom99.pkz (26 MB): 143 new shaders, 9521 in all
+[2026-10-13 02:28:19.552] [info] [eot] [t101628] [shaders] dump: [104/235] Data/11B_SMA_020_Corridors99_T.pkz (7 MB): 21 new shaders, 9542 in all
+[2026-10-13 02:28:19.792] [info] [eot] [t101628] [shaders] dump: [105/235] Data/11B_SMA_022_Warehouse99.pkz (17 MB): 33 new shaders, 9575 in all
+[2026-10-13 02:28:19.974] [info] [eot] [t101628] [shaders] dump: [106/235] Data/11B_SMA_025_SewersTunnel99_T.pkz (13 MB): 42 new shaders, 9617 in all
+[2026-10-13 02:28:20.320] [info] [eot] [t101628] [shaders] dump: [107/235] Data/11C_SMA_030_HydroponicJungle99.pkz (26 MB): 113 new shaders, 9730 in all
+[2026-10-13 02:28:20.454] [info] [eot] [t101628] [shaders] dump: [108/235] Data/11C_SMA_035_CorridorToSewers99_T.pkz (10 MB): 0 new shaders, 9730 in all
+[2026-10-13 02:28:20.614] [info] [eot] [t101628] [shaders] dump: [109/235] Data/11C_SMA_040_Sewers99_T.pkz (12 MB): 0 new shaders, 9730 in all
+[2026-10-13 02:28:20.903] [info] [eot] [t101628] [shaders] dump: [110/235] Data/11C_SMA_050_Corridors99_T.pkz (22 MB): 60 new shaders, 9790 in all
+[2026-10-13 02:28:21.028] [info] [eot] [t101628] [shaders] dump: [111/235] Data/11C_SMA_060_EggRegenRoom99_T.pkz (9 MB): 0 new shaders, 9790 in all
+[2026-10-13 02:28:21.038] [info] [eot] [t101628] [shaders] dump: [112/235] Data/11C_SMA_070_PortalRoom99_T.pkz (0 MB): 0 new shaders, 9790 in all
+[2026-10-13 02:28:21.145] [info] [eot] [t101628] [shaders] dump: [113/235] Data/11_SMA_Main.pkz (6 MB): 42 new shaders, 9832 in all
+[2026-10-13 02:28:21.312] [info] [eot] [t101628] [shaders] dump: [114/235] Data/12A_SM99_005_PortalRoom99.pkz (12 MB): 67 new shaders, 9899 in all
+[2026-10-13 02:28:21.455] [info] [eot] [t101628] [shaders] dump: [115/235] Data/12A_SM99_010_VentAccess99_T.pkz (10 MB): 39 new shaders, 9938 in all
+[2026-10-13 02:28:21.466] [info] [eot] [t101628] [shaders] dump: [116/235] Data/12A_SM99_020_DNALabFirst99.pkz (0 MB): 0 new shaders, 9938 in all
+[2026-10-13 02:28:21.688] [info] [eot] [t101628] [shaders] dump: [117/235] Data/12A_SM99_030_GammaWing99.pkz (15 MB): 167 new shaders, 10105 in all
+[2026-10-13 02:28:21.694] [info] [eot] [t101628] [shaders] dump: [118/235] Data/12B_SM99_040_DNALabSecond99.pkz (0 MB): 0 new shaders, 10105 in all
+[2026-10-13 02:28:21.931] [info] [eot] [t101628] [shaders] dump: [119/235] Data/12B_SM99_050_CyberneticWing99.pkz (17 MB): 55 new shaders, 10160 in all
+[2026-10-13 02:28:21.937] [info] [eot] [t101628] [shaders] dump: [120/235] Data/12C_SM99_060_DNALabThird99.pkz (0 MB): 0 new shaders, 10160 in all
+[2026-10-13 02:28:22.209] [info] [eot] [t101628] [shaders] dump: [121/235] Data/12C_SM99_070_SymbioticWing99.pkz (19 MB): 31 new shaders, 10191 in all
+[2026-10-13 02:28:22.217] [info] [eot] [t101628] [shaders] dump: [122/235] Data/12C_SM99_080_DNALabFourth99.pkz (0 MB): 5 new shaders, 10196 in all
+[2026-10-13 02:28:22.324] [info] [eot] [t101628] [shaders] dump: [123/235] Data/12C_SM99_090_SamplingStation99_T.pkz (7 MB): 32 new shaders, 10228 in all
+[2026-10-13 02:28:22.682] [info] [eot] [t101628] [shaders] dump: [124/235] Data/12X_SM99_XX1_DNALab99.pkz (26 MB): 143 new shaders, 10371 in all
+[2026-10-13 02:28:22.858] [info] [eot] [t101628] [shaders] dump: [125/235] Data/12_SM99_Main.pkz (12 MB): 38 new shaders, 10409 in all
+[2026-10-13 02:28:23.147] [info] [eot] [t101628] [shaders] dump: [126/235] Data/13A_SMA_010_OfficeClosingDoor_T.pkz (21 MB): 100 new shaders, 10509 in all
+[2026-10-13 02:28:23.654] [info] [eot] [t101628] [shaders] dump: [127/235] Data/13A_SMA_020_GenLab.pkz (36 MB): 239 new shaders, 10748 in all
+[2026-10-13 02:28:23.748] [info] [eot] [t101628] [shaders] dump: [128/235] Data/13A_SMA_030_Corridors_T.pkz (7 MB): 45 new shaders, 10793 in all
+[2026-10-13 02:28:24.355] [info] [eot] [t101628] [shaders] dump: [129/235] Data/13A_SMA_040_Hydroponics.pkz (45 MB): 128 new shaders, 10921 in all
+[2026-10-13 02:28:24.441] [info] [eot] [t101628] [shaders] dump: [130/235] Data/13A_SMA_050_Corridors_T.pkz (6 MB): 0 new shaders, 10921 in all
+[2026-10-13 02:28:24.931] [info] [eot] [t101628] [shaders] dump: [131/235] Data/13A_SMA_060_GenLab.pkz (36 MB): 173 new shaders, 11094 in all
+[2026-10-13 02:28:24.991] [info] [eot] [t101628] [shaders] dump: [132/235] Data/13A_SMA_065_CrawlVent_T.pkz (4 MB): 12 new shaders, 11106 in all
+[2026-10-13 02:28:25.383] [info] [eot] [t101628] [shaders] dump: [133/235] Data/13B_SMA_070_GasChamber.pkz (29 MB): 140 new shaders, 11246 in all
+[2026-10-13 02:28:25.471] [info] [eot] [t101628] [shaders] dump: [134/235] Data/13_SMA_Main.pkz (5 MB): 0 new shaders, 11246 in all
+[2026-10-13 02:28:25.543] [info] [eot] [t101628] [shaders] dump: [135/235] Data/14A_SM99_010_TrapDoorRoomA99.pkz (5 MB): 32 new shaders, 11278 in all
+[2026-10-13 02:28:25.664] [info] [eot] [t101628] [shaders] dump: [136/235] Data/14A_SM99_020_DisposalChuteDownA99.pkz (8 MB): 33 new shaders, 11311 in all
+[2026-10-13 02:28:25.785] [info] [eot] [t101628] [shaders] dump: [137/235] Data/14A_SM99_030_DisposalChuteDownB99.pkz (8 MB): 10 new shaders, 11321 in all
+[2026-10-13 02:28:26.260] [info] [eot] [t101628] [shaders] dump: [138/235] Data/14B_SM99_040_AntiGravCenter99.pkz (33 MB): 127 new shaders, 11448 in all
+[2026-10-13 02:28:26.385] [info] [eot] [t101628] [shaders] dump: [139/235] Data/14C_SM99_050_DisposalChuteUpA99.pkz (9 MB): 0 new shaders, 11448 in all
+[2026-10-13 02:28:26.486] [info] [eot] [t101628] [shaders] dump: [140/235] Data/14C_SM99_060_DisposalChuteUpB99.pkz (7 MB): 0 new shaders, 11448 in all
+[2026-10-13 02:28:26.837] [info] [eot] [t101628] [shaders] dump: [141/235] Data/14C_SM99_070_TrapDoorRoomB99.pkz (24 MB): 153 new shaders, 11601 in all
+[2026-10-13 02:28:26.956] [info] [eot] [t101628] [shaders] dump: [142/235] Data/14X_SM99_XX1_TrapDoorRoom99.pkz (9 MB): 2 new shaders, 11603 in all
+[2026-10-13 02:28:26.988] [info] [eot] [t101628] [shaders] dump: [143/235] Data/14_SM99_Main.pkz (2 MB): 1 new shaders, 11604 in all
+[2026-10-13 02:28:27.430] [info] [eot] [t101628] [shaders] dump: [144/235] Data/15A_SMA_010_FailedExperimentLab.pkz (30 MB): 327 new shaders, 11931 in all
+[2026-10-13 02:28:27.535] [info] [eot] [t101628] [shaders] dump: [145/235] Data/15A_SMA_010_PIP_Zombies.pkz (8 MB): 1 new shaders, 11932 in all
+[2026-10-13 02:28:27.779] [info] [eot] [t101628] [shaders] dump: [146/235] Data/15A_SMA_020_LockedCorridor.pkz (19 MB): 20 new shaders, 11952 in all
+[2026-10-13 02:28:27.785] [info] [eot] [t101628] [shaders] dump: [147/235] Data/15A_SMA_030_TeleportProtoRoomA.pkz (0 MB): 0 new shaders, 11952 in all
+[2026-10-13 02:28:28.100] [info] [eot] [t101628] [shaders] dump: [148/235] Data/15A_SMA_040_TeleportProtoRoomB99.pkz (22 MB): 87 new shaders, 12039 in all
+[2026-10-13 02:28:28.104] [info] [eot] [t101628] [shaders] dump: [149/235] Data/15A_SMA_050_TeleportProtoRoomC.pkz (0 MB): 0 new shaders, 12039 in all
+[2026-10-13 02:28:28.150] [info] [eot] [t102160] [workbuf] 0 lock(s) held
+[2026-10-13 02:28:28.449] [info] [eot] [t101628] [shaders] dump: [150/235] Data/15A_SMA_060_UnlockedCorridor.pkz (26 MB): 112 new shaders, 12151 in all
+[2026-10-13 02:28:28.744] [info] [eot] [t101628] [shaders] dump: [151/235] Data/15A_SMA_XX1_TeleportProtoRoom.pkz (22 MB): 37 new shaders, 12188 in all
+[2026-10-13 02:28:28.871] [info] [eot] [t101628] [shaders] dump: [152/235] Data/15_SMA_Main.pkz (8 MB): 0 new shaders, 12188 in all
+[2026-10-13 02:28:29.081] [info] [eot] [t101628] [shaders] dump: [153/235] Data/16A_SM99_010_WindowsA99_T.pkz (15 MB): 61 new shaders, 12249 in all
+[2026-10-13 02:28:29.370] [info] [eot] [t101628] [shaders] dump: [154/235] Data/16A_SM99_020_GalleryA99.pkz (20 MB): 78 new shaders, 12327 in all
+[2026-10-13 02:28:29.662] [info] [eot] [t101628] [shaders] dump: [155/235] Data/16A_SM99_030_GalleryB99.pkz (21 MB): 57 new shaders, 12384 in all
+[2026-10-13 02:28:29.847] [info] [eot] [t101628] [shaders] dump: [156/235] Data/16A_SM99_040_WindowsB99_T.pkz (13 MB): 26 new shaders, 12410 in all
+[2026-10-13 02:28:30.123] [info] [eot] [t101628] [shaders] dump: [157/235] Data/16A_SM99_042_Office99.pkz (20 MB): 74 new shaders, 12484 in all
+[2026-10-13 02:28:30.328] [info] [eot] [t101628] [shaders] dump: [158/235] Data/16A_SM99_045_Bridge99_T.pkz (14 MB): 29 new shaders, 12513 in all
+[2026-10-13 02:28:30.440] [info] [eot] [t101628] [shaders] dump: [159/235] Data/16A_SM99_050_CEOLobby99.pkz (7 MB): 42 new shaders, 12555 in all
+[2026-10-13 02:28:30.702] [info] [eot] [t101628] [shaders] dump: [160/235] Data/16A_SM99_060_CEOOffice99_T.pkz (19 MB): 66 new shaders, 12621 in all
+[2026-10-13 02:28:30.732] [info] [eot] [t101628] [shaders] dump: [161/235] Data/16X_SM99_XX1_Outdoor99.pkz (1 MB): 0 new shaders, 12621 in all
+[2026-10-13 02:28:30.782] [info] [eot] [t101628] [shaders] dump: [162/235] Data/16_SM99_Main.pkz (3 MB): 0 new shaders, 12621 in all
+[2026-10-13 02:28:31.046] [info] [eot] [t101628] [shaders] dump: [163/235] Data/17A_SM99_020_PortalRoom_T.pkz (19 MB): 104 new shaders, 12725 in all
+[2026-10-13 02:28:31.270] [info] [eot] [t101628] [shaders] dump: [164/235] Data/17A_SM99_040_PortalRoom_T.pkz (16 MB): 28 new shaders, 12753 in all
+[2026-10-13 02:28:31.548] [info] [eot] [t101628] [shaders] dump: [165/235] Data/17A_SM99_060_PortalRoom_T.pkz (19 MB): 54 new shaders, 12807 in all
+[2026-10-13 02:28:31.848] [info] [eot] [t101628] [shaders] dump: [166/235] Data/17A_SMA_010_PortalRoom_T.pkz (22 MB): 45 new shaders, 12852 in all
+[2026-10-13 02:28:32.118] [info] [eot] [t101628] [shaders] dump: [167/235] Data/17A_SMA_030_PortalRoom_T.pkz (20 MB): 30 new shaders, 12882 in all
+[2026-10-13 02:28:32.325] [info] [eot] [t101628] [shaders] dump: [168/235] Data/17A_SMA_050_PortalRoom_T.pkz (15 MB): 6 new shaders, 12888 in all
+[2026-10-13 02:28:32.401] [info] [eot] [t101628] [shaders] dump: [169/235] Data/17_Both_Main.pkz (5 MB): 0 new shaders, 12888 in all
+[2026-10-13 02:28:32.403] [info] [eot] [t101628] [shaders] dump: [170/235] Data/Act01.pkz (0 MB): 0 new shaders, 12888 in all
+[2026-10-13 02:28:32.405] [info] [eot] [t101628] [shaders] dump: [171/235] Data/Act02.pkz (0 MB): 0 new shaders, 12888 in all
+[2026-10-13 02:28:32.407] [info] [eot] [t101628] [shaders] dump: [172/235] Data/Act03.pkz (0 MB): 0 new shaders, 12888 in all
+[2026-10-13 02:28:32.525] [info] [eot] [t101628] [shaders] dump: [173/235] Data/Base2099.pkz (9 MB): 41 new shaders, 12929 in all
+[2026-10-13 02:28:32.752] [info] [eot] [t101628] [shaders] dump: [174/235] Data/BaseAmazing.pkz (15 MB): 201 new shaders, 13130 in all
+[2026-10-13 02:28:33.553] [info] [eot] [t101628] [shaders] dump: [175/235] Data/BaseEnemies.pkz (60 MB): 383 new shaders, 13513 in all
+[2026-10-13 02:28:34.727] [info] [eot] [t101628] [shaders] dump: [176/235] Data/BaseGameplay.pkz (86 MB): 556 new shaders, 14069 in all
+[2026-10-13 02:28:34.797] [info] [eot] [t101628] [shaders] dump: [177/235] Data/BaseHero.pkz (5 MB): 64 new shaders, 14133 in all
+[2026-10-13 02:28:35.030] [info] [eot] [t101628] [shaders] dump: [178/235] Data/BossAntiVenom.pkz (19 MB): 29 new shaders, 14162 in all
+[2026-10-13 02:28:35.204] [info] [eot] [t101628] [shaders] dump: [179/235] Data/BossCEO.pkz (13 MB): 31 new shaders, 14193 in all
+[2026-10-13 02:28:35.404] [info] [eot] [t101628] [shaders] dump: [180/235] Data/BossMonsterOck.pkz (16 MB): 9 new shaders, 14202 in all
+[2026-10-13 02:28:35.464] [info] [eot] [t101628] [shaders] dump: [181/235] Data/CH_SM99_010_PortalRoomFirstStage99.pkz (4 MB): 0 new shaders, 14202 in all
+[2026-10-13 02:28:35.509] [info] [eot] [t101628] [shaders] dump: [182/235] Data/CH_SM99_020_PRoomSecondStage99.pkz (3 MB): 0 new shaders, 14202 in all
+[2026-10-13 02:28:35.554] [info] [eot] [t101628] [shaders] dump: [183/235] Data/CH_SM99_030_PortalRoomThirdStage99.pkz (3 MB): 0 new shaders, 14202 in all
+[2026-10-13 02:28:35.557] [info] [eot] [t101628] [shaders] dump: [184/235] Data/CH_SM99_Main.pkz (0 MB): 0 new shaders, 14202 in all
+[2026-10-13 02:28:35.627] [info] [eot] [t101628] [shaders] dump: [185/235] Data/CH_SMA_010_PortalRoomFirstStage.pkz (4 MB): 0 new shaders, 14202 in all
+[2026-10-13 02:28:35.719] [info] [eot] [t101628] [shaders] dump: [186/235] Data/CH_SMA_020_PRoomSecondStage.pkz (6 MB): 0 new shaders, 14202 in all
+[2026-10-13 02:28:35.790] [info] [eot] [t101628] [shaders] dump: [187/235] Data/CH_SMA_030_PortalRoomThirdStage.pkz (4 MB): 11 new shaders, 14213 in all
+[2026-10-13 02:28:35.796] [info] [eot] [t101628] [shaders] dump: [188/235] Data/CH_SMA_Main.pkz (0 MB): 0 new shaders, 14213 in all
+[2026-10-13 02:28:35.798] [info] [eot] [t101628] [shaders] dump: [189/235] Data/CombatArenas.pkz (0 MB): 0 new shaders, 14213 in all
+[2026-10-13 02:28:35.850] [info] [eot] [t101628] [shaders] dump: [190/235] Data/Common.pkz (3 MB): 14 new shaders, 14227 in all
+[2026-10-13 02:28:36.109] [info] [eot] [t101628] [shaders] dump: [191/235] Data/ENV_CH_010_PRFirstStage.pkz (19 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:36.325] [info] [eot] [t101628] [shaders] dump: [192/235] Data/ENV_CH_010_PRFirstStage99.pkz (15 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:36.547] [info] [eot] [t101628] [shaders] dump: [193/235] Data/ENV_CH_020_PRSecondStage.pkz (17 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:36.766] [info] [eot] [t101628] [shaders] dump: [194/235] Data/ENV_CH_020_PRSecondStage99.pkz (15 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:36.990] [info] [eot] [t101628] [shaders] dump: [195/235] Data/ENV_CH_030_PRThirdStage.pkz (17 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.195] [info] [eot] [t101628] [shaders] dump: [196/235] Data/ENV_CH_030_PRThirdStage99.pkz (15 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.198] [info] [eot] [t101628] [shaders] dump: [197/235] Data/EnemyAndroidExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.200] [info] [eot] [t101628] [shaders] dump: [198/235] Data/EnemyBasherExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.215] [info] [eot] [t101628] [shaders] dump: [199/235] Data/EnemyBlackCatAcolyteExtraData.pkz (1 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.232] [info] [eot] [t101628] [shaders] dump: [200/235] Data/EnemyBlackCatExtraData.pkz (1 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.234] [info] [eot] [t101628] [shaders] dump: [201/235] Data/EnemyBlockerFutureExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.266] [info] [eot] [t101628] [shaders] dump: [202/235] Data/EnemyBlockerPresentExtraData.pkz (2 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.268] [info] [eot] [t101628] [shaders] dump: [203/235] Data/EnemyCleanerFutureExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.301] [info] [eot] [t101628] [shaders] dump: [204/235] Data/EnemyCleanerPresentExtraData.pkz (2 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.304] [info] [eot] [t101628] [shaders] dump: [205/235] Data/EnemyCrasherFutureExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.365] [info] [eot] [t101628] [shaders] dump: [206/235] Data/EnemyCrasherPresentExtraData.pkz (5 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.367] [info] [eot] [t101628] [shaders] dump: [207/235] Data/EnemyGunnerFutureExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.379] [info] [eot] [t101628] [shaders] dump: [208/235] Data/EnemyGunnerPresentExtraData.pkz (1 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.382] [info] [eot] [t101628] [shaders] dump: [209/235] Data/EnemyHatchlingExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.385] [info] [eot] [t101628] [shaders] dump: [210/235] Data/EnemyInfantExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.387] [info] [eot] [t101628] [shaders] dump: [211/235] Data/EnemyLaserBotFutureExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.424] [info] [eot] [t101628] [shaders] dump: [212/235] Data/EnemyLaserBotPresentExtraData.pkz (3 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.428] [info] [eot] [t101628] [shaders] dump: [213/235] Data/EnemyMotherFutureExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.430] [info] [eot] [t101628] [shaders] dump: [214/235] Data/EnemyMotherPresentExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.432] [info] [eot] [t101628] [shaders] dump: [215/235] Data/EnemyRangerExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.434] [info] [eot] [t101628] [shaders] dump: [216/235] Data/EnemyStunnerFutureExtraData.pkz (0 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.456] [info] [eot] [t101628] [shaders] dump: [217/235] Data/EnemyStunnerPresentExtraData.pkz (1 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.475] [info] [eot] [t101628] [shaders] dump: [218/235] Data/EnemyZombieExtraData.pkz (1 MB): 0 new shaders, 14227 in all
+[2026-10-13 02:28:37.618] [info] [eot] [t101628] [shaders] dump: [219/235] Data/FrontScreen.pkz (11 MB): 14 new shaders, 14241 in all
+[2026-10-13 02:28:38.151] [info] [eot] [t102160] [workbuf] 0 lock(s) held
+[2026-10-13 02:28:38.507] [info] [eot] [t101628] [shaders] dump: [220/235] Data/Gallery.pkz (71 MB): 94 new shaders, 14335 in all
+[2026-10-13 02:28:38.517] [info] [eot] [t101628] [shaders] dump: [221/235] Data/Legal.pkz (0 MB): 0 new shaders, 14335 in all
+[2026-10-13 02:28:38.527] [info] [eot] [t101628] [shaders] dump: [222/235] Data/Main.pkz (0 MB): 1 new shaders, 14336 in all
+[2026-10-13 02:28:38.531] [info] [eot] [t101628] [shaders] dump: [223/235] Data/NAV_CH_XXX_PortalRoom.pkz (0 MB): 0 new shaders, 14336 in all
+[2026-10-13 02:28:38.533] [info] [eot] [t101628] [shaders] dump: [224/235] Data/NAV_CH_XXX_PortalRoom99.pkz (0 MB): 0 new shaders, 14336 in all
+[2026-10-13 02:28:38.538] [info] [eot] [t101628] [shaders] dump: [225/235] Data/TV2099.pkz (0 MB): 0 new shaders, 14336 in all
+[2026-10-13 02:28:38.543] [info] [eot] [t101628] [shaders] dump: [226/235] Data/TVAmazing.pkz (0 MB): 0 new shaders, 14336 in all
+[2026-10-13 02:28:38.592] [info] [eot] [t101628] [shaders] dump: [227/235] Data/WebOfSkills.pkz (2 MB): 7 new shaders, 14343 in all
+[2026-10-13 02:28:38.774] [info] [eot] [t101628] [shaders] dump: [228/235] Data/XX_SMX_XXX_PetersOffice.pkz (13 MB): 41 new shaders, 14384 in all
+[2026-10-13 02:28:38.961] [info] [eot] [t101628] [shaders] dump: [229/235] Data/XX_SMX_XXX_PortalRoom99_T.pkz (13 MB): 14 new shaders, 14398 in all
+[2026-10-13 02:28:39.151] [info] [eot] [t101628] [shaders] dump: [230/235] Data/XX_SMX_XXX_PortalRoom_T.pkz (15 MB): 0 new shaders, 14398 in all
+[2026-10-13 02:28:39.163] [info] [eot] [t101628] [shaders] dump: [231/235] Data/custom/ReeotAchievements.pkz (0 MB): 0 new shaders, 14398 in all
+[2026-10-13 02:28:39.177] [info] [eot] [t101628] [shaders] dump: [232/235] Data/custom/ReeotIcons.pkz (0 MB): 0 new shaders, 14398 in all
+[2026-10-13 02:28:39.181] [info] [eot] [t101628] [shaders] dump: [233/235] Data/custom/ReeotMenu.pkz (0 MB): 0 new shaders, 14398 in all
+[2026-10-13 02:28:39.789] [info] [eot] [t101628] [shaders] dump: [234/235] Data/custom/ReeotSuits.pkz (47 MB): 0 new shaders, 14398 in all
+[2026-10-13 02:28:39.840] [info] [eot] [t101628] [shaders] dump: [235/235] Data/custom/ReeotUI.pkz (2 MB): 0 new shaders, 14398 in all
+[2026-10-13 02:28:39.842] [info] [eot] [t101628] [shaders] dump: DONE: 14398 shaders (426342 found with repeats), 31422 KB in /app0/shader-dump.bin; 0 pack(s) failed
+[2026-10-13 02:28:39.845] [info] [eot] [t101628] reeot - shaders dumped - This build has no shaders yet, so it wrote the game's to shader-dump.bin and closed. Recompile them (RELEASE.md, step 5), build again, and the game draws.
+[2026-10-13 02:28:39.999] [warning] [krnl] [t102299] VdSetGraphicsInterruptCallback: no GPU emulation loaded (gpu_plugin not set); call ignored
+[2026-10-13 02:28:40.000] [warning] [krnl] [t102299] VdInitializeRingBuffer: no GPU emulation loaded (gpu_plugin not set); call ignored
+[2026-10-13 02:28:40.001] [warning] [krnl] [t102299] VdEnableRingBufferRPtrWriteBack: no GPU emulation loaded (gpu_plugin not set); call ignored
+[2026-10-13 02:28:48.152] [info] [eot] [t102160] [workbuf] 0 lock(s) held
+[2026-10-13 02:28:49.849] [info] [core] [t102184] PS5 stall dump 1 (10 s after launch): 31 threads
+[2026-10-13 02:28:49.850] [info] [core] [t102184]   F8000010 'XMA Decoder (F8000010)' start 00000000: 0 calls, last (none)
+[2026-10-13 02:28:49.851] [info] [core] [t102184]   F8000014 'Audio Worker (F8000014)' start 00000000: 0 calls, last (none)
+[2026-10-13 02:28:49.851] [info] [core] [t102184]   F8000020 'Kernel Dispatch (F8000020)' start 00000000: 0 calls, last (none)
+[2026-10-13 02:28:49.852] [info] [core] [t102184]   F8000024 'Main XThread (F8000024)' (guest) start 8224B3D8: 1293 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800004C (Event at 30036018, no timeout)
+[2026-10-13 02:28:49.853] [info] [core] [t102184]   F8000064 'XThread0000 (F8000064)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800005C (Event at 3003E018, no timeout)
+[2026-10-13 02:28:49.853] [info] [core] [t102184]   F8000070 'XThread0000 (F8000070)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000068 (Event at 30047018, no timeout)
+[2026-10-13 02:28:49.854] [info] [core] [t102184]   F800007C 'XThread0000 (F800007C)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000074 (Event at 30050018, no timeout)
+[2026-10-13 02:28:49.855] [info] [core] [t102184]   F8000088 'XThread0000 (F8000088)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000080 (Event at 30059018, no timeout)
+[2026-10-13 02:28:49.856] [info] [core] [t102184]   F8000094 'XThread0000 (F8000094)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800008C (Event at 30062018, no timeout)
+[2026-10-13 02:28:49.856] [info] [core] [t102184]   F80000A0 'XThread0000 (F80000A0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000098 (Event at 3006B018, no timeout)
+[2026-10-13 02:28:49.857] [info] [core] [t102184]   F80000AC 'XThread0000 (F80000AC)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000A4 (Event at 30074018, no timeout)
+[2026-10-13 02:28:49.858] [info] [core] [t102184]   F80000B8 'XThread0000 (F80000B8)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000B0 (Event at 3007D018, no timeout)
+[2026-10-13 02:28:49.858] [info] [core] [t102184]   F80000C4 'XThread0000 (F80000C4)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000BC (Event at 30086018, no timeout)
+[2026-10-13 02:28:49.859] [info] [core] [t102184]   F80000D0 'XThread0000 (F80000D0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000C8 (Event at 3008F018, no timeout)
+[2026-10-13 02:28:49.860] [info] [core] [t102184]   F80000D8 'XThread0000 (F80000D8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000D4 (Event at 30098018, no timeout)
+[2026-10-13 02:28:49.861] [info] [core] [t102184]   F80000E0 'XThread0000 (F80000E0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000DC (Event at 3009F018, no timeout)
+[2026-10-13 02:28:49.861] [info] [core] [t102184]   F80000E8 'XThread0000 (F80000E8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000E4 (Event at 300A6018, no timeout)
+[2026-10-13 02:28:49.862] [info] [core] [t102184]   F80000F0 'XThread0000 (F80000F0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000EC (Event at 300AD018, no timeout)
+[2026-10-13 02:28:49.863] [info] [core] [t102184]   F80000F8 'XThread0000 (F80000F8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000F4 (Event at 300B4018, no timeout)
+[2026-10-13 02:28:49.863] [info] [core] [t102184]   F8000104 'XThread0000 (F8000104)' (guest) start 8233BEA8 (via 8237BC40): 11 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-13 02:28:49.864] [info] [core] [t102184]   F8000108 'XThread0000 (F8000108)' (guest) start 8233BEA8 (via 8237BC40): 11 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-13 02:28:49.865] [info] [core] [t102184]   F800010C 'XThread0000 (F800010C)' (guest) start 8233BEA8 (via 8237BC40): 11 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-13 02:28:49.866] [info] [core] [t102184]   F8000110 'XThread0000 (F8000110)' (guest) start 8233BEA8 (via 8237BC40): 15 calls, last __imp__ExTerminateThread
+[2026-10-13 02:28:49.866] [info] [core] [t102184]   F8000114 'XThread0000 (F8000114)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800002C (Semaphore at 30026018, no timeout)
+[2026-10-13 02:28:49.867] [info] [core] [t102184]   F8000118 'XThread0000 (F8000118)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000030 (Semaphore at 30028018, no timeout)
+[2026-10-13 02:28:49.868] [info] [core] [t102184]   F800011C 'XThread0000 (F800011C)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000034 (Semaphore at 3002A018, no timeout)
+[2026-10-13 02:28:49.868] [info] [core] [t102184]   F8000120 'XThread0000 (F8000120)' (guest) start 8233BEA8 (via 8237BC40): 19 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000054 (Semaphore at 3003A018, timeout -10000000 x100ns)
+[2026-10-13 02:28:49.869] [info] [core] [t102184]   F8000124 'XThread0000 (F8000124)' (guest) start 8233BEA8 (via 8237BC40): 19 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000058 (Semaphore at 3003C018, timeout -10000000 x100ns)
+[2026-10-13 02:28:49.870] [info] [core] [t102184]   F8000128 'XThread0000 (F8000128)' (guest) start 8233BEA8 (via 8237BC40): 80 calls, last rexcrt_memcpy
+[2026-10-13 02:28:49.871] [info] [core] [t102184]   F800012C 'XThread0000 (F800012C)' (guest) start 8223CB88 (via 8237BC40): 1314 calls, last __imp__KeWaitForSingleObject
+[2026-10-13 02:28:49.871] [info] [core] [t102184]   F8000130 'XThread0000 (F8000130)' (guest) start 8223CB88 (via 8237BC40): 6 calls, last __imp__KeWaitForSingleObject
+[2026-10-13 02:28:58.153] [info] [eot] [t102160] [workbuf] 0 lock(s) held
+[2026-10-13 02:28:59.872] [info] [core] [t102184] PS5 stall dump 2 (20 s after launch): 31 threads
+[2026-10-13 02:28:59.873] [info] [core] [t102184]   F8000010 'XMA Decoder (F8000010)' start 00000000: 0 calls, last (none)
+[2026-10-13 02:28:59.874] [info] [core] [t102184]   F8000014 'Audio Worker (F8000014)' start 00000000: 0 calls, last (none)
+[2026-10-13 02:28:59.874] [info] [core] [t102184]   F8000020 'Kernel Dispatch (F8000020)' start 00000000: 0 calls, last (none)
+[2026-10-13 02:28:59.875] [info] [core] [t102184]   F8000024 'Main XThread (F8000024)' (guest) start 8224B3D8: 1293 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800004C (Event at 30036018, no timeout)
+[2026-10-13 02:28:59.876] [info] [core] [t102184]     recent: KeSetBasePriorityThread ObDereferenceObject rexcrt_memset KeTlsGetValue KeTlsGetValue KeTlsGetValue rexcrt_memset KeTlsGetValue KeTlsGetValue KeTlsGetValue rexcrt_memset rexcrt_memset KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue rexcrt_RtlAllocateHeap ExCreateThread ObReferenceObjectByHandle KeSetBasePriorityThread ObDereferenceObject NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.877] [info] [core] [t102184]   F8000064 'XThread0000 (F8000064)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800005C (Event at 3003E018, no timeout)
+[2026-10-13 02:28:59.877] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.878] [info] [core] [t102184]   F8000070 'XThread0000 (F8000070)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000068 (Event at 30047018, no timeout)
+[2026-10-13 02:28:59.879] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.879] [info] [core] [t102184]   F800007C 'XThread0000 (F800007C)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000074 (Event at 30050018, no timeout)
+[2026-10-13 02:28:59.880] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.881] [info] [core] [t102184]   F8000088 'XThread0000 (F8000088)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000080 (Event at 30059018, no timeout)
+[2026-10-13 02:28:59.881] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.882] [info] [core] [t102184]   F8000094 'XThread0000 (F8000094)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800008C (Event at 30062018, no timeout)
+[2026-10-13 02:28:59.883] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.884] [info] [core] [t102184]   F80000A0 'XThread0000 (F80000A0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000098 (Event at 3006B018, no timeout)
+[2026-10-13 02:28:59.884] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.885] [info] [core] [t102184]   F80000AC 'XThread0000 (F80000AC)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000A4 (Event at 30074018, no timeout)
+[2026-10-13 02:28:59.886] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.886] [info] [core] [t102184]   F80000B8 'XThread0000 (F80000B8)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000B0 (Event at 3007D018, no timeout)
+[2026-10-13 02:28:59.887] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.888] [info] [core] [t102184]   F80000C4 'XThread0000 (F80000C4)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000BC (Event at 30086018, no timeout)
+[2026-10-13 02:28:59.889] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.889] [info] [core] [t102184]   F80000D0 'XThread0000 (F80000D0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000C8 (Event at 3008F018, no timeout)
+[2026-10-13 02:28:59.890] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.891] [info] [core] [t102184]   F80000D8 'XThread0000 (F80000D8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000D4 (Event at 30098018, no timeout)
+[2026-10-13 02:28:59.891] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.892] [info] [core] [t102184]   F80000E0 'XThread0000 (F80000E0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000DC (Event at 3009F018, no timeout)
+[2026-10-13 02:28:59.893] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.894] [info] [core] [t102184]   F80000E8 'XThread0000 (F80000E8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000E4 (Event at 300A6018, no timeout)
+[2026-10-13 02:28:59.894] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.895] [info] [core] [t102184]   F80000F0 'XThread0000 (F80000F0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000EC (Event at 300AD018, no timeout)
+[2026-10-13 02:28:59.896] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.896] [info] [core] [t102184]   F80000F8 'XThread0000 (F80000F8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000F4 (Event at 300B4018, no timeout)
+[2026-10-13 02:28:59.897] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.898] [info] [core] [t102184]   F8000104 'XThread0000 (F8000104)' (guest) start 8233BEA8 (via 8237BC40): 11 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-13 02:28:59.899] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.899] [info] [core] [t102184]   F8000108 'XThread0000 (F8000108)' (guest) start 8233BEA8 (via 8237BC40): 11 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-13 02:28:59.900] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.901] [info] [core] [t102184]   F800010C 'XThread0000 (F800010C)' (guest) start 8233BEA8 (via 8237BC40): 11 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-13 02:28:59.901] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.902] [info] [core] [t102184]   F8000110 'XThread0000 (F8000110)' (guest) start 8233BEA8 (via 8237BC40): 15 calls, last __imp__ExTerminateThread
+[2026-10-13 02:28:59.903] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue XamContentGetLicenseMask KeTlsGetValue RtlEnterCriticalSection KeTlsGetValue KeTlsSetValue rexcrt_RtlFreeHeap RtlLeaveCriticalSection ExTerminateThread
+[2026-10-13 02:28:59.904] [info] [core] [t102184]   F8000114 'XThread0000 (F8000114)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800002C (Semaphore at 30026018, no timeout)
+[2026-10-13 02:28:59.904] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.905] [info] [core] [t102184]   F8000118 'XThread0000 (F8000118)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000030 (Semaphore at 30028018, no timeout)
+[2026-10-13 02:28:59.906] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.906] [info] [core] [t102184]   F800011C 'XThread0000 (F800011C)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000034 (Semaphore at 3002A018, no timeout)
+[2026-10-13 02:28:59.907] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.908] [info] [core] [t102184]   F8000120 'XThread0000 (F8000120)' (guest) start 8233BEA8 (via 8237BC40): 29 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000054 (Semaphore at 3003A018, timeout -10000000 x100ns)
+[2026-10-13 02:28:59.909] [info] [core] [t102184]     recent: KeTlsSetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.909] [info] [core] [t102184]   F8000124 'XThread0000 (F8000124)' (guest) start 8233BEA8 (via 8237BC40): 29 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000058 (Semaphore at 3003C018, timeout -10000000 x100ns)
+[2026-10-13 02:28:59.910] [info] [core] [t102184]     recent: KeTlsSetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx
+[2026-10-13 02:28:59.911] [info] [core] [t102184]   F8000128 'XThread0000 (F8000128)' (guest) start 8233BEA8 (via 8237BC40): 80 calls, last rexcrt_memcpy
+[2026-10-13 02:28:59.911] [info] [core] [t102184]     recent: KeInitializeDpc ExCreateThread ObReferenceObjectByHandle KeSetBasePriorityThread ObDereferenceObject KeInitializeDpc ExCreateThread ObReferenceObjectByHandle KeSetBasePriorityThread ObDereferenceObject KeTlsGetValue MmSetAddressProtect rexcrt_memcpy rexcrt_memcpy VdQueryVideoMode rexcrt_memcpy rexcrt_memcpy VdQueryVideoFlags rexcrt_memcpy rexcrt_memcpy VdCallGraphicsNotificationRoutines VdGetCurrentDisplayGamma KeGetCurrentProcessType rexcrt_memcpy
+[2026-10-13 02:28:59.912] [info] [core] [t102184]   F800012C 'XThread0000 (F800012C)' (guest) start 8223CB88 (via 8237BC40): 2650 calls, last __imp__KeWaitForSingleObject
+[2026-10-13 02:28:59.913] [info] [core] [t102184]     recent: KeGetCurrentProcessType RtlEnterCriticalSection RtlLeaveCriticalSection KeWaitForSingleObject KeGetCurrentProcessType RtlEnterCriticalSection RtlLeaveCriticalSection KeWaitForSingleObject KeGetCurrentProcessType RtlEnterCriticalSection RtlLeaveCriticalSection KeWaitForSingleObject KeGetCurrentProcessType RtlEnterCriticalSection RtlLeaveCriticalSection KeWaitForSingleObject KeGetCurrentProcessType RtlEnterCriticalSection RtlLeaveCriticalSection KeWaitForSingleObject KeGetCurrentProcessType RtlEnterCriticalSection RtlLeaveCriticalSection KeWaitForSingleObject
+[2026-10-13 02:28:59.913] [info] [core] [t102184]   F8000130 'XThread0000 (F8000130)' (guest) start 8223CB88 (via 8237BC40): 6 calls, last __imp__KeWaitForSingleObject
+[2026-10-13 02:28:59.914] [info] [core] [t102184]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection ObReferenceObjectByHandle KeSetAffinityThread ObDereferenceObject KeWaitForSingleObject
