@@ -1,4 +1,4 @@
-# EdgeOfTimeRecomp for the PS5 (title)
+# EdgeOfTimeRecomp for the PS5
 
 > **Playing it?** [RELEASE.md](RELEASE.md) is the guide: what you need, how to build it
 > from your own copy of the game, how to install it, and the credits.
