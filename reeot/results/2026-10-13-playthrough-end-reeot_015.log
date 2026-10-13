@@ -1,0 +1,731 @@
+[2026-10-12 22:33:06.532] [info] [eot] [t101629] reeot v1.0.0 [Release] ps5-amd64
+[2026-10-12 22:33:06.536] [info] [eot] [t101629]   commit:  9c2c4a3ae on claude/nifty-knuth-s27y9o
+[2026-10-12 22:33:06.536] [info] [eot] [t101629]   built:   20261012_2124 with Clang 20.1.2
+[2026-10-12 22:33:06.537] [info] [eot] [t101629]   sdk:     rexglue-v0.10.0.43-dev.g25d6a61 ps5-amd64 @20261012_0531
+[2026-10-12 22:33:06.538] [info] [eot] [t101629]   profile: default (/app0/profiles/default)
+[2026-10-12 22:33:06.539] [info] [eot] [t101629] [language] eot_language auto -> English (XLanguage 1)
+[2026-10-12 22:33:06.541] [info] [eot] [t101629] [input] controller input in the background: off
+[2026-10-12 22:33:06.542] [info] [eot] [t101629] [window] 3840x2160, fullscreen
+[2026-10-12 22:33:06.543] [info] [eot] [t101629] [install] game folder /app0/gamedata
+[2026-10-12 22:33:06.544] [info] [sys] [t101629] Guest memory arena mapped: virtual base 0x0000001000000000, physical base 0x0000001100000000
+[2026-10-12 22:33:06.571] [info] [core] [t101629] PS5: fault records go to /app0/logs/fault.log
+[2026-10-12 22:33:06.572] [info] [core] [t101629] PS5: code at 0x400000-0x2f40000 made readable for the MMIO handler
+[2026-10-12 22:33:06.573] [info] [eot] [t101629] [pad] no controller for the first player
+[2026-10-12 22:33:06.603] [info] [core] [t101629] Function table initialized for module: code=82080000-8238E6EC, image=82000000-82600000
+[2026-10-12 22:33:06.607] [info] [eot] [t101629] [boot] entry xex is Default.xex
+[2026-10-12 22:33:06.739] [info] [core] [t101629] XEX patch applied successfully: base version: 0.0.0.2, new version: 0.0.1.2
+[2026-10-12 22:33:06.786] [info] [eot] [t101629] [gpu] display 3840x2160 at 60 Hz, fullscreen (the display suggests 1440p)
+[2026-10-12 22:33:06.807] [info] [eot] [t101629] [gpu] render thread started: 1024 command slots (14 MB), batches of 64
+[2026-10-12 22:33:06.808] [info] [eot] [t101629] [gpu] Vulkan on PlayStation 5 GPU (RADV NAVI21) ready: swapchain 3840x2160, 32768 bindless texture slots, msaa 1x on the full-frame surfaces
+[2026-10-12 22:33:06.808] [info] [eot] [t101629] [gpu] internal render 1914x1080 (1080p = 1.709x the guest's 1120x632), fitted to the window at present; vsync on, fps cap 60
+[2026-10-12 22:33:08.339] [info] [eot] [t101629] [shaders] cache ready: 14398 shaders, 522 MB decompressed
+[2026-10-12 22:33:08.355] [info] [eot] [t101629] [pso] 6 pipeline worker thread(s) for 8 physical cores
+[2026-10-12 22:33:08.419] [info] [eot] [t101629] [pso] boot: 3066 compiled-in + 4437 local rows -> 1493 queued on the recorded lane, 6010 held for 104 level package(s) (0 duplicate); templates: 774; capturing every pipeline drawn to /app0/profiles/default/cache/pso/ as 'session'
+[2026-10-12 22:33:08.422] [info] [core] [t101629] PS5 pad connected: user 513995993, handle 50988800
+[2026-10-12 22:33:08.575] [warning] [krnl] [t102096] VdSetGraphicsInterruptCallback: no GPU emulation loaded (gpu_plugin not set); call ignored
+[2026-10-12 22:33:08.576] [warning] [krnl] [t102096] VdInitializeRingBuffer: no GPU emulation loaded (gpu_plugin not set); call ignored
+[2026-10-12 22:33:08.576] [warning] [krnl] [t102096] VdEnableRingBufferRPtrWriteBack: no GPU emulation loaded (gpu_plugin not set); call ignored
+[2026-10-12 22:33:08.775] [info] [apu] [t102069] PS5 AudioOut port 536870912 open: 48 kHz, S16 stereo, 256-sample periods
+[2026-10-12 22:33:08.901] [info] [core] [t102069] XEX patch applied successfully: base version: 0.0.0.2, new version: 0.0.1.2
+[2026-10-12 22:33:08.904] [info] [core] [t102069] Function table initialized for module: code=880A0000-883B7D44, image=88080000-88410000
+[2026-10-12 22:33:08.904] [info] [core] [t102069] Registering module: data/gamelogic.dll (code_base=880A0000)
+[2026-10-12 22:33:08.908] [info] [core] [t102069] Module 'data/gamelogic.dll' registered 8673 functions
+[2026-10-12 22:33:08.973] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-12 22:33:09.082] [info] [eot] [t102069] [pad] the first player's controller: DualSense (user 513995993) (playstation)
+[2026-10-12 22:33:09.082] [info] [core] [t102069] New controller connected to slot 0.
+[2026-10-12 22:33:09.084] [warning] [eot] [t102069] [ach] no Reeot_Ach_Toast window; is ReeotAchievements.pkz mounted?
+[2026-10-12 22:33:09.360] [info] [eot] [t102098] [tex] TempusGothic's atlas reference now names Reeot_Font_TempusGothic_4x (2 word(s))
+[2026-10-12 22:33:09.361] [info] [eot] [t102098] [tex] SansaCon's atlas reference now names Reeot_Font_SansaCon_4x (2 word(s))
+[2026-10-12 22:33:09.586] [info] [eot] [t102069] [glyphs] button icons: 3 set(s) and 57 key cap(s) on 1024x2132, pages 5..9 and 10 of both fonts
+[2026-10-12 22:33:16.762] [info] [eot] [t102054] [workbuf] 0 lock(s) held
+[2026-10-12 22:33:18.422] [info] [core] [t102070] PS5 stall dump 1 (10 s after launch): 37 threads
+[2026-10-12 22:33:18.423] [info] [core] [t102070]   F8000010 'XMA Decoder (F8000010)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:33:18.424] [info] [core] [t102070]   F8000014 'Audio Worker (F8000014)' start 00000000: 5444 calls, last __imp__XAudioSubmitRenderDriverFrame
+[2026-10-12 22:33:18.424] [info] [core] [t102070]   F8000020 'Kernel Dispatch (F8000020)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:33:18.425] [info] [core] [t102070]   F8000024 'Main XThread (F8000024)' (guest) start 8224B3D8: 129320 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000038 (Event at 3002C018, no timeout)
+[2026-10-12 22:33:18.426] [info] [core] [t102070]   F8000064 'XThread0000 (F8000064)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800005C (Event at 3003E018, no timeout)
+[2026-10-12 22:33:18.427] [info] [core] [t102070]   F8000070 'XThread0000 (F8000070)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000068 (Event at 30047018, no timeout)
+[2026-10-12 22:33:18.427] [info] [core] [t102070]   F800007C 'XThread0000 (F800007C)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000074 (Event at 30050018, no timeout)
+[2026-10-12 22:33:18.428] [info] [core] [t102070]   F8000088 'XThread0000 (F8000088)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000080 (Event at 30059018, no timeout)
+[2026-10-12 22:33:18.429] [info] [core] [t102070]   F8000094 'XThread0000 (F8000094)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800008C (Event at 30062018, no timeout)
+[2026-10-12 22:33:18.429] [info] [core] [t102070]   F80000A0 'XThread0000 (F80000A0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000098 (Event at 3006B018, no timeout)
+[2026-10-12 22:33:18.430] [info] [core] [t102070]   F80000AC 'XThread0000 (F80000AC)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000A4 (Event at 30074018, no timeout)
+[2026-10-12 22:33:18.431] [info] [core] [t102070]   F80000B8 'XThread0000 (F80000B8)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000B0 (Event at 3007D018, no timeout)
+[2026-10-12 22:33:18.432] [info] [core] [t102070]   F80000C4 'XThread0000 (F80000C4)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000BC (Event at 30086018, no timeout)
+[2026-10-12 22:33:18.432] [info] [core] [t102070]   F80000D0 'XThread0000 (F80000D0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000C8 (Event at 3008F018, no timeout)
+[2026-10-12 22:33:18.433] [info] [core] [t102070]   F80000D8 'XThread0000 (F80000D8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000D4 (Event at 30098018, no timeout)
+[2026-10-12 22:33:18.434] [info] [core] [t102070]   F80000E0 'XThread0000 (F80000E0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000DC (Event at 3009F018, no timeout)
+[2026-10-12 22:33:18.434] [info] [core] [t102070]   F80000E8 'XThread0000 (F80000E8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000E4 (Event at 300A6018, no timeout)
+[2026-10-12 22:33:18.435] [info] [core] [t102070]   F80000F0 'XThread0000 (F80000F0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000EC (Event at 300AD018, no timeout)
+[2026-10-12 22:33:18.436] [info] [core] [t102070]   F80000F8 'XThread0000 (F80000F8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000F4 (Event at 300B4018, no timeout)
+[2026-10-12 22:33:18.437] [info] [core] [t102070]   F8000104 'XThread0000 (F8000104)' (guest) start 8233BEA8 (via 8237BC40): 1311 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:33:18.437] [info] [core] [t102070]   F8000108 'XThread0000 (F8000108)' (guest) start 8233BEA8 (via 8237BC40): 1301 calls, last __imp__KeDelayExecutionThread
+[2026-10-12 22:33:18.438] [info] [core] [t102070]   F800010C 'XThread0000 (F800010C)' (guest) start 8233BEA8 (via 8237BC40): 1470 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:33:18.439] [info] [core] [t102070]   F8000110 'XThread0000 (F8000110)' (guest) start 8233BEA8 (via 8237BC40): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 22:33:18.439] [info] [core] [t102070]   F8000114 'XThread0000 (F8000114)' (guest) start 8233BEA8 (via 8237BC40): 34953 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800002C (Semaphore at 30026018, no timeout)
+[2026-10-12 22:33:18.440] [info] [core] [t102070]   F8000118 'XThread0000 (F8000118)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000030 (Semaphore at 30028018, no timeout)
+[2026-10-12 22:33:18.441] [info] [core] [t102070]   F800011C 'XThread0000 (F800011C)' (guest) start 8233BEA8 (via 8237BC40): 17343 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000034 (Semaphore at 3002A018, no timeout)
+[2026-10-12 22:33:18.441] [info] [core] [t102070]   F8000120 'XThread0000 (F8000120)' (guest) start 8233BEA8 (via 8237BC40): 1729 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000054 (Semaphore at 3003A018, timeout -10000000 x100ns)
+[2026-10-12 22:33:18.442] [info] [core] [t102070]   F8000124 'XThread0000 (F8000124)' (guest) start 8233BEA8 (via 8237BC40): 275 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000058 (Semaphore at 3003C018, timeout -10000000 x100ns)
+[2026-10-12 22:33:18.443] [info] [core] [t102070]   F8000128 'XThread0000 (F8000128)' (guest) start 8233BEA8 (via 8237BC40): 175519 calls, last rexcrt_memcpy
+[2026-10-12 22:33:18.444] [info] [core] [t102070]   F800012C 'XThread0000 (F800012C)' (guest) start 8223CB88 (via 8237BC40): 1318 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:33:18.444] [info] [core] [t102070]   F8000130 'XThread0000 (F8000130)' (guest) start 8223CB88 (via 8237BC40): 6 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:33:18.445] [info] [core] [t102070]   F8000144 'XThread0000 (F8000144)' (guest) start 8233BEA8 (via 8237BC40): 499 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800013C (Semaphore at 300FB018, timeout -200000 x100ns)
+[2026-10-12 22:33:18.446] [info] [core] [t102070]   F8000148 'XThread0000 (F8000148)' (guest) start 822E4830 (via 8237BC40): 49129 calls, last __imp__KeWaitForMultipleObjects
+[2026-10-12 22:33:18.446] [info] [core] [t102070]   F8000170 'XThread0000 (F8000170)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800016C (Semaphore at 3010F018, no timeout)
+[2026-10-12 22:33:18.447] [info] [core] [t102070]   F8000178 'XThread0000 (F8000178)' (guest) start 8233BEA8 (via 8237BC40): 271564 calls, last __imp__KeDelayExecutionThread
+[2026-10-12 22:33:18.448] [info] [core] [t102070]   F800017C 'XThread0000 (F800017C)' (guest) start 8233BEA8 (via 8237BC40): 96 calls, last __imp__ExTerminateThread
+[2026-10-12 22:33:18.449] [info] [core] [t102070]   F8000228 'XThread0000 (F8000228)' (guest) start 8233BEA8 (via 8237BC40): 17838 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000224 (Event at 301C5018, timeout -5000000 x100ns)
+[2026-10-12 22:33:26.762] [info] [eot] [t102054] [workbuf] 2 lock(s) held
+[2026-10-12 22:33:26.763] [info] [eot] [t102054] [workbuf]   824D7380: owner F8000024 'Main XThread (F8000024)' for 0 s, depth 0, waiters 0, semaphore 00000000
+[2026-10-12 22:33:26.764] [info] [eot] [t102054] [workbuf]     its calls before taking it: KeTlsGetValue KeTlsGetValue KeTlsGetValue NtClearEvent NtReleaseSemaphore rexcrt_memcpy NtWaitForSingleObjectEx KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue rexcrt_memcpy KeTlsGetValue rexcrt_memcpy KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue rexcrt_memcpy KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue
+[2026-10-12 22:33:26.764] [info] [eot] [t102054] [workbuf]   824D77F0: owner F8000024 'Main XThread (F8000024)' for 0 s, depth 1, waiters 0, semaphore 00000000
+[2026-10-12 22:33:26.765] [info] [eot] [t102054] [workbuf]     its calls before taking it: KeTlsGetValue KeTlsGetValue KeTlsGetValue NtClearEvent NtReleaseSemaphore rexcrt_memcpy NtWaitForSingleObjectEx KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue rexcrt_memcpy KeTlsGetValue rexcrt_memcpy KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue rexcrt_memcpy KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue
+[2026-10-12 22:33:28.449] [info] [core] [t102070] PS5 stall dump 2 (20 s after launch): 37 threads
+[2026-10-12 22:33:28.450] [info] [core] [t102070]   F8000010 'XMA Decoder (F8000010)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:33:28.451] [info] [core] [t102070]   F8000014 'Audio Worker (F8000014)' start 00000000: 11084 calls, last __imp__XAudioSubmitRenderDriverFrame
+[2026-10-12 22:33:28.452] [info] [core] [t102070]     recent: XAudioSubmitRenderDriverFrame KeSetEvent KeWaitForMultipleObjects XAudioSubmitRenderDriverFrame KeSetEvent KeWaitForMultipleObjects XAudioSubmitRenderDriverFrame KeSetEvent KeWaitForMultipleObjects XAudioSubmitRenderDriverFrame KeSetEvent KeWaitForMultipleObjects XAudioSubmitRenderDriverFrame KeSetEvent KeWaitForMultipleObjects XAudioSubmitRenderDriverFrame KeSetEvent KeWaitForMultipleObjects XAudioSubmitRenderDriverFrame KeSetEvent KeWaitForMultipleObjects XAudioSubmitRenderDriverFrame KeSetEvent KeWaitForMultipleObjects
+[2026-10-12 22:33:28.453] [info] [core] [t102070]   F8000020 'Kernel Dispatch (F8000020)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:33:28.453] [info] [core] [t102070]   F8000024 'Main XThread (F8000024)' (guest) start 8224B3D8: 231272 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800003C (Event at 3002E018, no timeout)
+[2026-10-12 22:33:28.454] [info] [core] [t102070]     recent: KeTlsGetValue KeTlsGetValue rexcrt_memcpy KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue XNotifyGetNext KeTlsGetValue KeTlsGetValue rexcrt_memset rexcrt_memset rexcrt_memset rexcrt_memset rexcrt_memset rexcrt_memset rexcrt_memset rexcrt_memset rexcrt_memset rexcrt_memset rexcrt_memset KeTlsGetValue NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.455] [info] [core] [t102070]   F8000064 'XThread0000 (F8000064)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800005C (Event at 3003E018, no timeout)
+[2026-10-12 22:33:28.455] [info] [core] [t102070]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.456] [info] [core] [t102070]   F8000070 'XThread0000 (F8000070)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000068 (Event at 30047018, no timeout)
+[2026-10-12 22:33:28.457] [info] [core] [t102070]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.458] [info] [core] [t102070]   F800007C 'XThread0000 (F800007C)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000074 (Event at 30050018, no timeout)
+[2026-10-12 22:33:28.458] [info] [core] [t102070]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.459] [info] [core] [t102070]   F8000088 'XThread0000 (F8000088)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000080 (Event at 30059018, no timeout)
+[2026-10-12 22:33:28.460] [info] [core] [t102070]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.460] [info] [core] [t102070]   F8000094 'XThread0000 (F8000094)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800008C (Event at 30062018, no timeout)
+[2026-10-12 22:33:28.461] [info] [core] [t102070]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.462] [info] [core] [t102070]   F80000A0 'XThread0000 (F80000A0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000098 (Event at 3006B018, no timeout)
+[2026-10-12 22:33:28.463] [info] [core] [t102070]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.463] [info] [core] [t102070]   F80000AC 'XThread0000 (F80000AC)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000A4 (Event at 30074018, no timeout)
+[2026-10-12 22:33:28.464] [info] [core] [t102070]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.465] [info] [core] [t102070]   F80000B8 'XThread0000 (F80000B8)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000B0 (Event at 3007D018, no timeout)
+[2026-10-12 22:33:28.465] [info] [core] [t102070]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.466] [info] [core] [t102070]   F80000C4 'XThread0000 (F80000C4)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000BC (Event at 30086018, no timeout)
+[2026-10-12 22:33:28.467] [info] [core] [t102070]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.468] [info] [core] [t102070]   F80000D0 'XThread0000 (F80000D0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000C8 (Event at 3008F018, no timeout)
+[2026-10-12 22:33:28.469] [info] [core] [t102070]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtClearEvent NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.470] [info] [core] [t102070]   F80000D8 'XThread0000 (F80000D8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000D4 (Event at 30098018, no timeout)
+[2026-10-12 22:33:28.471] [info] [core] [t102070]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.471] [info] [core] [t102070]   F80000E0 'XThread0000 (F80000E0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000DC (Event at 3009F018, no timeout)
+[2026-10-12 22:33:28.472] [info] [core] [t102070]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.473] [info] [core] [t102070]   F80000E8 'XThread0000 (F80000E8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000E4 (Event at 300A6018, no timeout)
+[2026-10-12 22:33:28.473] [info] [core] [t102070]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.474] [info] [core] [t102070]   F80000F0 'XThread0000 (F80000F0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000EC (Event at 300AD018, no timeout)
+[2026-10-12 22:33:28.475] [info] [core] [t102070]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.475] [info] [core] [t102070]   F80000F8 'XThread0000 (F80000F8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000F4 (Event at 300B4018, no timeout)
+[2026-10-12 22:33:28.476] [info] [core] [t102070]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.477] [info] [core] [t102070]   F8000104 'XThread0000 (F8000104)' (guest) start 8233BEA8 (via 8237BC40): 4337 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:33:28.478] [info] [core] [t102070]     recent: KeDelayExecutionThread NtSetEvent NtWaitForSingleObjectEx KeDelayExecutionThread NtSetEvent NtWaitForSingleObjectEx KeDelayExecutionThread NtSetEvent NtWaitForSingleObjectEx KeDelayExecutionThread NtSetEvent NtWaitForSingleObjectEx KeDelayExecutionThread NtWaitForSingleObjectEx KeDelayExecutionThread NtWaitForSingleObjectEx KeDelayExecutionThread NtWaitForSingleObjectEx KeDelayExecutionThread NtSetEvent NtWaitForSingleObjectEx KeDelayExecutionThread NtSetEvent NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.478] [info] [core] [t102070]   F8000108 'XThread0000 (F8000108)' (guest) start 8233BEA8 (via 8237BC40): 4353 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:33:28.479] [info] [core] [t102070]     recent: NtWaitForSingleObjectEx KeDelayExecutionThread NtWaitForSingleObjectEx KeDelayExecutionThread NtSetEvent NtWaitForSingleObjectEx KeDelayExecutionThread NtWaitForSingleObjectEx KeDelayExecutionThread NtWaitForSingleObjectEx KeDelayExecutionThread NtWaitForSingleObjectEx KeDelayExecutionThread NtWaitForSingleObjectEx KeDelayExecutionThread NtWaitForSingleObjectEx KeDelayExecutionThread NtWaitForSingleObjectEx KeDelayExecutionThread NtWaitForSingleObjectEx KeDelayExecutionThread NtWaitForSingleObjectEx KeDelayExecutionThread NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.480] [info] [core] [t102070]   F800010C 'XThread0000 (F800010C)' (guest) start 8233BEA8 (via 8237BC40): 4446 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:33:28.480] [info] [core] [t102070]     recent: KeDelayExecutionThread NtWaitForSingleObjectEx KeDelayExecutionThread NtWaitForSingleObjectEx KeDelayExecutionThread NtWaitForSingleObjectEx KeDelayExecutionThread NtWaitForSingleObjectEx KeDelayExecutionThread NtSetEvent NtWaitForSingleObjectEx KeDelayExecutionThread NtSetEvent NtWaitForSingleObjectEx KeDelayExecutionThread NtSetEvent NtWaitForSingleObjectEx KeDelayExecutionThread NtWaitForSingleObjectEx KeDelayExecutionThread NtWaitForSingleObjectEx KeDelayExecutionThread NtWaitForSingleObjectEx KeDelayExecutionThread
+[2026-10-12 22:33:28.481] [info] [core] [t102070]   F8000110 'XThread0000 (F8000110)' (guest) start 8233BEA8 (via 8237BC40): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 22:33:28.482] [info] [core] [t102070]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue XamContentGetLicenseMask KeTlsGetValue RtlEnterCriticalSection KeTlsGetValue KeTlsSetValue rexcrt_RtlFreeHeap RtlLeaveCriticalSection ExTerminateThread
+[2026-10-12 22:33:28.483] [info] [core] [t102070]   F8000114 'XThread0000 (F8000114)' (guest) start 8233BEA8 (via 8237BC40): 37084 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800002C (Semaphore at 30026018, no timeout)
+[2026-10-12 22:33:28.483] [info] [core] [t102070]     recent: NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.484] [info] [core] [t102070]   F8000118 'XThread0000 (F8000118)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000030 (Semaphore at 30028018, no timeout)
+[2026-10-12 22:33:28.485] [info] [core] [t102070]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.485] [info] [core] [t102070]   F800011C 'XThread0000 (F800011C)' (guest) start 8233BEA8 (via 8237BC40): 17343 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000034 (Semaphore at 3002A018, no timeout)
+[2026-10-12 22:33:28.486] [info] [core] [t102070]     recent: NtSetEvent NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx rexcrt_memcpy NtSetEvent NtSetEvent rexcrt_memcpy NtSetEvent NtSetEvent NtWaitForSingleObjectEx NtWaitForSingleObjectEx rexcrt_memcpy NtSetEvent NtSetEvent NtWaitForSingleObjectEx rexcrt_memcpy NtSetEvent NtSetEvent rexcrt_memcpy NtSetEvent NtSetEvent NtWaitForSingleObjectEx NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.487] [info] [core] [t102070]   F8000120 'XThread0000 (F8000120)' (guest) start 8233BEA8 (via 8237BC40): 2174 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000054 (Semaphore at 3003A018, timeout -10000000 x100ns)
+[2026-10-12 22:33:28.488] [info] [core] [t102070]     recent: NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.488] [info] [core] [t102070]   F8000124 'XThread0000 (F8000124)' (guest) start 8233BEA8 (via 8237BC40): 289 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000058 (Semaphore at 3003C018, timeout -10000000 x100ns)
+[2026-10-12 22:33:28.489] [info] [core] [t102070]     recent: NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtReleaseSemaphore NtReleaseSemaphore NtReleaseSemaphore NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.490] [info] [core] [t102070]   F8000128 'XThread0000 (F8000128)' (guest) start 8233BEA8 (via 8237BC40): 568265 calls, last rexcrt_memcpy
+[2026-10-12 22:33:28.490] [info] [core] [t102070]     recent: rexcrt_memcpy rexcrt_memcpy rexcrt_memcpy rexcrt_memcpy rexcrt_memcpy rexcrt_memcpy rexcrt_memcpy rexcrt_memcpy rexcrt_memcpy rexcrt_memcpy rexcrt_memcpy rexcrt_memcpy rexcrt_memcpy rexcrt_memcpy RtlEnterCriticalSection rexcrt_memset RtlLeaveCriticalSection rexcrt_memcpy rexcrt_memcpy rexcrt_memcpy rexcrt_memcpy rexcrt_memcpy KeGetCurrentProcessType rexcrt_memcpy
+[2026-10-12 22:33:28.491] [info] [core] [t102070]   F800012C 'XThread0000 (F800012C)' (guest) start 8223CB88 (via 8237BC40): 2650 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:33:28.492] [info] [core] [t102070]     recent: KeGetCurrentProcessType RtlEnterCriticalSection RtlLeaveCriticalSection KeWaitForSingleObject KeGetCurrentProcessType RtlEnterCriticalSection RtlLeaveCriticalSection KeWaitForSingleObject KeGetCurrentProcessType RtlEnterCriticalSection RtlLeaveCriticalSection KeWaitForSingleObject KeGetCurrentProcessType RtlEnterCriticalSection RtlLeaveCriticalSection KeWaitForSingleObject KeGetCurrentProcessType RtlEnterCriticalSection RtlLeaveCriticalSection KeWaitForSingleObject KeGetCurrentProcessType RtlEnterCriticalSection RtlLeaveCriticalSection KeWaitForSingleObject
+[2026-10-12 22:33:28.493] [info] [core] [t102070]   F8000130 'XThread0000 (F8000130)' (guest) start 8223CB88 (via 8237BC40): 6 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:33:28.493] [info] [core] [t102070]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection ObReferenceObjectByHandle KeSetAffinityThread ObDereferenceObject KeWaitForSingleObject
+[2026-10-12 22:33:28.494] [info] [core] [t102070]   F8000144 'XThread0000 (F8000144)' (guest) start 8233BEA8 (via 8237BC40): 1011 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800013C (Semaphore at 300FB018, timeout -200000 x100ns)
+[2026-10-12 22:33:28.495] [info] [core] [t102070]     recent: NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.495] [info] [core] [t102070]   F8000148 'XThread0000 (F8000148)' (guest) start 822E4830 (via 8237BC40): 103381 calls, last __imp__KeWaitForMultipleObjects
+[2026-10-12 22:33:28.496] [info] [core] [t102070]     recent: RtlLeaveCriticalSection RtlEnterCriticalSection RtlLeaveCriticalSection RtlEnterCriticalSection RtlLeaveCriticalSection rexcrt_XMemCpy rexcrt_memcpy rexcrt_memcpy RtlEnterCriticalSection RtlLeaveCriticalSection RtlEnterCriticalSection RtlLeaveCriticalSection RtlEnterCriticalSection RtlLeaveCriticalSection KeSetEvent RtlEnterCriticalSection RtlLeaveCriticalSection RtlEnterCriticalSection RtlLeaveCriticalSection RtlEnterCriticalSection RtlLeaveCriticalSection rexcrt_memcpy RtlLeaveCriticalSection KeWaitForMultipleObjects
+[2026-10-12 22:33:28.497] [info] [core] [t102070]   F8000170 'XThread0000 (F8000170)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800016C (Semaphore at 3010F018, no timeout)
+[2026-10-12 22:33:28.498] [info] [core] [t102070]     recent: RtlEnterCriticalSection RtlLeaveCriticalSection KeTlsGetValue KeTlsSetValue KeTlsGetValue KeTlsSetValue KeTlsGetValue NtWaitForSingleObjectEx
+[2026-10-12 22:33:28.498] [info] [core] [t102070]   F8000178 'XThread0000 (F8000178)' (guest) start 8233BEA8 (via 8237BC40): 1031854 calls, last __imp__RtlLeaveCriticalSection
+[2026-10-12 22:33:28.499] [info] [core] [t102070]     recent: rexcrt_memcpy RtlEnterCriticalSection RtlLeaveCriticalSection rexcrt_memcpy RtlEnterCriticalSection RtlLeaveCriticalSection rexcrt_memcpy RtlEnterCriticalSection RtlLeaveCriticalSection rexcrt_memcpy RtlEnterCriticalSection RtlLeaveCriticalSection RtlEnterCriticalSection rexcrt_memset RtlLeaveCriticalSection RtlLeaveCriticalSection RtlEnterCriticalSection RtlEnterCriticalSection RtlLeaveCriticalSection RtlEnterCriticalSection RtlLeaveCriticalSection RtlLeaveCriticalSection RtlLeaveCriticalSection KeDelayExecutionThread
+[2026-10-12 22:33:28.500] [info] [core] [t102070]   F800017C 'XThread0000 (F800017C)' (guest) start 8233BEA8 (via 8237BC40): 96 calls, last __imp__ExTerminateThread
+[2026-10-12 22:33:28.500] [info] [core] [t102070]     recent: NtReleaseSemaphore NtWaitForSingleObjectEx rexcrt_memcpy NtWaitForSingleObjectEx NtClearEvent KeTlsGetValue KeTlsGetValue NtReleaseSemaphore NtWaitForSingleObjectEx rexcrt_CloseHandle rexcrt_CloseHandle rexcrt_CloseHandle NtWaitForSingleObjectEx NtWaitForSingleObjectEx rexcrt_CloseHandle rexcrt_CloseHandle rexcrt_CloseHandle KeTlsGetValue RtlEnterCriticalSection KeTlsGetValue KeTlsSetValue rexcrt_RtlFreeHeap RtlLeaveCriticalSection ExTerminateThread
+[2026-10-12 22:33:28.501] [info] [core] [t102070]   F8000194 'XThread0000 (F8000194)' (guest) start 8233BEA8 (via 8237BC40): 25713 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000190 (Event at 30166018, timeout -5000000 x100ns)
+[2026-10-12 22:33:28.502] [info] [core] [t102070]     recent: KeGetCurrentProcessType RtlEnterCriticalSection RtlLeaveCriticalSection RtlEnterCriticalSection RtlLeaveCriticalSection RtlLeaveCriticalSection RtlLeaveCriticalSection RtlEnterCriticalSection RtlEnterCriticalSection rexcrt_XMemCpy RtlLeaveCriticalSection RtlLeaveCriticalSection rexcrt_memset rexcrt_memset rexcrt_memset rexcrt_memset rexcrt_memset rexcrt_memset RtlEnterCriticalSection RtlEnterCriticalSection rexcrt_XMemCpy RtlLeaveCriticalSection RtlLeaveCriticalSection NtWaitForSingleObjectEx
+[2026-10-12 22:33:36.766] [info] [eot] [t102054] [workbuf] 0 lock(s) held
+[2026-10-12 22:33:38.503] [info] [core] [t102070] PS5 stall dump 3 (30 s after launch): 37 threads
+[2026-10-12 22:33:38.503] [info] [core] [t102070]   F8000010 'XMA Decoder (F8000010)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:33:38.504] [info] [core] [t102070]   F8000014 'Audio Worker (F8000014)' start 00000000: 16739 calls, last __imp__XAudioSubmitRenderDriverFrame
+[2026-10-12 22:33:38.505] [info] [core] [t102070]   F8000020 'Kernel Dispatch (F8000020)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:33:38.505] [info] [core] [t102070]   F8000024 'Main XThread (F8000024)' (guest) start 8224B3D8: 333284 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800003C (Event at 3002E018, no timeout)
+[2026-10-12 22:33:38.506] [info] [core] [t102070]   F8000064 'XThread0000 (F8000064)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800005C (Event at 3003E018, no timeout)
+[2026-10-12 22:33:38.507] [info] [core] [t102070]   F8000070 'XThread0000 (F8000070)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000068 (Event at 30047018, no timeout)
+[2026-10-12 22:33:38.508] [info] [core] [t102070]   F800007C 'XThread0000 (F800007C)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000074 (Event at 30050018, no timeout)
+[2026-10-12 22:33:38.508] [info] [core] [t102070]   F8000088 'XThread0000 (F8000088)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000080 (Event at 30059018, no timeout)
+[2026-10-12 22:33:38.509] [info] [core] [t102070]   F8000094 'XThread0000 (F8000094)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800008C (Event at 30062018, no timeout)
+[2026-10-12 22:33:38.510] [info] [core] [t102070]   F80000A0 'XThread0000 (F80000A0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000098 (Event at 3006B018, no timeout)
+[2026-10-12 22:33:38.510] [info] [core] [t102070]   F80000AC 'XThread0000 (F80000AC)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000A4 (Event at 30074018, no timeout)
+[2026-10-12 22:33:38.511] [info] [core] [t102070]   F80000B8 'XThread0000 (F80000B8)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000B0 (Event at 3007D018, no timeout)
+[2026-10-12 22:33:38.512] [info] [core] [t102070]   F80000C4 'XThread0000 (F80000C4)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000BC (Event at 30086018, no timeout)
+[2026-10-12 22:33:38.512] [info] [core] [t102070]   F80000D0 'XThread0000 (F80000D0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000C8 (Event at 3008F018, no timeout)
+[2026-10-12 22:33:38.513] [info] [core] [t102070]   F80000D8 'XThread0000 (F80000D8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000D4 (Event at 30098018, no timeout)
+[2026-10-12 22:33:38.514] [info] [core] [t102070]   F80000E0 'XThread0000 (F80000E0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000DC (Event at 3009F018, no timeout)
+[2026-10-12 22:33:38.515] [info] [core] [t102070]   F80000E8 'XThread0000 (F80000E8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000E4 (Event at 300A6018, no timeout)
+[2026-10-12 22:33:38.515] [info] [core] [t102070]   F80000F0 'XThread0000 (F80000F0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000EC (Event at 300AD018, no timeout)
+[2026-10-12 22:33:38.516] [info] [core] [t102070]   F80000F8 'XThread0000 (F80000F8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000F4 (Event at 300B4018, no timeout)
+[2026-10-12 22:33:38.517] [info] [core] [t102070]   F8000104 'XThread0000 (F8000104)' (guest) start 8233BEA8 (via 8237BC40): 7500 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:33:38.517] [info] [core] [t102070]   F8000108 'XThread0000 (F8000108)' (guest) start 8233BEA8 (via 8237BC40): 7280 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:33:38.518] [info] [core] [t102070]   F800010C 'XThread0000 (F800010C)' (guest) start 8233BEA8 (via 8237BC40): 7438 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:33:38.519] [info] [core] [t102070]   F8000110 'XThread0000 (F8000110)' (guest) start 8233BEA8 (via 8237BC40): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 22:33:38.520] [info] [core] [t102070]   F8000114 'XThread0000 (F8000114)' (guest) start 8233BEA8 (via 8237BC40): 38980 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800002C (Semaphore at 30026018, no timeout)
+[2026-10-12 22:33:38.520] [info] [core] [t102070]   F8000118 'XThread0000 (F8000118)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000030 (Semaphore at 30028018, no timeout)
+[2026-10-12 22:33:38.521] [info] [core] [t102070]   F800011C 'XThread0000 (F800011C)' (guest) start 8233BEA8 (via 8237BC40): 17343 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000034 (Semaphore at 3002A018, no timeout)
+[2026-10-12 22:33:38.522] [info] [core] [t102070]   F8000120 'XThread0000 (F8000120)' (guest) start 8233BEA8 (via 8237BC40): 2184 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000054 (Semaphore at 3003A018, timeout -10000000 x100ns)
+[2026-10-12 22:33:38.522] [info] [core] [t102070]   F8000124 'XThread0000 (F8000124)' (guest) start 8233BEA8 (via 8237BC40): 299 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000058 (Semaphore at 3003C018, timeout -10000000 x100ns)
+[2026-10-12 22:33:38.523] [info] [core] [t102070]   F8000128 'XThread0000 (F8000128)' (guest) start 8233BEA8 (via 8237BC40): 961025 calls, last rexcrt_memcpy
+[2026-10-12 22:33:38.524] [info] [core] [t102070]   F800012C 'XThread0000 (F800012C)' (guest) start 8223CB88 (via 8237BC40): 3986 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:33:38.525] [info] [core] [t102070]   F8000130 'XThread0000 (F8000130)' (guest) start 8223CB88 (via 8237BC40): 6 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:33:38.525] [info] [core] [t102070]   F8000144 'XThread0000 (F8000144)' (guest) start 8233BEA8 (via 8237BC40): 1522 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800013C (Semaphore at 300FB018, timeout -200000 x100ns)
+[2026-10-12 22:33:38.526] [info] [core] [t102070]   F8000148 'XThread0000 (F8000148)' (guest) start 822E4830 (via 8237BC40): 157564 calls, last __imp__KeWaitForMultipleObjects
+[2026-10-12 22:33:38.527] [info] [core] [t102070]   F8000170 'XThread0000 (F8000170)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800016C (Semaphore at 3010F018, no timeout)
+[2026-10-12 22:33:38.527] [info] [core] [t102070]   F8000178 'XThread0000 (F8000178)' (guest) start 8233BEA8 (via 8237BC40): 1874782 calls, last __imp__KeDelayExecutionThread
+[2026-10-12 22:33:38.528] [info] [core] [t102070]   F800017C 'XThread0000 (F800017C)' (guest) start 8233BEA8 (via 8237BC40): 96 calls, last __imp__ExTerminateThread
+[2026-10-12 22:33:38.529] [info] [core] [t102070]   F80001B4 'XThread0000 (F80001B4)' (guest) start 8233BEA8 (via 8237BC40): 5509 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80001A8 (Event at 30177018, timeout -5000000 x100ns)
+[2026-10-12 22:33:44.695] [warning] [eot] [t102069] [camera] no eot_mouse_take in the host; mouse look stays on the stick
+[2026-10-12 22:33:44.936] [warning] [eot] [t102058] [hitch-gpu] frame 2147 took 2.70 ms on the GPU (average 0.48): full 16f+z@1x 0.91 resolve 0.54 present 0.30 full 16f+z+add@1x 0.30 full 16u+z@1x 0.21 full 8+z@1x 0.17 small 8+z 0.09 resolve-depth 0.08
+[2026-10-12 22:33:46.767] [info] [eot] [t102054] [workbuf] 0 lock(s) held
+[2026-10-12 22:33:48.530] [info] [core] [t102070] PS5 stall dump 4 (40 s after launch): 36 threads
+[2026-10-12 22:33:48.530] [info] [core] [t102070]   F8000010 'XMA Decoder (F8000010)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:33:48.531] [info] [core] [t102070]   F8000014 'Audio Worker (F8000014)' start 00000000: 22379 calls, last __imp__XAudioSubmitRenderDriverFrame
+[2026-10-12 22:33:48.532] [info] [core] [t102070]   F8000020 'Kernel Dispatch (F8000020)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:33:48.532] [info] [core] [t102070]   F8000024 'Main XThread (F8000024)' (guest) start 8224B3D8: 671074 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800003C (Event at 3002E018, no timeout)
+[2026-10-12 22:33:48.533] [info] [core] [t102070]   F8000064 'XThread0000 (F8000064)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800005C (Event at 3003E018, no timeout)
+[2026-10-12 22:33:48.534] [info] [core] [t102070]   F8000070 'XThread0000 (F8000070)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000068 (Event at 30047018, no timeout)
+[2026-10-12 22:33:48.535] [info] [core] [t102070]   F800007C 'XThread0000 (F800007C)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000074 (Event at 30050018, no timeout)
+[2026-10-12 22:33:48.535] [info] [core] [t102070]   F8000088 'XThread0000 (F8000088)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000080 (Event at 30059018, no timeout)
+[2026-10-12 22:33:48.536] [info] [core] [t102070]   F8000094 'XThread0000 (F8000094)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800008C (Event at 30062018, no timeout)
+[2026-10-12 22:33:48.537] [info] [core] [t102070]   F80000A0 'XThread0000 (F80000A0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000098 (Event at 3006B018, no timeout)
+[2026-10-12 22:33:48.537] [info] [core] [t102070]   F80000AC 'XThread0000 (F80000AC)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000A4 (Event at 30074018, no timeout)
+[2026-10-12 22:33:48.538] [info] [core] [t102070]   F80000B8 'XThread0000 (F80000B8)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000B0 (Event at 3007D018, no timeout)
+[2026-10-12 22:33:48.539] [info] [core] [t102070]   F80000C4 'XThread0000 (F80000C4)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000BC (Event at 30086018, no timeout)
+[2026-10-12 22:33:48.540] [info] [core] [t102070]   F80000D0 'XThread0000 (F80000D0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000C8 (Event at 3008F018, no timeout)
+[2026-10-12 22:33:48.540] [info] [core] [t102070]   F80000D8 'XThread0000 (F80000D8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000D4 (Event at 30098018, no timeout)
+[2026-10-12 22:33:48.541] [info] [core] [t102070]   F80000E0 'XThread0000 (F80000E0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000DC (Event at 3009F018, no timeout)
+[2026-10-12 22:33:48.542] [info] [core] [t102070]   F80000E8 'XThread0000 (F80000E8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000E4 (Event at 300A6018, no timeout)
+[2026-10-12 22:33:48.542] [info] [core] [t102070]   F80000F0 'XThread0000 (F80000F0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000EC (Event at 300AD018, no timeout)
+[2026-10-12 22:33:48.543] [info] [core] [t102070]   F80000F8 'XThread0000 (F80000F8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000F4 (Event at 300B4018, no timeout)
+[2026-10-12 22:33:48.544] [info] [core] [t102070]   F8000104 'XThread0000 (F8000104)' (guest) start 8233BEA8 (via 8237BC40): 48511 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:33:48.545] [info] [core] [t102070]   F8000108 'XThread0000 (F8000108)' (guest) start 8233BEA8 (via 8237BC40): 58189 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:33:48.545] [info] [core] [t102070]   F800010C 'XThread0000 (F800010C)' (guest) start 8233BEA8 (via 8237BC40): 57732 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:33:48.546] [info] [core] [t102070]   F8000110 'XThread0000 (F8000110)' (guest) start 8233BEA8 (via 8237BC40): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 22:33:48.547] [info] [core] [t102070]   F8000114 'XThread0000 (F8000114)' (guest) start 8233BEA8 (via 8237BC40): 40737 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800002C (Semaphore at 30026018, no timeout)
+[2026-10-12 22:33:48.547] [info] [core] [t102070]   F8000118 'XThread0000 (F8000118)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000030 (Semaphore at 30028018, no timeout)
+[2026-10-12 22:33:48.548] [info] [core] [t102070]   F800011C 'XThread0000 (F800011C)' (guest) start 8233BEA8 (via 8237BC40): 17888 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000034 (Semaphore at 3002A018, no timeout)
+[2026-10-12 22:33:48.549] [info] [core] [t102070]   F8000120 'XThread0000 (F8000120)' (guest) start 8233BEA8 (via 8237BC40): 3019 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000054 (Semaphore at 3003A018, timeout -10000000 x100ns)
+[2026-10-12 22:33:48.550] [info] [core] [t102070]   F8000124 'XThread0000 (F8000124)' (guest) start 8233BEA8 (via 8237BC40): 749 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000058 (Semaphore at 3003C018, timeout -10000000 x100ns)
+[2026-10-12 22:33:48.550] [info] [core] [t102070]   F8000128 'XThread0000 (F8000128)' (guest) start 8233BEA8 (via 8237BC40): 1238816 calls, last rexcrt_memcpy
+[2026-10-12 22:33:48.551] [info] [core] [t102070]   F800012C 'XThread0000 (F800012C)' (guest) start 8223CB88 (via 8237BC40): 5318 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:33:48.552] [info] [core] [t102070]   F8000130 'XThread0000 (F8000130)' (guest) start 8223CB88 (via 8237BC40): 6 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:33:48.552] [info] [core] [t102070]   F8000144 'XThread0000 (F8000144)' (guest) start 8233BEA8 (via 8237BC40): 3601 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800013C (Semaphore at 300FB018, timeout -200000 x100ns)
+[2026-10-12 22:33:48.553] [info] [core] [t102070]   F8000148 'XThread0000 (F8000148)' (guest) start 822E4830 (via 8237BC40): 216395 calls, last __imp__KeWaitForMultipleObjects
+[2026-10-12 22:33:48.554] [info] [core] [t102070]   F8000170 'XThread0000 (F8000170)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800016C (Semaphore at 3010F018, no timeout)
+[2026-10-12 22:33:48.555] [info] [core] [t102070]   F8000178 'XThread0000 (F8000178)' (guest) start 8233BEA8 (via 8237BC40): 2346009 calls, last __imp__KeDelayExecutionThread
+[2026-10-12 22:33:48.555] [info] [core] [t102070]   F800017C 'XThread0000 (F800017C)' (guest) start 8233BEA8 (via 8237BC40): 96 calls, last __imp__ExTerminateThread
+[2026-10-12 22:33:50.320] [warning] [sys] [t102069] GetProcAddressByOrdinal: function XamContentAggregateCreateEnumerator (0279) in xam - no native implementation
+[2026-10-12 22:33:50.321] [warning] [krnl] [t102069] ERROR: XexGetProcedureAddress ordinal 633 (0x279) in 'xam' not found!
+[2026-10-12 22:33:56.768] [info] [eot] [t102054] [workbuf] 0 lock(s) held
+[2026-10-12 22:33:58.556] [info] [core] [t102070] PS5 stall dump 5 (50 s after launch): 36 threads
+[2026-10-12 22:33:58.557] [info] [core] [t102070]   F8000010 'XMA Decoder (F8000010)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:33:58.557] [info] [core] [t102070]   F8000014 'Audio Worker (F8000014)' start 00000000: 28019 calls, last __imp__XAudioSubmitRenderDriverFrame
+[2026-10-12 22:33:58.558] [info] [core] [t102070]   F8000020 'Kernel Dispatch (F8000020)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:33:58.559] [info] [core] [t102070]   F8000024 'Main XThread (F8000024)' (guest) start 8224B3D8: 1305579 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000038 (Event at 3002C018, no timeout)
+[2026-10-12 22:33:58.560] [info] [core] [t102070]   F8000064 'XThread0000 (F8000064)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800005C (Event at 3003E018, no timeout)
+[2026-10-12 22:33:58.560] [info] [core] [t102070]   F8000070 'XThread0000 (F8000070)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000068 (Event at 30047018, no timeout)
+[2026-10-12 22:33:58.561] [info] [core] [t102070]   F800007C 'XThread0000 (F800007C)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000074 (Event at 30050018, no timeout)
+[2026-10-12 22:33:58.562] [info] [core] [t102070]   F8000088 'XThread0000 (F8000088)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000080 (Event at 30059018, no timeout)
+[2026-10-12 22:33:58.562] [info] [core] [t102070]   F8000094 'XThread0000 (F8000094)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800008C (Event at 30062018, no timeout)
+[2026-10-12 22:33:58.563] [info] [core] [t102070]   F80000A0 'XThread0000 (F80000A0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000098 (Event at 3006B018, no timeout)
+[2026-10-12 22:33:58.564] [info] [core] [t102070]   F80000AC 'XThread0000 (F80000AC)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000A4 (Event at 30074018, no timeout)
+[2026-10-12 22:33:58.565] [info] [core] [t102070]   F80000B8 'XThread0000 (F80000B8)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000B0 (Event at 3007D018, no timeout)
+[2026-10-12 22:33:58.565] [info] [core] [t102070]   F80000C4 'XThread0000 (F80000C4)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000BC (Event at 30086018, no timeout)
+[2026-10-12 22:33:58.566] [info] [core] [t102070]   F80000D0 'XThread0000 (F80000D0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000C8 (Event at 3008F018, no timeout)
+[2026-10-12 22:33:58.567] [info] [core] [t102070]   F80000D8 'XThread0000 (F80000D8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000D4 (Event at 30098018, no timeout)
+[2026-10-12 22:33:58.567] [info] [core] [t102070]   F80000E0 'XThread0000 (F80000E0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000DC (Event at 3009F018, no timeout)
+[2026-10-12 22:33:58.568] [info] [core] [t102070]   F80000E8 'XThread0000 (F80000E8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000E4 (Event at 300A6018, no timeout)
+[2026-10-12 22:33:58.569] [info] [core] [t102070]   F80000F0 'XThread0000 (F80000F0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000EC (Event at 300AD018, no timeout)
+[2026-10-12 22:33:58.569] [info] [core] [t102070]   F80000F8 'XThread0000 (F80000F8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000F4 (Event at 300B4018, no timeout)
+[2026-10-12 22:33:58.570] [info] [core] [t102070]   F8000104 'XThread0000 (F8000104)' (guest) start 8233BEA8 (via 8237BC40): 139981 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:33:58.571] [info] [core] [t102070]   F8000108 'XThread0000 (F8000108)' (guest) start 8233BEA8 (via 8237BC40): 151634 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:33:58.572] [info] [core] [t102070]   F800010C 'XThread0000 (F800010C)' (guest) start 8233BEA8 (via 8237BC40): 151351 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:33:58.572] [info] [core] [t102070]   F8000110 'XThread0000 (F8000110)' (guest) start 8233BEA8 (via 8237BC40): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 22:33:58.573] [info] [core] [t102070]   F8000114 'XThread0000 (F8000114)' (guest) start 8233BEA8 (via 8237BC40): 40907 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800002C (Semaphore at 30026018, no timeout)
+[2026-10-12 22:33:58.574] [info] [core] [t102070]   F8000118 'XThread0000 (F8000118)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000030 (Semaphore at 30028018, no timeout)
+[2026-10-12 22:33:58.574] [info] [core] [t102070]   F800011C 'XThread0000 (F800011C)' (guest) start 8233BEA8 (via 8237BC40): 17922 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000034 (Semaphore at 3002A018, no timeout)
+[2026-10-12 22:33:58.575] [info] [core] [t102070]   F8000120 'XThread0000 (F8000120)' (guest) start 8233BEA8 (via 8237BC40): 3142 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000054 (Semaphore at 3003A018, timeout -10000000 x100ns)
+[2026-10-12 22:33:58.576] [info] [core] [t102070]   F8000124 'XThread0000 (F8000124)' (guest) start 8233BEA8 (via 8237BC40): 899 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000058 (Semaphore at 3003C018, timeout -10000000 x100ns)
+[2026-10-12 22:33:58.577] [info] [core] [t102070]   F8000128 'XThread0000 (F8000128)' (guest) start 8233BEA8 (via 8237BC40): 1449003 calls, last __imp__NtClearEvent
+[2026-10-12 22:33:58.577] [info] [core] [t102070]   F800012C 'XThread0000 (F800012C)' (guest) start 8223CB88 (via 8237BC40): 6650 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:33:58.578] [info] [core] [t102070]   F8000130 'XThread0000 (F8000130)' (guest) start 8223CB88 (via 8237BC40): 6 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:33:58.579] [info] [core] [t102070]   F8000144 'XThread0000 (F8000144)' (guest) start 8233BEA8 (via 8237BC40): 7040 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800013C (Semaphore at 300FB018, timeout -200000 x100ns)
+[2026-10-12 22:33:58.579] [info] [core] [t102070]   F8000148 'XThread0000 (F8000148)' (guest) start 822E4830 (via 8237BC40): 285859 calls, last __imp__KeWaitForMultipleObjects
+[2026-10-12 22:33:58.580] [info] [core] [t102070]   F8000170 'XThread0000 (F8000170)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800016C (Semaphore at 3010F018, no timeout)
+[2026-10-12 22:33:58.581] [info] [core] [t102070]   F8000178 'XThread0000 (F8000178)' (guest) start 8233BEA8 (via 8237BC40): 2346209 calls, last __imp__KeDelayExecutionThread
+[2026-10-12 22:33:58.582] [info] [core] [t102070]   F800017C 'XThread0000 (F800017C)' (guest) start 8233BEA8 (via 8237BC40): 96 calls, last __imp__ExTerminateThread
+[2026-10-12 22:34:06.768] [info] [eot] [t102054] [workbuf] 0 lock(s) held
+[2026-10-12 22:34:08.411] [info] [eot] [t102069] [pso] loading screen up at frame 3555 (pool pending recorded 0 prio 0 bg 0)
+[2026-10-12 22:34:08.582] [info] [core] [t102070] PS5 stall dump 6 (60 s after launch): 36 threads
+[2026-10-12 22:34:08.583] [info] [core] [t102070]   F8000010 'XMA Decoder (F8000010)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:34:08.584] [info] [core] [t102070]   F8000014 'Audio Worker (F8000014)' start 00000000: 33659 calls, last __imp__XAudioSubmitRenderDriverFrame
+[2026-10-12 22:34:08.584] [info] [core] [t102070]   F8000020 'Kernel Dispatch (F8000020)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:34:08.585] [info] [core] [t102070]   F8000024 'Main XThread (F8000024)' (guest) start 8224B3D8: 1966929 calls, last __imp__KeDelayExecutionThread
+[2026-10-12 22:34:08.586] [info] [core] [t102070]   F8000064 'XThread0000 (F8000064)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800005C (Event at 3003E018, no timeout)
+[2026-10-12 22:34:08.586] [info] [core] [t102070]   F8000070 'XThread0000 (F8000070)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000068 (Event at 30047018, no timeout)
+[2026-10-12 22:34:08.587] [info] [core] [t102070]   F800007C 'XThread0000 (F800007C)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000074 (Event at 30050018, no timeout)
+[2026-10-12 22:34:08.588] [info] [core] [t102070]   F8000088 'XThread0000 (F8000088)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000080 (Event at 30059018, no timeout)
+[2026-10-12 22:34:08.589] [info] [core] [t102070]   F8000094 'XThread0000 (F8000094)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800008C (Event at 30062018, no timeout)
+[2026-10-12 22:34:08.589] [info] [core] [t102070]   F80000A0 'XThread0000 (F80000A0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000098 (Event at 3006B018, no timeout)
+[2026-10-12 22:34:08.590] [info] [core] [t102070]   F80000AC 'XThread0000 (F80000AC)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000A4 (Event at 30074018, no timeout)
+[2026-10-12 22:34:08.591] [info] [core] [t102070]   F80000B8 'XThread0000 (F80000B8)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000B0 (Event at 3007D018, no timeout)
+[2026-10-12 22:34:08.591] [info] [core] [t102070]   F80000C4 'XThread0000 (F80000C4)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000BC (Event at 30086018, no timeout)
+[2026-10-12 22:34:08.592] [info] [core] [t102070]   F80000D0 'XThread0000 (F80000D0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000C8 (Event at 3008F018, no timeout)
+[2026-10-12 22:34:08.593] [info] [core] [t102070]   F80000D8 'XThread0000 (F80000D8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000D4 (Event at 30098018, no timeout)
+[2026-10-12 22:34:08.593] [info] [core] [t102070]   F80000E0 'XThread0000 (F80000E0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000DC (Event at 3009F018, no timeout)
+[2026-10-12 22:34:08.594] [info] [core] [t102070]   F80000E8 'XThread0000 (F80000E8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000E4 (Event at 300A6018, no timeout)
+[2026-10-12 22:34:08.595] [info] [core] [t102070]   F80000F0 'XThread0000 (F80000F0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000EC (Event at 300AD018, no timeout)
+[2026-10-12 22:34:08.596] [info] [core] [t102070]   F80000F8 'XThread0000 (F80000F8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000F4 (Event at 300B4018, no timeout)
+[2026-10-12 22:34:08.596] [info] [core] [t102070]   F8000104 'XThread0000 (F8000104)' (guest) start 8233BEA8 (via 8237BC40): 219054 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:34:08.597] [info] [core] [t102070]   F8000108 'XThread0000 (F8000108)' (guest) start 8233BEA8 (via 8237BC40): 230693 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:34:08.598] [info] [core] [t102070]   F800010C 'XThread0000 (F800010C)' (guest) start 8233BEA8 (via 8237BC40): 230637 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:34:08.598] [info] [core] [t102070]   F8000110 'XThread0000 (F8000110)' (guest) start 8233BEA8 (via 8237BC40): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 22:34:08.599] [info] [core] [t102070]   F8000114 'XThread0000 (F8000114)' (guest) start 8233BEA8 (via 8237BC40): 41299 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800002C (Semaphore at 30026018, no timeout)
+[2026-10-12 22:34:08.600] [info] [core] [t102070]   F8000118 'XThread0000 (F8000118)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000030 (Semaphore at 30028018, no timeout)
+[2026-10-12 22:34:08.601] [info] [core] [t102070]   F800011C 'XThread0000 (F800011C)' (guest) start 8233BEA8 (via 8237BC40): 18085 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000034 (Semaphore at 3002A018, no timeout)
+[2026-10-12 22:34:08.601] [info] [core] [t102070]   F8000120 'XThread0000 (F8000120)' (guest) start 8233BEA8 (via 8237BC40): 4973 calls, last __imp__NtReleaseSemaphore
+[2026-10-12 22:34:08.602] [info] [core] [t102070]   F8000124 'XThread0000 (F8000124)' (guest) start 8233BEA8 (via 8237BC40): 1601 calls, last __imp__NtReleaseSemaphore
+[2026-10-12 22:34:08.603] [info] [core] [t102070]   F8000128 'XThread0000 (F8000128)' (guest) start 8233BEA8 (via 8237BC40): 1690439 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000040 (Event at 30030018, timeout -1000000 x100ns)
+[2026-10-12 22:34:08.603] [info] [core] [t102070]   F800012C 'XThread0000 (F800012C)' (guest) start 8223CB88 (via 8237BC40): 7978 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:34:08.604] [info] [core] [t102070]   F8000130 'XThread0000 (F8000130)' (guest) start 8223CB88 (via 8237BC40): 6 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:34:08.605] [info] [core] [t102070]   F8000144 'XThread0000 (F8000144)' (guest) start 8233BEA8 (via 8237BC40): 11460 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800013C (Semaphore at 300FB018, timeout -200000 x100ns)
+[2026-10-12 22:34:08.606] [info] [core] [t102070]   F8000148 'XThread0000 (F8000148)' (guest) start 822E4830 (via 8237BC40): 364169 calls, last __imp__KeWaitForMultipleObjects
+[2026-10-12 22:34:08.606] [info] [core] [t102070]   F8000170 'XThread0000 (F8000170)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800016C (Semaphore at 3010F018, no timeout)
+[2026-10-12 22:34:08.609] [info] [core] [t102070]   F8000178 'XThread0000 (F8000178)' (guest) start 8233BEA8 (via 8237BC40): 2346409 calls, last __imp__KeDelayExecutionThread
+[2026-10-12 22:34:08.610] [info] [core] [t102070]   F800017C 'XThread0000 (F800017C)' (guest) start 8233BEA8 (via 8237BC40): 96 calls, last __imp__ExTerminateThread
+[2026-10-12 22:34:12.824] [info] [eot] [t102069] [pso] loading screen down at frame 3814 after 259 frames (pool pending recorded 0 prio 0 bg 0, 0 package pipelines still building)
+[2026-10-12 22:34:13.053] [warning] [eot] [t102058] [hitch-gpu] frame 3824 took 3.25 ms on the GPU (average 1.22): full 16f+z@1x 1.27 resolve 0.53 full 16f+z+add@1x 0.37 present 0.31 full 16u+z@1x 0.24 full 8+z@1x 0.19 small 8+z 0.09 resolve-depth 0.08
+[2026-10-12 22:34:16.769] [info] [eot] [t102054] [workbuf] 2 lock(s) held
+[2026-10-12 22:34:16.770] [info] [eot] [t102054] [workbuf]   824BAB4C: owner F8000024 'Main XThread (F8000024)' for 0 s, depth 1, waiters 0, semaphore F800022C
+[2026-10-12 22:34:16.771] [info] [eot] [t102054] [workbuf]     its calls before taking it: KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue rexcrt_memcpy rexcrt_memcpy rexcrt_memcpy rexcrt_memcpy rexcrt_memcpy rexcrt_memcpy KeTlsGetValue NtWaitForSingleObjectEx KeTlsGetValue KeTlsGetValue KeTlsGetValue KeTlsGetValue rexcrt_memcpy KeTlsGetValue rexcrt_memcpy
+[2026-10-12 22:34:16.772] [info] [eot] [t102054] [workbuf]   E7E00C60: owner F8000120 'XThread0000 (F8000120)' for 0 s, depth 1, waiters 0, semaphore 00000000
+[2026-10-12 22:34:16.772] [info] [eot] [t102054] [workbuf]     its calls before taking it: KeTlsGetValue KeTlsGetValue KeTlsGetValue rexcrt_memcpy NtWaitForSingleObjectEx NtClearEvent KeTlsGetValue KeTlsGetValue NtReleaseSemaphore NtWaitForSingleObjectEx rexcrt_memcpy rexcrt_memcpy rexcrt_strncmp rexcrt_memcpy KeTlsGetValue rexcrt_memcpy rexcrt_memcpy KeTlsGetValue rexcrt_memcpy rexcrt_memcpy KeTlsGetValue KeTlsGetValue KeTlsGetValue rexcrt_memcpy
+[2026-10-12 22:34:18.611] [info] [core] [t102070] PS5 stall dump 7 (70 s after launch): 36 threads
+[2026-10-12 22:34:18.611] [info] [core] [t102070]   F8000010 'XMA Decoder (F8000010)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:34:18.612] [info] [core] [t102070]   F8000014 'Audio Worker (F8000014)' start 00000000: 39301 calls, last __imp__KeWaitForMultipleObjects
+[2026-10-12 22:34:18.613] [info] [core] [t102070]   F8000020 'Kernel Dispatch (F8000020)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:34:18.614] [info] [core] [t102070]   F8000024 'Main XThread (F8000024)' (guest) start 8224B3D8: 2520714 calls, last __imp__KeTlsGetValue
+[2026-10-12 22:34:18.614] [info] [core] [t102070]   F8000064 'XThread0000 (F8000064)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800005C (Event at 3003E018, no timeout)
+[2026-10-12 22:34:18.615] [info] [core] [t102070]   F8000070 'XThread0000 (F8000070)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000068 (Event at 30047018, no timeout)
+[2026-10-12 22:34:18.616] [info] [core] [t102070]   F800007C 'XThread0000 (F800007C)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000074 (Event at 30050018, no timeout)
+[2026-10-12 22:34:18.616] [info] [core] [t102070]   F8000088 'XThread0000 (F8000088)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000080 (Event at 30059018, no timeout)
+[2026-10-12 22:34:18.617] [info] [core] [t102070]   F8000094 'XThread0000 (F8000094)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800008C (Event at 30062018, no timeout)
+[2026-10-12 22:34:18.618] [info] [core] [t102070]   F80000A0 'XThread0000 (F80000A0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000098 (Event at 3006B018, no timeout)
+[2026-10-12 22:34:18.619] [info] [core] [t102070]   F80000AC 'XThread0000 (F80000AC)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000A4 (Event at 30074018, no timeout)
+[2026-10-12 22:34:18.619] [info] [core] [t102070]   F80000B8 'XThread0000 (F80000B8)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000B0 (Event at 3007D018, no timeout)
+[2026-10-12 22:34:18.620] [info] [core] [t102070]   F80000C4 'XThread0000 (F80000C4)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000BC (Event at 30086018, no timeout)
+[2026-10-12 22:34:18.621] [info] [core] [t102070]   F80000D0 'XThread0000 (F80000D0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000C8 (Event at 3008F018, no timeout)
+[2026-10-12 22:34:18.621] [info] [core] [t102070]   F80000D8 'XThread0000 (F80000D8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000D4 (Event at 30098018, no timeout)
+[2026-10-12 22:34:18.622] [info] [core] [t102070]   F80000E0 'XThread0000 (F80000E0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000DC (Event at 3009F018, no timeout)
+[2026-10-12 22:34:18.623] [info] [core] [t102070]   F80000E8 'XThread0000 (F80000E8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000E4 (Event at 300A6018, no timeout)
+[2026-10-12 22:34:18.624] [info] [core] [t102070]   F80000F0 'XThread0000 (F80000F0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000EC (Event at 300AD018, no timeout)
+[2026-10-12 22:34:18.624] [info] [core] [t102070]   F80000F8 'XThread0000 (F80000F8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000F4 (Event at 300B4018, no timeout)
+[2026-10-12 22:34:18.625] [info] [core] [t102070]   F8000104 'XThread0000 (F8000104)' (guest) start 8233BEA8 (via 8237BC40): 401816 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:34:18.626] [info] [core] [t102070]   F8000108 'XThread0000 (F8000108)' (guest) start 8233BEA8 (via 8237BC40): 419104 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:34:18.626] [info] [core] [t102070]   F800010C 'XThread0000 (F800010C)' (guest) start 8233BEA8 (via 8237BC40): 407776 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:34:18.627] [info] [core] [t102070]   F8000110 'XThread0000 (F8000110)' (guest) start 8233BEA8 (via 8237BC40): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 22:34:18.628] [info] [core] [t102070]   F8000114 'XThread0000 (F8000114)' (guest) start 8233BEA8 (via 8237BC40): 83847 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800002C (Semaphore at 30026018, no timeout)
+[2026-10-12 22:34:18.629] [info] [core] [t102070]   F8000118 'XThread0000 (F8000118)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000030 (Semaphore at 30028018, no timeout)
+[2026-10-12 22:34:18.629] [info] [core] [t102070]   F800011C 'XThread0000 (F800011C)' (guest) start 8233BEA8 (via 8237BC40): 41065 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000034 (Semaphore at 3002A018, no timeout)
+[2026-10-12 22:34:18.630] [info] [core] [t102070]   F8000120 'XThread0000 (F8000120)' (guest) start 8233BEA8 (via 8237BC40): 34894 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000054 (Semaphore at 3003A018, timeout -10000000 x100ns)
+[2026-10-12 22:34:18.631] [info] [core] [t102070]   F8000124 'XThread0000 (F8000124)' (guest) start 8233BEA8 (via 8237BC40): 6792 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000058 (Semaphore at 3003C018, timeout -10000000 x100ns)
+[2026-10-12 22:34:18.631] [info] [core] [t102070]   F8000128 'XThread0000 (F8000128)' (guest) start 8233BEA8 (via 8237BC40): 1828538 calls, last rexcrt_memcpy
+[2026-10-12 22:34:18.632] [info] [core] [t102070]   F800012C 'XThread0000 (F800012C)' (guest) start 8223CB88 (via 8237BC40): 9310 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:34:18.633] [info] [core] [t102070]   F8000130 'XThread0000 (F8000130)' (guest) start 8223CB88 (via 8237BC40): 6 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:34:18.634] [info] [core] [t102070]   F8000144 'XThread0000 (F8000144)' (guest) start 8233BEA8 (via 8237BC40): 59016 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000140 (Event at 300FD018, timeout -200000 x100ns)
+[2026-10-12 22:34:18.634] [info] [core] [t102070]   F8000148 'XThread0000 (F8000148)' (guest) start 822E4830 (via 8237BC40): 495578 calls, last __imp__KeWaitForMultipleObjects
+[2026-10-12 22:34:18.635] [info] [core] [t102070]   F8000170 'XThread0000 (F8000170)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800016C (Semaphore at 3010F018, no timeout)
+[2026-10-12 22:34:18.636] [info] [core] [t102070]   F8000178 'XThread0000 (F8000178)' (guest) start 8233BEA8 (via 8237BC40): 2346607 calls, last __imp__KeDelayExecutionThread
+[2026-10-12 22:34:18.636] [info] [core] [t102070]   F800017C 'XThread0000 (F800017C)' (guest) start 8233BEA8 (via 8237BC40): 96 calls, last __imp__ExTerminateThread
+[2026-10-12 22:34:26.773] [info] [eot] [t102054] [workbuf] 0 lock(s) held
+[2026-10-12 22:34:28.637] [info] [core] [t102070] PS5 stall dump 8 (80 s after launch): 36 threads
+[2026-10-12 22:34:28.638] [info] [core] [t102070]   F8000010 'XMA Decoder (F8000010)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:34:28.639] [info] [core] [t102070]   F8000014 'Audio Worker (F8000014)' start 00000000: 44941 calls, last __imp__KeWaitForMultipleObjects
+[2026-10-12 22:34:28.640] [info] [core] [t102070]   F8000020 'Kernel Dispatch (F8000020)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:34:28.643] [info] [core] [t102070]   F8000024 'Main XThread (F8000024)' (guest) start 8224B3D8: 3408706 calls, last __imp__KeDelayExecutionThread
+[2026-10-12 22:34:28.644] [info] [core] [t102070]   F8000064 'XThread0000 (F8000064)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800005C (Event at 3003E018, no timeout)
+[2026-10-12 22:34:28.645] [info] [core] [t102070]   F8000070 'XThread0000 (F8000070)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000068 (Event at 30047018, no timeout)
+[2026-10-12 22:34:28.645] [info] [core] [t102070]   F800007C 'XThread0000 (F800007C)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000074 (Event at 30050018, no timeout)
+[2026-10-12 22:34:28.646] [info] [core] [t102070]   F8000088 'XThread0000 (F8000088)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000080 (Event at 30059018, no timeout)
+[2026-10-12 22:34:28.647] [info] [core] [t102070]   F8000094 'XThread0000 (F8000094)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800008C (Event at 30062018, no timeout)
+[2026-10-12 22:34:28.647] [info] [core] [t102070]   F80000A0 'XThread0000 (F80000A0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000098 (Event at 3006B018, no timeout)
+[2026-10-12 22:34:28.648] [info] [core] [t102070]   F80000AC 'XThread0000 (F80000AC)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000A4 (Event at 30074018, no timeout)
+[2026-10-12 22:34:28.652] [info] [core] [t102070]   F80000B8 'XThread0000 (F80000B8)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000B0 (Event at 3007D018, no timeout)
+[2026-10-12 22:34:28.653] [info] [core] [t102070]   F80000C4 'XThread0000 (F80000C4)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000BC (Event at 30086018, no timeout)
+[2026-10-12 22:34:28.654] [info] [core] [t102070]   F80000D0 'XThread0000 (F80000D0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000C8 (Event at 3008F018, no timeout)
+[2026-10-12 22:34:28.654] [info] [core] [t102070]   F80000D8 'XThread0000 (F80000D8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000D4 (Event at 30098018, no timeout)
+[2026-10-12 22:34:28.655] [info] [core] [t102070]   F80000E0 'XThread0000 (F80000E0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000DC (Event at 3009F018, no timeout)
+[2026-10-12 22:34:28.656] [info] [core] [t102070]   F80000E8 'XThread0000 (F80000E8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000E4 (Event at 300A6018, no timeout)
+[2026-10-12 22:34:28.657] [info] [core] [t102070]   F80000F0 'XThread0000 (F80000F0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000EC (Event at 300AD018, no timeout)
+[2026-10-12 22:34:28.657] [info] [core] [t102070]   F80000F8 'XThread0000 (F80000F8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000F4 (Event at 300B4018, no timeout)
+[2026-10-12 22:34:28.658] [info] [core] [t102070]   F8000104 'XThread0000 (F8000104)' (guest) start 8233BEA8 (via 8237BC40): 740877 calls, last __imp__KeDelayExecutionThread
+[2026-10-12 22:34:28.659] [info] [core] [t102070]   F8000108 'XThread0000 (F8000108)' (guest) start 8233BEA8 (via 8237BC40): 756957 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:34:28.659] [info] [core] [t102070]   F800010C 'XThread0000 (F800010C)' (guest) start 8233BEA8 (via 8237BC40): 745248 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:34:28.660] [info] [core] [t102070]   F8000110 'XThread0000 (F8000110)' (guest) start 8233BEA8 (via 8237BC40): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 22:34:28.661] [info] [core] [t102070]   F8000114 'XThread0000 (F8000114)' (guest) start 8233BEA8 (via 8237BC40): 84099 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800002C (Semaphore at 30026018, no timeout)
+[2026-10-12 22:34:28.662] [info] [core] [t102070]   F8000118 'XThread0000 (F8000118)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000030 (Semaphore at 30028018, no timeout)
+[2026-10-12 22:34:28.662] [info] [core] [t102070]   F800011C 'XThread0000 (F800011C)' (guest) start 8233BEA8 (via 8237BC40): 41175 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000034 (Semaphore at 3002A018, no timeout)
+[2026-10-12 22:34:28.663] [info] [core] [t102070]   F8000120 'XThread0000 (F8000120)' (guest) start 8233BEA8 (via 8237BC40): 35417 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000054 (Semaphore at 3003A018, timeout -10000000 x100ns)
+[2026-10-12 22:34:28.664] [info] [core] [t102070]   F8000124 'XThread0000 (F8000124)' (guest) start 8233BEA8 (via 8237BC40): 8111 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000058 (Semaphore at 3003C018, timeout -10000000 x100ns)
+[2026-10-12 22:34:28.664] [info] [core] [t102070]   F8000128 'XThread0000 (F8000128)' (guest) start 8233BEA8 (via 8237BC40): 2212614 calls, last rexcrt_memcpy
+[2026-10-12 22:34:28.665] [info] [core] [t102070]   F800012C 'XThread0000 (F800012C)' (guest) start 8223CB88 (via 8237BC40): 10642 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:34:28.666] [info] [core] [t102070]   F8000130 'XThread0000 (F8000130)' (guest) start 8223CB88 (via 8237BC40): 6 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:34:28.667] [info] [core] [t102070]   F8000144 'XThread0000 (F8000144)' (guest) start 8233BEA8 (via 8237BC40): 128602 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800013C (Semaphore at 300FB018, timeout -200000 x100ns)
+[2026-10-12 22:34:28.667] [info] [core] [t102070]   F8000148 'XThread0000 (F8000148)' (guest) start 822E4830 (via 8237BC40): 653895 calls, last __imp__KeWaitForMultipleObjects
+[2026-10-12 22:34:28.668] [info] [core] [t102070]   F8000170 'XThread0000 (F8000170)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800016C (Semaphore at 3010F018, no timeout)
+[2026-10-12 22:34:28.669] [info] [core] [t102070]   F8000178 'XThread0000 (F8000178)' (guest) start 8233BEA8 (via 8237BC40): 2346807 calls, last __imp__KeDelayExecutionThread
+[2026-10-12 22:34:28.669] [info] [core] [t102070]   F800017C 'XThread0000 (F800017C)' (guest) start 8233BEA8 (via 8237BC40): 96 calls, last __imp__ExTerminateThread
+[2026-10-12 22:34:36.774] [info] [eot] [t102054] [workbuf] 0 lock(s) held
+[2026-10-12 22:34:38.670] [info] [core] [t102070] PS5 stall dump 9 (90 s after launch): 36 threads
+[2026-10-12 22:34:38.671] [info] [core] [t102070]   F8000010 'XMA Decoder (F8000010)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:34:38.672] [info] [core] [t102070]   F8000014 'Audio Worker (F8000014)' start 00000000: 50585 calls, last __imp__XAudioSubmitRenderDriverFrame
+[2026-10-12 22:34:38.673] [info] [core] [t102070]   F8000020 'Kernel Dispatch (F8000020)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:34:38.673] [info] [core] [t102070]   F8000024 'Main XThread (F8000024)' (guest) start 8224B3D8: 4254409 calls, last rexcrt_memcpy
+[2026-10-12 22:34:38.674] [info] [core] [t102070]   F8000064 'XThread0000 (F8000064)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800005C (Event at 3003E018, no timeout)
+[2026-10-12 22:34:38.675] [info] [core] [t102070]   F8000070 'XThread0000 (F8000070)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000068 (Event at 30047018, no timeout)
+[2026-10-12 22:34:38.675] [info] [core] [t102070]   F800007C 'XThread0000 (F800007C)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000074 (Event at 30050018, no timeout)
+[2026-10-12 22:34:38.676] [info] [core] [t102070]   F8000088 'XThread0000 (F8000088)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000080 (Event at 30059018, no timeout)
+[2026-10-12 22:34:38.677] [info] [core] [t102070]   F8000094 'XThread0000 (F8000094)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800008C (Event at 30062018, no timeout)
+[2026-10-12 22:34:38.678] [info] [core] [t102070]   F80000A0 'XThread0000 (F80000A0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000098 (Event at 3006B018, no timeout)
+[2026-10-12 22:34:38.678] [info] [core] [t102070]   F80000AC 'XThread0000 (F80000AC)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000A4 (Event at 30074018, no timeout)
+[2026-10-12 22:34:38.679] [info] [core] [t102070]   F80000B8 'XThread0000 (F80000B8)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000B0 (Event at 3007D018, no timeout)
+[2026-10-12 22:34:38.680] [info] [core] [t102070]   F80000C4 'XThread0000 (F80000C4)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000BC (Event at 30086018, no timeout)
+[2026-10-12 22:34:38.680] [info] [core] [t102070]   F80000D0 'XThread0000 (F80000D0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000C8 (Event at 3008F018, no timeout)
+[2026-10-12 22:34:38.681] [info] [core] [t102070]   F80000D8 'XThread0000 (F80000D8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000D4 (Event at 30098018, no timeout)
+[2026-10-12 22:34:38.682] [info] [core] [t102070]   F80000E0 'XThread0000 (F80000E0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000DC (Event at 3009F018, no timeout)
+[2026-10-12 22:34:38.683] [info] [core] [t102070]   F80000E8 'XThread0000 (F80000E8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000E4 (Event at 300A6018, no timeout)
+[2026-10-12 22:34:38.683] [info] [core] [t102070]   F80000F0 'XThread0000 (F80000F0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000EC (Event at 300AD018, no timeout)
+[2026-10-12 22:34:38.684] [info] [core] [t102070]   F80000F8 'XThread0000 (F80000F8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000F4 (Event at 300B4018, no timeout)
+[2026-10-12 22:34:38.685] [info] [core] [t102070]   F8000104 'XThread0000 (F8000104)' (guest) start 8233BEA8 (via 8237BC40): 1064689 calls, last rexcrt_memcpy
+[2026-10-12 22:34:38.685] [info] [core] [t102070]   F8000108 'XThread0000 (F8000108)' (guest) start 8233BEA8 (via 8237BC40): 1080044 calls, last rexcrt_memcpy
+[2026-10-12 22:34:38.686] [info] [core] [t102070]   F800010C 'XThread0000 (F800010C)' (guest) start 8233BEA8 (via 8237BC40): 1067746 calls, last __imp__KeDelayExecutionThread
+[2026-10-12 22:34:38.687] [info] [core] [t102070]   F8000110 'XThread0000 (F8000110)' (guest) start 8233BEA8 (via 8237BC40): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 22:34:38.688] [info] [core] [t102070]   F8000114 'XThread0000 (F8000114)' (guest) start 8233BEA8 (via 8237BC40): 84330 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800002C (Semaphore at 30026018, no timeout)
+[2026-10-12 22:34:38.688] [info] [core] [t102070]   F8000118 'XThread0000 (F8000118)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000030 (Semaphore at 30028018, no timeout)
+[2026-10-12 22:34:38.689] [info] [core] [t102070]   F800011C 'XThread0000 (F800011C)' (guest) start 8233BEA8 (via 8237BC40): 41274 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000034 (Semaphore at 3002A018, no timeout)
+[2026-10-12 22:34:38.690] [info] [core] [t102070]   F8000120 'XThread0000 (F8000120)' (guest) start 8233BEA8 (via 8237BC40): 35837 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000054 (Semaphore at 3003A018, timeout -10000000 x100ns)
+[2026-10-12 22:34:38.690] [info] [core] [t102070]   F8000124 'XThread0000 (F8000124)' (guest) start 8233BEA8 (via 8237BC40): 9362 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000058 (Semaphore at 3003C018, timeout -10000000 x100ns)
+[2026-10-12 22:34:38.691] [info] [core] [t102070]   F8000128 'XThread0000 (F8000128)' (guest) start 8233BEA8 (via 8237BC40): 2496847 calls, last rexcrt_memcpy
+[2026-10-12 22:34:38.692] [info] [core] [t102070]   F800012C 'XThread0000 (F800012C)' (guest) start 8223CB88 (via 8237BC40): 11974 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:34:38.693] [info] [core] [t102070]   F8000130 'XThread0000 (F8000130)' (guest) start 8223CB88 (via 8237BC40): 6 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:34:38.693] [info] [core] [t102070]   F8000144 'XThread0000 (F8000144)' (guest) start 8233BEA8 (via 8237BC40): 171384 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800013C (Semaphore at 300FB018, timeout -200000 x100ns)
+[2026-10-12 22:34:38.694] [info] [core] [t102070]   F8000148 'XThread0000 (F8000148)' (guest) start 822E4830 (via 8237BC40): 789394 calls, last __imp__KeWaitForMultipleObjects
+[2026-10-12 22:34:38.695] [info] [core] [t102070]   F8000170 'XThread0000 (F8000170)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800016C (Semaphore at 3010F018, no timeout)
+[2026-10-12 22:34:38.695] [info] [core] [t102070]   F8000178 'XThread0000 (F8000178)' (guest) start 8233BEA8 (via 8237BC40): 2347007 calls, last __imp__KeDelayExecutionThread
+[2026-10-12 22:34:38.696] [info] [core] [t102070]   F800017C 'XThread0000 (F800017C)' (guest) start 8233BEA8 (via 8237BC40): 96 calls, last __imp__ExTerminateThread
+[2026-10-12 22:34:46.775] [info] [eot] [t102054] [workbuf] 0 lock(s) held
+[2026-10-12 22:34:48.697] [info] [core] [t102070] PS5 stall dump 10 (100 s after launch): 36 threads
+[2026-10-12 22:34:48.698] [info] [core] [t102070]   F8000010 'XMA Decoder (F8000010)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:34:48.699] [info] [core] [t102070]   F8000014 'Audio Worker (F8000014)' start 00000000: 56224 calls, last __imp__KeWaitForMultipleObjects
+[2026-10-12 22:34:48.699] [info] [core] [t102070]   F8000020 'Kernel Dispatch (F8000020)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:34:48.700] [info] [core] [t102070]   F8000024 'Main XThread (F8000024)' (guest) start 8224B3D8: 5130282 calls, last __imp__NtReleaseSemaphore
+[2026-10-12 22:34:48.701] [info] [core] [t102070]   F8000064 'XThread0000 (F8000064)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800005C (Event at 3003E018, no timeout)
+[2026-10-12 22:34:48.701] [info] [core] [t102070]   F8000070 'XThread0000 (F8000070)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000068 (Event at 30047018, no timeout)
+[2026-10-12 22:34:48.702] [info] [core] [t102070]   F800007C 'XThread0000 (F800007C)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000074 (Event at 30050018, no timeout)
+[2026-10-12 22:34:48.703] [info] [core] [t102070]   F8000088 'XThread0000 (F8000088)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000080 (Event at 30059018, no timeout)
+[2026-10-12 22:34:48.703] [info] [core] [t102070]   F8000094 'XThread0000 (F8000094)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800008C (Event at 30062018, no timeout)
+[2026-10-12 22:34:48.704] [info] [core] [t102070]   F80000A0 'XThread0000 (F80000A0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000098 (Event at 3006B018, no timeout)
+[2026-10-12 22:34:48.705] [info] [core] [t102070]   F80000AC 'XThread0000 (F80000AC)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000A4 (Event at 30074018, no timeout)
+[2026-10-12 22:34:48.706] [info] [core] [t102070]   F80000B8 'XThread0000 (F80000B8)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000B0 (Event at 3007D018, no timeout)
+[2026-10-12 22:34:48.706] [info] [core] [t102070]   F80000C4 'XThread0000 (F80000C4)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000BC (Event at 30086018, no timeout)
+[2026-10-12 22:34:48.707] [info] [core] [t102070]   F80000D0 'XThread0000 (F80000D0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000C8 (Event at 3008F018, no timeout)
+[2026-10-12 22:34:48.708] [info] [core] [t102070]   F80000D8 'XThread0000 (F80000D8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000D4 (Event at 30098018, no timeout)
+[2026-10-12 22:34:48.708] [info] [core] [t102070]   F80000E0 'XThread0000 (F80000E0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000DC (Event at 3009F018, no timeout)
+[2026-10-12 22:34:48.709] [info] [core] [t102070]   F80000E8 'XThread0000 (F80000E8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000E4 (Event at 300A6018, no timeout)
+[2026-10-12 22:34:48.710] [info] [core] [t102070]   F80000F0 'XThread0000 (F80000F0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000EC (Event at 300AD018, no timeout)
+[2026-10-12 22:34:48.711] [info] [core] [t102070]   F80000F8 'XThread0000 (F80000F8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000F4 (Event at 300B4018, no timeout)
+[2026-10-12 22:34:48.711] [info] [core] [t102070]   F8000104 'XThread0000 (F8000104)' (guest) start 8233BEA8 (via 8237BC40): 1412324 calls, last rexcrt_memcpy
+[2026-10-12 22:34:48.712] [info] [core] [t102070]   F8000108 'XThread0000 (F8000108)' (guest) start 8233BEA8 (via 8237BC40): 1425112 calls, last rexcrt_memcpy
+[2026-10-12 22:34:48.713] [info] [core] [t102070]   F800010C 'XThread0000 (F800010C)' (guest) start 8233BEA8 (via 8237BC40): 1414603 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:34:48.714] [info] [core] [t102070]   F8000110 'XThread0000 (F8000110)' (guest) start 8233BEA8 (via 8237BC40): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 22:34:48.714] [info] [core] [t102070]   F8000114 'XThread0000 (F8000114)' (guest) start 8233BEA8 (via 8237BC40): 84568 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800002C (Semaphore at 30026018, no timeout)
+[2026-10-12 22:34:48.715] [info] [core] [t102070]   F8000118 'XThread0000 (F8000118)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000030 (Semaphore at 30028018, no timeout)
+[2026-10-12 22:34:48.716] [info] [core] [t102070]   F800011C 'XThread0000 (F800011C)' (guest) start 8233BEA8 (via 8237BC40): 41379 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000034 (Semaphore at 3002A018, no timeout)
+[2026-10-12 22:34:48.716] [info] [core] [t102070]   F8000120 'XThread0000 (F8000120)' (guest) start 8233BEA8 (via 8237BC40): 36243 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000054 (Semaphore at 3003A018, timeout -10000000 x100ns)
+[2026-10-12 22:34:48.717] [info] [core] [t102070]   F8000124 'XThread0000 (F8000124)' (guest) start 8233BEA8 (via 8237BC40): 10762 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000058 (Semaphore at 3003C018, timeout -10000000 x100ns)
+[2026-10-12 22:34:48.718] [info] [core] [t102070]   F8000128 'XThread0000 (F8000128)' (guest) start 8233BEA8 (via 8237BC40): 2847495 calls, last rexcrt_memcpy
+[2026-10-12 22:34:48.718] [info] [core] [t102070]   F800012C 'XThread0000 (F800012C)' (guest) start 8223CB88 (via 8237BC40): 13306 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:34:48.719] [info] [core] [t102070]   F8000130 'XThread0000 (F8000130)' (guest) start 8223CB88 (via 8237BC40): 6 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:34:48.720] [info] [core] [t102070]   F8000144 'XThread0000 (F8000144)' (guest) start 8233BEA8 (via 8237BC40): 224028 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800013C (Semaphore at 300FB018, timeout -200000 x100ns)
+[2026-10-12 22:34:48.721] [info] [core] [t102070]   F8000148 'XThread0000 (F8000148)' (guest) start 822E4830 (via 8237BC40): 929121 calls, last __imp__KeWaitForMultipleObjects
+[2026-10-12 22:34:48.721] [info] [core] [t102070]   F8000170 'XThread0000 (F8000170)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800016C (Semaphore at 3010F018, no timeout)
+[2026-10-12 22:34:48.722] [info] [core] [t102070]   F8000178 'XThread0000 (F8000178)' (guest) start 8233BEA8 (via 8237BC40): 2347206 calls, last __imp__KeDelayExecutionThread
+[2026-10-12 22:34:48.723] [info] [core] [t102070]   F800017C 'XThread0000 (F800017C)' (guest) start 8233BEA8 (via 8237BC40): 96 calls, last __imp__ExTerminateThread
+[2026-10-12 22:34:56.776] [info] [eot] [t102054] [workbuf] 0 lock(s) held
+[2026-10-12 22:34:58.723] [info] [core] [t102070] PS5 stall dump 11 (110 s after launch): 36 threads
+[2026-10-12 22:34:58.724] [info] [core] [t102070]   F8000010 'XMA Decoder (F8000010)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:34:58.725] [info] [core] [t102070]   F8000014 'Audio Worker (F8000014)' start 00000000: 61865 calls, last __imp__XAudioSubmitRenderDriverFrame
+[2026-10-12 22:34:58.726] [info] [core] [t102070]   F8000020 'Kernel Dispatch (F8000020)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:34:58.726] [info] [core] [t102070]   F8000024 'Main XThread (F8000024)' (guest) start 8224B3D8: 5996306 calls, last rexcrt_memcpy
+[2026-10-12 22:34:58.727] [info] [core] [t102070]   F8000064 'XThread0000 (F8000064)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800005C (Event at 3003E018, no timeout)
+[2026-10-12 22:34:58.728] [info] [core] [t102070]   F8000070 'XThread0000 (F8000070)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000068 (Event at 30047018, no timeout)
+[2026-10-12 22:34:58.729] [info] [core] [t102070]   F800007C 'XThread0000 (F800007C)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000074 (Event at 30050018, no timeout)
+[2026-10-12 22:34:58.729] [info] [core] [t102070]   F8000088 'XThread0000 (F8000088)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000080 (Event at 30059018, no timeout)
+[2026-10-12 22:34:58.730] [info] [core] [t102070]   F8000094 'XThread0000 (F8000094)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800008C (Event at 30062018, no timeout)
+[2026-10-12 22:34:58.731] [info] [core] [t102070]   F80000A0 'XThread0000 (F80000A0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000098 (Event at 3006B018, no timeout)
+[2026-10-12 22:34:58.731] [info] [core] [t102070]   F80000AC 'XThread0000 (F80000AC)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000A4 (Event at 30074018, no timeout)
+[2026-10-12 22:34:58.732] [info] [core] [t102070]   F80000B8 'XThread0000 (F80000B8)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000B0 (Event at 3007D018, no timeout)
+[2026-10-12 22:34:58.733] [info] [core] [t102070]   F80000C4 'XThread0000 (F80000C4)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000BC (Event at 30086018, no timeout)
+[2026-10-12 22:34:58.734] [info] [core] [t102070]   F80000D0 'XThread0000 (F80000D0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000C8 (Event at 3008F018, no timeout)
+[2026-10-12 22:34:58.734] [info] [core] [t102070]   F80000D8 'XThread0000 (F80000D8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000D4 (Event at 30098018, no timeout)
+[2026-10-12 22:34:58.735] [info] [core] [t102070]   F80000E0 'XThread0000 (F80000E0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000DC (Event at 3009F018, no timeout)
+[2026-10-12 22:34:58.736] [info] [core] [t102070]   F80000E8 'XThread0000 (F80000E8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000E4 (Event at 300A6018, no timeout)
+[2026-10-12 22:34:58.736] [info] [core] [t102070]   F80000F0 'XThread0000 (F80000F0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000EC (Event at 300AD018, no timeout)
+[2026-10-12 22:34:58.737] [info] [core] [t102070]   F80000F8 'XThread0000 (F80000F8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000F4 (Event at 300B4018, no timeout)
+[2026-10-12 22:34:58.738] [info] [core] [t102070]   F8000104 'XThread0000 (F8000104)' (guest) start 8233BEA8 (via 8237BC40): 1756280 calls, last rexcrt_memcpy
+[2026-10-12 22:34:58.739] [info] [core] [t102070]   F8000108 'XThread0000 (F8000108)' (guest) start 8233BEA8 (via 8237BC40): 1761657 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:34:58.739] [info] [core] [t102070]   F800010C 'XThread0000 (F800010C)' (guest) start 8233BEA8 (via 8237BC40): 1749540 calls, last __imp__KeTlsGetValue
+[2026-10-12 22:34:58.740] [info] [core] [t102070]   F8000110 'XThread0000 (F8000110)' (guest) start 8233BEA8 (via 8237BC40): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 22:34:58.741] [info] [core] [t102070]   F8000114 'XThread0000 (F8000114)' (guest) start 8233BEA8 (via 8237BC40): 84771 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800002C (Semaphore at 30026018, no timeout)
+[2026-10-12 22:34:58.741] [info] [core] [t102070]   F8000118 'XThread0000 (F8000118)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000030 (Semaphore at 30028018, no timeout)
+[2026-10-12 22:34:58.742] [info] [core] [t102070]   F800011C 'XThread0000 (F800011C)' (guest) start 8233BEA8 (via 8237BC40): 41467 calls, last __imp__NtSetEvent
+[2026-10-12 22:34:58.743] [info] [core] [t102070]   F8000120 'XThread0000 (F8000120)' (guest) start 8233BEA8 (via 8237BC40): 36600 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000054 (Semaphore at 3003A018, timeout -10000000 x100ns)
+[2026-10-12 22:34:58.743] [info] [core] [t102070]   F8000124 'XThread0000 (F8000124)' (guest) start 8233BEA8 (via 8237BC40): 12139 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000058 (Semaphore at 3003C018, timeout -10000000 x100ns)
+[2026-10-12 22:34:58.744] [info] [core] [t102070]   F8000128 'XThread0000 (F8000128)' (guest) start 8233BEA8 (via 8237BC40): 3204428 calls, last rexcrt_memcpy
+[2026-10-12 22:34:58.745] [info] [core] [t102070]   F800012C 'XThread0000 (F800012C)' (guest) start 8223CB88 (via 8237BC40): 14638 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:34:58.746] [info] [core] [t102070]   F8000130 'XThread0000 (F8000130)' (guest) start 8223CB88 (via 8237BC40): 6 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:34:58.746] [info] [core] [t102070]   F8000144 'XThread0000 (F8000144)' (guest) start 8233BEA8 (via 8237BC40): 266216 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800013C (Semaphore at 300FB018, timeout -200000 x100ns)
+[2026-10-12 22:34:58.747] [info] [core] [t102070]   F8000148 'XThread0000 (F8000148)' (guest) start 822E4830 (via 8237BC40): 1066905 calls, last __imp__KeWaitForMultipleObjects
+[2026-10-12 22:34:58.748] [info] [core] [t102070]   F8000170 'XThread0000 (F8000170)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800016C (Semaphore at 3010F018, no timeout)
+[2026-10-12 22:34:58.748] [info] [core] [t102070]   F8000178 'XThread0000 (F8000178)' (guest) start 8233BEA8 (via 8237BC40): 2347406 calls, last __imp__KeDelayExecutionThread
+[2026-10-12 22:34:58.749] [info] [core] [t102070]   F800017C 'XThread0000 (F800017C)' (guest) start 8233BEA8 (via 8237BC40): 96 calls, last __imp__ExTerminateThread
+[2026-10-12 22:35:06.777] [info] [eot] [t102054] [workbuf] 0 lock(s) held
+[2026-10-12 22:35:08.750] [info] [core] [t102070] PS5 stall dump 12 (120 s after launch): 36 threads
+[2026-10-12 22:35:08.751] [info] [core] [t102070]   F8000010 'XMA Decoder (F8000010)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:35:08.751] [info] [core] [t102070]   F8000014 'Audio Worker (F8000014)' start 00000000: 67505 calls, last __imp__XAudioSubmitRenderDriverFrame
+[2026-10-12 22:35:08.752] [info] [core] [t102070]   F8000020 'Kernel Dispatch (F8000020)' start 00000000: 0 calls, last (none)
+[2026-10-12 22:35:08.753] [info] [core] [t102070]   F8000024 'Main XThread (F8000024)' (guest) start 8224B3D8: 6843806 calls, last __imp__NtReleaseSemaphore
+[2026-10-12 22:35:08.754] [info] [core] [t102070]   F8000064 'XThread0000 (F8000064)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800005C (Event at 3003E018, no timeout)
+[2026-10-12 22:35:08.754] [info] [core] [t102070]   F8000070 'XThread0000 (F8000070)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000068 (Event at 30047018, no timeout)
+[2026-10-12 22:35:08.755] [info] [core] [t102070]   F800007C 'XThread0000 (F800007C)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000074 (Event at 30050018, no timeout)
+[2026-10-12 22:35:08.756] [info] [core] [t102070]   F8000088 'XThread0000 (F8000088)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000080 (Event at 30059018, no timeout)
+[2026-10-12 22:35:08.756] [info] [core] [t102070]   F8000094 'XThread0000 (F8000094)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800008C (Event at 30062018, no timeout)
+[2026-10-12 22:35:08.757] [info] [core] [t102070]   F80000A0 'XThread0000 (F80000A0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000098 (Event at 3006B018, no timeout)
+[2026-10-12 22:35:08.758] [info] [core] [t102070]   F80000AC 'XThread0000 (F80000AC)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000A4 (Event at 30074018, no timeout)
+[2026-10-12 22:35:08.759] [info] [core] [t102070]   F80000B8 'XThread0000 (F80000B8)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000B0 (Event at 3007D018, no timeout)
+[2026-10-12 22:35:08.759] [info] [core] [t102070]   F80000C4 'XThread0000 (F80000C4)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000BC (Event at 30086018, no timeout)
+[2026-10-12 22:35:08.760] [info] [core] [t102070]   F80000D0 'XThread0000 (F80000D0)' (guest) start 8233BEA8 (via 8237BC40): 9 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000C8 (Event at 3008F018, no timeout)
+[2026-10-12 22:35:08.761] [info] [core] [t102070]   F80000D8 'XThread0000 (F80000D8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000D4 (Event at 30098018, no timeout)
+[2026-10-12 22:35:08.761] [info] [core] [t102070]   F80000E0 'XThread0000 (F80000E0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000DC (Event at 3009F018, no timeout)
+[2026-10-12 22:35:08.762] [info] [core] [t102070]   F80000E8 'XThread0000 (F80000E8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000E4 (Event at 300A6018, no timeout)
+[2026-10-12 22:35:08.763] [info] [core] [t102070]   F80000F0 'XThread0000 (F80000F0)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000EC (Event at 300AD018, no timeout)
+[2026-10-12 22:35:08.764] [info] [core] [t102070]   F80000F8 'XThread0000 (F80000F8)' (guest) start 8232AFA0 (via 8237BC40): 3 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000F4 (Event at 300B4018, no timeout)
+[2026-10-12 22:35:08.764] [info] [core] [t102070]   F8000104 'XThread0000 (F8000104)' (guest) start 8233BEA8 (via 8237BC40): 2055570 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:35:08.765] [info] [core] [t102070]   F8000108 'XThread0000 (F8000108)' (guest) start 8233BEA8 (via 8237BC40): 2058838 calls, last rexcrt_memcpy
+[2026-10-12 22:35:08.766] [info] [core] [t102070]   F800010C 'XThread0000 (F800010C)' (guest) start 8233BEA8 (via 8237BC40): 2045145 calls, last __imp__NtWaitForSingleObjectEx; waiting on F80000FC (Semaphore at 300BB018, no timeout)
+[2026-10-12 22:35:08.766] [info] [core] [t102070]   F8000110 'XThread0000 (F8000110)' (guest) start 8233BEA8 (via 8237BC40): 15 calls, last __imp__ExTerminateThread
+[2026-10-12 22:35:08.767] [info] [core] [t102070]   F8000114 'XThread0000 (F8000114)' (guest) start 8233BEA8 (via 8237BC40): 85069 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800002C (Semaphore at 30026018, no timeout)
+[2026-10-12 22:35:08.768] [info] [core] [t102070]   F8000118 'XThread0000 (F8000118)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000030 (Semaphore at 30028018, no timeout)
+[2026-10-12 22:35:08.769] [info] [core] [t102070]   F800011C 'XThread0000 (F800011C)' (guest) start 8233BEA8 (via 8237BC40): 41573 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000034 (Semaphore at 3002A018, no timeout)
+[2026-10-12 22:35:08.769] [info] [core] [t102070]   F8000120 'XThread0000 (F8000120)' (guest) start 8233BEA8 (via 8237BC40): 37261 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000054 (Semaphore at 3003A018, timeout -10000000 x100ns)
+[2026-10-12 22:35:08.770] [info] [core] [t102070]   F8000124 'XThread0000 (F8000124)' (guest) start 8233BEA8 (via 8237BC40): 13436 calls, last __imp__NtWaitForSingleObjectEx; waiting on F8000058 (Semaphore at 3003C018, timeout -10000000 x100ns)
+[2026-10-12 22:35:08.771] [info] [core] [t102070]   F8000128 'XThread0000 (F8000128)' (guest) start 8233BEA8 (via 8237BC40): 3411898 calls, last rexcrt_memcpy
+[2026-10-12 22:35:08.771] [info] [core] [t102070]   F800012C 'XThread0000 (F800012C)' (guest) start 8223CB88 (via 8237BC40): 15970 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:35:08.772] [info] [core] [t102070]   F8000130 'XThread0000 (F8000130)' (guest) start 8223CB88 (via 8237BC40): 6 calls, last __imp__KeWaitForSingleObject
+[2026-10-12 22:35:08.773] [info] [core] [t102070]   F8000144 'XThread0000 (F8000144)' (guest) start 8233BEA8 (via 8237BC40): 325101 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800013C (Semaphore at 300FB018, timeout -200000 x100ns)
+[2026-10-12 22:35:08.774] [info] [core] [t102070]   F8000148 'XThread0000 (F8000148)' (guest) start 822E4830 (via 8237BC40): 1210102 calls, last __imp__KeWaitForMultipleObjects
+[2026-10-12 22:35:08.774] [info] [core] [t102070]   F8000170 'XThread0000 (F8000170)' (guest) start 8233BEA8 (via 8237BC40): 8 calls, last __imp__NtWaitForSingleObjectEx; waiting on F800016C (Semaphore at 3010F018, no timeout)
+[2026-10-12 22:35:08.775] [info] [core] [t102070]   F8000178 'XThread0000 (F8000178)' (guest) start 8233BEA8 (via 8237BC40): 2347606 calls, last __imp__KeDelayExecutionThread
+[2026-10-12 22:35:08.776] [info] [core] [t102070]   F800017C 'XThread0000 (F800017C)' (guest) start 8233BEA8 (via 8237BC40): 96 calls, last __imp__ExTerminateThread
+[2026-10-12 22:37:32.020] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-12 22:37:32.020] [info] [krnl] [t102069] XGIUserWriteAchievements: id=88 (0)
+[2026-10-12 22:39:35.106] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-12 22:39:35.106] [info] [krnl] [t102069] XGIUserWriteAchievements: id=91 (0)
+[2026-10-12 22:39:35.320] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-12 22:39:45.748] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-12 22:39:45.749] [info] [krnl] [t102069] XGIUserWriteAchievements: id=68 (0)
+[2026-10-12 22:42:18.486] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-12 22:42:18.486] [info] [krnl] [t102069] XGIUserWriteAchievements: id=82 (0)
+[2026-10-12 22:45:25.162] [warning] [eot] [t102058] [hitch-gpu] frame 43504 took 5.50 ms on the GPU (average 2.94): resolve 1.85 small 16f+z 1.26 full 16f+z@1x 0.51 present 0.34 small 8+z 0.28 resolve-depth 0.27 full 16u+z@1x 0.25 full 16f+z+add@1x 0.21
+[2026-10-12 22:45:25.179] [warning] [eot] [t102058] [hitch-gpu] frame 43505 took 5.54 ms on the GPU (average 2.99): resolve 1.91 small 16f+z 1.25 full 16f+z@1x 0.50 present 0.34 small 8+z 0.29 resolve-depth 0.26 full 16u+z@1x 0.25 full 16f+z+add@1x 0.21
+[2026-10-12 22:45:25.196] [warning] [eot] [t102058] [hitch-gpu] frame 43506 took 5.47 ms on the GPU (average 3.04): resolve 1.85 small 16f+z 1.24 full 16f+z@1x 0.51 present 0.34 small 8+z 0.29 resolve-depth 0.26 full 16u+z@1x 0.25 full 16f+z+add@1x 0.22
+[2026-10-12 22:45:25.212] [warning] [eot] [t102058] [hitch-gpu] frame 43507 took 5.55 ms on the GPU (average 3.09): resolve 1.94 small 16f+z 1.26 full 16f+z@1x 0.50 present 0.33 small 8+z 0.29 resolve-depth 0.26 full 16u+z@1x 0.25 shadow 0.20
+[2026-10-12 22:45:25.229] [warning] [eot] [t102058] [hitch-gpu] frame 43508 took 5.50 ms on the GPU (average 3.14): resolve 1.88 small 16f+z 1.27 full 16f+z@1x 0.50 present 0.33 small 8+z 0.29 resolve-depth 0.27 full 16u+z@1x 0.25 full 16f+z+add@1x 0.20
+[2026-10-12 22:45:25.246] [warning] [eot] [t102058] [hitch-gpu] frame 43509 took 5.57 ms on the GPU (average 3.18): resolve 1.97 small 16f+z 1.26 full 16f+z@1x 0.49 present 0.33 small 8+z 0.29 resolve-depth 0.27 full 16u+z@1x 0.25 shadow 0.21
+[2026-10-12 22:45:25.262] [warning] [eot] [t102058] [hitch-gpu] frame 43510 took 5.49 ms on the GPU (average 3.23): resolve 1.90 small 16f+z 1.26 full 16f+z@1x 0.50 present 0.33 full 16u+z@1x 0.32 small 8+z 0.29 resolve-depth 0.28 shadow 0.20
+[2026-10-12 22:45:25.279] [warning] [eot] [t102058] [hitch-gpu] frame 43511 took 5.62 ms on the GPU (average 3.28): resolve 2.02 small 16f+z 1.26 full 16f+z@1x 0.50 present 0.33 full 16u+z@1x 0.33 small 8+z 0.29 resolve-depth 0.27 shadow 0.20
+[2026-10-12 22:45:25.296] [warning] [eot] [t102058] [hitch-gpu] frame 43512 took 5.48 ms on the GPU (average 3.32): resolve 1.88 small 16f+z 1.26 full 16f+z@1x 0.50 present 0.34 full 16u+z@1x 0.33 small 8+z 0.29 resolve-depth 0.27 shadow 0.21
+[2026-10-12 22:45:25.312] [warning] [eot] [t102058] [hitch-gpu] frame 43513 took 5.66 ms on the GPU (average 3.37): resolve 2.05 small 16f+z 1.27 full 16f+z@1x 0.51 present 0.33 full 16u+z@1x 0.33 small 8+z 0.29 resolve-depth 0.27 shadow 0.20
+[2026-10-12 22:45:25.329] [warning] [eot] [t102058] [hitch-gpu] frame 43514 took 5.49 ms on the GPU (average 3.41): resolve 1.89 small 16f+z 1.29 full 16f+z@1x 0.50 present 0.33 full 16u+z@1x 0.32 small 8+z 0.29 resolve-depth 0.27 shadow 0.19
+[2026-10-12 22:45:25.346] [warning] [eot] [t102058] [hitch-gpu] frame 43515 took 5.67 ms on the GPU (average 3.45): resolve 2.05 small 16f+z 1.28 full 16f+z@1x 0.50 present 0.33 full 16u+z@1x 0.32 small 8+z 0.29 resolve-depth 0.27 shadow 0.20
+[2026-10-12 22:45:25.379] [warning] [eot] [t102058] [hitch-gpu] frame 43517 took 5.62 ms on the GPU (average 3.54): resolve 2.06 small 16f+z 1.29 full 16f+z@1x 0.49 present 0.33 full 16u+z@1x 0.32 small 8+z 0.29 resolve-depth 0.28 shadow 0.20
+[2026-10-12 22:45:25.413] [warning] [eot] [t102058] [hitch-gpu] frame 43519 took 5.64 ms on the GPU (average 3.62): resolve 2.05 small 16f+z 1.30 full 16f+z@1x 0.50 full 16u+z@1x 0.33 present 0.33 small 8+z 0.30 resolve-depth 0.28 shadow 0.22
+[2026-10-12 22:48:06.207] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-12 22:48:06.208] [info] [krnl] [t102069] XGIUserWriteAchievements: id=80 (0)
+[2026-10-12 22:48:06.209] [info] [sys] [t102069] Achievement unlocked: 00000050
+[2026-10-12 22:49:42.519] [warning] [eot] [t102058] [hitch-gpu] frame 58831 took 2.74 ms on the GPU (average 0.46): full 16f+z+add@1x 0.77 full 16f+z@1x 0.75 resolve 0.50 present 0.31 full 16u+z@1x 0.21 upload 0.08 small 16f+z 0.06 small 8 0.03
+[2026-10-12 22:49:42.542] [warning] [eot] [t102058] [hitch-gpu] frame 58832 took 2.75 ms on the GPU (average 0.51): full 16f+z+add@1x 0.76 full 16f+z@1x 0.72 resolve 0.55 present 0.30 full 16u+z@1x 0.21 other 0.10 small 16f+z 0.06 small 8 0.03
+[2026-10-12 23:09:56.210] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-12 23:09:56.211] [info] [krnl] [t102069] XGIUserWriteAchievements: id=51 (0)
+[2026-10-12 23:09:56.212] [info] [sys] [t102069] Achievement unlocked: 00000033
+[2026-10-12 23:09:56.245] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-12 23:09:56.246] [info] [krnl] [t102069] XGIUserWriteAchievements: id=46 (0)
+[2026-10-12 23:09:56.247] [info] [sys] [t102069] Achievement unlocked: 0000002E
+[2026-10-12 23:09:56.446] [info] [eot] [t102069] [pso] loading screen up at frame 131567 (pool pending recorded 0 prio 0 bg 0)
+[2026-10-12 23:10:00.723] [info] [eot] [t102069] [pso] loading screen down at frame 131817 after 250 frames (pool pending recorded 0 prio 0 bg 0, 0 package pipelines still building)
+[2026-10-12 23:10:35.454] [warning] [eot] [t102058] [hitch-gpu] frame 133898 took 2.92 ms on the GPU (average 0.58): full 16f+z+add@1x 0.74 full 16f+z@1x 0.69 resolve 0.39 present 0.31 other 0.24 full 16u+z@1x 0.18 full 8+z@1x 0.10 resolve-depth 0.09
+[2026-10-12 23:10:35.471] [warning] [eot] [t102058] [hitch-gpu] frame 133899 took 2.70 ms on the GPU (average 0.62): full 16f+z+add@1x 0.75 full 16f+z@1x 0.70 resolve 0.39 present 0.31 full 16u+z@1x 0.18 full 8+z@1x 0.10 resolve-depth 0.08 small 16f+z 0.06
+[2026-10-12 23:10:35.488] [warning] [eot] [t102058] [hitch-gpu] frame 133900 took 2.85 ms on the GPU (average 0.67): full 16f+z+add@1x 0.73 full 16f+z@1x 0.69 resolve 0.39 present 0.30 full 16u+z@1x 0.18 other 0.18 full 8+z@1x 0.10 resolve-depth 0.08
+[2026-10-12 23:10:35.521] [warning] [eot] [t102058] [hitch-gpu] frame 133902 took 2.87 ms on the GPU (average 0.75): full 16f+z+add@1x 0.75 full 16f+z@1x 0.69 resolve 0.38 present 0.30 other 0.21 full 16u+z@1x 0.17 full 8+z@1x 0.10 resolve-depth 0.08
+[2026-10-12 23:10:35.555] [warning] [eot] [t102058] [hitch-gpu] frame 133904 took 2.88 ms on the GPU (average 0.83): full 16f+z+add@1x 0.74 full 16f+z@1x 0.70 resolve 0.39 present 0.30 other 0.21 full 16u+z@1x 0.17 full 8+z@1x 0.10 resolve-depth 0.09
+[2026-10-12 23:11:28.207] [warning] [eot] [t102058] [hitch-gpu] frame 137060 took 3.19 ms on the GPU (average 1.12): full 16f+z@1x 0.68 full 16f+z+add@1x 0.62 resolve 0.60 present 0.30 full 16u+z@1x 0.22 full 8+z@1x 0.18 small 16f+z 0.17 small 8+z 0.16
+[2026-10-12 23:20:26.099] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-12 23:20:26.100] [info] [krnl] [t102069] XGIUserWriteAchievements: id=60 (0)
+[2026-10-12 23:20:26.101] [info] [sys] [t102069] Achievement unlocked: 0000003C
+[2026-10-12 23:21:04.026] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-12 23:23:04.557] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-12 23:28:36.289] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-12 23:28:36.290] [info] [krnl] [t102069] XGIUserWriteAchievements: id=92 (0)
+[2026-10-12 23:28:36.291] [info] [sys] [t102069] Achievement unlocked: 0000005C
+[2026-10-12 23:36:48.437] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-12 23:42:28.015] [warning] [eot] [t102058] [hitch-gpu] frame 247327 took 4.93 ms on the GPU (average 2.77): resolve 1.73 small 16f+z 1.27 full 16f+z@1x 0.59 present 0.34 full 16u+z@1x 0.28 full 16f+z+add@1x 0.21 resolve-depth 0.15 small 16u+z 0.07
+[2026-10-12 23:42:28.032] [warning] [eot] [t102058] [hitch-gpu] frame 247328 took 4.91 ms on the GPU (average 2.82): resolve 1.75 small 16f+z 1.25 full 16f+z@1x 0.59 present 0.34 full 16u+z@1x 0.28 full 16f+z+add@1x 0.21 resolve-depth 0.14 small 16u+z 0.07
+[2026-10-12 23:42:28.049] [warning] [eot] [t102058] [hitch-gpu] frame 247329 took 4.93 ms on the GPU (average 2.86): resolve 1.76 small 16f+z 1.27 full 16f+z@1x 0.58 present 0.34 full 16u+z@1x 0.28 full 16f+z+add@1x 0.20 resolve-depth 0.14 small 16u+z 0.08
+[2026-10-12 23:42:28.065] [warning] [eot] [t102058] [hitch-gpu] frame 247330 took 4.91 ms on the GPU (average 2.90): resolve 1.76 small 16f+z 1.26 full 16f+z@1x 0.59 present 0.34 full 16u+z@1x 0.28 full 16f+z+add@1x 0.20 resolve-depth 0.14 small 16u+z 0.08
+[2026-10-12 23:42:42.909] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-12 23:42:42.910] [info] [krnl] [t102069] XGIUserWriteAchievements: id=61 (0)
+[2026-10-12 23:42:42.911] [info] [sys] [t102069] Achievement unlocked: 0000003D
+[2026-10-13 00:10:50.574] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-13 00:10:50.575] [info] [krnl] [t102069] XGIUserWriteAchievements: id=81 (0)
+[2026-10-13 00:10:50.576] [info] [sys] [t102069] Achievement unlocked: 00000051
+[2026-10-13 00:14:19.731] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-13 00:14:19.732] [info] [krnl] [t102069] XGIUserWriteAchievements: id=89 (0)
+[2026-10-13 00:14:19.733] [info] [sys] [t102069] Achievement unlocked: 00000059
+[2026-10-13 00:18:24.910] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-13 00:18:24.910] [info] [krnl] [t102069] XGIUserWriteAchievements: id=62 (0)
+[2026-10-13 00:18:24.911] [info] [sys] [t102069] Achievement unlocked: 0000003E
+[2026-10-13 00:18:25.150] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-13 00:18:25.246] [warning] [eot] [t102058] [hitch-gpu] frame 375101 took 3.41 ms on the GPU (average 0.40): full 16f+z@1x 1.63 upload 0.51 full 16f+z+add@1x 0.33 present 0.31 resolve 0.19 full 8+z@1x 0.16 full 16u+z@1x 0.14 resolve-depth 0.08
+[2026-10-13 00:18:25.432] [warning] [eot] [t102058] [hitch-gpu] frame 375104 took 2.76 ms on the GPU (average 0.54): full 16f+z@1x 0.88 resolve 0.70 present 0.31 full 16f+z+add@1x 0.30 full 16u+z@1x 0.19 full 8+z@1x 0.16 resolve-depth 0.08 small 16f+z 0.06
+[2026-10-13 00:18:30.934] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-13 00:23:42.135] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-13 00:27:58.225] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-13 00:27:58.225] [info] [krnl] [t102069] XGIUserWriteAchievements: id=67 (0)
+[2026-10-13 00:27:58.226] [info] [sys] [t102069] Achievement unlocked: 00000043
+[2026-10-13 00:32:12.271] [info] [eot] [t102069] [pso] loading screen up at frame 423826 (pool pending recorded 0 prio 0 bg 0)
+[2026-10-13 00:32:17.295] [info] [eot] [t102069] [pso] package 0x46a reported loading: holding the screen for 2 pipelines (0 its own)
+[2026-10-13 00:32:17.308] [info] [eot] [t102069] [pso] package 0x46a released after 2242 ms
+[2026-10-13 00:32:17.430] [info] [eot] [t102069] [pso] loading screen down at frame 424122 after 296 frames (pool pending recorded 0 prio 0 bg 0, 0 package pipelines still building)
+[2026-10-13 00:37:16.685] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-13 00:45:24.712] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-13 00:45:24.713] [info] [krnl] [t102069] XGIUserWriteAchievements: id=52 (0)
+[2026-10-13 00:45:24.714] [info] [sys] [t102069] Achievement unlocked: 00000034
+[2026-10-13 00:48:31.607] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-13 00:48:31.607] [info] [krnl] [t102069] XGIUserWriteAchievements: id=47 (0)
+[2026-10-13 00:48:31.608] [info] [sys] [t102069] Achievement unlocked: 0000002F
+[2026-10-13 00:52:25.934] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-13 00:55:30.443] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-13 00:55:30.444] [info] [krnl] [t102069] XGIUserWriteAchievements: id=69 (0)
+[2026-10-13 00:55:30.445] [info] [sys] [t102069] Achievement unlocked: 00000045
+[2026-10-13 01:01:42.533] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-13 01:01:42.534] [info] [krnl] [t102069] XGIUserWriteAchievements: id=83 (0)
+[2026-10-13 01:01:42.535] [info] [sys] [t102069] Achievement unlocked: 00000053
+[2026-10-13 01:02:08.826] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-13 01:02:08.827] [info] [krnl] [t102069] XGIUserWriteAchievements: id=84 (0)
+[2026-10-13 01:02:08.827] [info] [sys] [t102069] Achievement unlocked: 00000054
+[2026-10-13 01:02:43.839] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-13 01:03:26.165] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-13 01:03:26.165] [info] [krnl] [t102069] XGIUserWriteAchievements: id=63 (0)
+[2026-10-13 01:03:26.166] [info] [sys] [t102069] Achievement unlocked: 0000003F
+[2026-10-13 01:03:52.710] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-13 01:15:48.393] [warning] [eot] [t102058] [hitch-gpu] frame 577073 took 5.77 ms on the GPU (average 3.71): resolve 2.01 full 16f+z@1x 1.06 small 16f+z 0.86 full 16f+z+add@1x 0.45 present 0.34 full 16u+z@1x 0.26 resolve-depth 0.22 small 16u+z 0.11
+[2026-10-13 01:15:48.427] [warning] [eot] [t102058] [hitch-gpu] frame 577075 took 5.79 ms on the GPU (average 3.79): resolve 2.04 full 16f+z@1x 1.05 small 16f+z 0.87 full 16f+z+add@1x 0.44 present 0.33 full 16u+z@1x 0.26 resolve-depth 0.22 small 16u+z 0.11
+[2026-10-13 01:17:10.151] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-13 01:17:10.152] [info] [krnl] [t102069] XGIUserWriteAchievements: id=64 (0)
+[2026-10-13 01:17:10.152] [info] [sys] [t102069] Achievement unlocked: 00000040
+[2026-10-13 01:17:13.005] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-13 01:17:16.682] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-13 01:35:44.154] [warning] [eot] [t102058] [hitch-gpu] frame 648225 took 6.09 ms on the GPU (average 3.63): resolve 2.91 small 16f+z 1.05 full 16f+z@1x 0.57 present 0.32 resolve-depth 0.31 full 16u+z@1x 0.26 full 16f+z+add@1x 0.23 small 16u+z 0.11
+[2026-10-13 01:35:44.175] [warning] [eot] [t102058] [hitch-gpu] frame 648226 took 6.67 ms on the GPU (average 3.68): resolve 3.17 small 16f+z 1.33 full 16f+z@1x 0.59 present 0.32 resolve-depth 0.31 full 16u+z@1x 0.26 full 16f+z+add@1x 0.23 small 16u+z 0.11
+[2026-10-13 01:35:44.198] [warning] [eot] [t102058] [hitch-gpu] frame 648227 took 6.24 ms on the GPU (average 3.74): resolve 3.04 small 16f+z 1.05 full 16f+z@1x 0.60 present 0.32 resolve-depth 0.31 full 16u+z@1x 0.26 full 16f+z+add@1x 0.21 small 16u+z 0.11
+[2026-10-13 01:35:44.218] [warning] [eot] [t102058] [hitch-gpu] frame 648228 took 6.44 ms on the GPU (average 3.79): resolve 3.28 small 16f+z 1.07 full 16f+z@1x 0.57 present 0.32 resolve-depth 0.31 full 16u+z@1x 0.26 full 16f+z+add@1x 0.19 small 16u+z 0.11
+[2026-10-13 01:35:44.237] [warning] [eot] [t102058] [hitch-gpu] frame 648229 took 6.99 ms on the GPU (average 3.84): resolve 3.79 small 16f+z 1.08 full 16f+z@1x 0.59 resolve-depth 0.32 present 0.32 full 16u+z@1x 0.26 full 16f+z+add@1x 0.19 small 16u+z 0.11
+[2026-10-13 01:35:44.256] [warning] [eot] [t102058] [hitch-gpu] frame 648230 took 6.84 ms on the GPU (average 3.91): resolve 3.59 small 16f+z 1.15 full 16f+z@1x 0.58 present 0.32 resolve-depth 0.32 full 16u+z@1x 0.26 full 16f+z+add@1x 0.19 small 16u+z 0.11
+[2026-10-13 01:35:44.275] [warning] [eot] [t102058] [hitch-gpu] frame 648231 took 6.61 ms on the GPU (average 3.97): resolve 3.40 small 16f+z 1.10 full 16f+z@1x 0.58 resolve-depth 0.32 present 0.32 full 16u+z@1x 0.26 full 16f+z+add@1x 0.18 small 16u+z 0.12
+[2026-10-13 01:35:44.298] [warning] [eot] [t102058] [hitch-gpu] frame 648232 took 6.64 ms on the GPU (average 4.02): resolve 3.47 small 16f+z 1.08 full 16f+z@1x 0.58 present 0.32 resolve-depth 0.31 full 16u+z@1x 0.26 full 16f+z+add@1x 0.18 small 16u+z 0.12
+[2026-10-13 01:35:44.320] [warning] [eot] [t102058] [hitch-gpu] frame 648233 took 6.61 ms on the GPU (average 4.07): resolve 3.43 small 16f+z 1.09 full 16f+z@1x 0.59 present 0.32 resolve-depth 0.32 full 16u+z@1x 0.26 full 16f+z+add@1x 0.17 small 16u+z 0.11
+[2026-10-13 01:35:44.341] [warning] [eot] [t102058] [hitch-gpu] frame 648234 took 7.00 ms on the GPU (average 4.12): resolve 3.46 small 16f+z 1.47 full 16f+z@1x 0.58 present 0.32 resolve-depth 0.32 full 16u+z@1x 0.26 full 16f+z+add@1x 0.15 small 16u+z 0.12
+[2026-10-13 01:35:44.364] [warning] [eot] [t102058] [hitch-gpu] frame 648235 took 6.62 ms on the GPU (average 4.18): resolve 3.45 small 16f+z 1.08 full 16f+z@1x 0.59 resolve-depth 0.33 present 0.32 full 16u+z@1x 0.26 full 16f+z+add@1x 0.16 small 16u+z 0.12
+[2026-10-13 01:35:44.384] [warning] [eot] [t102058] [hitch-gpu] frame 648236 took 6.46 ms on the GPU (average 4.23): resolve 3.31 small 16f+z 1.08 full 16f+z@1x 0.57 resolve-depth 0.32 present 0.32 full 16u+z@1x 0.26 full 16f+z+add@1x 0.16 small 16u+z 0.12
+[2026-10-13 01:35:44.406] [warning] [eot] [t102058] [hitch-gpu] frame 648237 took 6.87 ms on the GPU (average 4.27): resolve 3.31 small 16f+z 1.06 resolve-depth 0.70 full 16f+z@1x 0.60 present 0.32 full 16u+z@1x 0.26 full 16f+z+add@1x 0.17 small 16u+z 0.12
+[2026-10-13 01:35:49.874] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-13 01:35:49.875] [info] [krnl] [t102069] XGIUserWriteAchievements: id=65 (0)
+[2026-10-13 01:35:49.876] [info] [sys] [t102069] Achievement unlocked: 00000041
+[2026-10-13 01:35:50.061] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-13 01:41:41.582] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-13 01:49:44.757] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-13 01:49:44.757] [info] [krnl] [t102069] XGIUserWriteAchievements: id=73 (0)
+[2026-10-13 01:49:44.758] [info] [sys] [t102069] Achievement unlocked: 00000049
+[2026-10-13 01:50:05.270] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-13 01:50:05.270] [info] [krnl] [t102069] XGIUserWriteAchievements: id=66 (0)
+[2026-10-13 01:50:05.271] [info] [sys] [t102069] Achievement unlocked: 00000042
+[2026-10-13 01:52:26.734] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-13 01:58:31.288] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-13 01:59:58.624] [warning] [eot] [t102058] [hitch-gpu] frame 733751 took 5.42 ms on the GPU (average 2.99): resolve 1.76 small 16f+z 1.56 full 16f+z@1x 0.48 present 0.34 resolve-depth 0.28 full 16u+z@1x 0.27 small 8+z 0.24 full 16f+z+add@1x 0.21
+[2026-10-13 01:59:58.641] [warning] [eot] [t102058] [hitch-gpu] frame 733752 took 5.64 ms on the GPU (average 3.04): resolve 1.97 small 16f+z 1.58 full 16f+z@1x 0.48 present 0.34 resolve-depth 0.27 full 16u+z@1x 0.26 small 8+z 0.24 full 16f+z+add@1x 0.21
+[2026-10-13 01:59:58.658] [warning] [eot] [t102058] [hitch-gpu] frame 733753 took 5.47 ms on the GPU (average 3.09): resolve 1.79 small 16f+z 1.59 full 16f+z@1x 0.49 present 0.34 resolve-depth 0.27 full 16u+z@1x 0.26 small 8+z 0.24 full 16f+z+add@1x 0.21
+[2026-10-13 01:59:58.675] [warning] [eot] [t102058] [hitch-gpu] frame 733754 took 5.72 ms on the GPU (average 3.14): resolve 2.01 small 16f+z 1.61 full 16f+z@1x 0.49 present 0.34 resolve-depth 0.27 full 16u+z@1x 0.26 small 8+z 0.24 full 16f+z+add@1x 0.21
+[2026-10-13 01:59:58.691] [warning] [eot] [t102058] [hitch-gpu] frame 733755 took 5.54 ms on the GPU (average 3.19): resolve 1.82 small 16f+z 1.63 full 16f+z@1x 0.48 present 0.34 resolve-depth 0.27 full 16u+z@1x 0.27 small 8+z 0.24 full 16f+z+add@1x 0.21
+[2026-10-13 01:59:58.708] [warning] [eot] [t102058] [hitch-gpu] frame 733756 took 5.61 ms on the GPU (average 3.23): resolve 1.93 small 16f+z 1.64 full 16f+z@1x 0.48 present 0.34 resolve-depth 0.27 full 16u+z@1x 0.27 small 8+z 0.23 full 16f+z+add@1x 0.17
+[2026-10-13 01:59:58.725] [warning] [eot] [t102058] [hitch-gpu] frame 733757 took 5.49 ms on the GPU (average 3.28): resolve 1.77 small 16f+z 1.66 full 16f+z@1x 0.48 full 16u+z@1x 0.35 present 0.34 resolve-depth 0.27 small 8+z 0.24 full 16f+z+add@1x 0.17
+[2026-10-13 01:59:58.741] [warning] [eot] [t102058] [hitch-gpu] frame 733758 took 5.69 ms on the GPU (average 3.33): resolve 1.93 small 16f+z 1.67 full 16f+z@1x 0.48 full 16u+z@1x 0.35 present 0.34 resolve-depth 0.28 small 8+z 0.24 full 16f+z+add@1x 0.19
+[2026-10-13 01:59:58.758] [warning] [eot] [t102058] [hitch-gpu] frame 733759 took 5.57 ms on the GPU (average 3.37): resolve 1.83 small 16f+z 1.65 full 16f+z@1x 0.48 full 16u+z@1x 0.35 present 0.34 resolve-depth 0.27 small 8+z 0.24 full 16f+z+add@1x 0.19
+[2026-10-13 01:59:58.775] [warning] [eot] [t102058] [hitch-gpu] frame 733760 took 5.77 ms on the GPU (average 3.42): resolve 1.96 small 16f+z 1.73 full 16f+z@1x 0.49 full 16u+z@1x 0.35 present 0.34 resolve-depth 0.28 small 8+z 0.24 full 16f+z+add@1x 0.17
+[2026-10-13 01:59:58.791] [warning] [eot] [t102058] [hitch-gpu] frame 733761 took 5.62 ms on the GPU (average 3.46): resolve 1.81 small 16f+z 1.70 full 16f+z@1x 0.48 full 16u+z@1x 0.36 present 0.34 resolve-depth 0.28 small 8+z 0.24 full 16f+z+add@1x 0.19
+[2026-10-13 01:59:58.808] [warning] [eot] [t102058] [hitch-gpu] frame 733762 took 5.79 ms on the GPU (average 3.51): resolve 1.96 small 16f+z 1.75 full 16f+z@1x 0.48 full 16u+z@1x 0.35 present 0.34 resolve-depth 0.28 small 8+z 0.24 full 16f+z+add@1x 0.18
+[2026-10-13 01:59:58.825] [warning] [eot] [t102058] [hitch-gpu] frame 733763 took 5.64 ms on the GPU (average 3.55): resolve 1.85 small 16f+z 1.73 full 16f+z@1x 0.48 full 16u+z@1x 0.36 present 0.34 resolve-depth 0.27 small 8+z 0.24 full 16f+z+add@1x 0.16
+[2026-10-13 01:59:58.841] [warning] [eot] [t102058] [hitch-gpu] frame 733764 took 5.92 ms on the GPU (average 3.59): resolve 2.04 small 16f+z 1.79 full 16f+z@1x 0.48 full 16u+z@1x 0.36 present 0.34 resolve-depth 0.28 small 8+z 0.24 full 16f+z+add@1x 0.19
+[2026-10-13 01:59:58.875] [warning] [eot] [t102058] [hitch-gpu] frame 733766 took 5.84 ms on the GPU (average 3.68): resolve 2.01 small 16f+z 1.81 full 16f+z@1x 0.48 full 16u+z@1x 0.36 present 0.33 resolve-depth 0.28 small 8+z 0.24 full 16f+z+add@1x 0.13
+[2026-10-13 02:00:19.570] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-13 02:07:14.200] [warning] [eot] [t102058] [present] no front buffer mirror for 0xe4e61900; presenting black
+[2026-10-13 02:08:15.728] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-13 02:08:15.729] [info] [krnl] [t102069] XGIUserWriteAchievements: id=53 (0)
+[2026-10-13 02:08:15.730] [info] [sys] [t102069] Achievement unlocked: 00000035
+[2026-10-13 02:11:28.621] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-13 02:11:28.621] [info] [krnl] [t102069] XGIUserWriteAchievements: id=54 (0)
+[2026-10-13 02:11:28.622] [info] [sys] [t102069] Achievement unlocked: 00000036
+[2026-10-13 02:11:28.648] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-13 02:11:28.649] [info] [krnl] [t102069] XGIUserWriteAchievements: id=48 (0)
+[2026-10-13 02:11:28.650] [info] [sys] [t102069] Achievement unlocked: 00000030
+[2026-10-13 02:11:28.675] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-13 02:11:28.676] [info] [krnl] [t102069] XGIUserWriteAchievements: id=79 (0)
+[2026-10-13 02:11:28.677] [info] [sys] [t102069] Achievement unlocked: 0000004F
+[2026-10-13 02:11:43.754] [info] [krnl] [t102069] XGIUserWriteAchievements called: buf_len=8 raw[0]=00000001 raw[4]=8249C0DC
+[2026-10-13 02:11:43.755] [info] [krnl] [t102069] XGIUserWriteAchievements: id=49 (0)
+[2026-10-13 02:11:43.755] [info] [sys] [t102069] Achievement unlocked: 00000031
+[2026-10-13 02:12:24.787] [warning] [eot] [t102058] [hitch-gpu] frame 778118 took 3.01 ms on the GPU (average 0.41): full 16f+z+add@1x 1.17 full 16f+z@1x 0.72 present 0.30 resolve 0.27 full 16u+z@1x 0.19 small 8+z 0.12 full 8+z@1x 0.10 resolve-depth 0.08
+[2026-10-13 02:12:24.803] [warning] [eot] [t102058] [hitch-gpu] frame 778119 took 2.96 ms on the GPU (average 0.47): full 16f+z+add@1x 1.17 full 16f+z@1x 0.72 present 0.30 resolve 0.23 full 16u+z@1x 0.18 small 8+z 0.12 full 8+z@1x 0.10 resolve-depth 0.08
+[2026-10-13 02:12:24.820] [warning] [eot] [t102058] [hitch-gpu] frame 778120 took 2.95 ms on the GPU (average 0.52): full 16f+z+add@1x 1.17 full 16f+z@1x 0.71 present 0.30 resolve 0.24 full 16u+z@1x 0.18 small 8+z 0.12 full 8+z@1x 0.10 resolve-depth 0.08
+[2026-10-13 02:12:24.837] [warning] [eot] [t102058] [hitch-gpu] frame 778121 took 2.94 ms on the GPU (average 0.57): full 16f+z+add@1x 1.16 full 16f+z@1x 0.71 present 0.30 resolve 0.23 full 16u+z@1x 0.18 small 8+z 0.12 full 8+z@1x 0.10 resolve-depth 0.08
+[2026-10-13 02:12:24.853] [warning] [eot] [t102058] [hitch-gpu] frame 778122 took 2.96 ms on the GPU (average 0.61): full 16f+z+add@1x 1.18 full 16f+z@1x 0.71 present 0.30 resolve 0.24 full 16u+z@1x 0.18 small 8+z 0.12 full 8+z@1x 0.10 resolve-depth 0.08
+[2026-10-13 02:12:24.870] [warning] [eot] [t102058] [hitch-gpu] frame 778123 took 2.94 ms on the GPU (average 0.66): full 16f+z+add@1x 1.17 full 16f+z@1x 0.70 present 0.30 resolve 0.24 full 16u+z@1x 0.18 small 8+z 0.11 full 8+z@1x 0.10 resolve-depth 0.08
+[2026-10-13 02:12:24.887] [warning] [eot] [t102058] [hitch-gpu] frame 778124 took 2.98 ms on the GPU (average 0.71): full 16f+z+add@1x 1.16 full 16f+z@1x 0.72 present 0.30 resolve 0.24 full 16u+z@1x 0.18 small 8+z 0.12 full 8+z@1x 0.10 resolve-depth 0.08
+[2026-10-13 02:12:24.903] [warning] [eot] [t102058] [hitch-gpu] frame 778125 took 2.95 ms on the GPU (average 0.75): full 16f+z+add@1x 1.16 full 16f+z@1x 0.72 present 0.30 resolve 0.23 full 16u+z@1x 0.19 small 8+z 0.11 full 8+z@1x 0.10 resolve-depth 0.08
+[2026-10-13 02:12:24.920] [warning] [eot] [t102058] [hitch-gpu] frame 778126 took 3.02 ms on the GPU (average 0.79): full 16f+z+add@1x 1.17 full 16f+z@1x 0.72 present 0.31 resolve 0.23 full 16u+z@1x 0.19 small 8+z 0.12 full 8+z@1x 0.10 resolve-depth 0.08
+[2026-10-13 02:12:24.937] [warning] [eot] [t102058] [hitch-gpu] frame 778127 took 2.94 ms on the GPU (average 0.84): full 16f+z+add@1x 1.16 full 16f+z@1x 0.71 present 0.30 resolve 0.24 full 16u+z@1x 0.19 small 8+z 0.11 full 8+z@1x 0.10 resolve-depth 0.08
+[2026-10-13 02:12:24.953] [warning] [eot] [t102058] [hitch-gpu] frame 778128 took 3.10 ms on the GPU (average 0.88): full 16f+z+add@1x 1.17 full 16f+z@1x 0.72 present 0.30 resolve 0.23 full 16u+z@1x 0.18 other 0.15 small 8+z 0.12 full 8+z@1x 0.10
+[2026-10-13 02:12:24.970] [warning] [eot] [t102058] [hitch-gpu] frame 778129 took 2.94 ms on the GPU (average 0.93): full 16f+z+add@1x 1.15 full 16f+z@1x 0.73 present 0.30 resolve 0.23 full 16u+z@1x 0.18 small 8+z 0.12 full 8+z@1x 0.10 resolve-depth 0.08
+[2026-10-13 02:12:24.987] [warning] [eot] [t102058] [hitch-gpu] frame 778130 took 3.13 ms on the GPU (average 0.97): full 16f+z+add@1x 1.16 full 16f+z@1x 0.72 present 0.30 resolve 0.24 full 16u+z@1x 0.18 other 0.18 small 8+z 0.12 full 8+z@1x 0.10
+[2026-10-13 02:12:25.020] [warning] [eot] [t102058] [hitch-gpu] frame 778132 took 3.08 ms on the GPU (average 1.05): full 16f+z+add@1x 1.17 full 16f+z@1x 0.72 present 0.30 resolve 0.24 full 16u+z@1x 0.18 other 0.12 small 8+z 0.12 full 8+z@1x 0.10
+[2026-10-13 02:12:25.104] [warning] [eot] [t102058] [hitch-gpu] frame 778137 took 3.26 ms on the GPU (average 1.24): full 16f+z+add@1x 1.17 full 16f+z@1x 1.07 present 0.30 resolve 0.25 full 16u+z@1x 0.18 small 8+z 0.12 full 8+z@1x 0.10 small 8 0.03
+[2026-10-13 02:12:42.807] [info] [eot] [t102069] [pso] loading screen up at frame 779199 (pool pending recorded 0 prio 0 bg 0)
+[2026-10-13 02:12:48.880] [info] [eot] [t102069] [pso] loading screen down at frame 779555 after 356 frames (pool pending recorded 0 prio 0 bg 0, 0 package pipelines still building)

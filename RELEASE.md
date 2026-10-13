@@ -17,13 +17,13 @@ your own copy of the game. Everything made from the game (see
 
 ## Status
 
-- Plays on a PS5 with sound, the DualSense and full graphics. It was tested for about
-  30 minutes of play on one console without a crash; a full playthrough is under way.
+- **Playable from beginning to end.** The game has been played through on one PS5 with
+  sound, the DualSense and full graphics. The last session ran 3 hours 40 minutes,
+  through the ending, without a crash.
+- Every shader that playthrough used was in the shader cache built as below, from the
+  packs and the shaders the game records on its first run. Nothing was missing.
 - The first minute or two can stutter while the PS5 builds each shader the first time
   it is used.
-- A few of the game's shaders only turn up while playing. Until they are added (see
-  [Shaders the game finds while playing](#shaders-the-game-finds-while-playing)), the
-  things they draw are skipped.
 
 ## What you need
 
