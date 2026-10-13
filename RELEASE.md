@@ -243,6 +243,14 @@ recompilation of the game this port is built from. Its credits, in full in its R
 runtime. This port runs its PS5 fork,
 [KongaTime/rexglue-sdk](https://github.com/KongaTime/rexglue-sdk).
 
+**Mihawk ([mihawk-99](https://github.com/mihawk-99))**: Vulkan on the PS5, which every
+frame of the game is drawn through. [PS5_Vulkan](https://github.com/mihawk-99/PS5_Vulkan)
+and the [PS5_Mesa](https://github.com/mihawk-99/PS5_Mesa) fork bring Mesa's RADV driver
+to the console. The [PS5 Vulkan Template](https://github.com/mihawk-99/PS5_VulkanTemplate)
+is the title's foundation: its platform layer, link and console tools, with Sascha
+Willems' Vulkan examples. The [payload SDK fork](https://github.com/mihawk-99/PS5_PayloadSDK)
+gives the title its platform layer.
+
 **[The Simpsons Game PS5 port](https://github.com/LoZazaMastro/TheSimpsonsGame-PS5-Builder)**
 by LoZazaMastro, built on YesterMester's
 [TheSimpsonsGameRecomp](https://github.com/YesterMester/TheSimpsonsGameRecomp): the
@@ -261,10 +269,9 @@ earlier ReXGlue game on the PS5, and the reference for this port's PS5 runtime.
   with;
 - [plume](https://github.com/renderbag/plume), the renderer, through zolaware's
   [fork](https://github.com/zolaware/plume);
-- [PS5 Vulkan Template](https://github.com/mihawk-99/PS5_VulkanTemplate), the title's
-  foundation, and Sascha Willems' Vulkan examples;
-- the [PS5 payload SDK](https://github.com/ps5-payload-dev/sdk);
-- Mesa's RADV Vulkan driver, through PS5_Vulkan;
+- the [PS5 payload SDK](https://github.com/ps5-payload-dev/sdk) (John Törnblom and the
+  ps5-payload-dev contributors), which Mihawk's fork builds on;
+- [Mesa](https://mesa3d.org)'s RADV Vulkan driver;
 - [etaHEN](https://github.com/etaHEN/etaHEN),
   [ShadowMountPlus](https://github.com/drakmor/ShadowMountPlus) and
   [ftpsrv](https://github.com/ps5-payload-dev/ftpsrv);
