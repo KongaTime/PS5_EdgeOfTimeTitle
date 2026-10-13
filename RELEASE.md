@@ -60,7 +60,7 @@ Check these out side by side in one folder:
 ```bash
 git clone https://github.com/KongaTime/PS5_EdgeOfTimeTitle
 git clone https://github.com/KongaTime/rexglue-sdk
-git clone -b claude/nifty-knuth-s27y9o https://github.com/KongaTime/EdgeOfTimeRecomp
+git clone https://github.com/KongaTime/EdgeOfTimeRecomp
 git clone https://github.com/KongaTime/ps5_vulkan PS5_Vulkan
 git clone https://github.com/KongaTime/ps5_mesa PS5_Mesa
 git clone https://github.com/KongaTime/ps5_payloadsdk PS5_PayloadSDK

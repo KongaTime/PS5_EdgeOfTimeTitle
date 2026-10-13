@@ -93,7 +93,7 @@ It builds against the PS5 stack, checked out beside it:
 
 ```bash
 git clone https://github.com/KongaTime/rexglue-sdk
-git clone -b claude/nifty-knuth-s27y9o https://github.com/KongaTime/EdgeOfTimeRecomp
+git clone https://github.com/KongaTime/EdgeOfTimeRecomp
 git -C PS5_PayloadSDK pull                  # 1de8b37 or later
 EdgeOfTimeRecomp/ps5/tools/build-rexglue.sh # the runtime, for the PS5
 cd PS5_EdgeOfTimeTitle
