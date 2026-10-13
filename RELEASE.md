@@ -20,8 +20,8 @@ your own copy of the game. Everything made from the game (see
 - **Playable from beginning to end.** The game has been played through on one PS5 with
   sound, the DualSense and full graphics. The last session ran 3 hours 40 minutes,
   through the ending, without a crash.
-- Every shader that playthrough used was in the shader cache built as below, from the
-  packs and the shaders the game records on its first run. Nothing was missing.
+- Every shader that playthrough used was in the shader cache, made from the game's
+  packs and `Default.xex` as below. Nothing was missing.
 - The first minute or two can stutter while the PS5 builds each shader the first time
   it is used.
 
@@ -90,33 +90,27 @@ cd EdgeOfTimeRecomp && rexglue codegen reeot_manifest.toml && cd ..
 This writes `EdgeOfTimeRecomp/generated/`. Git ignores it, because it is made from your
 game.
 
-### 4. Dump the game's shaders on the PS5
-
-The shaders are recompiled from the game's packs, which are already on the console
-once the game folder is there. A small one-off title reads them and writes out only the
-shaders.
+### 4. Build it once, and let it find the shaders
 
 ```bash
-cd PS5_EdgeOfTimeTitle
-export PS5_CLANG=$(command -v clang)
-sdk=$(bash ps5/tools/setup-sdk.sh)
-cmake -S ps5 -B build/ps5-shaderdump -G Ninja -DCMAKE_BUILD_TYPE=Release \
-  -DCMAKE_TOOLCHAIN_FILE=$sdk/toolchain/prospero.cmake \
-  -DPS5_VULKAN_DIR=$PWD/../PS5_Vulkan -DREEOT_TITLE_APP=shaderdump
-ninja -C build/ps5-shaderdump title
-cp dist/PPSA99300/eboot.bin ../shaderdump-eboot.bin     # the next build overwrites it
+cd PS5_EdgeOfTimeTitle && ps5/tools/build.sh && cd ..
 ```
 
-Then, on the console:
+This first build has no shaders yet. A build without shaders doesn't run the game:
+it finds the shaders instead. It reads them from the game's packs and from inside
+`Default.xex`, which the PS5 build can read once the runtime has loaded it.
 
-1. Copy the whole `dist/PPSA99300/` folder to `/data/homebrew/PPSA99300/`.
+On the console:
+
+1. Copy the whole `PS5_EdgeOfTimeTitle/dist/PPSA99300/` folder to
+   `/data/homebrew/PPSA99300/`.
 2. Copy the PC install's game folder there as `gamedata/`.
-3. Replace `eboot.bin` with `shaderdump-eboot.bin`, keeping the name `eboot.bin`.
-4. Launch it from the home screen (ShadowMountPlus adds it about 30 seconds after the
-   folder appears).
-5. It closes by itself after about a minute. `reeot-test-results.txt` should have a
-   `dump: DONE` line near the end (all 235 packs, about 14,000 shaders, about 31 MB).
-6. Copy `/data/homebrew/PPSA99300/shader-dump.bin` back to the build machine.
+3. Launch it from the home screen. ShadowMountPlus adds it about 30 seconds after the
+   folder appears.
+4. The screen stays black for about a minute, then the app closes by itself.
+   `reeot-test-results.txt` then has a `dump: DONE` line (all 235 packs, about 14,400
+   shaders, about 31 MB).
+5. Copy `/data/homebrew/PPSA99300/shader-dump.bin` back to the build machine.
 
 ### 5. Recompile the shaders
 
@@ -137,13 +131,14 @@ XenosRecomp's input must be a folder. It takes about 30 minutes on four cores.
 `split-shader-cache.py` writes `generated/shader-cache.zst` (about 64 MB), the file that
 goes beside `eboot.bin`, and the table the build links.
 
-### 6. Build the game
+### 6. Build the game again, with its shaders
 
 ```bash
 cd PS5_EdgeOfTimeTitle && ps5/tools/build.sh
 ```
 
-This writes the title folder `dist/PPSA99300/` (an `eboot.bin` of about 77 MB).
+This writes the title folder `dist/PPSA99300/` again, now with an `eboot.bin` of about
+77 MB that runs the game.
 
 ## Install it
 
@@ -156,9 +151,9 @@ Your folder on the console ends up like this:
   gamedata/                                                  the PC install's game folder
 ```
 
-Copy `dist/PPSA99300/` over the folder again (the game build adds `assets/` and
-replaces the dump title's `eboot.bin`), and `shader-cache.zst` beside it. Then launch
-*Spider-Man Edge Of Time* from the home screen.
+Copy the new `eboot.bin` from `dist/PPSA99300/` over the first one, and
+`shader-cache.zst` beside it. Then launch *Spider-Man Edge Of Time* from the home
+screen.
 
 `eboot.bin` and `shader-cache.zst` are a pair: always update them together. With a
 mismatched pair, the game logs that the shader file doesn't match and draws nothing.
@@ -181,10 +176,11 @@ and art, and the rest of the folder stays as it was.
 
 ## Shaders the game finds while playing
 
-Some shaders are made by the game while it runs, rather than read from the packs (some
-are in `Default.xex` itself). When the game uses a shader that isn't in the cache, it
-appends it to `/data/homebrew/PPSA99300/shader-misses.bin`. Leave that file in place as
-you play: it collects every shader your play needed.
+Step 4's dump should catch every shader the game has: a full playthrough needed none
+besides the packs' and `Default.xex`'s. As a safety net, whenever the game uses a
+shader that isn't in the cache, it appends it to
+`/data/homebrew/PPSA99300/shader-misses.bin`. If that file appears, something drawn
+with that shader was skipped.
 
 To add them: put `shader-misses.bin` in `shaders-in/` beside `shader-dump.bin`, run
 steps 5 and 6 again, and install the new `eboot.bin` and `shader-cache.zst` together.
