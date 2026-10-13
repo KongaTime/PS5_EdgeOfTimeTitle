@@ -41,9 +41,9 @@ what the PS5 reads. It also holds the port's own packages, in `Data/custom/`.
 
 ## Install the download
 
-1. Download `SpiderMan-EdgeOfTime-PS5-v1.0.0.zip` from the
+1. Download the zip under **Assets** on the
    [latest release](https://github.com/KongaTime/PS5_EdgeOfTimeTitle/releases/latest)
-   and unzip it.
+   and unzip it. It holds a `PPSA99300` folder.
 2. Copy everything inside the PC install's `game` folder into `PPSA99300/gamedata/`.
    `Default.xex` must end up at `PPSA99300/gamedata/Default.xex`.
 3. Copy the whole `PPSA99300` folder to `/data/homebrew/` on the PS5 over FTP, so that
