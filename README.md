@@ -40,8 +40,13 @@ is EdgeOfTimeRecomp's own, `ReeotApp`, built with the game by `reeot/reeot_game.
   ImGui 1.65 would clash with the runtime's 1.92.
 
 On the console, the game reads its files from `/app0/gamedata`, which is
-`/data/homebrew/PPSA99300/gamedata/`, copied from a PC install. Profiles, mods and
-logs go in the title's folder.
+`/data/homebrew/PPSA99300/gamedata/`: the player's disc files with the Title Update, or
+a PC install's game folder. The port's packages aren't shipped, since three are made
+partly from the game's packs and `Default.xex`: the build makes the two drawn from the
+port's art alone and puts them, with the manifests and art the other three need, in the
+title's `port/` folder. The first time a build runs, it makes all five in
+`gamedata/Data/custom/` (EdgeOfTimeRecomp's `src/installer/port_packages.h`). Profiles,
+mods and logs go in the title's folder.
 
 `-DREEOT_TITLE_APP=test` builds test app 5 instead (`reeot/rex_test_app.cpp`). It
 checks, in order:

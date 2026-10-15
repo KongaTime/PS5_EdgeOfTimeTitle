@@ -34,10 +34,19 @@ release, add your game files, copy it to the PS5 and play: see
 - an FTP server, such as [ftpsrv](https://github.com/ps5-payload-dev/ftpsrv) on port
   2121.
 
-**The game:** your own copy of the Xbox 360 game, installed on a PC with
-[EdgeOfTimeRecompiled](https://github.com/goliathret/EdgeOfTimeRecomp)'s installer (its
-README explains how to get the files from your Xbox 360). The install's `game` folder is
-what the PS5 reads. It also holds the port's own packages, in `Data/custom/`.
+**The game:** your own copy of the Xbox 360 game, with its Title Update:
+- the disc's files, extracted from your own disc image (for example with
+  [extract-xiso](https://github.com/XboxDev/extract-xiso));
+- `Default.xexp` and `Data/GameLogic.dllp`, from the game's Title Update.
+
+A game folder from a PC install with
+[EdgeOfTimeRecompiled](https://github.com/goliathret/EdgeOfTimeRecomp)'s installer works
+too: it holds the same files.
+
+The port's own packages (its menus, achievements, button icons and suits) aren't in the
+download, because three of them are made partly from the game's own files. The first
+time it runs, the title makes them from your game files, in `gamedata/Data/custom/`.
+That takes a few seconds, once per update.
 
 ## Install the download
 
@@ -46,8 +55,10 @@ The v1.0.0 release asset is named `Spider.Man.Edge.Of.Time.zip`.
 1. Download the zip under **Assets** on the
    [latest release](https://github.com/KongaTime/PS5_EdgeOfTimeTitle/releases/latest)
    and unzip it. It holds a `PPSA99300` folder.
-2. Copy everything inside the PC install's `game` folder into `PPSA99300/gamedata/`.
-   `Default.xex` must end up at `PPSA99300/gamedata/Default.xex`.
+2. Copy the disc's files into `PPSA99300/gamedata/`, then the Title Update's
+   `Default.xexp` beside `Default.xex` and its `GameLogic.dllp` into `Data/`.
+   `Default.xex` must end up at `PPSA99300/gamedata/Default.xex`. (From a PC install,
+   copy everything inside its `game` folder instead.)
 3. Copy the whole `PPSA99300` folder to `/data/homebrew/` on the PS5 over FTP, so that
    you have `/data/homebrew/PPSA99300/eboot.bin`.
 4. ShadowMountPlus adds *Spider-Man Edge Of Time* to the home screen about 30 seconds
@@ -106,7 +117,7 @@ PS5_EdgeOfTimeTitle/ps5/tools/bootstrap.sh      # checks the host and everything
 
 ### 3. Recompile the game's code
 
-From the PC install's game folder, copy `Default.xex`, `Default.xexp`,
+From your game files (above), copy `Default.xex`, `Default.xexp`,
 `Data/GameLogic.dll` and `Data/GameLogic.dllp` into `EdgeOfTimeRecomp/assets/`, keeping
 `Data/`. Then:
 
@@ -131,7 +142,7 @@ On the console:
 
 1. Copy the whole `PS5_EdgeOfTimeTitle/dist/PPSA99300/` folder to
    `/data/homebrew/PPSA99300/`.
-2. Copy the PC install's game folder there as `gamedata/`.
+2. Copy your game files there as `gamedata/`.
 3. Launch it from the home screen. ShadowMountPlus adds it about 30 seconds after the
    folder appears.
 4. The screen stays black for about a minute, then the app closes by itself.
@@ -173,9 +184,9 @@ Your folder on the console ends up like this:
 
 ```
 /data/homebrew/PPSA99300/
-  eboot.bin, sce_sys/, sce_module/, assets/, shaders/, ...   from dist/PPSA99300/
+  eboot.bin, sce_sys/, sce_module/, port/, assets/, ...      from dist/PPSA99300/
   shader-cache.zst                                           from EdgeOfTimeRecomp/generated/
-  gamedata/                                                  the PC install's game folder
+  gamedata/                                                  your game files
 ```
 
 Copy the new `eboot.bin` from `dist/PPSA99300/` over the first one, and
