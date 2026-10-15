@@ -4,13 +4,42 @@ Copyright (C) 2026 KongaTime
 SPDX-License-Identifier: MIT
 """
 import re
+import shutil
 import subprocess
+import tempfile
 from pathlib import Path
 
 
 def git(repo, *args):
     return subprocess.run(["git", "-C", str(repo), *args], check=True,
                           capture_output=True, text=True).stdout.strip()
+
+
+def published_patch(repo):
+    """The patch the parent repository publishes for this submodule, when the
+    checkout's changes are exactly that patch (EdgeOfTimeRecomp's build guide
+    applies ps5/patches/plume-ps5.patch to thirdparty/plume): the source is then
+    the recorded revision with that patch, both published. None otherwise."""
+    parent = git(repo, "rev-parse", "--show-superproject-working-tree")
+    if not parent:
+        return None
+    patch = Path(parent) / "ps5" / "patches" / f"{Path(repo).name}-ps5.patch"
+    if not patch.is_file() or git(parent, "status", "--porcelain", "--", str(patch.relative_to(parent))):
+        return None
+    changed = git(repo, "diff", "--name-only", "HEAD").split("\n")
+    if not changed or changed == [""] or git(repo, "ls-files", "--others", "--exclude-standard"):
+        return None
+    with tempfile.TemporaryDirectory() as tmp:
+        for path in changed:
+            (Path(tmp) / path).parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(Path(repo) / path, Path(tmp) / path)
+        if subprocess.run(["git", "apply", "-R", str(patch)], cwd=tmp, capture_output=True).returncode:
+            return None
+        for path in changed:
+            head = subprocess.run(["git", "-C", str(repo), "show", f"HEAD:{path}"], capture_output=True).stdout
+            if (Path(tmp) / path).read_bytes() != head:
+                return None
+    return str(patch.relative_to(parent))
 
 
 def source_info(repo, revision="HEAD"):
@@ -20,8 +49,12 @@ def source_info(repo, revision="HEAD"):
         raise SystemExit(f"Initialize the dependency at {repo} before staging notices")
     rev = git(repo, "rev-parse", f"{revision}^{{commit}}")
     remote = git(repo, "remote", "get-url", "origin").removesuffix(".git")
-    return dict(kind="git", path=str(repo), remote=remote, revision=rev,
+    info = dict(kind="git", path=str(repo), remote=remote, revision=rev,
                 dirty=bool(git(repo, "status", "--porcelain", "--untracked-files=normal")))
+    if info["dirty"] and (patch := published_patch(repo)):
+        info["dirty"] = False
+        info["patch"] = patch
+    return info
 
 
 def submodule_sources(repo, rev):
@@ -115,7 +148,10 @@ def dirty_sources(source, label):
 
 def source_archives(repo, source, label):
     """Yield every source archive, preserving nested dependency identities."""
-    yield Path(repo), source["revision"], label, source["remote"]
+    where = source["remote"]
+    if source.get("patch"):
+        where += f" with the parent's {source['patch']} applied"
+    yield Path(repo), source["revision"], label, where
     for path, child in source.get("submodules", {}).items():
         child_label = label + "-" + path.replace("/", "-")
         yield from source_archives(Path(repo) / path, child, child_label)
