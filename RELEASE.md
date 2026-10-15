@@ -48,7 +48,10 @@ too: it holds the same files.
 The port's own packages (its menus, achievements, button icons and suits) aren't in the
 download, because three of them are made partly from the game's own files. The first
 time it runs, the title makes them from your game files, in `gamedata/Data/custom/`.
-That takes a few seconds, once per update.
+That takes about a minute, once per update.
+
+**DLC (optional):** the game's downloadable content packages, as they are, in a `dlc`
+folder (lowercase) in the title's folder. The game adds them every time it starts.
 
 ## Install the download
 
@@ -57,22 +60,26 @@ The v1.0.0 release asset is named `Spider.Man.Edge.Of.Time.zip`.
 1. Download the zip under **Assets** on the
    [latest release](https://github.com/KongaTime/PS5_EdgeOfTimeTitle/releases/latest)
    and unzip it. It holds a `PPSA99300` folder.
-2. Copy your disc image (`.iso`) and the Title Update package into
-   `PPSA99300/gamedata/`. The first launch installs the game from them: it shows its
-   progress in notifications and takes a few minutes. You can delete both files
-   afterwards.
+2. Copy your disc image (`.iso`) and the Title Update package (the file as it comes,
+   often with no extension) into `PPSA99300/`, beside `eboot.bin`. The first launch
+   installs the game from them into `gamedata/`, behind a progress screen; it takes a
+   few minutes. If you close it partway, the next launch carries on from where it
+   stopped. Once the game has started, you can delete both files.
 
    Or copy the disc's files into `PPSA99300/gamedata/`, then the Title Update's
    `Default.xexp` beside `Default.xex` and its `GameLogic.dllp` into `Data/`, so that
    `Default.xex` is at `PPSA99300/gamedata/Default.xex`. From a PC install, copy
    everything inside its `game` folder instead.
+   For DLC, put the packages in `PPSA99300/dlc/`.
 3. Copy the whole `PPSA99300` folder to `/data/homebrew/` on the PS5 over FTP, so that
    you have `/data/homebrew/PPSA99300/eboot.bin`.
 4. ShadowMountPlus adds *Spider-Man Edge Of Time* to the home screen about 30 seconds
    after the folder appears. Launch it from there.
 
-The first few minutes can stutter while the PS5 prepares each shader the first time it
-is used.
+The first launch then makes the port's packages (about a minute) and loads more slowly
+than later ones. The game can stutter the first time it shows something new while the
+PS5 prepares its graphics; the game remembers what it prepared (in
+`profiles/default/cache/pso/`), so this fades as you play.
 
 Your saves, settings and logs are in the title's folder, under `profiles/` and `logs/`.
 Back up `profiles/` before you update or remove the game. Never delete the title from
