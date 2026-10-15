@@ -62,9 +62,15 @@ The v1.0.0 release asset is named `Spider.Man.Edge.Of.Time.zip`.
    and unzip it. It holds a `PPSA99300` folder.
 2. Copy your disc image (`.iso`) and the Title Update package (the file as it comes,
    often with no extension) into `PPSA99300/`, beside `eboot.bin`. The first launch
-   installs the game from them into `gamedata/`, behind a progress screen; it takes a
-   few minutes. If you close it partway, the next launch carries on from where it
-   stopped. Once the game has started, you can delete both files.
+   installs the game from them into `gamedata/`, behind a progress screen. If you close
+   it partway, the next launch carries on from where it stopped. Once the game has
+   started, you can delete both files.
+
+   **For a quick install, close and reopen it 2 or 3 times.** The PS5 copies the first
+   1.5 GB or so at about 200 MB/s, then slows to about 25 MB/s while it catches up.
+   When that happens, the screen says so: close the game with the PS button and open it
+   again, and it carries on at full speed. Or just leave it running: it takes 3 or 4
+   minutes either way.
 
    Or copy the disc's files into `PPSA99300/gamedata/`, then the Title Update's
    `Default.xexp` beside `Default.xex` and its `GameLogic.dllp` into `Data/`, so that
