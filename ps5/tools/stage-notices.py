@@ -9,7 +9,7 @@ eboot.bin:
   LEGAL.txt                 no piracy; what the title is licensed under; trademarks
   licenses/README.txt       the same notice, then every part: its licence, copyright and source
   licenses/components.json  the same parts as data, each with the revision it was built from
-                            (ps5/tools/source-bundle.py archives the source from it)
+                            (ps5/tools/package-release.py archives the source from it)
   licenses/<part>/...       the licence texts each part requires
 
 Every text is read at the revision the title was built from (git show), not from a
@@ -21,11 +21,13 @@ Copyright (C) 2026 Mihawk
 SPDX-License-Identifier: MIT
 """
 import json
+import os
 import re
 import shutil
 import subprocess
 import sys
 from pathlib import Path
+from release_licenses import dependency_part, submodule_sources, validate_notices
 
 PS5 = Path(__file__).resolve().parent.parent
 ROOT = PS5.parent
@@ -68,16 +70,19 @@ def write_tree(dest, repo, rev, path):
 LEGAL = """{name} - legal use
 {rule}
 
-PIRACY IS NOT CONDONED. This title contains no games, no BIOS files, no
-console firmware and no decryption keys, and none will ever be provided or
-linked to. Use only games you own and files from hardware you own.
+The runtime package requires original game data supplied by the user. Do not
+bundle original game data, BIOS files, console firmware or decryption keys.
+Use only games you own and files from hardware you own.
 Downloading or sharing games, BIOS files, firmware or keys you do not own is
 piracy: do not do it, and do not ask for help with it.
 
 Licences: the title's own code and Sascha Willems' Vulkan examples are MIT.
 It links the PS5 platform layer{kit}, which {are} GPL-3.0-or-later, so the
-title as distributed is under GPL-3.0-or-later as a whole, and its complete
-source is offered with it. Every part, its licence and its source are listed
+combined platform-covered work is distributed under GPL-3.0-or-later.
+The port also includes BSD-licensed ReXGlue and EdgeOfTimeRecomp code.
+License texts do not grant rights to the original commercial game or its
+generated code, shaders or artwork. Review those rights separately.
+Recorded components, their licences and their source locations are listed
 in licenses/README.txt; the assets and theirs in assets/NOTICES.txt.
 
 Not affiliated with or endorsed by Sony Interactive Entertainment.
@@ -103,7 +108,6 @@ def main():
                  ("ps5/third_party/volk/LICENSE.md", "volk-LICENSE.md")]
     for path, dest in libraries:
         write_text(out / "title" / dest, ROOT, rev, path)
-    glm = git(ROOT, "ls-tree", rev, "external/glm").split()[2]
     parts.append(dict(
         id="title", name=f"{name}: its program, the foundation (Sascha Willems' Vulkan examples and base class, the PS5 layer) "
                          "and the libraries in its tree (Dear ImGui, libktx, tinygltf with stb_image and nlohmann json, "
@@ -113,7 +117,22 @@ def main():
         copyright=["Copyright (c) 2016-2026 Sascha Willems", "Copyright (C) 2026 Mihawk", "and each library's authors"],
         artifacts=["eboot.bin", "shaders/"], texts="licenses/title/",
         source=dict(kind="git", path=str(ROOT), remote=remote, revision=rev, dirty=dirty,
-                    submodules={"external/glm": dict(remote="https://github.com/g-truc/glm", revision=glm)})))
+                    submodules=submodule_sources(ROOT, rev))))
+
+    # Read the paths CMake actually configured, rather than guessing a sibling
+    # checkout when REXGLUE_SRC or EDGEOFTIMERECOMP_SRC was overridden.
+    paths_file = ROOT / "build/ps5/release-dependency-paths.json"
+    paths = json.loads(paths_file.read_text()) if paths_file.exists() else {}
+    dependencies = [
+        ("rexglue", "REXGLUE_SRC", "rexglue-sdk", "ReXGlue SDK and linked runtime",
+         ["Copyright (c) 2026 Tom Clay", "Copyright (c) 2022 Ben Vanik and Xenia project contributors"]),
+        ("edgeoftime", "EDGEOFTIMERECOMP_SRC", "EdgeOfTimeRecomp", "EdgeOfTimeRecomp PS5 application and dependencies",
+         ["Copyright (c) 2026 goliath-tilers"]),
+    ]
+    for ident, env, sibling, label, owners in dependencies:
+        repo = Path(paths.get(ident) or os.environ.get(env) or ROOT.parent / sibling).resolve()
+        parts.append(dependency_part(repo, ident, label,
+                     "BSD-3-Clause; dependencies retain their individual licence terms", owners, out))
 
     # The UI kit, in a title that has the module
     if (PS5 / "ui/setup-kit.sh").exists():
@@ -129,7 +148,7 @@ def main():
                         dirty=False)))
 
     # The payload SDK fork: its platform layer and headers
-    sdk = Path(ROOT.parent / "PS5_PayloadSDK")
+    sdk = Path(os.environ.get("PS5_PAYLOAD_SDK_FORK", ROOT.parent / "PS5_PayloadSDK"))
     sdk_rev = pinned("tools/setup-sdk.sh", "sdk_revision")
     write_text(out / "platform/GPL-3.0.txt", sdk, sdk_rev, "LICENSE")
     write_text(out / "platform/musl-regex-COPYRIGHT.txt", sdk, sdk_rev, "platform/src/regex/COPYRIGHT.musl")
@@ -173,6 +192,15 @@ def main():
     if llvm.exists():
         (out / "llvm-runtime").mkdir()
         shutil.copy2(llvm, out / "llvm-runtime/LICENSE.TXT")
+    else:
+        # SDK v0.42 ships libc++ 18.1.0 but no license document. Keep an
+        # unmodified copy from the matching upstream LLVM release in the tree.
+        fallback = PS5 / "licenses/llvm-runtime/LICENSE.TXT"
+        if not fallback.is_file() or not fallback.stat().st_size:
+            raise SystemExit("Missing LLVM runtime license: provide PS5_LLVM/llvm/LICENSE.TXT or "
+                             "ps5/licenses/llvm-runtime/LICENSE.TXT")
+        (out / "llvm-runtime").mkdir()
+        shutil.copy2(fallback, out / "llvm-runtime/LICENSE.TXT")
     parts.append(dict(
         id="llvm-runtime", name="LLVM libc++, libc++abi, libunwind and compiler-rt builtins (linked into eboot.bin)",
         licence="Apache-2.0 WITH LLVM-exception",
@@ -181,6 +209,7 @@ def main():
         source=dict(kind="fixed", revision="ps5-payload-dev SDK v0.42 release archives",
                     url="https://github.com/ps5-payload-dev/sdk/releases/tag/v0.42")))
 
+    validate_notices(app, parts)
     (out / "components.json").write_text(json.dumps(parts, indent=1, ensure_ascii=False) + "\n")
     has_kit = any(p["id"] == "ui-kit" for p in parts)
     legal = LEGAL.format(name=name, rule="=" * (len(name) + 12), kit=" and the UI kit" if has_kit else "",

@@ -41,6 +41,8 @@ what the PS5 reads. It also holds the port's own packages, in `Data/custom/`.
 
 ## Install the download
 
+The v1.0.0 release asset is named `Spider.Man.Edge.Of.Time.zip`.
+
 1. Download the zip under **Assets** on the
    [latest release](https://github.com/KongaTime/PS5_EdgeOfTimeTitle/releases/latest)
    and unzip it. It holds a `PPSA99300` folder.
@@ -60,6 +62,9 @@ the home screen while its folder is still in `/data/homebrew`. To update, replac
 `eboot.bin` and `shader-cache.zst` together.
 
 ## Build it yourself (optional)
+
+For publishing a build, also follow [release preparation](RELEASE-SOURCES.md)
+to collect the matching dependency notices and source inventory.
 
 Only needed to change the code or make your own build.
 

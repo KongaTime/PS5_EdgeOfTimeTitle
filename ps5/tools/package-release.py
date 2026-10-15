@@ -36,6 +36,7 @@ import sys
 import tempfile
 import zipfile
 from pathlib import Path
+from release_licenses import dirty_sources, source_archives, validate_notices
 
 PS5 = Path(__file__).resolve().parent.parent
 ROOT = PS5.parent
@@ -103,7 +104,8 @@ def main():
     title_id = param["titleId"]
     folder = ROOT / "dist" / title_id
     parts = json.loads((folder / "licenses/components.json").read_text())
-    dirty = [p["id"] for p in parts if p["source"].get("dirty")]
+    validate_notices(folder, parts)
+    dirty = [name for p in parts for name in dirty_sources(p["source"], p["id"])]
     if dirty:
         raise SystemExit(f"built from uncommitted source: {', '.join(dirty)}; commit, rebuild, then package")
     found = [str(p.relative_to(folder)) for p in folder.rglob("*") if p.name in NEVER]
@@ -123,13 +125,10 @@ def main():
     for p in parts:
         src = p["source"]
         if src["kind"] == "git":
-            name = f'{p["id"]}-{src["revision"][:12]}'
-            archive(src["path"], src["revision"], name, out / "source" / f"{name}.tar.gz")
-            sources.append((f"{name}.tar.gz", p["name"], f'{src["remote"]} at {src["revision"]}'))
-            for sub, info in src.get("submodules", {}).items():
-                sname = f'{p["id"]}-{Path(sub).name}-{info["revision"][:12]}'
-                archive(Path(src["path"]) / sub, info["revision"], sname, out / "source" / f"{sname}.tar.gz")
-                sources.append((f"{sname}.tar.gz", f'{sub}, a submodule of the title', f'{info["remote"]} at {info["revision"]}'))
+            for repo, rev, label, remote in source_archives(src["path"], src, p["id"]):
+                name = f'{label}-{rev[:12]}'
+                archive(repo, rev, name, out / "source" / f"{name}.tar.gz")
+                sources.append((f"{name}.tar.gz", p["name"] + f" ({label})", f'{remote} at {rev}'))
             if src.get("built_with_sdk"):
                 sdk = ROOT.parent / "PS5_PayloadSDK"
                 sname = f'{p["id"]}-sdk-{src["built_with_sdk"][:12]}'

@@ -9,8 +9,9 @@ piracy: do not do it, and do not ask for help with it.
 
 Licences: the title's own code and Sascha Willems' Vulkan examples are MIT.
 It links the PS5 platform layer, which is GPL-3.0-or-later, so the
-title as distributed is under GPL-3.0-or-later as a whole, and its complete
-source is offered with it. Every part, its licence and its source are listed
+platform-covered combined work is distributed under GPL-3.0-or-later.
+The older component/source inventory below is incomplete; see
+../../RELEASE-SOURCES.md for the required rebuild and source review. Entries are listed
 in licenses/README.txt; the assets and theirs in assets/NOTICES.txt.
 
 Not affiliated with or endorsed by Sony Interactive Entertainment.
@@ -18,6 +19,11 @@ Not affiliated with or endorsed by Sony Interactive Entertainment.
 Vulkan is a registered trademark of the Khronos Group Inc.; the RADV port is
 not a conformant product (its conformanceVersion is 0.0.0.0).
 
+
+This file and components.json are the earlier v1.0.0 inventory. Additional BSD
+and LLVM licence texts have since been added to this repository. Rebuild the
+title to regenerate the full inventory; see ../../RELEASE-SOURCES.md. Do not
+infer missing dependency build revisions from the licence-text source versions.
 
 The parts of this title
 =======================

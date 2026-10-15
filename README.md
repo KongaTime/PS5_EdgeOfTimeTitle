@@ -127,3 +127,8 @@ licence), and so is `reeot/`. The ReXGlue runtime linked in is BSD 3-Clause (the
 `LICENSE` and `ps5/PORTED.md`).
 The built title links the PS5 platform layer of the payload SDK fork, which is
 GPL-3.0, so the title as distributed is under GPL-3.0.
+
+Third-party components keep their original notices and licence terms. The
+release tools collect ReXGlue, EdgeOfTimeRecomp and initialized submodule notices
+from the source checkouts used for the build. See [release preparation](RELEASE-SOURCES.md)
+for the notice checks, source archives and the limits of that inventory.

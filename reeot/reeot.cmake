@@ -35,6 +35,8 @@ if(NOT reeot_eotr)
 	set(reeot_eotr ${ROOT}/../EdgeOfTimeRecomp)
 endif()
 get_filename_component(reeot_eotr "${reeot_eotr}" ABSOLUTE)
+file(WRITE ${CMAKE_BINARY_DIR}/release-dependency-paths.json
+	"{\n  \"rexglue\": \"${reeot_rexglue}\",\n  \"edgeoftime\": \"${reeot_eotr}\"\n}\n")
 set(reeot_plume ${reeot_eotr}/thirdparty/plume)
 if(NOT EXISTS ${reeot_plume}/contrib/volk/volk.h)
 	message(FATAL_ERROR "No plume with its submodules at ${reeot_plume}: git -C ${reeot_eotr} submodule update "
